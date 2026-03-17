@@ -79,6 +79,30 @@ const nextConfig: NextConfig = {
             key: 'Permissions-Policy',
             value: 'camera=(), microphone=(), geolocation=(self), interest-cohort=()',
           },
+          // CSP — protège contre XSS et injections tierces
+          // unsafe-inline nécessaire pour les scripts JSON-LD (schema.org) et styles Tailwind
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline'",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: blob:",
+              "font-src 'self'",
+              "connect-src 'self'",
+              "media-src 'self'",
+              "frame-src 'none'",
+              "frame-ancestors 'none'",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
+            ].join('; '),
+          },
+          // CORS restreint à l'origine propre (override du wildcard Vercel)
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'https://sinnes.fr',
+          },
           // Performance : prefetch DNS pour Google Fonts (chargées via next/font en local — backup CDN)
           {
             key: 'Link',
