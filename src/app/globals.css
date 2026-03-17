@@ -1,26 +1,242 @@
+/**
+ * SINNES AUTOMOBILES — globals.css
+ *
+ * Tailwind v4 : configuration via @theme inline.
+ * Variables CSS miroir exact des fichiers source WordPress :
+ *   post-5.css (variables globales kit Elementor)
+ *   style.css hello-elementor-enfant (child theme customisations)
+ *
+ * ⚠️  Pas de dark mode — identité visuelle fixe (fond blanc/noir).
+ */
+
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* ---------------------------------------------------------------------------
+   CUSTOM PROPERTIES — Design System Sinnes
+   --------------------------------------------------------------------------- */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Marque */
+  --color-accent: #efad42;
+  --color-accent-dark: #d49436;
+  --color-accent-alpha: rgba(239, 173, 66, 0.5);
+  --color-primary: #cc6119;
+  --color-secondary: #6c98e1;
+  --color-secondary-dark: #5a7db6;
+  --color-third: #232628;
+  --color-fourth: #153e4d;
+
+  /* Surfaces */
+  --color-bg-shade: #F0F3F7;
+  --color-bg-card: #ffffff;
+  --color-card-hover: #F1F5F9;
+
+  /* Textes */
+  --color-text-main: #010101;
+  --color-text-muted: rgba(1, 1, 1, 0.5);
+  --color-card-title: #111827;
+  --color-card-border: rgba(17, 24, 39, 0.1);
+
+  /* Badges */
+  --color-sold-badge: #FC4E4E;
+  --color-cta-urgence: #e53935;
+
+  /* SVG Infographies Fast-Check */
+  --color-svg-noir: #0A0A0A;
+  --color-svg-noir-card: #1A1A1A;
+  --color-svg-jaune: #FFD700;
+  --color-svg-jaune-hover: #FFC107;
+
+  /* Layout */
+  --container-max: 1140px;
+  --header-height: 72px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ---------------------------------------------------------------------------
+   RESET MINIMAL
+   --------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text-main);
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------------------------------------
+   TYPOGRAPHIE DE BASE
+   Fallback avant injection des variables next/font depuis layout.tsx
+   --------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair, "Playfair Display", Georgia, serif);
+  font-weight: 700;
+  color: var(--color-third);
+  line-height: 1.2;
+}
+
+p, li, button, label, input, textarea {
+  font-family: var(--font-maven, "Maven Pro", system-ui, sans-serif);
+}
+
+/* ---------------------------------------------------------------------------
+   FOCUS VISIBLE — accessibilité clavier
+   --------------------------------------------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------------------------
+   CONTAINER UTILITAIRE
+   max-width 1140px — extrait de --mvl-container-width dans post-5.css
+   --------------------------------------------------------------------------- */
+
+.container-sinnes {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+/* ---------------------------------------------------------------------------
+   ANIMATIONS CSS — reproduisent les data-settings Elementor
+   fadeInDown, bounceIn, zoomIn, grow, pulse (index.html data-settings)
+   --------------------------------------------------------------------------- */
+
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-in {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { opacity: 1; transform: scale(1.05); }
+  70%  { transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cta-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 173, 66, 0.5); }
+  50%       { box-shadow: 0 0 0 10px rgba(239, 173, 66, 0); }
+}
+
+/* ---------------------------------------------------------------------------
+   HEADER STICKY
+   --------------------------------------------------------------------------- */
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: #1a1a1a;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+/* ---------------------------------------------------------------------------
+   BOUTON PRINCIPAL
+   Background #efad42, hover #d49436, translateY(-2px), Maven Pro 600
+   Source : style.css child theme
+   --------------------------------------------------------------------------- */
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-family: var(--font-maven, "Maven Pro", sans-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  text-decoration: none;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.btn-accent:hover,
+.btn-accent:focus-visible {
+  background-color: var(--color-accent-dark);
+  color: #1c1c1c;
+  transform: translateY(-2px);
+}
+
+.btn-urgence {
+  background-color: var(--color-cta-urgence);
+  color: #ffffff;
+  animation: cta-pulse 2s ease-in-out infinite;
+}
+
+.btn-urgence:hover,
+.btn-urgence:focus-visible {
+  background-color: #c62828;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------------------------------
+   CARD
+   border 1px #eee, radius 12px, hover translateY(-5px) + shadow
+   Source : style.css child theme
+   --------------------------------------------------------------------------- */
+
+.card-sinnes {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-sinnes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------------------------------------------------------------------
+   PRIX OVERLAY
+   Position absolute bottom-right, fond #efad42, Maven Pro 700 1.3rem
+   Source : style.css child theme
+   --------------------------------------------------------------------------- */
+
+.price-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: var(--color-accent);
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: var(--font-maven, "Maven Pro", sans-serif);
+  font-weight: 700;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  line-height: 1;
 }

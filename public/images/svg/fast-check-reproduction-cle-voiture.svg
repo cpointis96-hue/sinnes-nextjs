@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fc-repro-title" font-family="system-ui, -apple-system, sans-serif">
+  <title id="fc-repro-title">Reproduction clé voiture Nice — 4 étapes : besoin, diagnostic, taille laser, clé prête</title>
+  <desc>Infographie Sinnes Automobiles : 4 étapes pour reproduire votre clé de voiture à Nice — votre besoin, diagnostic sur place, taille laser et programmation, clé prête à l'emploi.</desc>
+
+  <!-- Fond global -->
+  <rect width="1200" height="400" fill="#0A0A0A"/>
+
+  <!-- ÉTAPE 1 -->
+  <rect x="20" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="2" stroke-opacity="0.3"/>
+  <text x="147" y="90" text-anchor="middle" font-size="42" fill="#FFD700">🔑</text>
+  <text x="147" y="155" text-anchor="middle" font-size="13" fill="#6B7280" letter-spacing="2">ÉTAPE 1</text>
+  <text x="147" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Votre besoin</text>
+  <line x1="97" y1="215" x2="197" y2="215" stroke="#FFD700" stroke-width="2"/>
+  <text x="147" y="248" text-anchor="middle" font-size="13" fill="#9CA3AF">Double préventif,</text>
+  <text x="147" y="268" text-anchor="middle" font-size="13" fill="#9CA3AF">clé perdue,</text>
+  <text x="147" y="288" text-anchor="middle" font-size="13" fill="#9CA3AF">clé endommagée</text>
+  <text x="147" y="308" text-anchor="middle" font-size="13" fill="#9CA3AF">ou perte totale</text>
+
+  <!-- Flèche 1→2 -->
+  <text x="300" y="213" text-anchor="middle" font-size="28" font-weight="700" fill="#FFD700">→</text>
+
+  <!-- ÉTAPE 2 -->
+  <rect x="320" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="2" stroke-opacity="0.3"/>
+  <text x="447" y="90" text-anchor="middle" font-size="42" fill="#FFD700">🔍</text>
+  <text x="447" y="155" text-anchor="middle" font-size="13" fill="#6B7280" letter-spacing="2">ÉTAPE 2</text>
+  <text x="447" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Diagnostic</text>
+  <line x1="397" y1="215" x2="497" y2="215" stroke="#FFD700" stroke-width="2"/>
+  <text x="447" y="248" text-anchor="middle" font-size="13" fill="#9CA3AF">Décodage de la serrure</text>
+  <text x="447" y="268" text-anchor="middle" font-size="13" fill="#9CA3AF">ou de la centrale</text>
+  <text x="447" y="288" text-anchor="middle" font-size="13" fill="#9CA3AF">électronique</text>
+  <text x="447" y="308" text-anchor="middle" font-size="13" fill="#9CA3AF">sur place</text>
+
+  <!-- Flèche 2→3 -->
+  <text x="600" y="213" text-anchor="middle" font-size="28" font-weight="700" fill="#FFD700">→</text>
+
+  <!-- ÉTAPE 3 -->
+  <rect x="620" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="2" stroke-opacity="0.3"/>
+  <text x="747" y="90" text-anchor="middle" font-size="42" fill="#FFD700">⚡</text>
+  <text x="747" y="155" text-anchor="middle" font-size="13" fill="#6B7280" letter-spacing="2">ÉTAPE 3</text>
+  <text x="747" y="188" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Taille &amp; Programmation</text>
+  <line x1="697" y1="208" x2="797" y2="208" stroke="#FFD700" stroke-width="2"/>
+  <text x="747" y="242" text-anchor="middle" font-size="13" fill="#9CA3AF">Taille laser +</text>
+  <text x="747" y="262" text-anchor="middle" font-size="13" fill="#9CA3AF">programmation puce</text>
+  <text x="747" y="282" text-anchor="middle" font-size="13" fill="#9CA3AF">transpondeur</text>
+  <text x="747" y="302" text-anchor="middle" font-size="12" fill="#6B7280">(Abrites · ZedFull)</text>
+
+  <!-- Flèche 3→4 -->
+  <text x="900" y="213" text-anchor="middle" font-size="28" font-weight="700" fill="#FFD700">→</text>
+
+  <!-- ÉTAPE 4 -->
+  <rect x="920" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="2" stroke-opacity="0.6"/>
+  <text x="1047" y="90" text-anchor="middle" font-size="42" fill="#FFD700">✅</text>
+  <text x="1047" y="155" text-anchor="middle" font-size="13" fill="#6B7280" letter-spacing="2">ÉTAPE 4</text>
+  <text x="1047" y="195" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Clé prête à l'emploi</text>
+  <line x1="997" y1="215" x2="1097" y2="215" stroke="#FFD700" stroke-width="2"/>
+  <text x="1047" y="248" text-anchor="middle" font-size="13" fill="#9CA3AF">Votre véhicule démarre</text>
+  <text x="1047" y="268" text-anchor="middle" font-size="13" fill="#9CA3AF">— garantie constructeur</text>
+  <text x="1047" y="288" text-anchor="middle" font-size="13" fill="#9CA3AF">préservée</text>
+  <text x="1047" y="340" text-anchor="middle" font-size="12" fill="#FFD700" font-weight="600">À partir de 78€</text>
+  <text x="1047" y="358" text-anchor="middle" font-size="11" fill="#6B7280">+33 6 75 54 04 11</text>
+</svg>
