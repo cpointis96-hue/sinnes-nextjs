@@ -213,6 +213,12 @@ export default function PrixCleVsConcessionnairePage() {
             d'une intervention est donc bien plus bas, et cette économie est répercutée
             directement sur le tarif client.
           </p>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+            En tant que{' '}
+            <a href="/serrurier-automobile-nice/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>serrurier automobile indépendant à Nice</a>,
+            Sinnes Automobiles incarne exactement ce modèle : aucun intermédiaire, coûts réduits,
+            économie répercutée sur le tarif client.
+          </p>
           <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
             Pour les tarifs détaillés, consultez notre <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>grille de tarifs Sinnes</a> et
             notre page <a href="/prix-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>prix d'une clé voiture</a>.
@@ -262,9 +268,13 @@ export default function PrixCleVsConcessionnairePage() {
             complète — décodage + taillage + programmation — dure de 30 minutes (clé simple)
             à 2h (perte totale complexe). Le jour même, à domicile si vous le souhaitez.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
             Si votre véhicule est votre outil de travail ou si vous avez des enfants à récupérer,
             ce délai fait une différence considérable — et à 50-80% d'économie en plus.
+          </p>
+          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+            La meilleure protection : <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>faire un double de clé plutôt qu'attendre le concessionnaire</a> —
+            à partir de {PRICES.cleSimple.sinnes}€, aujourd'hui même, sans délai.
           </p>
 
           <blockquote className="border-l-4 border-[#FFD700] pl-4 italic my-8" style={{ color: '#374151' }}>

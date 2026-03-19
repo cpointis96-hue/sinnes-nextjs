@@ -250,6 +250,11 @@ export default function RefaireCleAudiPage() {
               — <strong style={{ color: '#FFFFFF' }}>Laurent Ferreri</strong>, avis Google · Décembre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Vous avez une autre marque haut de gamme ? Découvrez aussi notre page pour{' '}
+            <a href="/refaire-cle-mercedes/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>refaire une clé Mercedes</a> à Nice.
+          </p>
         </div>
       </section>
 

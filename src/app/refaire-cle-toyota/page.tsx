@@ -259,6 +259,11 @@ export default function RefaireCleTooyotaPage() {
               — <strong style={{ color: '#FFFFFF' }}>Isabelle T.</strong>, avis Google · Février 2026
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Vous avez une autre marque ? Découvrez aussi notre page pour{' '}
+            <a href="/refaire-cle-renault/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>refaire une clé Renault</a> à Nice.
+          </p>
         </div>
       </section>
 

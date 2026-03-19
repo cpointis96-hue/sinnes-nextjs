@@ -259,6 +259,11 @@ export default function RefaireCleFiatPage() {
               — <strong style={{ color: '#FFFFFF' }}>Sophie M.</strong>, avis Google · Novembre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Vous avez un véhicule du groupe VAG ? Découvrez aussi notre page pour{' '}
+            <a href="/refaire-cle-audi/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>refaire une clé Audi</a> à Nice.
+          </p>
         </div>
       </section>
 

@@ -263,6 +263,11 @@ export default function RefaireCleRenaultPage() {
               — <strong style={{ color: '#FFFFFF' }}>Adam K.</strong>, avis Google · Octobre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Vous avez une autre marque ? Découvrez aussi notre page pour{' '}
+            <a href="/refaire-cle-fiat/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>refaire une clé Fiat</a> à Nice.
+          </p>
         </div>
       </section>
 

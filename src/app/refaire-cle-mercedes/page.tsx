@@ -249,6 +249,12 @@ export default function RefaireCleMercedesPage() {
               — <strong style={{ color: '#FFFFFF' }}>Frédéric L.</strong>, avis Google · Décembre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            Pour aller plus loin, consultez notre guide complet sur la{' '}
+            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>programmation clé voiture</a> —
+            tous les systèmes, toutes les marques.
+          </p>
         </div>
       </section>
 

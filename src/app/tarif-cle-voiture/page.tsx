@@ -467,10 +467,7 @@ export default function TarifCleVoiturePage() {
               <a href="/prix-cle-voiture/" className="text-primary font-semibold hover:underline">
                 prix par type de clé
               </a>{' '}
-              en détail —{' '}
-              <a href="/prix-cle-vs-concessionnaire/" className="text-primary font-semibold hover:underline">
-                tarif vs concessionnaire
-              </a>
+              en détail
             </p>
           </div>
         </div>

@@ -269,6 +269,19 @@ export default function CleVoitureTranspondeurPage() {
               — <strong>Denis Ribes</strong>, avis Google · Décembre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed mb-4 text-text-muted">
+            Pour{' '}
+            <a href="/double-cle-voiture/" className="text-primary font-semibold hover:underline">obtenir un double de clé à transpondeur</a>,
+            Sinouhé Rochereau réalise le taillage de la lame et la programmation du transpondeur
+            dans la même intervention — à domicile ou à l'atelier. Consultez nos{' '}
+            <a href="/tarif-cle-voiture/" className="text-primary font-semibold hover:underline">tarifs programmation clé à transpondeur</a>.
+          </p>
+          <p className="font-body leading-relaxed mb-8 text-text-muted">
+            Vous avez une Audi ou un véhicule du groupe VAG ? Consultez notre page dédiée à la{' '}
+            <a href="/refaire-cle-audi/" className="text-primary font-semibold hover:underline">clé transpondeur Audi</a> —
+            IMMO4, IMMO5 et KESSY couverts.
+          </p>
         </div>
       </section>
 

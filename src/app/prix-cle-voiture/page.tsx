@@ -5,8 +5,8 @@ import TrustStrip, { TrustStripItem, IconEuro, IconShield, IconWrench } from '@/
 import FAQAccordion from './FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Prix clé voiture — Comparatif par type | Sinnes Nice',
-  description: "Prix d'une clé voiture par type : clé simple, centralisée, mains libres, perte totale. Comparatif Sinnes vs concessionnaire. Devis gratuit — +33 6 75 54 04 11",
+  title: "Prix clé voiture — Facteurs et fourchettes | Sinnes Nice",
+  description: "Qu'est-ce qui influence le prix d'une clé voiture ? Type de clé, marque, âge du véhicule, transpondeur. Fourchette 78€–240€. Devis gratuit — +33 6 75 54 04 11",
   alternates: { canonical: 'https://sinnes.fr/prix-cle-voiture/' },
   openGraph: {
     title: 'Prix clé voiture — Sinnes Automobiles Nice',
@@ -157,49 +157,40 @@ export default function PrixCleVoiturePage() {
       {/* TRUST STRIP */}
       <TrustStrip theme="light" items={TRUST_ITEMS} />
 
-      {/* H2 BLOC 1 — dark (table dark) */}
+      {/* H2 BLOC 1 — dark (informative) */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-            Prix d'une clé voiture en 2026 — grille complète
-          </h2>
-          <div className="overflow-x-auto mb-4">
-            <table className="w-full font-body text-sm border-collapse">
-              <thead>
-                <tr style={{ background: '#FFD700' }}>
-                  <th className="text-left px-4 py-3 font-bold text-[#0A0A0A]">Type de clé</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#0A0A0A]">Prix Sinnes</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#0A0A0A]">Prix concessionnaire</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ background: '#1A1A1A' }}>
-                  <td className="px-4 py-3" style={{ color: '#FFFFFF' }}>Clé simple (sans télécommande)</td>
-                  <td className="px-4 py-3 font-bold" style={{ color: '#FFD700' }}>À partir de {PRICES.cleSimple.sinnes}€</td>
-                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.5)' }}>{PRICES.cleSimple.concessionnaire.min}–{PRICES.cleSimple.concessionnaire.max}€</td>
-                </tr>
-                <tr style={{ background: '#222222' }}>
-                  <td className="px-4 py-3" style={{ color: '#FFFFFF' }}>Clé centralisée (télécommande)</td>
-                  <td className="px-4 py-3 font-bold" style={{ color: '#FFD700' }}>À partir de {PRICES.cleCentralisee.sinnes}€</td>
-                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.5)' }}>{PRICES.cleCentralisee.concessionnaire.min}–{PRICES.cleCentralisee.concessionnaire.max}€</td>
-                </tr>
-                <tr style={{ background: '#1A1A1A' }}>
-                  <td className="px-4 py-3" style={{ color: '#FFFFFF' }}>Clé mains libres / badge</td>
-                  <td className="px-4 py-3 font-bold" style={{ color: '#FFD700' }}>À partir de {PRICES.cleMainsLibres.sinnes}€</td>
-                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.5)' }}>{PRICES.cleMainsLibres.concessionnaire.min}–{PRICES.cleMainsLibres.concessionnaire.max}€</td>
-                </tr>
-                <tr style={{ background: '#222222' }}>
-                  <td className="px-4 py-3" style={{ color: '#FFFFFF' }}>Perte totale (sans double)</td>
-                  <td className="px-4 py-3 font-bold" style={{ color: '#FFD700' }}>À partir de {PRICES.perteTotale.sinnes}€</td>
-                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.5)' }}>{PRICES.perteTotale.concessionnaire.min}–{PRICES.perteTotale.concessionnaire.max}€</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="font-body text-xs mb-8" style={{ color: 'rgba(255,255,255,0.4)' }}>
-            * Tarifs indicatifs — devis personnalisé gratuit selon marque et modèle au <a href={`tel:${NAP.phoneTel}`} style={{ color: '#FFD700' }}>{NAP.phoneDisplay}</a>.
-            Voir la <a href="/tarif-cle-voiture/" className="hover:underline font-semibold" style={{ color: '#FFD700' }}>grille tarifaire complète</a> pour le détail.
+          <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Chez Sinnes Automobiles, le prix d'une clé voiture se situe entre {PRICES.cleSimple.sinnes}€ et {PRICES.perteTotale.sinnes}€ selon le type
+            de clé et votre situation. Pour le détail ligne par ligne, consultez{' '}
+            <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>notre grille de tarifs détaillée</a>.
           </p>
+
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
+            Quels facteurs font varier le prix d'une clé voiture ?
+          </h2>
+          <ul className="list-none space-y-4 mb-8 pl-2" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            <li className="font-body">
+              — <strong style={{ color: '#FFFFFF' }}>Type de clé</strong> : une clé simple sans télécommande ({PRICES.cleSimple.sinnes}€)
+              coûte nettement moins cher qu'un badge mains libres ({PRICES.cleMainsLibres.sinnes}€). La complexité
+              électronique et le nombre d'opérations font la différence.
+            </li>
+            <li className="font-body">
+              — <strong style={{ color: '#FFFFFF' }}>Marque du véhicule</strong> : certaines architectures propriétaires
+              (Renault IVER, Toyota G-chip, Mercedes HiTag AES) nécessitent des outils et licences spécifiques
+              qui influencent le tarif final.
+            </li>
+            <li className="font-body">
+              — <strong style={{ color: '#FFFFFF' }}>Âge du véhicule</strong> : les modèles antérieurs à 1995 n'ont pas
+              de transpondeur — la clé est purement mécanique, donc moins coûteuse. Les véhicules récents
+              (après 2015) ont des systèmes de plus en plus sécurisés.
+            </li>
+            <li className="font-body">
+              — <strong style={{ color: '#FFFFFF' }}>Type de transpondeur</strong> : les transpondeurs fixes (T5, ID60) sont
+              clonables rapidement. Les transpondeurs cryptés (ID46, ID48, HITAG) nécessitent une
+              programmation OBD via valise, plus longue à réaliser.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -216,8 +207,15 @@ export default function PrixCleVoiturePage() {
             Ces tarifs incluent la taille laser de la lame et la programmation complète du
             transpondeur — tout compris, pas de frais cachés.
           </p>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+            Si vous avez perdu toutes vos clés sans conserver de double, la situation est différente :
+            le tarif monte jusqu'à {PRICES.perteTotale.sinnes}€, car elle inclut le crochetage et la reprogrammation
+            complète du calculateur. En savoir plus sur{' '}
+            <a href="/cle-voiture-perdue/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>refaire une clé en cas de perte totale</a>.
+          </p>
           <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
-            Pour tout savoir sur le processus, consultez notre page <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>faire un double de clé</a>.
+            Pour tout savoir sur le processus, consultez notre page{' '}
+            <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>faire un double de clé voiture</a>.
           </p>
         </div>
       </section>
@@ -260,8 +258,14 @@ export default function PrixCleVoiturePage() {
             indépendant, sans structure lourde, qui intervient directement — d'où une économie
             de 50% à 80% pour un résultat strictement identique.
           </p>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+            Pour le comparatif détaillé, consultez notre page{' '}
+            <a href="/prix-cle-vs-concessionnaire/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>notre comparatif tarif vs concessionnaire</a>.
+          </p>
           <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
-            Pour le comparatif détaillé, consultez notre page <a href="/prix-cle-vs-concessionnaire/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>comparer avec le concessionnaire</a>.
+            Pour voir l'ensemble de{' '}
+            <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>nos prestations de reproduction de clé</a>,
+            de la clé simple au badge mains libres, consultez notre page dédiée.
           </p>
 
           <blockquote className="border-l-4 border-[#FFD700] pl-4 italic my-8" style={{ color: '#374151' }}>

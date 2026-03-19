@@ -173,11 +173,16 @@ export default function DepannageCledomicilePage() {
             du transpondeur — se passe en une seule visite à votre adresse. Pour le <a href="/serrurier-automobile-nice/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>serrurier automobile à Nice</a>,
             c'est l'option la plus pratique.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Cette approche est particulièrement appréciée dans les situations où le véhicule
             est immobilisé : clé perdue (le véhicule ne peut pas se déplacer par lui-même),
             clé bloquée dans le contact, ou simplement commodité d'une intervention sans
             se déplacer à l'atelier.
+          </p>
+          <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Pour plus de détails sur les techniques utilisées, consultez notre page{' '}
+            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>programmation clé voiture à domicile</a> —
+            transpondeurs fixes, cryptés et badges mains libres.
           </p>
         </div>
       </section>
@@ -198,10 +203,15 @@ export default function DepannageCledomicilePage() {
             <li className="font-body">— <strong style={{ color: '#111111' }}>Cannes, Mougins, Grasse</strong> : frais communiqués lors du devis</li>
             <li className="font-body">— <strong style={{ color: '#111111' }}>Villefranche, Beaulieu, Monaco, Menton</strong> : frais communiqués lors du devis</li>
           </ul>
-          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
             Tous les frais de déplacement éventuels sont communiqués gratuitement avant toute
             intervention. Pour la <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>clé de voiture à Nice et alentours</a>,
             consultez notre page dédiée à chaque ville.
+          </p>
+          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+            Consultez nos{' '}
+            <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarifs déplacement et programmation</a> pour
+            connaître les frais éventuels selon votre zone et le type de clé à réaliser.
           </p>
         </div>
       </section>

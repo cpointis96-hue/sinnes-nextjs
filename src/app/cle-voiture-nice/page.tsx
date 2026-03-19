@@ -187,12 +187,17 @@ export default function CleVoitureNicePage() {
             sont une zone d'intervention régulière. Clé perdue avant un vol ou au retour —
             Sinouhé peut intervenir directement sur les niveaux P1 à P5.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
             <strong style={{ color: '#FFFFFF' }}>Vieux-Nice</strong> : particularité importante — les ruelles historiques
             ne sont pas accessibles en véhicule d'atelier. Sinouhé intervient à pied avec
             son matériel portable Abrites. Sinouhé connaît chaque accès des ruelles étroites
             du Vieux-Nice — cela ne rallonge pas les délais ni les tarifs.
             <strong style={{ color: '#FFFFFF' }}> Quartier Libération</strong> : marché et commerces — zone résidentielle dense couverte sans problème.
+          </p>
+          <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            En cas de situation urgente sur Nice, consultez notre page{' '}
+            <a href="/urgence-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>intervention d'urgence clé voiture à Nice</a> —
+            Sinouhé intervient en moins de 2h dans tous les quartiers de la ville.
           </p>
         </div>
       </section>
@@ -222,9 +227,15 @@ export default function CleVoitureNicePage() {
             les plaisanciers de passage font régulièrement appel à Sinnes pour des clés
             de véhicule laissés sur le port.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
             Délai depuis Nice : 30 à 45 minutes en dehors des heures de pointe. Frais de
             déplacement : communiqués gratuitement lors du devis téléphonique.
+          </p>
+          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+            Pour un{' '}
+            <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>dépannage clé à domicile sur Nice et alentours</a>,
+            Sinouhé se déplace directement à votre adresse avec son matériel complet —
+            sans frais de déplacement pour Nice.
           </p>
         </div>
       </section>
@@ -274,6 +285,13 @@ export default function CleVoitureNicePage() {
               — <strong style={{ color: '#111111' }}>Denis Ribes</strong>, avis Google · Décembre 2025
             </footer>
           </blockquote>
+
+          <p className="font-body leading-relaxed" style={{ color: '#374151' }}>
+            Pour une{' '}
+            <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>reproduction de clé à Nice</a>,
+            découvrez l'ensemble de nos prestations. Consultez aussi nos{' '}
+            <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarifs et devis</a> en ligne.
+          </p>
         </div>
       </section>
 
