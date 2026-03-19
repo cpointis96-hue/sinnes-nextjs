@@ -13,8 +13,8 @@ const FAQ_ITEMS = [
     answer: "Oui, Sinnes est joignable 7j/7. Pour toute urgence nocturne, contactez-nous par téléphone au +33 6 75 54 04 11. L'intervention est planifiée en fonction de la disponibilité de Sinouhé Rochereau.",
   },
   {
-    question: "Pouvez-vous ouvrir une voiture sans abîmer la serrure ?",
-    answer: "Oui. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction. Dans la très grande majorité des cas, la serrure et la carrosserie sont intégralement préservées.",
+    question: "Que faire si ma clé est bloquée à l'intérieur de ma voiture ?",
+    answer: "Appelez immédiatement le +33 6 75 54 04 11. Sinouhé Rochereau intervient avec son matériel portable pour ouvrir le véhicule sans effraction et récupérer la clé coincée dans la serrure ou dans l'habitacle, sans abîmer la carrosserie ni la serrure.",
   },
   {
     question: "Quel est le tarif d'une intervention urgence ?",

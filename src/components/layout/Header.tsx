@@ -42,7 +42,7 @@ export default function Header() {
           className="btn-accent btn-urgence inline-flex flex-col items-center px-3 py-2 min-h-[44px] min-w-[44px]"
           aria-label={`Appeler Sinnes Automobiles — ${NAP.phoneDisplay}`}
         >
-          <span className="font-body font-semibold text-sm leading-tight">
+          <span className="font-body font-semibold text-sm leading-tight whitespace-nowrap">
             {NAP.phoneDisplay}
           </span>
           <span className="hidden md:block font-body text-xs opacity-90 leading-tight">

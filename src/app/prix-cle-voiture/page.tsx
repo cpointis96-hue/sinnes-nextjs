@@ -18,19 +18,18 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://sinnes.fr/prix-cle-voiture/#pricing",
-      "name": "Prix clé voiture — Comparatif par type",
-      "provider": { "@id": "https://sinnes.fr/#organization" },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Grille tarifaire clé automobile Sinnes",
-        "itemListElement": [
-          { "@type": "Offer", "name": "Clé simple (sans télécommande)", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR" },
-          { "@type": "Offer", "name": "Clé centralisée (avec télécommande)", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR" },
-          { "@type": "Offer", "name": "Clé mains libres / badge", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR" },
-          { "@type": "Offer", "name": "Perte totale (aucun double)", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR" }
-        ]
+      "@type": "Article",
+      "@id": "https://sinnes.fr/prix-cle-voiture/#article",
+      "headline": "Prix clé voiture — Facteurs et fourchettes",
+      "description": "Les facteurs qui influencent le prix d'une clé voiture : type de clé, marque, âge du véhicule, type de transpondeur.",
+      "author": { "@id": "https://sinnes.fr/#ines" },
+      "publisher": { "@id": "https://sinnes.fr/#organization" },
+      "about": {
+        "@type": "Service",
+        "@id": "https://sinnes.fr/#service-cle",
+        "name": "Reproduction de clé de voiture",
+        "priceRange": `${PRICES.cleSimple.sinnes}€–${PRICES.perteTotale.sinnes}€`,
+        "provider": { "@id": "https://sinnes.fr/#organization" }
       }
     },
     {

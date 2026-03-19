@@ -14,14 +14,14 @@ const FAQ_ITEMS = [
       'Oui, dans la majorité des cas. Sinouhé Rochereau décode la serrure ou la centrale électronique pour recréer une clé fonctionnelle, même sans clé originale. Ce service est disponible pour la quasi-totalité des marques.',
   },
   {
-    question: 'La reproduction de clé invalide-t-elle la garantie constructeur ?',
+    question: "Qu'est-ce que la gravure d'une clé de voiture ?",
     answer:
-      'Non. Sinnes Automobiles utilise des procédures de programmation officielle (valise Abrites, ZedFull) respectant les préconisations constructeur. La garantie du véhicule est préservée.',
+      "La gravure (ou taillage) consiste à découper la lame de la clé selon le profil exact de votre serrure, par machine laser ou à commande numérique. C'est l'étape mécanique de la reproduction, réalisée après décodage de la serrure. Elle est systématiquement couplée à la programmation du transpondeur pour les clés électroniques.",
   },
   {
-    question: 'Intervenez-vous sur toutes les marques de voiture ?',
+    question: "Peut-on changer uniquement la coque d'une clé voiture ?",
     answer:
-      'Oui. Sinnes Automobiles prend en charge plus de 40 marques : Renault, Peugeot, Citroën, Volkswagen, Toyota, Hyundai, BMW, Mercedes-Benz, Audi, Fiat et bien d\'autres.',
+      "Oui. Si votre télécommande ou coque est cassée mais que l'électronique fonctionne encore, Sinnes Automobiles peut remplacer la coque seule et transférer la carte électronique. Une solution rapide et bien moins coûteuse qu'une reproduction complète.",
   },
 ]
 

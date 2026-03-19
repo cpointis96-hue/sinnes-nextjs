@@ -57,10 +57,10 @@ const schema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: "Quel est le délai d'intervention d'un serrurier automobile à Nice ?",
+          name: "Quelle est la différence entre un serrurier automobile et un serrurier de portes ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Sinnes Automobiles intervient généralement en moins de 2h sur Nice et les communes voisines. Disponible 7j/7, y compris week-ends et jours fériés, sur rendez-vous.",
+            text: "Un serrurier automobile est spécialisé exclusivement sur les véhicules : programmation de transpondeur, décodage de serrure de véhicule, duplication de clé avec puce électronique. Un serrurier de portes n'a pas les équipements pour programmer les systèmes immobiliseurs modernes (valise Abrites, ZedFull). Sinnes Automobiles n'intervient que sur les véhicules — c'est notre seul métier.",
           },
         },
         {
@@ -68,15 +68,23 @@ const schema = {
           name: 'Combien coûte un serrurier automobile à Nice ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Le tarif dépend du type de clé : à partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple, ${PRICES.cleCentralisee.sinnes}€ pour une clé centralisée, ${PRICES.cleMainsLibres.sinnes}€ pour une clé mains libres. Devis gratuit sur demande.`,
+            text: `Le tarif dépend du type de clé : à partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple, ${PRICES.cleCentralisee.sinnes}€ pour une clé centralisée, ${PRICES.cleMainsLibres.sinnes}€ pour une clé mains libres, ${PRICES.perteTotale.sinnes}€ en cas de perte totale sans double. Devis gratuit, prix identique 7j/7 — aucune majoration d'urgence.`,
           },
         },
         {
           '@type': 'Question',
-          name: 'Intervenez-vous aussi à Antibes, Cannes et Cagnes-sur-Mer ?',
+          name: "Quels outils utilise un vrai serrurier automobile professionnel ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Oui. Sinnes Automobiles couvre Nice, Antibes, Cagnes-sur-Mer, Cannes, Saint-Laurent-du-Var, Villefranche-sur-Mer et toute la Côte d'Azur.",
+            text: "Un serrurier automobile professionnel utilise une valise de diagnostic homologuée (chez Sinnes : Abrites et ZedFull), un lecteur RFID pour identifier les puces transpondeur (ID46, ID48, HITAG 2), un outil de décodage mécanique pour lire le code de la serrure sans clé d'origine, et une fraiseuse laser ou à codes pour tailler la clé. Sans ces équipements, un technicien ne peut pas programmer les clés des véhicules modernes.",
+          },
+        },
+        {
+          '@type': 'Question',
+          name: "La garantie constructeur est-elle préservée après l'intervention d'un serrurier automobile ?",
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "Oui, si le serrurier utilise les bons outils et les bonnes méthodes. Sinouhé Rochereau, formateur certifié chez Incarline, programme les clés selon les normes constructeurs. La procédure de programmation officielle (via OBD ou accès direct à l'immobiliseur) est identique à celle du concessionnaire — la garantie est donc entièrement préservée.",
           },
         },
         {
@@ -84,7 +92,7 @@ const schema = {
           name: "Est-il possible d'ouvrir une voiture sans casser la serrure ?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: "Oui, dans la plupart des cas. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction, préservant intégralement la serrure et la carrosserie.",
+            text: "Oui, dans la plupart des cas. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction — ni dégât sur la serrure, ni trace sur la carrosserie. La technique varie selon le modèle et la génération du véhicule. Certains véhicules récents avec serrure électronique nécessitent une approche différente (accès OBD), mais le résultat est identique : aucun dommage.",
           },
         },
       ],
@@ -224,63 +232,58 @@ export default function SerrurierAutomobileNicePage() {
             par Sinouhé Rochereau, formateur certifié et expert reconnu sur la Côte d'Azur.
           </p>
 
-          {/* H2 #2 — Autour de moi (KD 8) */}
+          {/* H2 #2 — Formation et certification (angle expertise) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
-            Besoin d'un serrurier automobile autour de vous à Nice ?
+            Sinouhé Rochereau — Formateur international, expert certifié
+          </h2>
+          <p className="font-body text-text-main leading-relaxed mb-4">
+            Sinouhé Rochereau n'est pas seulement serrurier automobile : il est formateur
+            international certifié chez Incarline, l'un des organismes de référence en
+            programmation de clés électroniques. Il forme d'autres techniciens à l'utilisation
+            des outils Abrites et ZedFull — les mêmes valises que celles des concessionnaires.
+          </p>
+          <p className="font-body text-text-main leading-relaxed mb-4">
+            Cette expertise se traduit directement pour vous : Sinouhé peut traiter des cas
+            que d'autres serruriers refusent — véhicules récents avec immobiliseurs de
+            dernière génération, systèmes HITAG 3 ou clés cryptées, perte totale sans aucune
+            clé d'origine. Commissaire au Grand Prix de Monaco depuis 2016, il connaît les
+            exigences de fiabilité que le milieu automobile de haut niveau impose.
+          </p>
+          <p className="font-body text-text-main leading-relaxed mb-8">
+            Pour les détails techniques complets sur la programmation des puces transpondeur,
+            consultez notre page{' '}
+            <a href="/programmation-cle-voiture/" className="text-primary font-semibold hover:underline">
+              programmation de clé voiture
+            </a>{' '}
+            — et pour comprendre notre zone d'intervention sur la Côte d'Azur, notre page{' '}
+            <a href="/cle-voiture-nice/" className="text-primary font-semibold hover:underline">
+              clé de voiture à Nice et alentours
+            </a>{' '}
+            détaille chaque quartier et commune couverts.
+          </p>
+
+          {/* H2 #3 — Zone de couverture (épurée, sans détails terrain) */}
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
+            Zone d'intervention — Nice et Côte d'Azur
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Appelez le{' '}
             <a href={`tel:${NAP.phoneTel}`} className="text-[#e53935] font-bold">
               {NAP.phoneDisplay}
             </a>{' '}
-            — intervention sous 2h dans toute la zone. Nous couvrons Nice, Antibes, Cagnes-sur-Mer,
-            Cannes, Saint-Laurent-du-Var, Villefranche-sur-Mer, Menton, Grasse, Vence et Mougins.
-            Pour toute intervention locale, consultez notre page{' '}
-            <a href="/cle-voiture-nice/" className="text-primary font-semibold hover:underline">
-              clé de voiture à Nice et alentours
-            </a>.
+            — intervention sous 2h dans toute la zone. Nous couvrons :
           </p>
-
-          {/* H3 — Vieux-Nice */}
-          <h3 className="font-heading font-bold text-xl text-third mt-8 mb-3">
-            Intervention à pied dans le Vieux-Nice
-          </h3>
-          <p className="font-body text-text-main leading-relaxed mb-6">
-            Les ruelles du Vieux-Nice, le parking souterrain Saleya et les zones piétonnes
-            autour du marché du Cours Saleya sont inaccessibles aux véhicules d'intervention.
-            Sinouhé se déplace à pied avec son matériel portable — valise de diagnostic compacte,
-            lecteur RFID — pour intervenir directement sur place, sans déplacer votre véhicule.
-          </p>
-
-          {/* H3 — Aéroport */}
-          <h3 className="font-heading font-bold text-xl text-third mt-8 mb-3">
-            Zone aéroport Nice Côte d'Azur
-          </h3>
-          <p className="font-body text-text-main leading-relaxed mb-6">
-            Vous avez perdu vos clés en arrivant à l'aéroport de Nice Côte d'Azur ?
-            Nous intervenons directement au parking des terminaux T1 et T2. Une situation
-            fréquente, souvent résolue en moins d'une heure après votre appel.
-          </p>
-
-          {/* H3 — Sophia + Antibes */}
-          <h3 className="font-heading font-bold text-xl text-third mt-8 mb-3">
-            Sophia Antipolis et Antibes
-          </h3>
-          <p className="font-body text-text-main leading-relaxed mb-6">
-            Les collaborateurs du parc technologique de Sophia Antipolis font partie de nos clients
-            réguliers — clé restée dans le bureau, badge endommagé, télécommande défaillante.
-            Nous couvrons également le Vieil Antibes, le Port Vauban et les remparts historiques.
-          </p>
-
-          {/* H3 — Cannes */}
-          <h3 className="font-heading font-bold text-xl text-third mt-8 mb-3">
-            Cannes et Grasse
-          </h3>
-          <p className="font-body text-text-main leading-relaxed mb-8">
-            Du Palais des Festivals à La Bocca en passant par la Rue d'Antibes, nous intervenons
-            sur tout le territoire cannois. La zone de Grasse et ses environs sont également
-            couverts — contactez-nous pour confirmer le délai selon votre localisation exacte.
-          </p>
+          <ul className="font-body text-text-main leading-relaxed mb-8 grid grid-cols-2 md:grid-cols-3 gap-2">
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Nice</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Antibes</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Cagnes-sur-Mer</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Cannes</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Saint-Laurent-du-Var</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Villefranche-sur-Mer</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Menton</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Grasse</li>
+            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Vence · Mougins</li>
+          </ul>
 
           {/* H2 #3 — Urgence (KD 7) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">

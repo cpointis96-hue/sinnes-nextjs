@@ -18,22 +18,36 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
+      "@type": "LocalBusiness",
       "@id": "https://sinnes.fr/cle-voiture-nice/#service",
-      "name": "Clé de voiture Nice et Côte d'Azur",
-      "provider": { "@id": "https://sinnes.fr/#organization" },
+      "name": "Clé de voiture Nice, Antibes, Cagnes-sur-Mer, Cannes",
+      "description": "Service de reproduction et programmation de clé automobile à Nice et communes alentours. Intervention à domicile, chaque quartier connu.",
+      "url": "https://sinnes.fr/cle-voiture-nice/",
+      "telephone": "+33675540411",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4 rue Diderot",
+        "addressLocality": "Nice",
+        "postalCode": "06000",
+        "addressCountry": "FR"
+      },
       "areaServed": [
         { "@type": "City", "name": "Nice" },
         { "@type": "City", "name": "Antibes" },
         { "@type": "City", "name": "Cagnes-sur-Mer" },
-        { "@type": "City", "name": "Cannes" }
-      ]
+        { "@type": "City", "name": "Cannes" },
+        { "@type": "City", "name": "Saint-Laurent-du-Var" },
+        { "@type": "City", "name": "Villefranche-sur-Mer" }
+      ],
+      "employee": { "@id": "https://sinnes.fr/#sinouhe" },
+      "parentOrganization": { "@id": "https://sinnes.fr/#organization" }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Clé voiture Nice", "item": "https://sinnes.fr/cle-voiture-nice/" }
+        { "@type": "ListItem", "position": 2, "name": "Serrurier automobile Nice", "item": "https://sinnes.fr/serrurier-automobile-nice/" },
+        { "@type": "ListItem", "position": 3, "name": "Clé voiture Nice et alentours", "item": "https://sinnes.fr/cle-voiture-nice/" }
       ]
     },
     {
@@ -41,23 +55,28 @@ const schema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Intervenez-vous pour une clé de voiture à Antibes ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Sinnes Automobiles intervient à Antibes, notamment à Sophia Antipolis, dans le Vieil Antibes et au Port Vauban. Contactez-nous au +33 6 75 54 04 11 — Sinouhé Rochereau se déplace directement sur place." }
+          "name": "Y a-t-il des frais de déplacement pour les interventions hors Nice ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "À Nice : aucun frais de déplacement. Pour Antibes, Cagnes-sur-Mer et Cannes : des frais kilométriques peuvent s'appliquer, communiqués gratuitement lors du devis téléphonique. Appelez le +33 6 75 54 04 11 pour obtenir un prix précis selon votre adresse exacte." }
         },
         {
           "@type": "Question",
-          "name": "Pouvez-vous intervenir dans le Vieux-Nice ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui, avec une particularité : les ruelles du Vieux-Nice ne sont pas accessibles en véhicule d'atelier. Sinouhé Rochereau intervient à pied avec son matériel portable Abrites — cela ne change rien à la qualité ni aux tarifs de l'intervention." }
+          "name": "Pouvez-vous intervenir dans le Vieux-Nice ou le Vieil Antibes ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Dans les zones piétonnes et les ruelles historiques inaccessibles en véhicule, Sinouhé Rochereau intervient à pied avec son matériel portable Abrites — valise compacte et lecteur RFID. La qualité et les tarifs de l'intervention sont identiques." }
         },
         {
           "@type": "Question",
-          "name": "Quel est le délai d'intervention à Cannes ou Cagnes-sur-Mer ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "En général 1h à 2h depuis Nice. Sinouhé Rochereau couvre Nice, Antibes, Cagnes-sur-Mer, Cannes, Saint-Laurent-du-Var, Villefranche-sur-Mer et toute la Côte d'Azur. Pas de frais de déplacement pour les interventions à Nice." }
+          "name": "Quel est le délai réaliste pour une intervention à Cannes depuis Nice ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "En dehors des heures de pointe (matin 7h-9h et soir 17h-20h), comptez 35 à 45 minutes depuis Nice. En heure de pointe ou lors d'événements cannois (Festival de Cannes, MIPIM), prévoir 1h à 1h30. Sinouhé vous confirme le délai exact lors de l'appel." }
         },
         {
           "@type": "Question",
-          "name": "Intervenez-vous à l'aéroport de Nice ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui. En cas de clé perdue avant un vol ou au retour, Sinnes Automobiles peut intervenir directement aux parkings des terminaux 1 et 2 de l'aéroport Nice Côte d'Azur. Appelez le +33 6 75 54 04 11 dès que vous constatez le problème." }
+          "name": "Pouvez-vous intervenir au parking de l'aéroport Nice Côte d'Azur ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Sinouhé Rochereau intervient directement aux niveaux P1 à P5 des parkings des terminaux T1 et T2. En cas de clé perdue avant un vol, appelez immédiatement le +33 6 75 54 04 11 — le délai d'intervention depuis le centre de Nice est généralement inférieur à 45 minutes." }
+        },
+        {
+          "@type": "Question",
+          "name": "Intervenez-vous à Sophia Antipolis le week-end ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui, 7j/7 y compris le week-end. Le parc technologique de Sophia Antipolis est moins chargé en circulation le week-end — délai d'intervention depuis Nice : 30 à 40 minutes. Appelez le +33 6 75 54 04 11." }
         }
       ]
     },
@@ -125,10 +144,14 @@ export default function CleVoitureNicePage() {
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Sinnes Automobiles intervient pour la reproduction et le double de clé voiture sur
-            toute la Côte d'Azur. Sinouhé Rochereau se déplace directement là où vous êtes —
-            domicile, parking, bureau, port. À partir de {PRICES.cleSimple.sinnes}€, 7j/7, devis gratuit.
-            Appelez le {NAP.phoneDisplay}.
+            Chaque quartier de Nice, chaque zone de la Côte d'Azur a ses particularités d'accès.
+            Sinouhé Rochereau connaît le terrain : ruelles piétonnes du Vieux-Nice, parkings
+            d'aéroport, zones industrielles de Sophia Antipolis, remparts du Vieil Antibes.
+            Il se déplace directement là où vous êtes — avec son matériel complet, 7j/7.
+            Appelez le{' '}
+            <a href={`tel:${NAP.phoneTel}`} className="font-bold hover:underline" style={{ color: '#FFD700' }}>
+              {NAP.phoneDisplay}
+            </a>.
           </p>
 
           <a
@@ -169,35 +192,47 @@ export default function CleVoitureNicePage() {
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-            Clé de voiture à Nice — intervention dans tous les quartiers
+            Clé de voiture à Nice — quartier par quartier
           </h2>
-          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Nice est la ville principale d'intervention de Sinnes Automobiles. Sinouhé Rochereau
-            connaît chaque quartier et leurs spécificités d'accès. Pour le <a href="/serrurier-automobile-nice/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>serrurier automobile à Nice</a>,
-            il intervient sur l'ensemble de la ville sans supplément de déplacement.
+          <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Nice est la ville principale d'intervention de Sinnes Automobiles.
+            En tant que{' '}
+            <a href="/serrurier-automobile-nice/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>serrurier automobile niçois</a>,
+            Sinouhé Rochereau intervient sans supplément de déplacement sur l'ensemble de la ville —
+            mais chaque quartier a ses propres réalités d'accès qu'il connaît parfaitement.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Vieux-Nice — intervention à pied obligatoire
+          </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            <strong style={{ color: '#FFFFFF' }}>Promenade des Anglais</strong> : parking de la Promenade, parking du Palais de la Méditerranée —
-            interventions fréquentes pour des touristes ou résidents bloqués sur ces parkings.
-            <strong style={{ color: '#FFFFFF' }}> Gare Nice-Ville</strong> : parking de la gare SNCF, parking Thiers —
-            situation courante après un voyage : clé perdue ou clé dans le véhicule.
+            Les ruelles du Vieux-Nice (rue Droite, rue du Marché, cours Saleya) sont interdites
+            aux véhicules motorisés de 11h à 19h30 en été. Le parking Saleya souterrain est
+            accessible mais le déplacement interne se fait à pied. Sinouhé se déplace avec son
+            matériel portable Abrites — valise compacte et lecteur RFID — directement à votre
+            véhicule. Délai typique : 25 à 35 minutes depuis le centre-ville.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Aéroport Nice Côte d'Azur — clé perdue avant ou après un vol
+          </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            <strong style={{ color: '#FFFFFF' }}>Aéroport Nice Côte d'Azur</strong> (Terminaux 1 et 2) : les parkings de l'aéroport
-            sont une zone d'intervention régulière. Clé perdue avant un vol ou au retour —
-            Sinouhé peut intervenir directement sur les niveaux P1 à P5.
+            Sinouhé peut intervenir directement sur les niveaux P1 à P5 des terminaux T1 et T2.
+            Conseil pratique : appelez immédiatement — si votre vol est dans moins d'une heure,
+            signalez-le à l'appel, une solution partielle (accès au véhicule) peut être mise
+            en place en attendant une reproduction complète à votre retour.
+            Délai depuis le centre de Nice : 20 à 30 minutes hors embouteillages.
           </p>
-          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            <strong style={{ color: '#FFFFFF' }}>Vieux-Nice</strong> : particularité importante — les ruelles historiques
-            ne sont pas accessibles en véhicule d'atelier. Sinouhé intervient à pied avec
-            son matériel portable Abrites. Sinouhé connaît chaque accès des ruelles étroites
-            du Vieux-Nice — cela ne rallonge pas les délais ni les tarifs.
-            <strong style={{ color: '#FFFFFF' }}> Quartier Libération</strong> : marché et commerces — zone résidentielle dense couverte sans problème.
-          </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Promenade des Anglais, Gare Nice-Ville, Quartier Libération
+          </h3>
           <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            En cas de situation urgente sur Nice, consultez notre page{' '}
-            <a href="/urgence-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>intervention d'urgence clé voiture à Nice</a> —
-            Sinouhé intervient en moins de 2h dans tous les quartiers de la ville.
+            Parking de la Promenade (sous l'Hôtel Méridien), paking Thiers (gare SNCF),
+            parking Jean-Médecin — ce sont des zones d'intervention classiques sur Nice.
+            Aucune particularité d'accès particulière : délai 15 à 25 minutes depuis le centre-ville.
+            En cas de situation urgente, consultez notre page{' '}
+            <a href="/urgence-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>intervention d'urgence clé voiture</a>.
           </p>
         </div>
       </section>
@@ -206,36 +241,49 @@ export default function CleVoitureNicePage() {
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#111111' }}>
-            Clé de voiture à Antibes — Sophia Antipolis et Vieil Antibes
+            Clé de voiture à Antibes — Sophia Antipolis, Vieil Antibes, Port Vauban
           </h2>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            Antibes est la deuxième ville d'intervention de Sinnes après Nice. Trois zones sont
-            particulièrement actives :
+          <p className="font-body leading-relaxed mb-6" style={{ color: '#374151' }}>
+            Antibes est la deuxième ville d'intervention après Nice.
+            Délai moyen : 30 à 40 minutes depuis Nice hors heure de pointe.
+            Frais de déplacement : communiqués lors du devis téléphonique gratuit.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            Sophia Antipolis — véhicules modernes, systèmes complexes
+          </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            <strong style={{ color: '#111111' }}>Sophia Antipolis</strong> : le parc technologique est une source régulière
-            d'appels. Les techniciens et cadres qui travaillent sur le parc ont souvent des
-            véhicules récents avec des systèmes de clé complexes. "Les techniciens du parc
-            technologique de Sophia Antipolis nous appellent régulièrement pour des doubles
-            de clé sur le parking."
+            Sophia Antipolis est une zone d'intervention régulière. Les collaborateurs du parc
+            technologique roulent souvent avec des véhicules récents à systèmes de clé complexes
+            (clé mains libres, badge, HITAG 3) — précisément le type d'intervention qui nécessite
+            l'équipement Abrites de Sinouhé. Parkings de la zone : Eurosophia, Agora, INRIA.
+            Le week-end, la circulation depuis Nice est allégée — délai réduit à 25-30 minutes.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            Vieil Antibes et remparts — accès piéton comme dans le Vieux-Nice
+          </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            <strong style={{ color: '#111111' }}>Vieil Antibes</strong> / remparts : accès restreint pour les véhicules,
-            stationnement limité dans les rues historiques. Même approche que dans le
-            Vieux-Nice — intervention à pied si nécessaire.
-            <strong style={{ color: '#111111' }}> Port Vauban</strong> : l'un des plus grands ports de plaisance de Méditerranée —
-            les plaisanciers de passage font régulièrement appel à Sinnes pour des clés
-            de véhicule laissés sur le port.
+            Les rues du centre historique (rue Aubernon, rue du Bas-Castelet) sont en zone
+            piétonne. Sinouhé intervient à pied avec son matériel portable depuis le parking
+            le plus proche. Stationnement limité sur les remparts : prévenir Sinouhé de votre
+            emplacement précis pour optimiser le trajet à pied.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            Port Vauban — plaisanciers et véhicules de passage
+          </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            Délai depuis Nice : 30 à 45 minutes en dehors des heures de pointe. Frais de
-            déplacement : communiqués gratuitement lors du devis téléphonique.
+            Le Port Vauban est l'un des plus grands ports de plaisance de Méditerranée.
+            Les plaisanciers de passage y laissent souvent leur véhicule plusieurs semaines —
+            situation fréquente : batterie de télécommande déchargée ou clé introuvable
+            au retour d'un séjour. Sinouhé intervient directement sur le parking du port.
           </p>
+
           <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
             Pour un{' '}
-            <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>dépannage clé à domicile sur Nice et alentours</a>,
-            Sinouhé se déplace directement à votre adresse avec son matériel complet —
-            sans frais de déplacement pour Nice.
+            <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>dépannage clé à domicile sur toute la zone</a>,
+            Sinouhé se déplace directement à votre adresse avec son matériel complet.
           </p>
         </div>
       </section>
@@ -244,18 +292,39 @@ export default function CleVoitureNicePage() {
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-            Clé de voiture à Cagnes-sur-Mer — Hippodrome et Haut-de-Cagnes
+            Clé de voiture à Cagnes-sur-Mer — Hippodrome, Haut-de-Cagnes, Cros-de-Cagnes
           </h2>
-          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Cagnes-sur-Mer présente plusieurs zones d'intervention spécifiques :
+          <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Délai depuis Nice : 20 à 30 minutes selon la zone de Cagnes visée.
+            Chaque secteur a ses spécificités d'accès.
           </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Hippodrome de la Côte d'Azur — pics de demande les jours de courses
+          </h3>
+          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Les journées de courses à l'Hippodrome (de novembre à mars) génèrent régulièrement
+            des appels — des centaines de véhicules sur le parking, et l'excitation de
+            l'événement favorise les oublis de clé. Le parking principal est directement
+            accessible en véhicule depuis la route de Grenoble. Délai : 20 minutes depuis Nice.
+          </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Haut-de-Cagnes — village médiéval perché, accès piéton
+          </h3>
+          <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
+            Le village médiéval du Haut-de-Cagnes est accessible en voiture jusqu'au parking
+            du Château, mais les ruelles intérieures sont piétonnes. Sinouhé stationne au
+            parking extérieur et monte à pied avec son matériel portable.
+          </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#FFD700' }}>
+            Cros-de-Cagnes — bord de mer, zone touristique
+          </h3>
           <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            <strong style={{ color: '#FFFFFF' }}>Hippodrome de la Côte d'Azur</strong> : lors des journées de courses,
-            le parking de l'hippodrome est une source fréquente d'appels — clés oubliées
-            dans l'excitation de l'événement.
-            <strong style={{ color: '#FFFFFF' }}> Haut-de-Cagnes</strong> / Vieux village : accès voiture limité dans ce village médiéval perché —
-            intervention possible à pied depuis le parking extérieur.
-            <strong style={{ color: '#FFFFFF' }}> Cros-de-Cagnes</strong> : quartier bord de mer avec son parking — zone résidentielle et touristique bien desservie.
+            Le quartier balnéaire de Cros-de-Cagnes est bien desservi et accessible sans
+            difficulté particulière. Parkings de bord de mer ouverts — zone d'intervention
+            classique, délai 25 minutes depuis Nice.
           </p>
         </div>
       </section>
@@ -264,18 +333,38 @@ export default function CleVoitureNicePage() {
       <section className="bg-[#F0F3F7] py-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#111111' }}>
-            Clé de voiture à Cannes — de la Croisette à La Bocca
+            Clé de voiture à Cannes — Festival, Croisette, La Bocca
           </h2>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            Cannes est couverte intégralement par Sinnes Automobiles. Les zones les plus actives :
+          <p className="font-body leading-relaxed mb-6" style={{ color: '#374151' }}>
+            Délai depuis Nice hors événements : 35 à 45 minutes.
+            Pendant les grands événements cannois : 1h à 1h30 selon la circulation.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
-            <strong style={{ color: '#111111' }}>Palais des Festivals</strong> : lors des grands événements (Festival de Cannes,
-            MIPIM, Cannes Lions), la demande d'interventions augmente significativement — visiteurs
-            étrangers avec des véhicules de location ou des voitures personnelles.
-            <strong style={{ color: '#111111' }}> Rue d'Antibes</strong> : artère commerçante principale, parkings souterrains adjacents —
-            zone d'intervention classique en journée.
-            <strong style={{ color: '#111111' }}> La Bocca</strong> : quartier résidentiel à l'ouest de Cannes — couvert sans supplément.
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            Palais des Festivals et Croisette — pics de demande pendant les événements
+          </h3>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+            Lors du Festival de Cannes (mai), du MIPIM (mars) ou des Cannes Lions (juin), la
+            demande d'intervention bondit — visiteurs étrangers avec véhicules de location,
+            clé de voiture oubliée dans l'agitation. Si vous êtes en période d'événement,
+            signalez-le à l'appel : Sinouhé prévoit un délai adapté à la circulation.
+            Parking de la Croisette et Parking Laubeuf — zones d'accès direct.
+          </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            Rue d'Antibes et parkings souterrains
+          </h3>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+            Artère commerçante principale de Cannes avec ses parkings souterrains (Parking des Vallergues,
+            Parking Forville) — zone d'intervention classique en journée. Accès véhicule sans difficulté.
+          </p>
+
+          <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#111111' }}>
+            La Bocca — quartier résidentiel, couvert sans supplément
+          </h3>
+          <p className="font-body leading-relaxed mb-6" style={{ color: '#374151' }}>
+            La Bocca à l'ouest de Cannes est couverte dans les mêmes conditions tarifaires
+            que le centre-ville. Délai légèrement réduit depuis Nice via l'A8.
           </p>
 
           <blockquote className="border-l-4 border-[#FFD700] pl-4 italic my-8" style={{ color: '#374151' }}>
@@ -287,10 +376,10 @@ export default function CleVoitureNicePage() {
           </blockquote>
 
           <p className="font-body leading-relaxed" style={{ color: '#374151' }}>
-            Pour une{' '}
-            <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>reproduction de clé à Nice</a>,
-            découvrez l'ensemble de nos prestations. Consultez aussi nos{' '}
-            <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarifs et devis</a> en ligne.
+            Pour en savoir plus sur nos services :{' '}
+            <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>reproduction de clé voiture</a>{' '}
+            ou{' '}
+            <a href="/urgence-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>intervention d'urgence clé voiture</a>.
           </p>
         </div>
       </section>
@@ -318,7 +407,7 @@ export default function CleVoitureNicePage() {
       <section style={{ background: '#F9FAFB' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text">
-            Questions fréquentes — Clé voiture Nice et alentours
+            Questions pratiques — Délais, accès et logistique par zone
           </h2>
           <FAQAccordion />
         </div>

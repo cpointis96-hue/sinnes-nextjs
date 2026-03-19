@@ -17,8 +17,8 @@ const FAQ_ITEMS = [
     answer: "Avec la clé originale : 30 à 45 minutes. Programmation d'un transpondeur incluse dans ce délai pour les clés avec puce. Sinouhé intervient à domicile ou à l'atelier à Nice.",
   },
   {
-    question: "Le double de clé fonctionne-t-il exactement comme l'originale ?",
-    answer: "Oui. La lame est gravée à l'identique par machine laser et le transpondeur est cloné ou programmé avec les mêmes codes que l'originale. Votre véhicule ne fait aucune différence entre les deux clés.",
+    question: "Peut-on commander un double de clé voiture en ligne ?",
+    answer: "Non. La reproduction d'une clé de voiture nécessite une intervention physique : décodage de la serrure, taillage laser de la lame et programmation du transpondeur. Ces opérations ne peuvent pas se faire à distance. Sinnes Automobiles se déplace chez vous sur la Côte d'Azur ou vous accueille à l'atelier, 4 rue Diderot, Nice.",
   },
 ]
 

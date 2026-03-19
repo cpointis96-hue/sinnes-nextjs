@@ -19,9 +19,14 @@ const FAQ_ITEMS = [
       "Oui. Sinnes Automobiles couvre Nice, Antibes, Cagnes-sur-Mer, Cannes, Saint-Laurent-du-Var, Villefranche-sur-Mer et toute la Côte d'Azur.",
   },
   {
-    question: "Est-il possible d'ouvrir une voiture sans casser la serrure ?",
+    question: "Peut-on réparer une clé de voiture abîmée ou dont l'électronique est défaillante ?",
     answer:
-      "Oui, dans la plupart des cas. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction, préservant intégralement la serrure et la carrosserie.",
+      "Oui. Sinnes Automobiles réalise la réparation de clés voiture : remplacement de coque cassée, réparation de la carte électronique, reprogrammation d'un transpondeur défaillant. Si la clé n'est plus réparable, nous la reproduisons à l'identique. Devis gratuit au +33 6 75 54 04 11.",
+  },
+  {
+    question: "Intervenez-vous sur des modèles courants comme la Golf 5 à Nice ?",
+    answer:
+      "Oui. La Volkswagen Golf 5 fait partie des véhicules que nous traitons régulièrement à Nice. Sa clé à transpondeur ID48 est couramment reproduite ou reprogrammée par Sinouhé Rochereau. Nous intervenons sur tous les modèles courants (Golf, Clio, 208, Yaris, 308…) et les véhicules plus anciens.",
   },
 ]
 

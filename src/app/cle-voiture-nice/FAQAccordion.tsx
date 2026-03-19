@@ -4,20 +4,24 @@ import { useState } from 'react'
 
 const FAQ_ITEMS = [
   {
-    question: "Intervenez-vous pour une clé de voiture à Antibes ?",
-    answer: "Oui. Sinnes Automobiles intervient à Antibes, notamment à Sophia Antipolis, dans le Vieil Antibes et au Port Vauban. Contactez-nous au +33 6 75 54 04 11 — Sinouhé Rochereau se déplace directement sur place.",
+    question: "Y a-t-il des frais de déplacement pour les interventions hors Nice ?",
+    answer: "À Nice : aucun frais de déplacement. Pour Antibes, Cagnes-sur-Mer et Cannes : des frais kilométriques peuvent s'appliquer selon la distance exacte, communiqués gratuitement lors du devis téléphonique. Appelez le +33 6 75 54 04 11 — Sinouhé vous confirme le prix total avant toute intervention.",
   },
   {
-    question: "Pouvez-vous intervenir dans le Vieux-Nice ?",
-    answer: "Oui, avec une particularité : les ruelles du Vieux-Nice ne sont pas accessibles en véhicule d'atelier. Sinouhé Rochereau intervient à pied avec son matériel portable Abrites — cela ne change rien à la qualité ni aux tarifs de l'intervention.",
+    question: "Pouvez-vous intervenir dans le Vieux-Nice ou le Vieil Antibes ?",
+    answer: "Oui. Dans les zones piétonnes et les ruelles historiques inaccessibles en véhicule d'atelier, Sinouhé Rochereau intervient à pied avec son matériel portable Abrites — valise compacte et lecteur RFID. La qualité de l'intervention et les tarifs sont exactement les mêmes.",
   },
   {
-    question: "Quel est le délai d'intervention à Cannes ou Cagnes-sur-Mer ?",
-    answer: "En général 1h à 2h depuis Nice. Sinouhé Rochereau couvre Nice, Antibes, Cagnes-sur-Mer, Cannes, Saint-Laurent-du-Var, Villefranche-sur-Mer et toute la Côte d'Azur. Pas de frais de déplacement pour les interventions à Nice.",
+    question: "Quel est le délai réaliste pour une intervention à Cannes depuis Nice ?",
+    answer: "En dehors des heures de pointe (matin 7h-9h et soir 17h-20h), comptez 35 à 45 minutes depuis Nice. En heure de pointe ou lors des grands événements cannois (Festival de Cannes, MIPIM), prévoir 1h à 1h30. Sinouhé vous confirme le délai exact lors de l'appel.",
   },
   {
-    question: "Intervenez-vous à l'aéroport de Nice ?",
-    answer: "Oui. En cas de clé perdue avant un vol ou au retour, Sinnes Automobiles peut intervenir directement aux parkings des terminaux 1 et 2 de l'aéroport Nice Côte d'Azur. Appelez le +33 6 75 54 04 11 dès que vous constatez le problème.",
+    question: "Pouvez-vous intervenir au parking de l'aéroport Nice Côte d'Azur ?",
+    answer: "Oui. Sinouhé Rochereau intervient directement aux niveaux P1 à P5 des terminaux T1 et T2. Si votre vol est dans moins d'une heure, signalez-le dès l'appel — une première solution (ouverture du véhicule) peut être mise en place rapidement, avec une reproduction de clé complète programmée à votre retour. Délai depuis le centre de Nice : 20 à 30 minutes hors embouteillages.",
+  },
+  {
+    question: "Intervenez-vous à Sophia Antipolis le week-end et jours fériés ?",
+    answer: "Oui, 7 jours sur 7, y compris le week-end et les jours fériés. Sophia Antipolis est moins encombrée en dehors de la semaine — le délai d'intervention depuis Nice est réduit à 25-30 minutes le week-end. Appelez directement le +33 6 75 54 04 11.",
   },
 ]
 
