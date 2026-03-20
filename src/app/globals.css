@@ -79,8 +79,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  text-wrap: pretty;
 }
 
 /* ---------------------------------------------------------------------------
@@ -92,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--sinnes-texte);
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 p, li, button, label, input, textarea {

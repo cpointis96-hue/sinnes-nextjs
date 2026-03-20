@@ -105,8 +105,8 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         background: 'white',
         border: '1px solid #f3f4f6',
         boxShadow: hovered
-          ? '0 20px 60px rgba(0, 0, 0, 0.10)'
-          : '0 1px 3px rgba(0, 0, 0, 0.04)',
+          ? '0 30px 70px rgba(0, 0, 0, 0.12)'
+          : '0 10px 30px rgba(0, 0, 0, 0.06)',
         transform: hovered ? 'scale(1.03) translateY(-5px)' : 'scale(1) translateY(0)',
         transition: SPRING,
         backfaceVisibility: 'hidden',
@@ -198,18 +198,19 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
           width: '100%',
           padding: '1rem 1.5rem',
           borderRadius: 9999,
-          border: `2px solid ${hovered ? '#EFAD42' : '#1A1A1A'}`,
-          backgroundColor: hovered ? '#EFAD42' : 'transparent',
-          color: hovered ? 'white' : '#1A1A1A',
-          fontWeight: 700,
+          border: '2px solid #EFAD42',
+          backgroundColor: '#EFAD42',
+          color: '#1A1A1A',
+          fontWeight: 800,
           fontSize: '0.875rem',
           textAlign: 'center',
           textDecoration: 'none',
-          boxShadow: hovered ? '0 4px 16px rgba(239, 173, 66, 0.35)' : 'none',
+          boxShadow: hovered ? '0 10px 25px rgba(239, 173, 66, 0.4)' : '0 4px 12px rgba(239, 173, 66, 0.15)',
+          transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
           transition: TRANSITION,
         }}
       >
-        Contactez-nous
+        Obtenir un devis gratuit
       </a>
     </div>
   )

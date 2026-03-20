@@ -131,7 +131,7 @@ export default function CleVoiturePerdуePage() {
             <span className="font-body text-white text-sm font-semibold">58 avis Google · 5.0/5</span>
           </div>
 
-          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h1} :<br />Solution d'urgence à Nice
           </h1>
 
@@ -164,7 +164,7 @@ export default function CleVoiturePerdуePage() {
       {/* SECTION 3 — PROCESS STEPS */}
       <section className="bg-white pt-6 pb-16 px-4">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center " style={{ color: '#111111' }}>
             {seoData['cle-voiture-perdue'].h2[0]}
           </h2>
           <ProcessSteps steps={steps} theme="light" />
@@ -181,7 +181,7 @@ export default function CleVoiturePerdуePage() {
       {/* H2 BLOC 1 — dark */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -206,7 +206,7 @@ export default function CleVoiturePerdуePage() {
       {/* H2 BLOC 2 — light */}
       <section className="bg-white pt-16 pb-6 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#111111' }}>
             {seoData['cle-voiture-perdue'].h2[2]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
@@ -234,11 +234,11 @@ export default function CleVoiturePerdуePage() {
       {/* H2 BLOC 3 — dark */}
       <section style={{ background: '#111111' }} className="pt-6 pb-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h2[3]}
           </h2>
 
-          <h3 className="font-heading font-bold text-xl mb-3 break-words" style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h3[0]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -248,7 +248,7 @@ export default function CleVoiturePerdуePage() {
             d'origine. Ce code est ensuite programmé sur la machine à taille laser.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 break-words" style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h3[1]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -257,7 +257,7 @@ export default function CleVoiturePerdуePage() {
             à l'originale : ni trop souple, ni trop rigide, avec les mêmes tolerances d'usinage.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 break-words" style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h3[2]}
           </h3>
           <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -273,7 +273,7 @@ export default function CleVoiturePerdуePage() {
       {/* H2 BLOC 4 — bg-[#F0F3F7] shade */}
       <section className="bg-[#F0F3F7] py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#111111' }}>
             {seoData['cle-voiture-perdue'].h2[4]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
@@ -295,7 +295,7 @@ export default function CleVoiturePerdуePage() {
       {/* H2 BLOC 5 — dark */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h2[5]}
           </h2>
           <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -310,7 +310,7 @@ export default function CleVoiturePerdуePage() {
       {/* SECTION 7 — CTA MILIEU */}
       <section className="bg-[#e53935] py-16 text-center text-white my-0">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4 break-words">
+          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4 ">
             {seoData['cle-voiture-perdue'].h2[6]}
           </h2>
           <p className="font-body text-xl mb-8 opacity-90">
@@ -331,7 +331,7 @@ export default function CleVoiturePerdуePage() {
       <section style={{ background: '#F0F3F7' }} className="py-16 px-4">
 
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text ">
             {seoData['cle-voiture-perdue'].h2[7]}
           </h2>
           <FAQAccordion items={FAQ_ITEMS} />

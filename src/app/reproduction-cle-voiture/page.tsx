@@ -108,6 +108,56 @@ const schema = {
 // PAGE
 // ─────────────────────────────────────────────────────────────
 
+// ─────────────────────────────────────────────────────────────
+// CUSTOM ICONS (SVG) — Style Sinnes
+// ─────────────────────────────────────────────────────────────
+
+function IconKeySimple({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <circle cx="7.5" cy="12" r="3" />
+      <path d="M10.5 12h9.5" />
+      <path d="M15 12v3" />
+      <path d="M18 12v3" />
+    </svg>
+  )
+}
+
+function IconKeyCentralisee({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="7" y="4" width="10" height="16" rx="2" />
+      <path d="M12 8v4" />
+      <path d="M10 10l4 0" />
+      <circle cx="12" cy="16" r="1.5" />
+      <path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8" className="opacity-40" />
+    </svg>
+  )
+}
+
+function IconKeyMainsLibres({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="5" y="6" width="14" height="12" rx="2" />
+      <circle cx="15" cy="12" r="2" />
+      <path d="M9 10h2" />
+      <path d="M9 14h2" />
+    </svg>
+  )
+}
+
+function IconPerteTotale({ className = '' }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <circle cx="12" cy="12" r="10" />
+      <line x1="12" y1="8" x2="12" y2="12" />
+      <line x1="12" y1="16" x2="12.01" y2="16" />
+      <path d="M12 12l4 4" className="opacity-40" />
+      <path d="M12 12l-4-4" className="opacity-40" />
+    </svg>
+  )
+}
+
 const TRUST_ITEMS: TrustStripItem[] = [
   {
     icon: <IconEuro className="w-8 h-8" />,
@@ -174,7 +224,7 @@ export default function ReproductionCleVoiturePage() {
           </div>
 
           <h1
-            className="font-heading font-extrabold text-4xl md:text-5xl leading-tight mb-6 break-words"
+            className="font-heading font-extrabold text-4xl md:text-5xl leading-tight mb-6 "
             style={{ color: '#FFFFFF' }}
           >
             {seoData['reproduction-cle-voiture'].h1}, spécialiste Nice &amp; Côte d&apos;Azur
@@ -196,15 +246,17 @@ export default function ReproductionCleVoiturePage() {
                          font-body font-bold text-xl px-8 py-4 rounded-lg min-h-[56px]
                          hover:bg-[#c62828] transition-colors"
             >
-              📞 <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
+          Urgence 7j/7 : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
             </a>
             <a
               href="/contactez-nous/"
-              className="inline-flex items-center justify-center bg-white text-[#1a1a1a]
-                         font-body font-bold text-xl px-8 py-4 rounded-lg min-h-[56px]
-                         hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center bg-[#EFAD42] text-[#1a1a1a]
+                         font-body font-black text-xl px-8 py-4 rounded-lg min-h-[56px]
+                         shadow-[0_4px_14px_0_rgba(239,173,66,0.39)]
+                         hover:bg-[#D49436] hover:shadow-[0_6px_20px_rgba(239,173,66,0.23)]
+                         hover:scale-[1.02] transition-all"
             >
-              Devis gratuit
+              Obtenir un devis gratuit
             </a>
           </div>
 
@@ -310,8 +362,8 @@ export default function ReproductionCleVoiturePage() {
       <article className="bg-white pt-6 pb-6 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
-            {seoData['reproduction-cle-voiture'].h2[0]}
+          <h2 className="font-heading font-bold text-3xl md:text-5xl text-text-main mb-6">
+            Tarifs reproduction de clé de voiture : Transparence totale
           </h2>
           <p className="font-body text-text-muted leading-relaxed mb-4">
             La reproduction de clé de voiture désigne l&apos;ensemble des opérations permettant de
@@ -338,11 +390,11 @@ export default function ReproductionCleVoiturePage() {
             haute sécurité (ID46, ID48, HITAG 2), et la carte mains libres ou badge.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[1]}
           </h2>
 
-          <h3 className="font-heading font-bold text-xl text-text-main mb-4 break-words">
+          <h3 className="font-heading font-bold text-xl text-text-main mb-4">
             {seoData['reproduction-cle-voiture'].h3[0]}
           </h3>
           <p className="font-body text-text-muted leading-relaxed mb-4">
@@ -360,7 +412,7 @@ export default function ReproductionCleVoiturePage() {
             contre la perte.
           </p>
 
-          <h3 className="font-heading font-bold text-xl text-text-main mb-4 break-words">
+          <h3 className="font-heading font-bold text-xl text-text-main mb-4">
             {seoData['reproduction-cle-voiture'].h3[1]}
           </h3>
           <p className="font-body text-text-muted leading-relaxed mb-4">
@@ -378,7 +430,7 @@ export default function ReproductionCleVoiturePage() {
             jeu de clés est invalidé dans le calculateur : votre véhicule est sécurisé.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[2]}
           </h2>
           <p className="font-body text-text-muted leading-relaxed mb-4">
@@ -409,7 +461,7 @@ export default function ReproductionCleVoiturePage() {
               </span>
             </li>
           </ul>
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[3]}
           </h2>
           <p className="font-body text-text-muted leading-relaxed mb-4">
@@ -437,7 +489,7 @@ export default function ReproductionCleVoiturePage() {
       <article className="bg-white pt-6 pb-6 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[4]}
           </h2>
           <p className="font-body text-text-muted leading-relaxed mb-6">
@@ -448,64 +500,131 @@ export default function ReproductionCleVoiturePage() {
             , devis gratuit, sans frais cachés.
           </p>
 
-          {/* Tableau tarifs */}
-          <div className="overflow-x-auto mb-8 rounded-xl border border-card-border">
-            <table className="w-full font-body text-sm">
-              <thead>
-                <tr className="bg-accent text-white">
-                  <th className="text-left px-4 py-3 font-bold">Type de clé</th>
-                  <th className="text-center px-4 py-3 font-bold">Prix Sinnes</th>
-                  <th className="text-center px-4 py-3 font-bold">Prix concessionnaire</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t border-card-border">
-                  <td className="px-4 py-3 text-text-main">{PRICES.cleSimple.label}</td>
-                  <td className="px-4 py-3 text-center font-bold text-primary">
-                    À partir de {PRICES.cleSimple.sinnes}€
-                  </td>
-                  <td className="px-4 py-3 text-center text-text-muted">
-                    {PRICES.cleSimple.concessionnaire.min}-{PRICES.cleSimple.concessionnaire.max}€
-                  </td>
-                </tr>
-                <tr className="border-t border-card-border bg-bg-shade">
-                  <td className="px-4 py-3 text-text-main">{PRICES.cleCentralisee.label}</td>
-                  <td className="px-4 py-3 text-center font-bold text-primary">
-                    À partir de {PRICES.cleCentralisee.sinnes}€
-                  </td>
-                  <td className="px-4 py-3 text-center text-text-muted">
-                    {PRICES.cleCentralisee.concessionnaire.min}-{PRICES.cleCentralisee.concessionnaire.max}€
-                  </td>
-                </tr>
-                <tr className="border-t border-card-border">
-                  <td className="px-4 py-3 text-text-main">{PRICES.cleMainsLibres.label}</td>
-                  <td className="px-4 py-3 text-center font-bold text-primary">
-                    À partir de {PRICES.cleMainsLibres.sinnes}€
-                  </td>
-                  <td className="px-4 py-3 text-center text-text-muted">
-                    {PRICES.cleMainsLibres.concessionnaire.min}-{PRICES.cleMainsLibres.concessionnaire.max}€
-                  </td>
-                </tr>
-                <tr className="border-t border-card-border bg-bg-shade">
-                  <td className="px-4 py-3 text-text-main">{PRICES.perteTotale.label}</td>
-                  <td className="px-4 py-3 text-center font-bold text-primary">
-                    À partir de {PRICES.perteTotale.sinnes}€
-                  </td>
-                  <td className="px-4 py-3 text-center text-text-muted">
-                    {PRICES.perteTotale.concessionnaire.min}-{PRICES.perteTotale.concessionnaire.max}€
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* SECTION TARIFS - DESIGN PREMIUM & TRANSPARENT */}
+          <div className="mt-12 mb-16">
+            <div className="text-center mb-10">
+              <h3 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-text-main mb-6">
+              Transparence totale sur nos tarifs
+            </h3>
+              <p className="font-body text-text-muted max-w-2xl mx-auto">
+                Comparez nos prix avec ceux des réseaux constructeurs. Économisez jusqu&apos;à 80% 
+                sur votre double de clé ou en cas de perte totale.
+              </p>
+            </div>
+
+            {/* Desktop Table View */}
+            <div className="hidden md:block overflow-hidden rounded-2xl border border-card-border shadow-lg">
+              <table className="w-full font-body text-sm border-collapse">
+                <thead>
+                  <tr className="bg-[#1A1A1A] text-white">
+                    <th className="text-left px-8 py-5 font-bold uppercase tracking-wider">Prestation & Type de clé</th>
+                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider">Expertise Sinnes</th>
+                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider text-white/50 border-l border-white/10">Concessionnaire</th>
+                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider text-accent font-black border-l border-white/10">Votre Économie</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-card-border">
+                  {[
+                    { key: 'cleSimple', icon: <IconKeySimple className="w-6 h-6" /> },
+                    { key: 'cleCentralisee', icon: <IconKeyCentralisee className="w-6 h-6" /> },
+                    { key: 'cleMainsLibres', icon: <IconKeyMainsLibres className="w-6 h-6" /> },
+                    { key: 'perteTotale', icon: <IconPerteTotale className="w-6 h-6" /> },
+                  ].map(({ key, icon }, i) => {
+                    const price = PRICES[key as keyof typeof PRICES];
+                    const avgConc = Math.round((price.concessionnaire.min + price.concessionnaire.max) / 2);
+                    const saving = Math.round(((avgConc - price.sinnes) / avgConc) * 100);
+                    
+                    return (
+                      <tr key={key} className={`group hover:bg-primary/5 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-bg-shade'}`}>
+                        <td className="px-8 py-6">
+                          <div className="flex items-center gap-4">
+                            <span className="shrink-0 p-2 rounded-lg bg-bg-shade group-hover:bg-primary/10 group-hover:text-primary transition-colors duration-300">
+                                {icon}
+                            </span>
+                            <div>
+                                <span className="block font-bold text-lg text-text-main leading-tight">{price.label}</span>
+                                <span className="text-xs text-text-muted uppercase tracking-widest mt-1">Équipements pro · Garanti</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td className="px-8 py-6 text-center border-l border-card-border/50">
+                          <span className="inline-block text-primary font-black text-2xl tracking-tight whitespace-nowrap">
+                            {price.sinnes}€
+                          </span>
+                        </td>
+                        <td className="px-8 py-6 text-center text-text-muted border-l border-card-border/50">
+                           <span className="font-semibold text-base">{price.concessionnaire.min}€ - {price.concessionnaire.max}€</span>
+                        </td>
+                        <td className="px-8 py-6 text-center border-l border-card-border/50">
+                            <span className="inline-flex items-center justify-center bg-accent/10 text-accent font-black text-xl px-4 py-1 rounded-full">
+                                -{saving}%
+                            </span>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Mobile Cards View */}
+            <div className="md:hidden space-y-6">
+              {[
+                { key: 'cleSimple', icon: <IconKeySimple className="w-6 h-6" /> },
+                { key: 'cleCentralisee', icon: <IconKeyCentralisee className="w-6 h-6" /> },
+                { key: 'cleMainsLibres', icon: <IconKeyMainsLibres className="w-6 h-6" /> },
+                { key: 'perteTotale', icon: <IconPerteTotale className="w-6 h-6" /> },
+              ].map(({ key, icon }) => {
+                const price = PRICES[key as keyof typeof PRICES];
+                const avgConc = Math.round((price.concessionnaire.min + price.concessionnaire.max) / 2);
+                const saving = Math.round(((avgConc - price.sinnes) / avgConc) * 100);
+                
+                return (
+                  <div key={key} className="bg-white rounded-2xl border border-card-border p-6 shadow-md relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-xs font-black rounded-bl-xl shadow-sm">
+                      -{saving}%
+                    </div>
+                    
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-bg-shade flex items-center justify-center text-text-main border border-card-border shrink-0">
+                        {icon}
+                      </div>
+                      <div>
+                        <h4 className="font-heading font-black text-xl text-text-main leading-tight mb-1">{price.label}</h4>
+                        <p className="text-xs text-text-muted">Intervention mobile 7j/7 incluse</p>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-dashed border-card-border">
+                      <div>
+                        <p className="text-[11px] text-text-muted uppercase tracking-widest mb-1 font-bold">Sinnes</p>
+                        <p className="text-3xl font-black text-primary tracking-tight">
+                          {price.sinnes}€
+                        </p>
+                      </div>
+                      <div className="text-right border-l border-card-border/50 pl-4">
+                        <p className="text-[11px] text-text-muted uppercase tracking-widest mb-1 font-bold">Concession</p>
+                        <p className="text-base font-bold text-text-muted/60 line-through mb-1 italic">
+                          {avgConc}€
+                        </p>
+                        <p className="text-[10px] font-black text-accent uppercase tracking-tighter">Économie immédiate</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
+          <div className="mb-14">
             <a
               href="/contactez-nous/"
-              className="inline-block bg-accent text-white font-body font-bold text-base px-8 py-3 rounded-lg hover:bg-accent-dark transition-colors"
+              className="inline-block bg-accent text-white font-body font-bold text-base px-8 py-3 rounded-lg hover:bg-accent-dark transition-colors shadow-md"
             >
-              Demandez votre devis gratuit
+              Obtenir un devis gratuit
             </a>
+          </div>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[5]}
           </h2>
           <ul className="font-body text-text-muted leading-relaxed mb-4 space-y-3 list-none pl-0">
@@ -553,7 +672,7 @@ export default function ReproductionCleVoiturePage() {
       <section className="bg-white py-16 px-4">
 
         <div className="container-sinnes max-w-3xl mx-auto">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-8 text-center break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-8 text-center ">
             {seoData['reproduction-cle-voiture'].h2[6]}
           </h2>
           <FAQAccordion items={FAQ_ITEMS} />

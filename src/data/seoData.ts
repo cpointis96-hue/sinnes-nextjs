@@ -47,7 +47,7 @@ export const seoData = {
       main: 'Service de reproduction de clé de voiture Sinnes Automobiles'
     },
     ctas: {
-      sticky: { label: 'Devis gratuit', variant: 'service' as const }
+      sticky: { label: 'Obtenir un devis gratuit', variant: 'service' as const }
     }
   },
   'serrurier-automobile-nice': {
@@ -87,7 +87,7 @@ export const seoData = {
     h3: [
       'Frais de déplacement hors Nice',
       'Véhicules anciens ou rares',
-      'Comment obtenir un devis gratuit ?'
+      'Comment Obtenir un devis gratuit ?'
     ],
     images: {
       main: 'Grille tarifaire Sinnes Automobiles'
@@ -116,7 +116,7 @@ export const seoData = {
       main: 'Programmation électronique de clé auto'
     },
     ctas: {
-      sticky: { label: 'Devis gratuit', variant: 'service' as const }
+      sticky: { label: 'Obtenir un devis gratuit', variant: 'service' as const }
     }
   },
   'double-cle-voiture': {
@@ -140,7 +140,7 @@ export const seoData = {
       main: 'Double de clé de voiture préventif'
     },
     ctas: {
-      sticky: { label: 'Devis gratuit', variant: 'service' as const }
+      sticky: { label: 'Obtenir un devis gratuit', variant: 'service' as const }
     }
   },
   'cle-voiture-perdue': {

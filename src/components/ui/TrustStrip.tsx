@@ -216,13 +216,13 @@ export default function TrustStrip({
                   </span>
                   <div>
                     <p
-                      className="font-heading font-bold text-sm md:text-base leading-tight break-words"
+                      className="font-heading font-bold text-sm md:text-base leading-tight "
                       style={{ color: '#111111' }}
                     >
                       {item.label}
                     </p>
                     <p
-                      className="font-body text-xs md:text-sm leading-snug mt-0.5 break-words"
+                      className="font-body text-xs md:text-sm leading-snug mt-0.5 "
                       style={{ color: '#6B7280' }}
                     >
                       {item.sublabel}

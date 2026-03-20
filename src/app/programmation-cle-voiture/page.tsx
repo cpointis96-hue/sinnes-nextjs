@@ -124,7 +124,7 @@ export default function ProgrammationCleVoiturePage() {
             <span className="font-body text-white text-sm font-semibold">58 avis Google · 5.0/5</span>
           </div>
 
-          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['programmation-cle-voiture'].h1} :<br />Transpondeur, télécommande et badge
           </h1>
 
@@ -138,8 +138,9 @@ export default function ProgrammationCleVoiturePage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-accent text-text-inverse font-body font-bold
-                       text-xl px-8 py-4 rounded-lg min-h-[56px] hover:bg-accent-dark transition-colors mb-8"
+            className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
+                       text-lg md:text-xl px-6 md:px-8 py-4 rounded-lg min-h-[56px]
+                       hover:bg-[#c62828] transition-colors shadow-lg mb-8"
           >
             Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
@@ -157,7 +158,7 @@ export default function ProgrammationCleVoiturePage() {
       {/* SECTION 3 — PROCESS STEPS */}
       <section style={{ background: '#FFFFFF' }} className="pt-6 pb-16 px-4">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center " style={{ color: '#111111' }}>
             {seoData['programmation-cle-voiture'].h2[0]}
           </h2>
           <ProcessSteps steps={steps} theme="light" />
@@ -175,7 +176,7 @@ export default function ProgrammationCleVoiturePage() {
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes max-w-3xl">
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
             {seoData['programmation-cle-voiture'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -197,11 +198,11 @@ export default function ProgrammationCleVoiturePage() {
             Pour la reproduction complète incluant taille + programmation, voir <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">reproduction de clé</a>.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
             {seoData['programmation-cle-voiture'].h2[2]}
           </h2>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main break-words">
+          <h3 className="font-heading font-bold text-xl mb-3 text-text-main ">
             {seoData['programmation-cle-voiture'].h3[0]}
           </h3>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -211,7 +212,7 @@ export default function ProgrammationCleVoiturePage() {
             La clé existante continue de fonctionner normalement. Durée : 30 à 45 minutes.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main break-words">
+          <h3 className="font-heading font-bold text-xl mb-3 text-text-main ">
             {seoData['programmation-cle-voiture'].h3[1]}
           </h3>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -222,7 +223,7 @@ export default function ProgrammationCleVoiturePage() {
             Ce processus est particulièrement important pour la sécurité de votre véhicule.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main break-words">
+          <h3 className="font-heading font-bold text-xl mb-3 text-text-main ">
             {seoData['programmation-cle-voiture'].h3[2]}
           </h3>
           <p className="font-body leading-relaxed mb-6 text-text-muted">
@@ -232,7 +233,7 @@ export default function ProgrammationCleVoiturePage() {
             existante : opération rapide (15 à 20 minutes sur la plupart des marques).
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
             {seoData['programmation-cle-voiture'].h2[3]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -254,7 +255,7 @@ export default function ProgrammationCleVoiturePage() {
             100%, et les délais sont respectés. Voir aussi notre service de <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">reproduction de clé</a>.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
             Programmation clé voiture à domicile : Nice et Côte d'Azur
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -269,7 +270,7 @@ export default function ProgrammationCleVoiturePage() {
             les conditions, voir notre page <a href="/depannage-cle-domicile/" className="text-primary font-semibold hover:underline">programmation à domicile</a>.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
             {seoData['programmation-cle-voiture'].h2[5]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
@@ -293,7 +294,7 @@ export default function ProgrammationCleVoiturePage() {
       {/* SECTION 7 — CTA MILIEU */}
       <section style={{ background: '#1A1A1A' }} className="py-12 border-y border-[#EFAD42]/20 text-center">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-4 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-4 " style={{ color: '#FFFFFF' }}>
             {seoData['programmation-cle-voiture'].h2[6]}
           </h2>
           <p className="font-body mb-6" style={{ color: 'rgba(255,255,255,0.7)' }}>
@@ -314,7 +315,7 @@ export default function ProgrammationCleVoiturePage() {
       <section style={{ background: '#F0F3F7' }} className="py-16 px-4">
 
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text ">
             {seoData['programmation-cle-voiture'].h2[7]}
           </h2>
           <FAQAccordion items={FAQ_ITEMS} />

@@ -186,7 +186,7 @@ export default function TarifCleVoiturePage() {
                          font-body font-bold text-xl px-8 py-4 rounded-lg min-h-[56px]
                          hover:bg-[#c62828] transition-colors"
             >
-              📞 Devis gratuit : {NAP.phoneDisplay}
+             Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
             </a>
           </div>
 
@@ -216,10 +216,11 @@ export default function TarifCleVoiturePage() {
             </p>
             <a
               href="/contactez-nous/"
-              className="inline-block bg-[#e53935] text-white font-body font-bold text-base
-                         px-8 py-3 rounded-lg min-h-[48px] hover:bg-[#c62828] transition-colors"
+              className="inline-block bg-[#EFAD42] text-[#1a1a1a] font-body font-black text-lg
+                         px-10 py-4 rounded-lg min-h-[56px] shadow-lg
+                         hover:bg-[#D49436] hover:scale-[1.02] transition-all"
             >
-              Demandez votre devis personnalisé
+              Obtenir un devis gratuit
             </a>
           </div>
 

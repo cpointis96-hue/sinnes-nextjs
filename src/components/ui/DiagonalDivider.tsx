@@ -104,7 +104,7 @@ export default function DiagonalDivider({
 }) {
   return (
     <div
-      className={`w-full flex items-center gap-3 md:gap-6 pt-[4px] pb-[5px] ${className}`}
+      className={`w-full flex items-center gap-3 md:gap-6 pt-[6px] pb-[8px] ${className}`}
       aria-hidden="true"
     >
       <PatternBar color={color} id={`${id}-l`} />

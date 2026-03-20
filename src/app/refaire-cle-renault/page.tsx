@@ -121,7 +121,7 @@ export default function RefaireCleRenaultPage() {
             <span className="font-body text-sm font-semibold" style={{ color: '#FFFFFF' }}>58 avis Google · 5.0/5</span>
           </div>
 
-          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['refaire-cle-renault'].h1} :<br />Clé carte et clé à lame
           </h1>
 
@@ -138,7 +138,7 @@ export default function RefaireCleRenaultPage() {
             className="inline-flex items-center gap-3 font-body font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity mb-8"
             style={{ background: '#EFAD42', color: '#0A0A0A' }}
           >
-            Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
+            Obtenir un devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
 
           <p className="text-sm border-l-4 border-[#EFAD42] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
@@ -152,7 +152,7 @@ export default function RefaireCleRenaultPage() {
       {/* PROCESS STEPS */}
       <section className="bg-white pt-6 pb-16 px-4">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center " style={{ color: '#111111' }}>
             {seoData['refaire-cle-renault'].h2[0]}
           </h2>
           <ProcessSteps steps={steps} theme="light" />
@@ -169,7 +169,7 @@ export default function RefaireCleRenaultPage() {
       {/* CORPS TEXTUEL — BLOC 1 : modèles couverts (dark) */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['refaire-cle-renault'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -199,7 +199,7 @@ export default function RefaireCleRenaultPage() {
       {/* CORPS TEXTUEL — BLOC 2 : clé carte IVER (light) */}
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#111111' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#111111' }}>
             {seoData['refaire-cle-renault'].h2[2]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
@@ -240,7 +240,7 @@ export default function RefaireCleRenaultPage() {
       {/* CORPS TEXTUEL — BLOC 3 : tarifs + blockquote (dark) */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
             {seoData['refaire-cle-renault'].h2[3]}
           </h2>
           <div className="overflow-x-auto mb-8">
@@ -281,7 +281,7 @@ export default function RefaireCleRenaultPage() {
       {/* CTA MILIEU */}
       <section className="py-16 text-center px-4" style={{ background: '#EFAD42' }}>
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4 break-words" style={{ color: '#0A0A0A' }}>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4 " style={{ color: '#0A0A0A' }}>
             {seoData['refaire-cle-renault'].h2[4]}
           </h2>
           <p className="font-body text-xl mb-8" style={{ color: 'rgba(0,0,0,0.7)' }}>
@@ -302,7 +302,7 @@ export default function RefaireCleRenaultPage() {
       <section style={{ background: '#F0F3F7' }} className="py-16 px-4">
 
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text break-words">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text ">
             {seoData['refaire-cle-renault'].h2[5]}
           </h2>
           <FAQAccordion items={FAQ_ITEMS} />

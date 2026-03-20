@@ -137,8 +137,9 @@ export default function DepannageCledomicilePage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-accent text-text-inverse font-body font-bold
-                       text-xl px-8 py-4 rounded-lg min-h-[56px] hover:bg-accent-dark transition-colors mb-8"
+            className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
+                       text-lg md:text-xl px-6 md:px-8 py-4 rounded-lg min-h-[56px]
+                       hover:bg-[#c62828] transition-colors shadow-lg mb-8"
           >
             Devis gratuit : {NAP.phoneDisplay}
           </a>

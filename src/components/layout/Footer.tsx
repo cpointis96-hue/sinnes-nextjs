@@ -70,10 +70,10 @@ export default function Footer() {
               style={{ gap: '0.55rem' }}
             >
               <meta itemProp="name" content={ORG.name} />
-              <span className="font-body break-words" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }} itemProp="streetAddress">
+              <span className="font-body " style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }} itemProp="streetAddress">
                 {NAP.address.streetAddress}
               </span>
-              <span className="font-body break-words" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
+              <span className="font-body " style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
                 <span itemProp="postalCode">{NAP.address.postalCode}</span>{' '}
                 <span itemProp="addressLocality">{NAP.address.addressLocality}</span>
               </span>

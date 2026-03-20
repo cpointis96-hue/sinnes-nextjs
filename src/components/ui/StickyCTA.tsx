@@ -40,7 +40,7 @@ export default function StickyCTA({
     return () => window.removeEventListener('scroll', handleScroll)
   }, [scrollThreshold])
 
-  const defaultLabel = variant === 'urgency' ? 'URGENCE' : 'Devis gratuit'
+  const defaultLabel = variant === 'urgency' ? 'URGENCE' : 'Obtenir un devis gratuit'
   const displayLabel = label || defaultLabel
   
   const bgColor = variant === 'urgency' ? '#e53935' : '#EFAD42'

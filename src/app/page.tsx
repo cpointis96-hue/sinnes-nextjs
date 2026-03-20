@@ -157,11 +157,11 @@ export default function HomePage() {
             </div>
 
             {/* H1 — noir sur blanc, choc visuel immédiat */}
-            <h1 className="font-heading font-black text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-tight mb-3 uppercase tracking-tight break-words">
+            <h1 className="font-heading font-black text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-tight mb-3 uppercase tracking-tight ">
               {seoData.home.h1}
             </h1>
 
-            <h2 className="font-heading font-bold text-lg md:text-xl text-[#1a1a1a] mb-5 leading-snug break-words">
+            <h2 className="font-heading font-bold text-lg md:text-xl text-[#1a1a1a] mb-5 leading-snug ">
               {seoData.home.h2[0]}
             </h2>
 
@@ -174,10 +174,10 @@ export default function HomePage() {
 
             {/* CTA principal */}
             <a
-              href="/contactez-nous/"
-              className="btn-accent inline-flex items-center gap-2 px-7 py-4 text-base font-bold w-full justify-center sm:w-auto sm:justify-start"
+              href={`tel:${NAP.phoneTel}`}
+              className="btn-accent inline-flex items-center gap-3 px-8 py-4 text-lg md:text-xl font-bold rounded-lg transition-colors shadow-lg"
             >
-              Prenez votre rendez-vous
+              Demandez votre devis : {NAP.phoneDisplay}
             </a>
 
             {/* Lien maillage secondaire */}
@@ -223,7 +223,7 @@ export default function HomePage() {
             {/* Texte */}
             <div>
               <ScrollReveal animation="fadeInDown" as="h2"
-                className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-third mb-6 leading-tight break-words">
+                className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-third mb-6 leading-tight ">
                 {seoData.home.h2[1]}
               </ScrollReveal>
 
@@ -276,7 +276,7 @@ export default function HomePage() {
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-12 break-words">
+            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-12 ">
             {seoData.home.h2[2]}
           </ScrollReveal>
 
@@ -359,7 +359,7 @@ export default function HomePage() {
             {/* Texte + Timeline */}
             <div>
               <ScrollReveal animation="fadeInDown" as="h2"
-                className="font-heading font-bold text-3xl md:text-4xl text-third mb-8 break-words">
+                className="font-heading font-bold text-3xl md:text-4xl text-third mb-8 ">
                 {seoData.home.h2[3]}
               </ScrollReveal>
 
@@ -411,7 +411,7 @@ export default function HomePage() {
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-3xl md:text-4xl text-center mb-12 break-words"
+            className="font-heading font-bold text-3xl md:text-4xl text-center mb-12 "
             style={{ color: '#ffffff' }}>
             {seoData.home.h2[4]}
           </ScrollReveal>
