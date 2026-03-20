@@ -163,7 +163,7 @@ export default function ReproductionCleVoiturePage() {
       </nav>
 
       {/* HERO */}
-      <section style={{ background: '#0A0A0A' }} className="text-white py-20 px-4">
+      <section style={{ background: '#0A0A0A' }} className="text-white pt-20 pb-6 px-4">
         <div className="container-sinnes text-center max-w-3xl mx-auto">
           {/* Badge avis */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
@@ -221,7 +221,7 @@ export default function ReproductionCleVoiturePage() {
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* 4 ÉTAPES — mobile-first, lisible, impactant */}
-      <section className="bg-white py-14 px-5" aria-label="Notre processus en 4 étapes">
+      <section className="bg-white pt-6 pb-14 px-5" aria-label="Notre processus en 4 étapes">
         <div className="container-sinnes max-w-2xl mx-auto md:max-w-none">
 
           <p className="font-body text-[#6B7280] text-xs uppercase tracking-[0.2em] text-center mb-12">
@@ -307,7 +307,7 @@ export default function ReproductionCleVoiturePage() {
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction-2" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* CORPS TEXTUEL */}
-      <article className="bg-white py-16 px-4">
+      <article className="bg-white pt-6 pb-6 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">
@@ -434,7 +434,7 @@ export default function ReproductionCleVoiturePage() {
 
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction-3" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
-      <article className="bg-white py-16 px-4">
+      <article className="bg-white pt-6 pb-6 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6 break-words">

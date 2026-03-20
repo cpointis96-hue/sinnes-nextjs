@@ -200,7 +200,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 2 — CAROUSEL MARQUES
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white border-y border-[#F0F3F7] py-6 overflow-hidden" aria-label="Marques automobiles prises en charge">
+      <section className="bg-white border-y border-[#F0F3F7] pt-6 pb-0 overflow-hidden" aria-label="Marques automobiles prises en charge">
         <BrandsCarousel />
         <ScrollReveal animation="fadeInUp" delay={0.1} className="container-sinnes mt-4 text-center">
           <p className="font-body text-sm italic text-[#6B7280]">
@@ -216,7 +216,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 3 — AVANTAGE DOMICILE
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white pt-6 pb-16 md:pb-24">
         <div className="container-sinnes">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -272,7 +272,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 4 — SERVICES GRID
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-bg-shade py-16 md:py-24">
+      <section className="bg-bg-shade pt-6 pb-16 md:pb-24">
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
@@ -340,7 +340,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 5 — QUI SOMMES-NOUS (Timeline)
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white pt-6 pb-16 md:pb-24">
         <div className="container-sinnes">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -407,7 +407,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 6 — CONTACT
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-[#1a1a1a] py-16 md:py-24 text-white">
+      <section className="bg-[#1a1a1a] pt-16 md:pt-24 pb-6 text-white">
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
@@ -514,7 +514,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 7 — AVIS GOOGLE
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-bg-shade py-16" aria-label="Avis clients Google">
+      <section className="bg-bg-shade pt-6 pb-16" aria-label="Avis clients Google">
         <div className="container-sinnes">
 
               <ReviewsCarousel />

@@ -83,7 +83,7 @@ export default function QuiSommesNousPage() {
       </nav>
 
       {/* HERO */}
-      <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
+      <section style={{ background: '#0A0A0A' }} className="pt-16 pb-6 px-4">
         <div className="container-sinnes max-w-3xl">
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
             {seoData['qui-sommes-nous'].h1}
@@ -99,7 +99,7 @@ export default function QuiSommesNousPage() {
       <div style={{ background: '#111111' }}><div className="container-sinnes"><DiagonalDivider id="dd-quisommesnous" icon={<SteeringWheelIcon size={42} color="#EFAD42" />} color="#EFAD42" /></div></div>
 
       {/* SINOUHÉ */}
-      <section style={{ background: '#111111' }} className="py-16 px-4">
+      <section style={{ background: '#111111' }} className="pt-6 pb-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
             {seoData['qui-sommes-nous'].h2[0]}

@@ -114,7 +114,7 @@ export default function RefaireCleRenaultPage() {
       </nav>
 
       {/* HERO */}
-      <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
+      <section style={{ background: '#0A0A0A' }} className="pt-16 pb-6 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
@@ -150,7 +150,7 @@ export default function RefaireCleRenaultPage() {
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-refaire-cle-renault" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* PROCESS STEPS */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-white pt-6 pb-16 px-4">
         <div className="container-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
             {seoData['refaire-cle-renault'].h2[0]}

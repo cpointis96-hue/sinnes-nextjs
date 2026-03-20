@@ -117,7 +117,7 @@ export default function ProgrammationCleVoiturePage() {
       </nav>
 
       {/* SECTION 2 — HERO */}
-      <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
+      <section style={{ background: '#0A0A0A' }} className="pt-16 pb-6 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
@@ -155,7 +155,7 @@ export default function ProgrammationCleVoiturePage() {
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-programmation" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* SECTION 3 — PROCESS STEPS */}
-      <section style={{ background: '#FFFFFF' }} className="py-16 px-4">
+      <section style={{ background: '#FFFFFF' }} className="pt-6 pb-16 px-4">
         <div className="container-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
             {seoData['programmation-cle-voiture'].h2[0]}

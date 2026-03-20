@@ -124,7 +124,7 @@ export default function CleVoiturePerdуePage() {
       </nav>
 
       {/* SECTION 2 — HERO */}
-      <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
+      <section style={{ background: '#0A0A0A' }} className="pt-16 pb-6 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
@@ -162,7 +162,7 @@ export default function CleVoiturePerdуePage() {
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-cle-voiture-perdue" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* SECTION 3 — PROCESS STEPS */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-white pt-6 pb-16 px-4">
         <div className="container-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
             {seoData['cle-voiture-perdue'].h2[0]}
@@ -204,7 +204,7 @@ export default function CleVoiturePerdуePage() {
       </section>
 
       {/* H2 BLOC 2 — light */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-white pt-16 pb-6 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#111111' }}>
             {seoData['cle-voiture-perdue'].h2[2]}
@@ -232,7 +232,7 @@ export default function CleVoiturePerdуePage() {
       <div style={{ background: '#111111' }}><div className="container-sinnes"><DiagonalDivider id="dd-perdue-2" icon={<SteeringWheelIcon size={42} color="#EFAD42" />} color="#EFAD42" /></div></div>
 
       {/* H2 BLOC 3 — dark */}
-      <section style={{ background: '#111111' }} className="py-16 px-4">
+      <section style={{ background: '#111111' }} className="pt-6 pb-16 px-4">
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
             {seoData['cle-voiture-perdue'].h2[3]}

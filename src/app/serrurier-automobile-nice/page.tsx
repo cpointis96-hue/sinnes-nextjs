@@ -131,7 +131,7 @@ export default function SerrurierAutomobileNicePage() {
       </nav>
 
       {/* ── HERO — CTA urgence + H1 + answer-first ── */}
-      <section style={{ background: '#0A0A0A' }} className="py-12 md:py-16">
+      <section style={{ background: '#0A0A0A' }} className="pt-12 md:pt-16 pb-6">
         <div className="container-sinnes">
 
           {/* Badge avis — above the fold */}
@@ -300,7 +300,7 @@ export default function SerrurierAutomobileNicePage() {
 
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier-3" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
-      <article className="bg-white py-16 px-4">
+      <article className="bg-white pt-6 pb-6 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
           {/* H2 #4 — Nos interventions */}
@@ -400,7 +400,7 @@ export default function SerrurierAutomobileNicePage() {
 
       {/* ── FAQ VISUEL (accordéon) ── */}
 
-      <section className="bg-bg-shade py-16">
+      <section className="bg-bg-shade pt-6 pb-16">
 
         <div className="container-sinnes max-w-[860px]">
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-10">
