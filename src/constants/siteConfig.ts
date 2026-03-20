@@ -18,7 +18,7 @@ export const ORG = {
   name: 'Sinnes Automobiles',
   legalName: 'Sinnes Automobiles',
   /** SIRET affiché dans le footer et la page mentions légales */
-  siret: '', // ← à renseigner
+  siret: '940 997 927 00014',
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo-avec-fond-noir.png`,
   logoWidth: 500,
@@ -33,7 +33,7 @@ export const ORG = {
 
 export const NAP = {
   /** Affiché sur le site, dans les schemas, les réseaux sociaux */
-  phoneDisplay: '+33 6 75 54 04 11',
+  phoneDisplay: '+33\u00A06\u00A075\u00A054\u00A004\u00A011',
   /** Valeur du href="tel:…" — E.164 sans espaces */
   phoneTel: '+33675540411',
   email: 'contact@sinnes.fr',

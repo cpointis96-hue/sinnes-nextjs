@@ -18,7 +18,7 @@ export default function ProcessSteps({ steps, className = '', theme = 'dark' }: 
   return (
     <div className={`relative ${className}`}>
       {/* Ligne verticale connectant les cercles — mobile uniquement */}
-      <div className="absolute left-[31px] top-[48px] bottom-[48px] w-px bg-[#FFD700]/30 md:hidden" />
+      <div className="absolute left-[31px] top-[48px] bottom-[48px] w-px bg-[#EFAD42]/30 md:hidden" />
 
       <div className="flex flex-col md:flex-row md:gap-0 gap-0">
         {steps.map((step, idx) => (
@@ -32,17 +32,17 @@ export default function ProcessSteps({ steps, className = '', theme = 'dark' }: 
             {idx < steps.length - 1 && (
               <div className="hidden md:flex absolute right-0 top-8 translate-x-1/2 z-10 items-center justify-center">
                 <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5" aria-hidden="true">
-                  <path d="M9 18l6-6-6-6" stroke="#FFD700" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 18l6-6-6-6" stroke="#EFAD42" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
             )}
 
             {/* Cercle numéroté */}
             <div
-              className="flex-shrink-0 w-16 h-16 rounded-full border-2 border-[#FFD700] flex items-center justify-center z-10"
-              style={{ background: isLight ? '#F9FAFB' : '#0A0A0A' }}
+              className="flex-shrink-0 w-16 h-16 rounded-full border-2 border-[#EFAD42] flex items-center justify-center z-10"
+              style={{ background: isLight ? '#F0F3F7' : '#0A0A0A' }}
             >
-              <span className="font-heading font-bold text-xl" style={{ color: '#FFD700' }}>
+              <span className="font-heading font-bold text-xl" style={{ color: '#EFAD42' }}>
                 {step.num}
               </span>
             </div>

@@ -57,7 +57,7 @@ export default function BrandsCarousel() {
       loop
       speed={700}
       breakpoints={{
-        0:    { slidesPerView: 3,  spaceBetween: 24 },
+        0:    { slidesPerView: 3,  spaceBetween: 12 },
         480:  { slidesPerView: 4,  spaceBetween: 28 },
         768:  { slidesPerView: 6,  spaceBetween: 32 },
         1024: { slidesPerView: 10, spaceBetween: 36 },

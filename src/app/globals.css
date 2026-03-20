@@ -1,56 +1,57 @@
 /**
  * SINNES AUTOMOBILES — globals.css
+ * Design system — 10 tokens, zéro couleur hors palette.
  *
- * Tailwind v4 : configuration via @theme inline.
- * Variables CSS miroir exact des fichiers source WordPress :
- *   post-5.css (variables globales kit Elementor)
- *   style.css hello-elementor-enfant (child theme customisations)
- *
- * ⚠️  Pas de dark mode — identité visuelle fixe (fond blanc/noir).
+ * Palette brand :
+ *   Or        #EFAD42 / #D49436
+ *   Sombre    #0A0A0A / #1A1A1A
+ *   Blanc     #FFFFFF / #F0F3F7
+ *   Texte     #111111 / #6B7280
+ *   Urgence   #E53935 / #C62828
  */
 
 @import "tailwindcss";
 @config "../../tailwind.config.ts";
 
 /* ---------------------------------------------------------------------------
-   CUSTOM PROPERTIES — Design System Sinnes
+   TOKENS — Design System Sinnes (10 valeurs, pas une de plus)
    --------------------------------------------------------------------------- */
 
 :root {
-  /* Marque */
-  --color-accent: #efad42;
-  --color-accent-dark: #d49436;
-  --color-accent-alpha: rgba(239, 173, 66, 0.5);
-  --color-primary: #cc6119;
-  --color-secondary: #6c98e1;
-  --color-secondary-dark: #5a7db6;
-  --color-third: #232628;
-  --color-fourth: #153e4d;
+  /* Or brand */
+  --sinnes-or:           #EFAD42;
+  --sinnes-or-sombre:    #D49436;
 
-  /* Surfaces */
-  --color-bg-shade: #F0F3F7;
-  --color-bg-card: #ffffff;
-  --color-card-hover: #F1F5F9;
+  /* Fonds sombres */
+  --sinnes-noir:         #0A0A0A;
+  --sinnes-surface:      #1A1A1A;
+
+  /* Fonds clairs */
+  --sinnes-blanc:        #FFFFFF;
+  --sinnes-nuance:       #F0F3F7;
 
   /* Textes */
-  --color-text-main: #010101;
-  --color-text-muted: rgba(1, 1, 1, 0.5);
-  --color-card-title: #111827;
-  --color-card-border: rgba(17, 24, 39, 0.1);
+  --sinnes-texte:        #111111;
+  --sinnes-discret:      #6B7280;
 
-  /* Badges */
-  --color-sold-badge: #FC4E4E;
-  --color-cta-urgence: #e53935;
-
-  /* SVG Infographies Fast-Check */
-  --color-svg-noir: #0A0A0A;
-  --color-svg-noir-card: #1A1A1A;
-  --color-svg-jaune: #FFD700;
-  --color-svg-jaune-hover: #FFC107;
+  /* Urgence */
+  --sinnes-rouge:        #E53935;
+  --sinnes-rouge-sombre: #C62828;
 
   /* Layout */
-  --container-max: 1140px;
-  --header-height: 72px;
+  --container-max:  1140px;
+  --header-height:  72px;
+
+  /* Aliases CSS pour compatibilité (référencés dans les composants existants) */
+  --color-accent:        var(--sinnes-or);
+  --color-accent-dark:   var(--sinnes-or-sombre);
+  --color-cta-urgence:   var(--sinnes-rouge);
+  --color-text-main:     var(--sinnes-texte);
+  --color-bg-shade:      var(--sinnes-nuance);
+  --color-bg-card:       var(--sinnes-blanc);
+  --color-card-border:   rgba(17, 24, 39, 0.1);
+  --color-third:         var(--sinnes-texte);
+  --color-sold-badge:    var(--sinnes-rouge);
 }
 
 /* ---------------------------------------------------------------------------
@@ -67,24 +68,29 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  color: var(--color-text-main);
-  background-color: #ffffff;
+  color: var(--sinnes-texte);
+  background-color: var(--sinnes-blanc);
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* ---------------------------------------------------------------------------
    TYPOGRAPHIE DE BASE
-   Fallback avant injection des variables next/font depuis layout.tsx
    --------------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-playfair, "Playfair Display", Georgia, serif);
   font-weight: 700;
-  color: var(--color-third);
+  color: var(--sinnes-texte);
   line-height: 1.2;
 }
 
@@ -97,14 +103,64 @@ p, li, button, label, input, textarea {
    --------------------------------------------------------------------------- */
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--sinnes-or);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
+
+/* ---------------------------------------------------------------------------
+   PRICING CARDS — CSS custom properties héritées (cross-browser, zéro conflit)
+   Le parent .sinnes-card change les variables au hover → les enfants suivent
+   --------------------------------------------------------------------------- */
+
+.sinnes-card {
+  border: 1px solid #f3f4f6;
+  border-radius: 40px;
+  background: white;
+  --badge-bg: #1A1A1A;
+  --badge-shadow: none;
+  --btn-bg: transparent;
+  --btn-border: #1A1A1A;
+  --btn-color: #1A1A1A;
+  transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 320ms ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  isolation: isolate;
+}
+
+.sinnes-card:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.10);
+  --badge-bg: #EFAD42;
+  --badge-shadow: 0 10px 30px rgba(239, 173, 66, 0.40);
+  --btn-bg: #EFAD42;
+  --btn-border: #EFAD42;
+  --btn-color: #ffffff;
+}
+
+.sinnes-badge {
+  background-color: var(--badge-bg);
+  box-shadow: var(--badge-shadow);
+  transition: background-color 300ms ease, box-shadow 300ms ease;
+}
+
+.sinnes-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  color: var(--btn-color);
+  transition: background-color 300ms ease, border-color 300ms ease, color 300ms ease, box-shadow 300ms ease;
+}
+
+.sinnes-card:hover .sinnes-btn {
+  box-shadow: 0 4px 16px rgba(239, 173, 66, 0.35);
+}
+
 /* ---------------------------------------------------------------------------
    CONTAINER UTILITAIRE
-   max-width 1140px — extrait de --mvl-container-width dans post-5.css
    --------------------------------------------------------------------------- */
 
 .container-sinnes {
@@ -115,8 +171,7 @@ p, li, button, label, input, textarea {
 }
 
 /* ---------------------------------------------------------------------------
-   ANIMATIONS CSS — reproduisent les data-settings Elementor
-   fadeInDown, bounceIn, zoomIn, grow, pulse (index.html data-settings)
+   ANIMATIONS
    --------------------------------------------------------------------------- */
 
 @keyframes fade-in-down {
@@ -136,10 +191,6 @@ p, li, button, label, input, textarea {
   to   { opacity: 1; transform: scale(1); }
 }
 
-@keyframes cta-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 173, 66, 0.5); }
-  50%       { box-shadow: 0 0 0 10px rgba(239, 173, 66, 0); }
-}
 
 /* ---------------------------------------------------------------------------
    HEADER STICKY
@@ -151,24 +202,22 @@ p, li, button, label, input, textarea {
   left: 0;
   right: 0;
   height: var(--header-height);
-  background-color: #1a1a1a;
+  background-color: var(--sinnes-surface);
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
 }
 
 /* ---------------------------------------------------------------------------
-   BOUTON PRINCIPAL
-   Background #efad42, hover #d49436, translateY(-2px), Maven Pro 600
-   Source : style.css child theme
+   BOUTON ACCENT (doré)
    --------------------------------------------------------------------------- */
 
 .btn-accent {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-accent);
-  color: #ffffff;
+  background-color: var(--sinnes-or);
+  color: var(--sinnes-blanc);
   font-family: var(--font-maven, "Maven Pro", sans-serif);
   font-weight: 600;
   font-size: 1rem;
@@ -184,32 +233,33 @@ p, li, button, label, input, textarea {
 
 .btn-accent:hover,
 .btn-accent:focus-visible {
-  background-color: var(--color-accent-dark);
-  color: #1c1c1c;
+  background-color: var(--sinnes-or-sombre);
+  color: var(--sinnes-surface);
   transform: translateY(-2px);
 }
 
+/* ---------------------------------------------------------------------------
+   BOUTON URGENCE (rouge)
+   --------------------------------------------------------------------------- */
+
 .btn-urgence {
-  background-color: var(--color-cta-urgence);
-  color: #ffffff;
-  animation: cta-pulse 2s ease-in-out infinite;
+  background-color: var(--sinnes-rouge);
+  color: var(--sinnes-blanc);
 }
 
 .btn-urgence:hover,
 .btn-urgence:focus-visible {
-  background-color: #c62828;
-  color: #ffffff;
+  background-color: var(--sinnes-rouge-sombre);
+  color: var(--sinnes-blanc);
   transform: translateY(-2px);
 }
 
 /* ---------------------------------------------------------------------------
    CARD
-   border 1px #eee, radius 12px, hover translateY(-5px) + shadow
-   Source : style.css child theme
    --------------------------------------------------------------------------- */
 
 .card-sinnes {
-  background-color: var(--color-bg-card);
+  background-color: var(--sinnes-blanc);
   border: 1px solid var(--color-card-border);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -222,18 +272,25 @@ p, li, button, label, input, textarea {
 
 /* ---------------------------------------------------------------------------
    PRIX OVERLAY
-   Position absolute bottom-right, fond #efad42, Maven Pro 700 1.3rem
-   Source : style.css child theme
    --------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+   ÉTOILES D'AVIS — couleur uniforme jaune Google sur tout le site
+   --------------------------------------------------------------------------- */
+
+.star-or {
+  color: #FBBC04 !important; /* jaune officiel Google reviews */
+  display: inline;
+}
 
 .price-overlay {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background-color: var(--color-accent);
+  background-color: var(--sinnes-or);
   padding: 10px 16px;
   border-radius: 8px;
-  color: #ffffff;
+  color: var(--sinnes-blanc);
   font-family: var(--font-maven, "Maven Pro", sans-serif);
   font-weight: 700;
   font-size: 1.3rem;

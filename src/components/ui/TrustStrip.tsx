@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 
 // ---------------------------------------------------------------------------
@@ -217,14 +216,14 @@ export default function TrustStrip({
                   </span>
                   <div>
                     <p
-                      className="font-heading font-bold text-sm md:text-base leading-tight"
+                      className="font-heading font-bold text-sm md:text-base leading-tight break-words"
                       style={{ color: '#111111' }}
                     >
                       {item.label}
                     </p>
                     <p
-                      className="font-body text-xs md:text-sm leading-snug mt-0.5"
-                      style={{ color: '#888888' }}
+                      className="font-body text-xs md:text-sm leading-snug mt-0.5 break-words"
+                      style={{ color: '#6B7280' }}
                     >
                       {item.sublabel}
                     </p>

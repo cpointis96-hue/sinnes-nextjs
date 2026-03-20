@@ -51,16 +51,14 @@ export default function MobileMenu() {
       <nav
         id="mobile-menu"
         aria-label="Menu mobile"
-        className={`
-          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]
-          flex flex-col pt-20 pb-8 px-6
-          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]
-          transition-transform duration-300 ease-in-out
-          md:hidden
-          ${open ? 'translate-x-0' : 'translate-x-full'}
-        `}
+        className={`fixed top-0 right-0 h-full w-[280px] z-[1001] flex flex-col pt-20 pb-8 px-6 transition-transform duration-300 ease-in-out md:hidden ${open ? 'translate-x-0' : 'translate-x-full'}`}
+        style={{ 
+          backgroundColor: '#1A1A1A', 
+          boxShadow: '-4px 0 24px rgba(0,0,0,0.6)',
+          borderLeft: '1px solid rgba(255,255,255,0.1)'
+        }}
       >
-        <ul role="list" className="flex flex-col gap-1">
+        <ul role="list" className="flex flex-col gap-2">
           {NAV_ITEMS.map((item) => {
             const isActive = pathname === item.href
             return (
@@ -69,14 +67,18 @@ export default function MobileMenu() {
                   href={item.href}
                   aria-current={isActive ? 'page' : undefined}
                   onClick={() => setOpen(false)}
-                  className={`
-                    block px-4 py-3 rounded-btn font-body font-medium text-base
-                    transition-colors duration-150
-                    ${isActive
-                      ? 'bg-accent text-white'
-                      : 'text-white/85 hover:text-white hover:bg-white/10'
-                    }
-                  `}
+                  style={{
+                    display: 'block',
+                    padding: '12px 16px',
+                    borderRadius: '6px',
+                    fontFamily: 'var(--font-maven), sans-serif',
+                    fontWeight: 700,
+                    fontSize: '16px',
+                    textDecoration: 'none',
+                    transition: 'all 150ms ease',
+                    backgroundColor: isActive ? '#EFAD42' : 'transparent',
+                    color: isActive ? '#000000' : 'rgba(255,255,255,0.9)'
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -90,35 +92,16 @@ export default function MobileMenu() {
           <a
             href={`tel:${NAP.phoneTel}`}
             className="btn-accent btn-urgence w-full text-center block px-4 py-3 rounded-btn font-body font-semibold text-base"
+            style={{ backgroundColor: '#E53935', color: '#FFFFFF' }}
             aria-label={`Appeler Sinnes Automobiles au ${NAP.phoneDisplay}`}
           >
-            {NAP.phoneDisplay}
+            <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
           <p className="text-white/40 text-xs text-center mt-2 font-body">
             7j/7 · Intervention rapide
           </p>
         </div>
       </nav>
-
-      {/* CTA sticky bottom — mobile uniquement */}
-      <a
-        href={`tel:${NAP.phoneTel}`}
-        className="
-          fixed bottom-0 left-0 right-0 z-[998]
-          flex items-center justify-center gap-2
-          bg-[#e53935] text-white
-          font-body font-semibold text-base
-          h-14 min-h-[44px]
-          md:hidden
-          shadow-[0_-2px_10px_rgba(0,0,0,0.3)]
-        "
-        aria-label={`Appeler Sinnes Automobiles au ${NAP.phoneDisplay} — 7j/7`}
-      >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-        {NAP.phoneDisplay}
-      </a>
     </>
   )
 }

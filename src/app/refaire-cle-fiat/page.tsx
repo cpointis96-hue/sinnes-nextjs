@@ -1,18 +1,41 @@
+import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
 import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
-import FAQAccordion from './FAQAccordion'
+import FAQAccordion, { type FAQItem } from './FAQAccordion'
+import SingleReview from '@/components/ui/SingleReview'
+import { getReviewForPage } from '@/data/reviews'
+import { seoData } from '@/data/seoData'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 
 export const metadata: Metadata = {
-  title: 'Refaire une clé Fiat 500 à Nice — Double et programmation',
-  description: 'Reproduction clé Fiat à Nice : Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit — +33 6 75 54 04 11',
+  title: seoData['refaire-cle-fiat'].title,
+  description: seoData['refaire-cle-fiat'].description,
   alternates: { canonical: 'https://sinnes.fr/refaire-cle-fiat/' },
   openGraph: {
-    title: 'Refaire une clé Fiat à Nice — Sinnes Automobiles',
+    title: seoData['refaire-cle-fiat'].title,
     url: 'https://sinnes.fr/refaire-cle-fiat/',
   },
 }
+
+const FAQ_ITEMS: FAQItem[] = [
+  {
+    question: 'Peut-on doubler une clé Fiat 500 sans concessionnaire ?',
+    answer: 'Oui. La Fiat 500 (2007+) utilise un transpondeur ID46 — Sinouhé Rochereau peut réaliser la programmation directement avec valise ZedFull ou Abrites. Intervention possible à domicile à Nice et alentours.',
+  },
+  {
+    question: 'Combien coûte de refaire une clé Fiat ?',
+    answer: `À partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple Fiat (sans télécommande). À partir de ${PRICES.cleCentralisee.sinnes}€ pour une clé avec télécommande intégrée. Devis gratuit au +33 6 75 54 04 11.`,
+  },
+  {
+    question: 'Intervenez-vous sur les Fiat professionnelles (Ducato) ?',
+    answer: 'Oui. Le Fiat Ducato est l\'un des véhicules utilitaires les plus fréquents sur la Côte d\'Azur. Sinouhé Rochereau intervient sur toutes les générations, clé simple ou avec télécommande.',
+  },
+  {
+    question: 'Peut-on refaire une clé Fiat à domicile ?',
+    answer: 'Oui. Sinnes Automobiles intervient à votre domicile à Nice, Antibes, Cagnes-sur-Mer et Cannes. Pas besoin de vous déplacer.',
+  },
+]
 
 const schema = {
   '@context': 'https://schema.org',
@@ -33,39 +56,25 @@ const schema = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        { '@type': 'ListItem', position: 2, name: 'Refaire clé Fiat', item: 'https://sinnes.fr/refaire-cle-fiat/' },
+        { '@type': 'ListItem', position: 2, name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
+        { '@type': 'ListItem', position: 3, name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
+        { '@type': 'ListItem', position: 4, name: 'Refaire clé Fiat', item: 'https://sinnes.fr/refaire-cle-fiat/' },
       ],
     },
     {
       '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Peut-on doubler une clé Fiat 500 sans concessionnaire ?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Oui. La Fiat 500 (2007+) utilise un transpondeur ID46 — Sinouhé Rochereau peut réaliser la programmation directement avec valise ZedFull ou Abrites. Intervention possible à domicile à Nice et alentours.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Combien coûte de refaire une clé Fiat ?',
-          acceptedAnswer: { '@type': 'Answer', text: `À partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple Fiat (sans télécommande). À partir de ${PRICES.cleCentralisee.sinnes}€ pour une clé avec télécommande intégrée. Devis gratuit au +33 6 75 54 04 11.` },
-        },
-        {
-          '@type': 'Question',
-          name: 'Intervenez-vous sur les Fiat professionnelles (Ducato) ?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Oui. Le Fiat Ducato est l\'un des véhicules utilitaires les plus fréquents sur la Côte d\'Azur. Sinouhé Rochereau intervient sur toutes les générations, clé simple ou avec télécommande.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Peut-on refaire une clé Fiat à domicile ?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Oui. Sinnes Automobiles intervient à votre domicile à Nice, Antibes, Cagnes-sur-Mer et Cannes. Pas besoin de vous déplacer.' },
-        },
-      ],
+      mainEntity: FAQ_ITEMS.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
     },
     {
       '@type': 'Person',
       '@id': 'https://sinnes.fr/#sinouhe',
       name: 'Sinouhé Rochereau',
       jobTitle: 'Expert en programmation de clés automobiles',
+      knowsAbout: TEAM.sinouhe.knowsAbout,
       worksFor: { '@id': 'https://sinnes.fr/#organization' },
     },
   ],
@@ -85,6 +94,8 @@ const TRUST_ITEMS: TrustStripItem[] = [
   { icon: <IconWrench />, label: 'Fiat ID46', sublabel: 'Valise Abrites + ZedFull' },
   { icon: <IconShield />, label: 'Garantie constructeur', sublabel: 'Méthode non-invasive' },
 ]
+
+const review = getReviewForPage('/refaire-cle-fiat/')
 
 export default function RefaireCleFiatPage() {
   return (
@@ -106,41 +117,43 @@ export default function RefaireCleFiatPage() {
       <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
-            <span className="text-[#FFD700] text-lg">★★★★★</span>
-            <span className="font-body text-sm font-semibold" style={{ color: '#FFFFFF' }}>57 avis Google · 5.0/5</span>
+            <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
+            <span className="font-body text-sm font-semibold" style={{ color: '#FFFFFF' }}>58 avis Google · 5.0/5</span>
           </div>
 
-          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            Refaire une clé Fiat à Nice — Fiat 500, Panda et toute la gamme
+          <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 break-words" style={{ color: '#FFFFFF' }}>
+            {seoData['refaire-cle-fiat'].h1} :<br />Fiat 500, Panda et toute la gamme
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Vous avez besoin de refaire ou doubler une clé Fiat à Nice ? Sinnes Automobiles intervient sur
             tous les modèles Fiat : 500, Panda, Tipo, Bravo et Ducato professionnel. Sinouhé Rochereau
             maîtrise la programmation du transpondeur ID46 via valise ZedFull ou Abrites. À partir
-            de {PRICES.cleSimple.sinnes}€, devis gratuit.
+            de {PRICES.cleSimple.sinnes}€, devis gratuit,
+            appelez le <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>.
           </p>
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 font-body font-bold text-xl px-8 py-4 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity mb-8"
-            style={{ background: '#FFD700', color: '#0A0A0A' }}
+            className="inline-flex items-center gap-3 font-body font-bold text-lg sm:text-xl px-6 sm:px-8 py-4 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity mb-8"
+            style={{ background: '#EFAD42', color: '#0A0A0A' }}
           >
-            Devis gratuit — {NAP.phoneDisplay}
+            Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
 
-          <p className="text-sm border-l-4 border-[#FFD700] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
-            Intervention par <strong style={{ color: '#FFFFFF' }}>{TEAM.sinouhe.name}</strong> —
+          <p className="text-sm border-l-4 border-[#EFAD42] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            Intervention par <strong style={{ color: '#FFFFFF' }}>{TEAM.sinouhe.name}</strong> ·
             Expert automobile, formateur international Incarline. Commissaire au Grand Prix de Monaco depuis 2016.
           </p>
         </div>
       </section>
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-refaire-cle-fiat" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* PROCESS STEPS */}
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center" style={{ color: '#111111' }}>
-            Comment fonctionne la reproduction de clé Fiat ?
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center break-words" style={{ color: '#111111' }}>
+            {seoData['refaire-cle-fiat'].h2[0]}
           </h2>
           <ProcessSteps steps={steps} theme="light" />
         </div>
@@ -149,11 +162,15 @@ export default function RefaireCleFiatPage() {
       {/* TRUST STRIP */}
       <TrustStrip theme="shade" items={TRUST_ITEMS} />
 
+      {/* AVIS GOOGLE RÉEL */}
+      {review && <SingleReview review={review} serviceName="Refaire clé Fiat" serviceUrl="/refaire-cle-fiat/" />}
+
+
       {/* H2 BLOC 1 — dark */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-            Clé Fiat : modèles couverts à Nice
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+            {seoData['refaire-cle-fiat'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Sinnes Automobiles intervient sur l'ensemble de la gamme Fiat distribuée en France :
@@ -168,7 +185,7 @@ export default function RefaireCleFiatPage() {
           </p>
           <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Pour réaliser un{' '}
-            <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>
+            <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
               double de clé Fiat
             </a>{' '}
             dans les meilleures conditions, il est essentiel d'identifier le modèle exact et l'année
@@ -180,39 +197,39 @@ export default function RefaireCleFiatPage() {
       {/* H2 BLOC 2 — light */}
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#111111' }}>
-            Transpondeur ID46 Fiat — clonage ou programmation ?
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#111111' }}>
+            {seoData['refaire-cle-fiat'].h2[2]}
           </h2>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             La majorité des Fiat modernes (depuis 2007) utilise le transpondeur{' '}
             <strong style={{ color: '#111111' }}>ID46</strong>. Ce composant est intégré à la clé et
             communique avec l'immobiliseur du véhicule pour autoriser le démarrage. Son fonctionnement
             diffère selon les générations :
           </p>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             Sur les <strong style={{ color: '#111111' }}>modèles antérieurs à 2008</strong> (Fiat Grande
             Punto première série, Doblo première génération) : certains transpondeurs peuvent être
             clonés directement par machine ZedFull. C'est la méthode la plus rapide.
           </p>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
-            Sur les <strong style={{ color: '#111111' }}>modèles 2008 et plus récents</strong> — dont la
-            Fiat 500 (2007+) qui reste l'un des véhicules les plus fréquents de la Côte d'Azur — l'ID46
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
+            Sur les <strong style={{ color: '#111111' }}>modèles 2008 et plus récents</strong>, dont la
+            Fiat 500 (2007+) qui reste l'un des véhicules les plus fréquents de la Côte d'Azur : l'ID46
             est en version cryptée. Un simple clonage est impossible : la programmation OBD via valise
             Abrites est obligatoire. Sinouhé Rochereau maîtrise cette procédure pour toutes les variantes.
           </p>
-          <p className="font-body leading-relaxed mb-4" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             Cas particulier : le <strong style={{ color: '#111111' }}>Fiat Ducato professionnel</strong>.
             C'est l'un des utilitaires les plus répandus sur les chantiers de la Côte d'Azur. Sinnes
             intervient sur toutes les générations de Ducato, que la clé soit simple ou dotée d'une
             télécommande de centralisation. La présence du système Blue&Me sur certaines variantes
             n'affecte pas la programmation de la clé.
           </p>
-          <p className="font-body leading-relaxed mb-8" style={{ color: '#374151' }}>
+          <p className="font-body leading-relaxed mb-8" style={{ color: '#111111' }}>
             Pour un devis précis adapté à votre modèle Fiat, consultez notre grille{' '}
             <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>
               tarif clé Fiat
             </a>{' '}
-            ou appelez directement le {NAP.phoneDisplay}.
+            ou appelez directement le <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>.
           </p>
         </div>
       </section>
@@ -220,79 +237,72 @@ export default function RefaireCleFiatPage() {
       {/* H2 BLOC 3 — dark (table dark + blockquote) */}
       <section style={{ background: '#111111' }} className="py-16 px-4">
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-            Tarif clé Fiat — à partir de {PRICES.cleSimple.sinnes}€
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 break-words" style={{ color: '#FFFFFF' }}>
+            {seoData['refaire-cle-fiat'].h2[3]}
           </h2>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm font-body border-collapse">
               <thead>
                 <tr style={{ background: '#1A1A1A' }}>
-                  <th className="px-4 py-3 text-left" style={{ color: '#FFD700' }}>Type de clé Fiat</th>
-                  <th className="px-4 py-3 text-right" style={{ color: '#FFD700' }}>Sinnes</th>
+                  <th className="px-4 py-3 text-left" style={{ color: '#EFAD42' }}>Type de clé Fiat</th>
+                  <th className="px-4 py-3 text-right" style={{ color: '#EFAD42' }}>Sinnes</th>
                   <th className="px-4 py-3 text-right" style={{ color: 'rgba(255,255,255,0.5)' }}>Concessionnaire</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style={{ background: '#111111', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                   <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.8)' }}>Clé simple sans télécommande (Tipo, Punto)</td>
-                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#FFD700' }}>à partir de {PRICES.cleSimple.sinnes}€</td>
+                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#EFAD42' }}>à partir de {PRICES.cleSimple.sinnes}€</td>
                   <td className="px-4 py-3 text-right" style={{ color: 'rgba(255,255,255,0.4)' }}>{PRICES.cleSimple.concessionnaire.min}–{PRICES.cleSimple.concessionnaire.max}€</td>
                 </tr>
-                <tr style={{ background: '#0D0D0D', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                <tr style={{ background: '#0A0A0A', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
                   <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.8)' }}>Clé avec télécommande intégrée (500, Panda 3e gen)</td>
-                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#FFD700' }}>à partir de {PRICES.cleCentralisee.sinnes}€</td>
+                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#EFAD42' }}>à partir de {PRICES.cleCentralisee.sinnes}€</td>
                   <td className="px-4 py-3 text-right" style={{ color: 'rgba(255,255,255,0.4)' }}>{PRICES.cleCentralisee.concessionnaire.min}–{PRICES.cleCentralisee.concessionnaire.max}€</td>
                 </tr>
                 <tr style={{ background: '#111111', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.8)' }}>Fiat 500e (électrique) — Smart Key</td>
-                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#FFD700' }}>devis personnalisé</td>
+                  <td className="px-4 py-3" style={{ color: 'rgba(255,255,255,0.8)' }}>Fiat 500e (électrique) · Smart Key</td>
+                  <td className="px-4 py-3 text-right font-bold" style={{ color: '#EFAD42' }}>devis personnalisé</td>
                   <td className="px-4 py-3 text-right" style={{ color: 'rgba(255,255,255,0.4)' }}>sur RDV</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <blockquote className="border-l-4 border-[#FFD700] pl-4 italic my-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            <p>"Ma Fiat 500 est de 2011, le concessionnaire ne voulait plus faire la clé. Sinouhé l'a
-            refaite en moins d'une heure à mon domicile à Antibes. Impeccable."</p>
-            <footer className="text-sm mt-2 not-italic" style={{ color: 'rgba(255,255,255,0.5)' }}>
-              — <strong style={{ color: '#FFFFFF' }}>Sophie M.</strong>, avis Google · Novembre 2025
-            </footer>
-          </blockquote>
-
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
             Vous avez un véhicule du groupe VAG ? Découvrez aussi notre page pour{' '}
-            <a href="/refaire-cle-audi/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>refaire une clé Audi</a> à Nice.
+            <a href="/refaire-cle-audi/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Audi</a> à Nice.
           </p>
         </div>
       </section>
 
       {/* CTA MILIEU */}
-      <section className="py-16 text-center px-4" style={{ background: '#FFD700' }}>
+      <section className="py-16 text-center px-4" style={{ background: '#EFAD42' }}>
         <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4" style={{ color: '#0A0A0A' }}>
-            Refaites votre clé Fiat maintenant
+          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4 break-words" style={{ color: '#0A0A0A' }}>
+            {seoData['refaire-cle-fiat'].h2[4]}
           </h2>
           <p className="font-body text-xl mb-8" style={{ color: 'rgba(0,0,0,0.7)' }}>
             Devis gratuit · Intervention 7j/7 · Nice et Côte d'Azur
           </p>
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-block font-body font-bold text-2xl px-12 py-5 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity shadow-lg"
-            style={{ background: '#0A0A0A', color: '#FFD700' }}
+            className="inline-block font-body font-bold text-xl sm:text-2xl px-10 sm:px-12 py-5 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity shadow-lg"
+            style={{ background: '#0A0A0A', color: '#EFAD42' }}
           >
-            {NAP.phoneDisplay}
+            <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
         </div>
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F9FAFB' }} className="py-16 px-4">
+
+      <section style={{ background: '#F0F3F7' }} className="py-16 px-4">
+
         <div className="container-sinnes max-w-3xl">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text">
-            Questions fréquentes — Clé Fiat
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text break-words">
+            {seoData['refaire-cle-fiat'].h2[5]}
           </h2>
-          <FAQAccordion />
+          <FAQAccordion items={FAQ_ITEMS} />
         </div>
       </section>
 
@@ -301,22 +311,13 @@ export default function RefaireCleFiatPage() {
         <a
           href={`tel:${NAP.phoneTel}`}
           className="inline-flex items-center gap-3 font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity"
-          style={{ background: '#FFD700', color: '#0A0A0A' }}
+          style={{ background: '#EFAD42', color: '#0A0A0A' }}
         >
-          Appelez maintenant — {NAP.phoneDisplay}
+          Appelez maintenant : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
         </a>
-        <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>
+        <p className="text-sm text-text-muted mt-3">7j/7 · Intervention rapide</p>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden pb-safe">
-        <a
-          href={`tel:${NAP.phoneTel}`}
-          className="flex items-center justify-center w-full font-body font-bold text-lg py-4 min-h-[56px]"
-          style={{ background: '#FFD700', color: '#0A0A0A' }}
-        >
-          Devis gratuit — {NAP.phoneDisplay}
-        </a>
-      </div>
     </>
   )
 }

@@ -6,80 +6,80 @@
   <rect width="1200" height="400" fill="#0A0A0A"/>
 
   <!-- ═══ ÉTAPE 1 ═══ -->
-  <rect x="20" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
+  <rect x="20" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
   <!-- Numéro -->
-  <circle cx="72" cy="80" r="22" fill="#FFD700"/>
+  <circle cx="72" cy="80" r="22" fill="#EFAD42"/>
   <text x="72" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">1</text>
   <!-- Icône clé + interrogation -->
-  <text x="147" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#FFD700">🔑</text>
+  <text x="147" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#EFAD42">🔑</text>
   <!-- Titre -->
   <text x="147" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Votre besoin</text>
   <!-- Ligne déco -->
-  <rect x="107" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="107" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <!-- Texte -->
   <text x="147" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Perte de clé,</text>
   <text x="147" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">double préventif</text>
   <text x="147" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">ou clé endommagée</text>
   <!-- Tag -->
-  <rect x="62" y="300" width="170" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="147" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">Diagnostic gratuit</text>
+  <rect x="62" y="300" width="170" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="147" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">Diagnostic gratuit</text>
 
   <!-- ═══ FLÈCHE 1→2 ═══ -->
   <g>
-    <line x1="290" y1="200" x2="320" y2="200" stroke="#FFD700" stroke-width="2"/>
-    <polygon points="320,193 335,200 320,207" fill="#FFD700"/>
+    <line x1="290" y1="200" x2="320" y2="200" stroke="#EFAD42" stroke-width="2"/>
+    <polygon points="320,193 335,200 320,207" fill="#EFAD42"/>
   </g>
 
   <!-- ═══ ÉTAPE 2 ═══ -->
-  <rect x="348" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="400" cy="80" r="22" fill="#FFD700"/>
+  <rect x="348" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="400" cy="80" r="22" fill="#EFAD42"/>
   <text x="400" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">2</text>
-  <text x="475" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#FFD700">📍</text>
+  <text x="475" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#EFAD42">📍</text>
   <text x="475" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Notre intervention</text>
-  <rect x="435" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="435" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="475" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Mobile à Nice</text>
   <text x="475" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">ou atelier —</text>
   <text x="475" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">diagnostic sur place</text>
-  <rect x="390" y="300" width="170" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="475" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">Nice · Antibes · Cannes</text>
+  <rect x="390" y="300" width="170" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="475" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">Nice · Antibes · Cannes</text>
 
   <!-- ═══ FLÈCHE 2→3 ═══ -->
   <g>
-    <line x1="618" y1="200" x2="648" y2="200" stroke="#FFD700" stroke-width="2"/>
-    <polygon points="648,193 663,200 648,207" fill="#FFD700"/>
+    <line x1="618" y1="200" x2="648" y2="200" stroke="#EFAD42" stroke-width="2"/>
+    <polygon points="648,193 663,200 648,207" fill="#EFAD42"/>
   </g>
 
   <!-- ═══ ÉTAPE 3 ═══ -->
-  <rect x="676" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="728" cy="80" r="22" fill="#FFD700"/>
+  <rect x="676" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="728" cy="80" r="22" fill="#EFAD42"/>
   <text x="728" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">3</text>
-  <text x="803" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#FFD700">⚡</text>
+  <text x="803" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#EFAD42">⚡</text>
   <text x="803" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Notre méthode</text>
-  <rect x="763" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="763" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="803" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Taille laser +</text>
   <text x="803" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">programmation</text>
   <text x="803" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">puce transpondeur</text>
-  <rect x="718" y="300" width="170" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="803" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">Abrites · ZedFull · RFID</text>
+  <rect x="718" y="300" width="170" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="803" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">Abrites · ZedFull · RFID</text>
 
   <!-- ═══ FLÈCHE 3→4 ═══ -->
   <g>
-    <line x1="946" y1="200" x2="976" y2="200" stroke="#FFD700" stroke-width="2"/>
-    <polygon points="976,193 991,200 976,207" fill="#FFD700"/>
+    <line x1="946" y1="200" x2="976" y2="200" stroke="#EFAD42" stroke-width="2"/>
+    <polygon points="976,193 991,200 976,207" fill="#EFAD42"/>
   </g>
 
   <!-- ═══ ÉTAPE 4 ═══ -->
-  <rect x="1004" y="30" width="176" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1.5"/>
-  <circle cx="1050" cy="80" r="22" fill="#FFD700"/>
+  <rect x="1004" y="30" width="176" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1.5"/>
+  <circle cx="1050" cy="80" r="22" fill="#EFAD42"/>
   <text x="1050" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">4</text>
-  <text x="1092" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#FFD700">✅</text>
+  <text x="1092" y="92" font-family="system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#EFAD42">✅</text>
   <text x="1092" y="140" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">Votre</text>
   <text x="1092" y="162" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">solution</text>
-  <rect x="1052" y="172" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="1052" y="172" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="1092" y="205" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">Repartez avec</text>
   <text x="1092" y="223" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">votre clé —</text>
   <text x="1092" y="241" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">garantie</text>
   <text x="1092" y="259" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">préservée</text>
-  <rect x="1022" y="300" width="140" height="32" rx="6" fill="#FFD700"/>
+  <rect x="1022" y="300" width="140" height="32" rx="6" fill="#EFAD42"/>
   <text x="1092" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#0A0A0A" text-anchor="middle" font-weight="700">7j/7 · Devis gratuit</text>
 </svg>

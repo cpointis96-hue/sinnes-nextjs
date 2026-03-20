@@ -1,0 +1,760 @@
+
+Running 13 tests using 2 workers
+
+[OVERFLOW] Page /reproduction-cle-voiture/ overflows! scrollWidth: 331. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   2 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /reproduction-cle-voiture/ - Mobile SE (320px) checks (1.2s)
+[OVERFLOW] Page / overflows! scrollWidth: 331. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    bg-accent text-white\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   1 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page / - Mobile SE (320px) checks (1.4s)
+[OVERFLOW] Page /double-cle-voiture/ overflows! scrollWidth: 341. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   3 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /double-cle-voiture/ - Mobile SE (320px) checks (826ms)
+[OVERFLOW] Page /cle-voiture-perdue/ overflows! scrollWidth: 331. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   4 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /cle-voiture-perdue/ - Mobile SE (320px) checks (858ms)
+[OVERFLOW] Page /programmation-cle-voiture/ overflows! scrollWidth: 341. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   5 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /programmation-cle-voiture/ - Mobile SE (320px) checks (981ms)
+[OVERFLOW] Page /refaire-cle-audi/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   6 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-audi/ - Mobile SE (320px) checks (1.0s)
+[OVERFLOW] Page /refaire-cle-fiat/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   7 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-fiat/ - Mobile SE (320px) checks (823ms)
+[OVERFLOW] Page /refaire-cle-hyundai/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   8 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-hyundai/ - Mobile SE (320px) checks (822ms)
+[OVERFLOW] Page /refaire-cle-mercedes/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘   9 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-mercedes/ - Mobile SE (320px) checks (798ms)
+[OVERFLOW] Page /refaire-cle-renault/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘  10 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-renault/ - Mobile SE (320px) checks (830ms)
+[OVERFLOW] Page /refaire-cle-toyota/ overflows! scrollWidth: 343. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘  11 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-toyota/ - Mobile SE (320px) checks (868ms)
+[OVERFLOW] Page /serrurier-automobile-nice/ overflows! scrollWidth: 331. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘  12 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /serrurier-automobile-nice/ - Mobile SE (320px) checks (833ms)
+[OVERFLOW] Page /tarif-cle-voiture/ overflows! scrollWidth: 331. Elements: [
+  {
+    tag: [32m'NAV'[39m,
+    id: [32m'mobile-menu'[39m,
+    className: [32m'\n'[39m +
+      [32m'          fixed top-0 right-0 h-full w-[280px] bg-[#1a1a1a] z-[1001]\n'[39m +
+      [32m'          flex flex-col pt-20 pb-8 px-6\n'[39m +
+      [32m'          shadow-[-4px_0_24px_rgba(0,0,0,0.4)]\n'[39m +
+      [32m'          transition-transform duration-300 ease-in-out\n'[39m +
+      [32m'          md:hidden\n'[39m +
+      [32m'          translate-x-full\n'[39m +
+      [32m'        '[39m,
+    right: [33m600[39m,
+    width: [33m280[39m
+  },
+  {
+    tag: [32m'UL'[39m,
+    id: [32m''[39m,
+    className: [32m'flex flex-col gap-1'[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m },
+  {
+    tag: [32m'A'[39m,
+    id: [32m''[39m,
+    className: [32m'\n'[39m +
+      [32m'                    block px-4 py-3 rounded-btn font-body font-medium text-base\n'[39m +
+      [32m'                    transition-colors duration-150\n'[39m +
+      [32m'                    text-white/85 hover:text-white hover:bg-white/10\n'[39m +
+      [32m'                  '[39m,
+    right: [33m576[39m,
+    width: [33m232[39m
+  },
+  { tag: [32m'LI'[39m, id: [32m''[39m, className: [32m''[39m, right: [33m576[39m, width: [33m232[39m }
+]
+  ✘  13 [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /tarif-cle-voiture/ - Mobile SE (320px) checks (798ms)
+
+
+  1) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page / - Mobile SE (320px) checks 
+
+    Error: Page / has horizontal overflow at 320px. scrollWidth: 331
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-2f331-ge---Mobile-SE-320px-checks-chromium/error-context.md
+
+  2) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /reproduction-cle-voiture/ - Mobile SE (320px) checks 
+
+    Error: Page /reproduction-cle-voiture/ has horizontal overflow at 320px. scrollWidth: 331
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-cad19-re---Mobile-SE-320px-checks-chromium/error-context.md
+
+  3) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /double-cle-voiture/ - Mobile SE (320px) checks 
+
+    Error: Page /double-cle-voiture/ has horizontal overflow at 320px. scrollWidth: 341
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-2cf26-re---Mobile-SE-320px-checks-chromium/error-context.md
+
+  4) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /cle-voiture-perdue/ - Mobile SE (320px) checks 
+
+    Error: Page /cle-voiture-perdue/ has horizontal overflow at 320px. scrollWidth: 331
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-25e37-ue---Mobile-SE-320px-checks-chromium/error-context.md
+
+  5) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /programmation-cle-voiture/ - Mobile SE (320px) checks 
+
+    Error: Page /programmation-cle-voiture/ has horizontal overflow at 320px. scrollWidth: 341
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-757b3-re---Mobile-SE-320px-checks-chromium/error-context.md
+
+  6) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-audi/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-audi/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-66b82-di---Mobile-SE-320px-checks-chromium/error-context.md
+
+  7) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-fiat/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-fiat/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-4995f-at---Mobile-SE-320px-checks-chromium/error-context.md
+
+  8) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-hyundai/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-hyundai/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-9303a-ai---Mobile-SE-320px-checks-chromium/error-context.md
+
+  9) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-mercedes/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-mercedes/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-ddc08-es---Mobile-SE-320px-checks-chromium/error-context.md
+
+  10) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-renault/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-renault/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-b836b-lt---Mobile-SE-320px-checks-chromium/error-context.md
+
+  11) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-toyota/ - Mobile SE (320px) checks 
+
+    Error: Page /refaire-cle-toyota/ has horizontal overflow at 320px. scrollWidth: 343
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-8a3c5-ta---Mobile-SE-320px-checks-chromium/error-context.md
+
+  12) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /serrurier-automobile-nice/ - Mobile SE (320px) checks 
+
+    Error: Page /serrurier-automobile-nice/ has horizontal overflow at 320px. scrollWidth: 331
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-02576-ce---Mobile-SE-320px-checks-chromium/error-context.md
+
+  13) [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /tarif-cle-voiture/ - Mobile SE (320px) checks 
+
+    Error: Page /tarif-cle-voiture/ has horizontal overflow at 320px. scrollWidth: 331
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      55 |         console.log(`[OVERFLOW] Page ${url} overflows! scrollWidth: ${overflowData.scrollWidth}. Elements:`, overflowData.overflowingElements);
+      56 |       }
+    > 57 |       expect(overflowData.hasOverflow, `Page ${url} has horizontal overflow at 320px. scrollWidth: ${overflowData.scrollWidth}`).toBe(false);
+         |                                                                                                                                  ^
+      58 |
+      59 |       // 2. Verify all phone numbers are wrapped in whitespace-nowrap and visible
+      60 |       // We look for spans that contain parts of the phone number
+        at /Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs/e2e/mobile-ux.spec.ts:57:130
+
+    Error Context: test-results/mobile-ux-Mobile-UX-Verifi-8f310-re---Mobile-SE-320px-checks-chromium/error-context.md
+
+  13 failed
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page / - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /reproduction-cle-voiture/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /double-cle-voiture/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /cle-voiture-perdue/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /programmation-cle-voiture/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-audi/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-fiat/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-hyundai/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-mercedes/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-renault/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /refaire-cle-toyota/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /serrurier-automobile-nice/ - Mobile SE (320px) checks 
+    [chromium] › e2e/mobile-ux.spec.ts:21:5 › Mobile UX Verification › Page /tarif-cle-voiture/ - Mobile SE (320px) checks 

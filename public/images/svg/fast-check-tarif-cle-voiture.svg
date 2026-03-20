@@ -6,87 +6,87 @@
   <rect width="1200" height="400" fill="#0A0A0A"/>
 
   <!-- ═══ ÉTAPE 1 ═══ -->
-  <rect x="20" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="72" cy="80" r="22" fill="#FFD700"/>
+  <rect x="20" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="72" cy="80" r="22" fill="#EFAD42"/>
   <text x="72" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">1</text>
   <!-- Icône clé (SVG path) -->
   <g transform="translate(124, 58)">
-    <circle cx="12" cy="17" r="6" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <line x1="16.5" y1="13" x2="28" y2="5" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
-    <line x1="24" y1="8" x2="27" y2="11" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="17" r="6" fill="none" stroke="#EFAD42" stroke-width="2"/>
+    <line x1="16.5" y1="13" x2="28" y2="5" stroke="#EFAD42" stroke-width="2" stroke-linecap="round"/>
+    <line x1="24" y1="8" x2="27" y2="11" stroke="#EFAD42" stroke-width="2" stroke-linecap="round"/>
   </g>
   <text x="147" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Type de clé</text>
-  <rect x="107" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="107" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="147" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Simple · Centralisée</text>
   <text x="147" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Mains libres</text>
   <text x="147" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Perte totale</text>
-  <rect x="52" y="300" width="190" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="147" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">4 types de clé automobile</text>
+  <rect x="52" y="300" width="190" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="147" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">4 types de clé automobile</text>
 
   <!-- ═══ FLÈCHE 1→2 ═══ -->
-  <line x1="290" y1="200" x2="320" y2="200" stroke="#FFD700" stroke-width="2"/>
-  <polygon points="320,193 335,200 320,207" fill="#FFD700"/>
+  <line x1="290" y1="200" x2="320" y2="200" stroke="#EFAD42" stroke-width="2"/>
+  <polygon points="320,193 335,200 320,207" fill="#EFAD42"/>
 
   <!-- ═══ ÉTAPE 2 ═══ -->
-  <rect x="348" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="400" cy="80" r="22" fill="#FFD700"/>
+  <rect x="348" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="400" cy="80" r="22" fill="#EFAD42"/>
   <text x="400" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">2</text>
   <!-- Icône téléphone/bulle -->
   <g transform="translate(452, 56)">
-    <rect x="0" y="0" width="28" height="22" rx="4" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <line x1="7" y1="22" x2="4" y2="28" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
-    <line x1="4" y1="7" x2="24" y2="7" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="4" y1="12" x2="20" y2="12" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="0" y="0" width="28" height="22" rx="4" fill="none" stroke="#EFAD42" stroke-width="2"/>
+    <line x1="7" y1="22" x2="4" y2="28" stroke="#EFAD42" stroke-width="2" stroke-linecap="round"/>
+    <line x1="4" y1="7" x2="24" y2="7" stroke="#EFAD42" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="12" x2="20" y2="12" stroke="#EFAD42" stroke-width="1.5" stroke-linecap="round"/>
   </g>
   <text x="475" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Devis gratuit</text>
-  <rect x="435" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="435" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="475" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Sans engagement</text>
   <text x="475" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Réponse immédiate</text>
   <text x="475" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">par téléphone</text>
-  <rect x="375" y="300" width="200" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="475" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">Tarif ferme en 2 minutes</text>
+  <rect x="375" y="300" width="200" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="475" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">Tarif ferme en 2 minutes</text>
 
   <!-- ═══ FLÈCHE 2→3 ═══ -->
-  <line x1="618" y1="200" x2="648" y2="200" stroke="#FFD700" stroke-width="2"/>
-  <polygon points="648,193 663,200 648,207" fill="#FFD700"/>
+  <line x1="618" y1="200" x2="648" y2="200" stroke="#EFAD42" stroke-width="2"/>
+  <polygon points="648,193 663,200 648,207" fill="#EFAD42"/>
 
   <!-- ═══ ÉTAPE 3 ═══ -->
-  <rect x="676" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="728" cy="80" r="22" fill="#FFD700"/>
+  <rect x="676" y="30" width="255" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.25"/>
+  <circle cx="728" cy="80" r="22" fill="#EFAD42"/>
   <text x="728" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">3</text>
   <!-- Icône localisation -->
   <g transform="translate(778, 54)">
-    <path d="M14 2C9.6 2 6 5.6 6 10c0 6.5 8 16 8 16s8-9.5 8-16c0-4.4-3.6-8-8-8z" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <circle cx="14" cy="10" r="3" fill="#FFD700"/>
+    <path d="M14 2C9.6 2 6 5.6 6 10c0 6.5 8 16 8 16s8-9.5 8-16c0-4.4-3.6-8-8-8z" fill="none" stroke="#EFAD42" stroke-width="2"/>
+    <circle cx="14" cy="10" r="3" fill="#EFAD42"/>
   </g>
   <text x="803" y="145" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Intervention</text>
-  <rect x="763" y="155" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="763" y="155" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="803" y="190" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Nice · Antibes</text>
   <text x="803" y="210" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">Cagnes · Cannes</text>
   <text x="803" y="230" font-family="system-ui, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle">7j/7 à domicile</text>
-  <rect x="708" y="300" width="190" height="32" rx="6" fill="#FFD700" fill-opacity="0.12" stroke="#FFD700" stroke-width="1" stroke-opacity="0.4"/>
-  <text x="803" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#FFD700" text-anchor="middle" font-weight="600">Atelier ou déplacement</text>
+  <rect x="708" y="300" width="190" height="32" rx="6" fill="#EFAD42" fill-opacity="0.12" stroke="#EFAD42" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="803" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#EFAD42" text-anchor="middle" font-weight="600">Atelier ou déplacement</text>
 
   <!-- ═══ FLÈCHE 3→4 ═══ -->
-  <line x1="946" y1="200" x2="976" y2="200" stroke="#FFD700" stroke-width="2"/>
-  <polygon points="976,193 991,200 976,207" fill="#FFD700"/>
+  <line x1="946" y1="200" x2="976" y2="200" stroke="#EFAD42" stroke-width="2"/>
+  <polygon points="976,193 991,200 976,207" fill="#EFAD42"/>
 
   <!-- ═══ ÉTAPE 4 ═══ -->
-  <rect x="1004" y="30" width="176" height="340" rx="8" fill="#1A1A1A" stroke="#FFD700" stroke-width="1.5"/>
-  <circle cx="1050" cy="80" r="22" fill="#FFD700"/>
+  <rect x="1004" y="30" width="176" height="340" rx="8" fill="#1A1A1A" stroke="#EFAD42" stroke-width="1.5"/>
+  <circle cx="1050" cy="80" r="22" fill="#EFAD42"/>
   <text x="1050" y="86" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#0A0A0A" text-anchor="middle">4</text>
   <!-- Icône check dans cercle -->
   <g transform="translate(1063, 55)">
-    <circle cx="14" cy="14" r="12" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <path d="M8 14l4 4 7-8" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="14" cy="14" r="12" fill="none" stroke="#EFAD42" stroke-width="2"/>
+    <path d="M8 14l4 4 7-8" fill="none" stroke="#EFAD42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="1092" y="140" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">Facture</text>
   <text x="1092" y="162" font-family="system-ui, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">transparente</text>
-  <rect x="1052" y="172" width="80" height="2" rx="1" fill="#FFD700"/>
+  <rect x="1052" y="172" width="80" height="2" rx="1" fill="#EFAD42"/>
   <text x="1092" y="205" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">Prix annoncé</text>
   <text x="1092" y="223" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">= prix payé</text>
   <text x="1092" y="241" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">Aucun frais</text>
   <text x="1092" y="259" font-family="system-ui, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">caché</text>
-  <rect x="1022" y="300" width="140" height="32" rx="6" fill="#FFD700"/>
+  <rect x="1022" y="300" width="140" height="32" rx="6" fill="#EFAD42"/>
   <text x="1092" y="321" font-family="system-ui, sans-serif" font-size="12" fill="#0A0A0A" text-anchor="middle" font-weight="700">Sans surprise</text>
 </svg>

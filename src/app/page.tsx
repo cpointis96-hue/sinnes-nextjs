@@ -1,20 +1,21 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS } from '@/constants/siteConfig'
+import { seoData } from '@/data/seoData'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import { BrandsCarousel, ReviewsCarousel } from './DynamicCarousels'
+import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 
 // ─────────────────────────────────────────────────────────────
 // METADATA
 // ─────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Sinnes Automobiles — Reproduction de clé voiture Nice',
-  description:
-    'Spécialiste reproduction & double de clé de voiture à Nice. Intervention 7j/7, tous véhicules. Devis gratuit — +33 6 75 54 04 11',
+  title: seoData.home.title,
+  description: seoData.home.description,
   alternates: { canonical: 'https://sinnes.fr/' },
   openGraph: {
-    title: 'Sinnes Automobiles — Reproduction de clé voiture Nice',
+    title: seoData.home.title,
     url: 'https://sinnes.fr/',
     images: [{ url: '/images/depannage-urgence-sinnes-1024x523.jpg', width: 1024, height: 523 }],
   },
@@ -47,9 +48,9 @@ const schema = {
       priceRange: '€€',
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '57',
-        bestRating: '5',
+        ratingValue: REVIEWS.ratingValue,
+        reviewCount: REVIEWS.reviewCount,
+        bestRating: REVIEWS.bestRating,
       },
       areaServed: {
         '@type': 'GeoCircle',
@@ -68,6 +69,7 @@ const schema = {
           '@id': 'https://sinnes.fr/#sinouhe',
           name: TEAM.sinouhe.name,
           jobTitle: TEAM.sinouhe.jobTitle,
+          knowsAbout: TEAM.sinouhe.knowsAbout,
           description: TEAM.sinouhe.description,
         },
         {
@@ -110,18 +112,6 @@ const TIMELINE = [
   },
 ]
 
-const AVIS = [
-  { nom: 'Nathalie Letienne', date: '20/02/2026', note: 5, texte: "Je recommande vivement sinnes automobiles ! J'étais bloqué sur un parking avec mes clés à l'intérieur de ma voiture, complètement stressé… ils sont intervenus très rapidement et ont réussi à ouvrir mon véhicule sans aucun dégât." },
-  { nom: 'Dylan D.', date: '16/02/2026', note: 5, texte: 'Rapide, sérieux et efficace!' },
-  { nom: 'Lisa S.', date: '13/02/2026', note: 5, texte: 'Je recommande ce Monsieur à 2000%. En plus d\'être sympathique, il est très compétent. Un véritable magicien! Encore un grand merci!' },
-  { nom: 'Cassandra Faraut', date: '13/02/2026', note: 5, texte: 'Rapide, efficace et très compétent, le service a été irréprochable. Je suis vraiment contente du travail réalisé sur ma voiture. Je recommande vivement de faire appel à eux !' },
-  { nom: 'Nicolas Moreau', date: '22/01/2026', note: 5, texte: 'Je tiens à dire que la prestation est de haute qualité : à l\'heure, efficace et extrêmement sympathique de surcroît. Je recommande vivement.' },
-  { nom: 'Adam Bouyssou', date: '18/01/2026', note: 5, texte: "Sinnes Automobiles est un super service, très gentil et très rapide. La réinitialisation du calculateur d'Airbags de ma Clio 5 2023 a duré 10min, elle ne démarrait plus et maintenant elle fonctionne à merveille !" },
-  { nom: 'Alex Chuet', date: '16/01/2026', note: 5, texte: 'Ce jeune homme mérite tellement plus que cinq étoiles… Souriant, efficace, très arrangeant. Il a résolu mon problème en moins d\'une heure. Un énorme merci.' },
-  { nom: 'Alexis Lucini', date: '18/12/2025', note: 5, texte: 'Rapide, efficace et très honnête je recommande fortement. Merci pour votre travail effectué sur mon fourgon.' },
-  { nom: 'Denis Ribes', date: '09/12/2025', note: 5, texte: 'Merci beaucoup à Sinouhé et Inès — en 5 minutes il a réussi à rencoder une clé à Menton, ils nous ont sauvé la vie ! Entreprise très sérieuse, recommandation +++.' },
-]
-
 // ─────────────────────────────────────────────────────────────
 // PAGE
 // ─────────────────────────────────────────────────────────────
@@ -161,23 +151,22 @@ export default function HomePage() {
             className="bg-white/80 rounded-2xl shadow-xl p-7 md:p-10 w-full max-w-xl ml-0 md:ml-12 lg:ml-20">
 
             {/* Badge avis */}
-            <div className="inline-flex items-center gap-2 bg-[#FFF8E7] px-3 py-1.5 rounded-full mb-6 border border-[#F5A623]/20">
-              <span className="text-[#F5A623] text-base leading-none" aria-hidden="true">★★★★★</span>
-              <span className="font-body text-[#1a1a1a] text-xs font-bold tracking-wide">57 avis Google · 5.0/5</span>
+            <div className="inline-flex items-center gap-2 bg-[#FFFFFF] px-3 py-1.5 rounded-full mb-6 border border-[#EFAD42]/20">
+              <span className="star-or text-base leading-none" aria-hidden="true" style={{ color: '#FBBC04' }}>★★★★★</span>
+              <span className="font-body text-[#1a1a1a] text-xs font-bold tracking-wide">58 avis Google · 5.0/5</span>
             </div>
 
             {/* H1 — noir sur blanc, choc visuel immédiat */}
-            <h1 className="font-heading font-black text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-tight mb-3 uppercase tracking-tight">
-              Perte de clé auto&nbsp;?
+            <h1 className="font-heading font-black text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-tight mb-3 uppercase tracking-tight break-words">
+              {seoData.home.h1}
             </h1>
 
-            {/* H2 — sous-titre accrocheur */}
-            <h2 className="font-heading font-bold text-lg md:text-xl text-[#1a1a1a] mb-5 leading-snug">
-              Faites un double de clé en toute sécurité
+            <h2 className="font-heading font-bold text-lg md:text-xl text-[#1a1a1a] mb-5 leading-snug break-words">
+              {seoData.home.h2[0]}
             </h2>
 
             {/* Corps — concis, service clair */}
-            <p className="font-body text-[#444] text-sm md:text-base leading-relaxed mb-8">
+            <p className="font-body text-[#6B7280] text-sm md:text-base leading-relaxed mb-8">
               {ORG.name} vous propose un service rapide de programmation de clé automobile,
               que ce soit pour un double ou en cas de perte totale. Nous nous déplaçons là où
               vous êtes, que ce soit à domicile, sur votre lieu de travail ou ailleurs.
@@ -192,7 +181,7 @@ export default function HomePage() {
             </a>
 
             {/* Lien maillage secondaire */}
-            <p className="font-body text-xs text-[#888] mt-5">
+            <p className="font-body text-xs text-[#6B7280] mt-5">
               Besoin d&apos;un{' '}
               <a
                 href="/serrurier-automobile-nice/"
@@ -211,7 +200,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 2 — CAROUSEL MARQUES
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white border-y border-[#eee] py-6 overflow-hidden" aria-label="Marques automobiles prises en charge">
+      <section className="bg-white border-y border-[#F0F3F7] py-6 overflow-hidden" aria-label="Marques automobiles prises en charge">
         <BrandsCarousel />
         <ScrollReveal animation="fadeInUp" delay={0.1} className="container-sinnes mt-4 text-center">
           <p className="font-body text-sm italic text-[#6B7280]">
@@ -220,6 +209,9 @@ export default function HomePage() {
           </p>
         </ScrollReveal>
       </section>
+
+      {/* Divider signature — après marques */}
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-marques" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* ═══════════════════════════════════════════════════
           SECTION 3 — AVANTAGE DOMICILE
@@ -231,8 +223,8 @@ export default function HomePage() {
             {/* Texte */}
             <div>
               <ScrollReveal animation="fadeInDown" as="h2"
-                className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-third mb-6 leading-tight">
-                {ORG.name} c&apos;est un service à domicile, on vient à votre rencontre, où que vous soyez&nbsp;!
+                className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-third mb-6 leading-tight break-words">
+                {seoData.home.h2[1]}
               </ScrollReveal>
 
               <ScrollReveal animation="fadeInUp" delay={0.1}>
@@ -262,7 +254,7 @@ export default function HomePage() {
             <ScrollReveal animation="zoomIn" delay={0.15}>
               <Image
                 src="/images/Deplacement.png"
-                alt="Sinnes Automobiles se déplace à domicile — Van Sinnes avec itinéraires Nice et alentours"
+                alt={seoData.home.images.deplacement}
                 title="Service à domicile Sinnes Automobiles — Nice, Antibes, Cannes"
                 width={1200}
                 height={600}
@@ -274,6 +266,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Divider signature — après domicile */}
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-domicile" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
       {/* ═══════════════════════════════════════════════════
           SECTION 4 — SERVICES GRID
       ═══════════════════════════════════════════════════ */}
@@ -281,8 +276,8 @@ export default function HomePage() {
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-12">
-            Nos services
+            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-12 break-words">
+            {seoData.home.h2[2]}
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -293,7 +288,7 @@ export default function HomePage() {
                 <ScrollReveal animation="zoomIn" delay={0.1} className="flex justify-center">
                   <Image
                     src="/images/programmation-cle.png"
-                    alt="Programmation de clé automobile Sinnes à Nice"
+                    alt={seoData.home.images.programmation}
                     width={180}
                     height={180}
                     className="object-contain"
@@ -317,7 +312,7 @@ export default function HomePage() {
                 <ScrollReveal animation="zoomIn" delay={0.1} className="flex justify-center">
                   <Image
                     src="/images/achatrevente-vehicule.png"
-                    alt="Vente de véhicule occasion Sinnes Automobiles Nice"
+                    alt={seoData.home.images.achatrevente}
                     width={180}
                     height={180}
                     className="object-contain"
@@ -339,6 +334,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Divider signature — entre services et qui-sommes-nous */}
+      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-services" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
       {/* ═══════════════════════════════════════════════════
           SECTION 5 — QUI SOMMES-NOUS (Timeline)
       ═══════════════════════════════════════════════════ */}
@@ -350,7 +348,7 @@ export default function HomePage() {
             <ScrollReveal animation="zoomIn" className="flex justify-center">
               <Image
                 src="/images/SERVICES-SINNES-1.png"
-                alt="Sinouhé et Inès — Équipe Sinnes Automobiles à votre service"
+                alt={seoData.home.images.equipe}
                 title="L'équipe Sinnes Automobiles — Sinouhé Rochereau et Inès Barthelemy"
                 width={800}
                 height={800}
@@ -361,8 +359,8 @@ export default function HomePage() {
             {/* Texte + Timeline */}
             <div>
               <ScrollReveal animation="fadeInDown" as="h2"
-                className="font-heading font-bold text-3xl md:text-4xl text-third mb-8">
-                Qui sommes nous&nbsp;?
+                className="font-heading font-bold text-3xl md:text-4xl text-third mb-8 break-words">
+                {seoData.home.h2[3]}
               </ScrollReveal>
 
               {/* Timeline */}
@@ -391,7 +389,7 @@ export default function HomePage() {
               {/* Byline Sinouhé — obligatoire */}
               <ScrollReveal animation="fadeInUp" delay={0.2}>
                 <p className="font-body text-sm text-text-muted border-l-4 border-accent pl-4 mb-8">
-                  Par <strong>{TEAM.sinouhe.name}</strong> — {TEAM.sinouhe.description}
+                  Par <strong>{TEAM.sinouhe.name}</strong> · {TEAM.sinouhe.description}
                 </p>
               </ScrollReveal>
 
@@ -413,9 +411,9 @@ export default function HomePage() {
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-3xl md:text-4xl text-center mb-12"
+            className="font-heading font-bold text-3xl md:text-4xl text-center mb-12 break-words"
             style={{ color: '#ffffff' }}>
-            Contactez-nous
+            {seoData.home.h2[4]}
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -429,7 +427,7 @@ export default function HomePage() {
                 <a href="/tarif-cle-voiture/" className="text-accent font-semibold hover:text-accent-dark transition-colors underline underline-offset-2">
                   tarifs de reproduction de clé
                 </a>{' '}
-                — devis gratuit, sans frais cachés.
+                , devis gratuit, sans frais cachés.
               </p>
 
               <a href={`tel:${NAP.phoneTel}`}
@@ -491,7 +489,7 @@ export default function HomePage() {
                 >
                   <Image
                     src="/images/carte-1024x402.png"
-                    alt="Zone d'intervention de Sinnes Automobiles — Nice et alentours — Serrurier automobile à Nice"
+                    alt={seoData.home.images.carte}
                     title="Zone d'intervention Sinnes Automobiles — Nice, Antibes, Cannes, Côte d'Azur"
                     width={1024}
                     height={402}
@@ -499,7 +497,7 @@ export default function HomePage() {
                   />
                 </a>
                 <figcaption className="font-body text-xs text-white/50 mt-2 text-center" itemProp="caption">
-                  Zone d&apos;intervention de Sinnes Automobiles — Nice et alentours — Serrurier automobile à Nice
+                  Zone d&apos;intervention de Sinnes Automobiles · Nice et alentours · Serrurier automobile à Nice
                 </figcaption>
                 <meta itemProp="contentUrl" content="https://sinnes.fr/images/carte-1024x402.png" />
                 <meta itemProp="author" content="Sinnes Automobiles" />
@@ -510,34 +508,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Divider signature — avant avis */}
+      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-avis" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
       {/* ═══════════════════════════════════════════════════
           SECTION 7 — AVIS GOOGLE
       ═══════════════════════════════════════════════════ */}
       <section className="bg-bg-shade py-16" aria-label="Avis clients Google">
         <div className="container-sinnes">
 
-          {/* Badge global avis */}
-          <ScrollReveal animation="fadeInDown" className="text-center mb-10">
-            <div className="inline-flex items-center gap-3 bg-white border border-card-border rounded-full px-6 py-3 shadow-sm">
-              <span className="text-[#FFD700] text-2xl" aria-hidden="true">★★★★★</span>
-              <span className="font-body font-bold text-text-main">57 avis · 5.0/5</span>
-              <span className="font-body text-xs text-text-muted">sur Google</span>
-            </div>
-          </ScrollReveal>
-
-          <ReviewsCarousel avis={AVIS} />
-
-          {/* CTA laisser un avis */}
-          <ScrollReveal animation="fadeInUp" delay={0.1} className="text-center mt-8">
-            <a
-              href="https://g.page/r/sinnes-automobiles/review"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="font-body text-sm text-primary font-semibold hover:underline"
-            >
-              Laissez votre avis →
-            </a>
-          </ScrollReveal>
+              <ReviewsCarousel />
 
         </div>
       </section>

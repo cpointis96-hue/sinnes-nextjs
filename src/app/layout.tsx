@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     template: '%s | Sinnes Nice',
   },
   description:
-    'Reproduction et double de clé de voiture à Nice. Intervention 7j/7. Devis gratuit — +33 6 75 54 04 11',
+    'Reproduction et double de clé de voiture à Nice. Intervention 7j/7. Devis gratuit : +33 6 75 54 04 11',
   alternates: {
     canonical: 'https://sinnes.fr/',
   },

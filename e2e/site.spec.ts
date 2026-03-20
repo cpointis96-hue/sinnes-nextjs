@@ -29,9 +29,18 @@ test.describe('Accueil', () => {
     await expect(page.locator('header').getByText(/6 75 54 04 11/).first()).toBeVisible()
   })
 
-  test('navigation principale visible', async ({ page }) => {
+  test('navigation accessible — desktop nav ou bouton hamburger', async ({ page }) => {
     await page.goto('/')
-    await expect(page.getByRole('navigation', { name: 'Navigation principale' })).toBeVisible()
+    const viewport = page.viewportSize()
+    const isMobile = (viewport?.width ?? 1280) < 768
+
+    if (isMobile) {
+      // Mobile : bouton hamburger visible
+      await expect(page.getByRole('button', { name: 'Ouvrir le menu' })).toBeVisible()
+    } else {
+      // Desktop : nav principale visible
+      await expect(page.getByRole('navigation', { name: 'Navigation principale' })).toBeVisible()
+    }
   })
 })
 

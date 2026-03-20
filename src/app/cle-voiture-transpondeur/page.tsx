@@ -1,18 +1,42 @@
+import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
 import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconWrench, IconShield } from '@/components/ui/TrustStrip'
-import FAQAccordion from './FAQAccordion'
+import FAQAccordion, { type FAQItem } from './FAQAccordion'
+import SingleReview from '@/components/ui/SingleReview'
+import { getReviewForPage } from '@/data/reviews'
+import { seoData } from '@/data/seoData'
+import StickyCTA from '@/components/ui/StickyCTA'
 
 export const metadata: Metadata = {
-  title: 'Clé voiture transpondeur — Fonctionnement et programmation',
-  description: 'Clé voiture avec transpondeur : comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33 6 75 54 04 11',
+  title: seoData['cle-voiture-transpondeur'].title,
+  description: seoData['cle-voiture-transpondeur'].description,
   alternates: { canonical: 'https://sinnes.fr/cle-voiture-transpondeur/' },
   openGraph: {
-    title: 'Clé voiture transpondeur — Sinnes Automobiles Nice',
+    title: seoData['cle-voiture-transpondeur'].title,
     url: 'https://sinnes.fr/cle-voiture-transpondeur/',
   },
 }
+
+const FAQ_ITEMS: FAQItem[] = [
+  {
+    question: "Qu'est-ce qu'un transpondeur dans une clé de voiture ?",
+    answer: "Un transpondeur est une micropuce RFID intégrée dans la clé de voiture. Elle émet un code unique à 125 kHz qui est reconnu par l'antenne du contacteur. Si le code correspond à ceux enregistrés dans le calculateur, l'immobiliseur libère le démarrage du moteur. Sans transpondeur valide, la voiture ne démarre pas même avec la bonne lame mécanique.",
+  },
+  {
+    question: "Comment savoir si ma clé a un transpondeur ?",
+    answer: "La plupart des véhicules produits après 1995 ont un transpondeur. Pour vérifier : tentez de démarrer avec une clé double coupée sans électronique — si le moteur démarre puis s'arrête après 2 secondes, votre véhicule a un immobiliseur transpondeur actif.",
+  },
+  {
+    question: "Peut-on cloner le transpondeur d'une clé de voiture ?",
+    answer: "Oui pour les transpondeurs fixes (ID60, ID33, PCF7936 T5). Non pour les transpondeurs cryptés (ID46, ID48, HITAG). Pour les cryptés, une programmation via valise de diagnostic (Abrites ou ZedFull) est obligatoire — c'est la spécialité de Sinouhé Rochereau.",
+  },
+  {
+    question: "Que se passe-t-il si le transpondeur d'une clé est endommagé ?",
+    answer: "Si le transpondeur est défaillant, le moteur ne démarre pas (ou démarre puis coupe immédiatement). Sinnes Automobiles peut programmer un nouveau transpondeur sur une clé vierge et l'enregistrer dans le calculateur du véhicule. Intervention à Nice et toute la Côte d'Azur.",
+  },
+]
 
 const schema = {
   "@context": "https://schema.org",
@@ -22,7 +46,12 @@ const schema = {
       "@id": "https://sinnes.fr/cle-voiture-transpondeur/#service",
       "name": "Programmation clé voiture transpondeur",
       "provider": { "@id": "https://sinnes.fr/#organization" },
-      "areaServed": { "@type": "City", "name": "Nice" }
+      "areaServed": [
+        { "@type": "City", "name": "Nice" },
+        { "@type": "City", "name": "Antibes" },
+        { "@type": "City", "name": "Cagnes-sur-Mer" },
+        { "@type": "City", "name": "Cannes" }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -33,34 +62,18 @@ const schema = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Qu'est-ce qu'un transpondeur dans une clé de voiture ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Un transpondeur est une micropuce RFID intégrée dans la clé de voiture. Elle émet un code unique à 125 kHz qui est reconnu par l'antenne du contacteur. Si le code correspond à ceux enregistrés dans le calculateur, l'immobiliseur libère le démarrage du moteur. Sans transpondeur valide, la voiture ne démarre pas même avec la bonne lame mécanique." }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment savoir si ma clé a un transpondeur ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "La plupart des véhicules produits après 1995 ont un transpondeur. Pour vérifier : tentez de démarrer avec une clé double coupée sans électronique — si le moteur démarre puis s'arrête après 2 secondes, votre véhicule a un immobiliseur transpondeur actif." }
-        },
-        {
-          "@type": "Question",
-          "name": "Peut-on cloner le transpondeur d'une clé de voiture ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Oui pour les transpondeurs fixes (ID60, ID33, PCF7936 T5). Non pour les transpondeurs cryptés (ID46, ID48, HITAG). Pour les cryptés, une programmation via valise de diagnostic (Abrites ou ZedFull) est obligatoire — c'est la spécialité de Sinouhé Rochereau." }
-        },
-        {
-          "@type": "Question",
-          "name": "Que se passe-t-il si le transpondeur d'une clé est endommagé ?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Si le transpondeur est défaillant, le moteur ne démarre pas (ou démarre puis coupe immédiatement). Sinnes Automobiles peut programmer un nouveau transpondeur sur une clé vierge et l'enregistrer dans le calculateur du véhicule. Intervention à Nice et toute la Côte d'Azur." }
-        }
-      ]
+      "mainEntity": FAQ_ITEMS.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": { "@type": "Answer", "text": item.answer }
+      }))
     },
     {
       "@type": "Person",
       "@id": "https://sinnes.fr/#sinouhe",
       "name": "Sinouhé Rochereau",
       "jobTitle": "Expert en programmation de clés automobiles",
+      "knowsAbout": TEAM.sinouhe.knowsAbout,
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
     }
   ]
@@ -80,6 +93,8 @@ const TRUST_ITEMS: TrustStripItem[] = [
   { icon: <IconWrench className="w-8 h-8" />, label: 'Programmation OBD', sublabel: 'Abrites · ZedFull', href: '/programmation-cle-voiture/' },
   { icon: <IconEuro className="w-8 h-8" />, label: `${PRICES.cleSimple.sinnes} €`, sublabel: 'À partir de', href: '/reproduction-cle-voiture/' },
 ]
+
+const review = getReviewForPage('/cle-voiture-transpondeur/')
 
 export default function CleVoitureTranspondeurPage() {
   return (
@@ -104,12 +119,12 @@ export default function CleVoitureTranspondeurPage() {
       <section style={{ background: '#0A0A0A' }} className="py-16 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
-            <span className="text-[#FFD700] text-lg">★★★★★</span>
-            <span className="font-body text-white text-sm font-semibold">57 avis Google · 5.0/5</span>
+            <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
+            <span className="font-body text-white text-sm font-semibold">58 avis Google · 5.0/5</span>
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            Clé voiture transpondeur —<br />Fonctionnement et programmation
+            {seoData['cle-voiture-transpondeur'].h1} :<br />Fonctionnement et programmation
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -117,7 +132,6 @@ export default function CleVoitureTranspondeurPage() {
             sa clé. Sans lui, le moteur refuse de démarrer même si la lame est correcte.
             Sinouhé Rochereau, expert certifié Incarline, programme et reproduit tous les types
             de transpondeurs automobiles à Nice et sur toute la Côte d'Azur.
-            Devis gratuit : {NAP.phoneDisplay}.
           </p>
 
           <a
@@ -125,22 +139,24 @@ export default function CleVoitureTranspondeurPage() {
             className="inline-flex items-center gap-3 bg-accent text-text-inverse font-body font-bold
                        text-xl px-8 py-4 rounded-lg min-h-[56px] hover:bg-accent-dark transition-colors mb-8"
           >
-            Devis gratuit — {NAP.phoneDisplay}
+            Devis gratuit : {NAP.phoneDisplay}
           </a>
 
-          <p className="text-sm border-l-4 border-[#FFD700] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
-            Expertise assurée par <strong style={{ color: '#FFFFFF' }}>{TEAM.sinouhe.name}</strong> —
+          <p className="text-sm border-l-4 border-[#EFAD42] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            Expertise assurée par <strong style={{ color: '#FFFFFF' }}>{TEAM.sinouhe.name}</strong> ·
             Formateur international en programmation de clés automobiles chez Incarline.
             Commissaire au Grand Prix de Monaco depuis 2016.
           </p>
         </div>
       </section>
 
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-transpondeur" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
       {/* SECTION 3 — PROCESS STEPS */}
       <section style={{ background: '#FFFFFF' }} className="py-16 px-4">
         <div className="container-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center" style={{ color: '#111111' }}>
-            Comment fonctionne un transpondeur ?
+            {seoData['cle-voiture-transpondeur'].h2[0]}
           </h2>
           <ProcessSteps steps={steps} theme="light" />
         </div>
@@ -149,12 +165,16 @@ export default function CleVoitureTranspondeurPage() {
       {/* TRUST STRIP */}
       <TrustStrip theme="shade" items={TRUST_ITEMS} />
 
+      {/* AVIS GOOGLE RÉEL */}
+      {review && <SingleReview review={review} serviceName="Clé voiture transpondeur" serviceUrl="/cle-voiture-transpondeur/" />}
+
+
       {/* SECTION 5 — CORPS TEXTUEL */}
       <section className="bg-white py-16 px-4">
         <div className="container-sinnes max-w-3xl">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
-            {"Qu'est-ce qu'un transpondeur dans une clé de voiture ?"}
+            {seoData['cle-voiture-transpondeur'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             Un transpondeur est une micropuce RFID (Radio-Frequency Identification) logée dans
@@ -164,25 +184,25 @@ export default function CleVoitureTranspondeurPage() {
           </p>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             La technologie du transpondeur automobile a été introduite en 1995 par Volkswagen
-            sur la Golf 3 — premier véhicule de grande série équipé d'un immobiliseur électronique
+            sur la Golf 3, premier véhicule de grande série équipé d'un immobiliseur électronique
             transpondeur. Depuis lors, pratiquement tous les véhicules neufs en sont équipés.
             En France, l'immobiliseur est obligatoire sur les véhicules neufs depuis 1998.
           </p>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
             Sans un transpondeur reconnu par le calculateur, le moteur peut démarrer mécaniquement
             (la lame actionne le contacteur), mais l'immobiliseur coupe instantanément l'alimentation
-            du moteur — généralement après 2 à 3 secondes. C'est le signal d'alerte qui vous
+            du moteur, généralement après 2 à 3 secondes. C'est le signal d'alerte qui vous
             indique que votre clé de remplacement n'a pas été correctement programmée.
           </p>
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
-            {"Comment fonctionne l'immobiliseur électronique ?"}
+            {seoData['cle-voiture-transpondeur'].h2[2]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             Le système immobiliseur se compose de trois éléments : l'antenne (autour du contacteur),
             le calculateur de bord (qui stocke les codes autorisés) et la puce transpondeur
             (dans la clé). Au démarrage, l'antenne émet un champ électromagnétique qui alimente
-            passivement la puce — pas de batterie nécessaire dans le transpondeur. La puce reçoit
+            passivement la puce : pas de batterie nécessaire dans le transpondeur. La puce reçoit
             de l'énergie, calcule une réponse cryptée et la renvoie à l'antenne.
           </p>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
@@ -190,30 +210,30 @@ export default function CleVoitureTranspondeurPage() {
             mémoire. S'il y a correspondance, l'immobiliseur libère le circuit d'alimentation
             du moteur. Ce processus prend moins d'une seconde. Les lexies techniques associées
             à ce système sont : calculateur, antenne transpondeur, puce immobiliseur, ID46,
-            ID48, HITAG2, PCF7936 — des termes que Sinouhé Rochereau manie au quotidien.
+            ID48, HITAG2, PCF7936, des termes que Sinouhé Rochereau manie au quotidien.
           </p>
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
-            Les différents types de transpondeurs automobiles
+            {seoData['cle-voiture-transpondeur'].h2[3]}
           </h2>
 
           <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            Transpondeur fixe (ID60, ID33, T5)
+            {seoData['cle-voiture-transpondeur'].h3[0]}
           </h3>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             Les transpondeurs fixes émettent toujours le même code, sans cryptage. Ils équipent
             les véhicules plus anciens (1995–2005 pour la majorité). Leur principal avantage :
-            ils sont clonables — Sinouhé peut copier le code d'un transpondeur fixe sur une puce
+            ils sont clonables : Sinouhé peut copier le code d'un transpondeur fixe sur une puce
             vierge compatible en quelques minutes, sans connexion OBD au véhicule.
             Types courants : PCF7935 (T5), Megamos ID48 sur les Renault ancien, transponders
             ID60 sur certaines Fiat et Alfa Romeo.
           </p>
 
           <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            Transpondeur crypté (ID46, ID48, HITAG2)
+            {seoData['cle-voiture-transpondeur'].h3[1]}
           </h3>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
-            Les transpondeurs cryptés utilisent des algorithmes de chiffrement — chaque transaction
+            Les transpondeurs cryptés utilisent des algorithmes de chiffrement : chaque transaction
             entre la clé et le calculateur est unique. Impossible de les cloner directement.
             L'ID46 est le plus répandu (PSA, Renault, Fiat, Lancia, Honda, Mazda). L'ID48 équipe
             principalement les véhicules du groupe VAG (VW, Audi, Seat, Skoda, Porsche) jusqu'en 2011.
@@ -222,17 +242,17 @@ export default function CleVoitureTranspondeurPage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            Transpondeur haute sécurité (HITAG Pro, DST80)
+            {seoData['cle-voiture-transpondeur'].h3[2]}
           </h3>
           <p className="font-body leading-relaxed mb-6 text-text-muted">
             Les véhicules récents (après 2011-2015) utilisent des algorithmes encore plus robustes.
             Le HITAG Pro équipe les VAG récents. Le DST80 est présent dans les Toyota et Lexus récents.
-            Ces systèmes nécessitent des outils spécialisés et des licences constructeur — c'est
+            Ces systèmes nécessitent des outils spécialisés et des licences constructeur. C'est
             exactement ce que propose Sinouhé avec ses équipements Abrites et ZedFull à jour.
           </p>
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
-            Peut-on cloner un transpondeur de clé voiture ?
+            {seoData['cle-voiture-transpondeur'].h2[4]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             La réponse dépend du type de transpondeur. Pour les transpondeurs fixes (T5, ID60,
@@ -241,18 +261,18 @@ export default function CleVoitureTranspondeurPage() {
           </p>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
             Pour les transpondeurs cryptés (ID46, ID48, HITAG) : le clonage direct est impossible
-            par conception. La seule solution est la <a href="/programmation-cle-voiture/" className="text-primary font-semibold hover:underline">programmation de clé</a> via OBD —
+            par conception. La seule solution est la <a href="/programmation-cle-voiture/" className="text-primary font-semibold hover:underline">programmation de clé</a> via OBD :
             l'outil calcule les codes PIN constructeur et enregistre le nouveau transpondeur dans
             le calculateur, sans cloner l'original.
           </p>
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
-            Reproduire ou programmer une clé à transpondeur
+            {seoData['cle-voiture-transpondeur'].h2[5]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             La <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">reproduction de clé</a> complète implique deux étapes simultanées :
             le taillage de la lame (mécanique) et la programmation ou le clonage du transpondeur
-            (électronique). Sinnes Automobiles réalise les deux dans la même intervention —
+            (électronique). Sinnes Automobiles réalise les deux dans la même intervention,
             en atelier à Nice ou à domicile sur toute la Côte d'Azur.
           </p>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
@@ -261,42 +281,33 @@ export default function CleVoitureTranspondeurPage() {
             fonctionnelle) ou en la regravant. Dans tous les cas, le nouveau transpondeur est
             enregistré dans le calculateur du véhicule via la prise OBD.
           </p>
-
-          <blockquote className="border-l-4 border-accent pl-6 italic text-text-muted my-8 bg-bg-shade py-4 pr-4 rounded-r-lg">
-            <p className="mb-2">"Merci beaucoup à Sinouhé et Inès — en 5 minutes il a réussi à rencoder une clé
-            à Menton, ils nous ont sauvé la vie ! Entreprise très sérieuse."</p>
-            <footer className="text-sm not-italic">
-              — <strong>Denis Ribes</strong>, avis Google · Décembre 2025
-            </footer>
-          </blockquote>
-
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             Pour{' '}
             <a href="/double-cle-voiture/" className="text-primary font-semibold hover:underline">obtenir un double de clé à transpondeur</a>,
             Sinouhé Rochereau réalise le taillage de la lame et la programmation du transpondeur
-            dans la même intervention — à domicile ou à l'atelier. Consultez nos{' '}
+            dans la même intervention, à domicile ou à l'atelier. Consultez nos{' '}
             <a href="/tarif-cle-voiture/" className="text-primary font-semibold hover:underline">tarifs programmation clé à transpondeur</a>.
           </p>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
             Vous avez une Audi ou un véhicule du groupe VAG ? Consultez notre page dédiée à la{' '}
-            <a href="/refaire-cle-audi/" className="text-primary font-semibold hover:underline">clé transpondeur Audi</a> —
+            <a href="/refaire-cle-audi/" className="text-primary font-semibold hover:underline">clé transpondeur Audi</a>,
             IMMO4, IMMO5 et KESSY couverts.
           </p>
         </div>
       </section>
 
       {/* SECTION 7 — CTA MILIEU */}
-      <section style={{ background: '#1A1A1A' }} className="py-12 border-y border-[#FFD700]/20 text-center">
+      <section style={{ background: '#1A1A1A' }} className="py-12 border-y border-[#EFAD42]/20 text-center">
         <div className="container-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-4" style={{ color: '#FFFFFF' }}>
-            Programmer votre clé transpondeur
+            {seoData['cle-voiture-transpondeur'].h2[6]}
           </h2>
           <p className="font-body mb-6" style={{ color: 'rgba(255,255,255,0.7)' }}>
             7j/7 · Nice et Côte d'Azur · Toutes marques
           </p>
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-block bg-[#FFD700] text-[#0A0A0A] font-body font-bold text-xl
+            className="inline-block bg-[#EFAD42] text-[#0A0A0A] font-body font-bold text-xl
                        px-10 py-4 rounded-lg min-h-[56px] hover:bg-yellow-400 transition-colors"
           >
             {NAP.phoneDisplay}
@@ -305,32 +316,32 @@ export default function CleVoitureTranspondeurPage() {
       </section>
 
       {/* SECTION 8 — FAQ */}
-      <section style={{ background: '#F9FAFB' }} className="py-16 px-4">
+
+      <section style={{ background: '#F0F3F7' }} className="py-16 px-4">
+
         <div className="container-sinnes max-w-3xl">
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 text-text">
-            Questions fréquentes — Clé voiture transpondeur
+            {seoData['cle-voiture-transpondeur'].h2[7]}
           </h2>
-          <FAQAccordion />
+          <FAQAccordion items={FAQ_ITEMS} />
         </div>
       </section>
 
       {/* SECTION 9 — CTA BAS + STICKY MOBILE */}
       <div className="text-center py-12 bg-bg-shade">
-        <a href={`tel:${NAP.phoneTel}`} className="btn-accent text-lg px-10 py-4 min-h-[56px]">
-          Appelez maintenant — {NAP.phoneDisplay}
+        <a
+          href={`tel:${NAP.phoneTel}`}
+          className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] hover:bg-[#c62828] transition-colors"
+        >
+          URGENCE : {NAP.phoneDisplay}
         </a>
         <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden pb-safe">
-        <a
-          href={`tel:${NAP.phoneTel}`}
-          className="flex items-center justify-center w-full bg-[#e53935] text-white
-                     font-body font-bold text-lg py-4 min-h-[56px]"
-        >
-          URGENCE — {NAP.phoneDisplay}
-        </a>
-      </div>
+      <StickyCTA 
+        variant={seoData['cle-voiture-transpondeur'].ctas.sticky.variant} 
+        label={seoData['cle-voiture-transpondeur'].ctas.sticky.label} 
+      />
     </>
   )
 }

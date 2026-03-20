@@ -1,20 +1,23 @@
+import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, PRICES } from '@/constants/siteConfig'
+import { NAP, ORG, PRICES, TEAM } from '@/constants/siteConfig'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconWrench, IconShield } from '@/components/ui/TrustStrip'
-import FAQAccordion from './FAQAccordion'
+import FAQAccordion, { type FAQItem } from './FAQAccordion'
+import SingleReview from '@/components/ui/SingleReview'
+import { getReviewForPage } from '@/data/reviews'
+import { seoData } from '@/data/seoData'
 
 // ─────────────────────────────────────────────────────────────
 // METADATA
 // ─────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Serrurier Automobile Nice — Intervention 7j/7',
-  description:
-    "Serrurier automobile à Nice spécialisé clé de voiture. Intervention 7j/7, Antibes, Cannes, Côte d'Azur. Devis gratuit — +33 6 75 54 04 11",
+  title: seoData['serrurier-automobile-nice'].title,
+  description: seoData['serrurier-automobile-nice'].description,
   alternates: { canonical: 'https://sinnes.fr/serrurier-automobile-nice/' },
   openGraph: {
-    title: 'Serrurier Automobile Nice — Sinnes Automobiles',
+    title: seoData['serrurier-automobile-nice'].title,
     url: 'https://sinnes.fr/serrurier-automobile-nice/',
     images: [{ url: '/images/cle-de-voiture-nice-1024x683.jpg', width: 1024, height: 683 }],
   },
@@ -23,6 +26,29 @@ export const metadata: Metadata = {
 // ─────────────────────────────────────────────────────────────
 // SCHEMA JSON-LD
 // ─────────────────────────────────────────────────────────────
+
+const FAQ_ITEMS: FAQItem[] = [
+  {
+    question: 'Quelle est la différence entre un serrurier automobile et un serrurier de portes ?',
+    answer: 'Un serrurier automobile est spécialisé exclusivement sur les véhicules : programmation de transpondeur, décodage de serrure de véhicule, duplication de clé avec puce électronique. Un serrurier de portes n\'a pas les équipements pour programmer les systèmes immobiliseurs modernes (valise Abrites, ZedFull). Sinnes Automobiles n\'intervient que sur les véhicules — c\'est notre seul métier.',
+  },
+  {
+    question: 'Combien coûte un serrurier automobile à Nice ?',
+    answer: `Le tarif dépend du type de clé : à partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple, ${PRICES.cleCentralisee.sinnes}€ pour une clé centralisée, ${PRICES.cleMainsLibres.sinnes}€ pour une clé mains libres, ${PRICES.perteTotale.sinnes}€ en cas de perte totale sans double. Devis gratuit, prix identique 7j/7 — aucune majoration d'urgence.`,
+  },
+  {
+    question: 'Quels outils utilise un vrai serrurier automobile professionnel ?',
+    answer: 'Un serrurier automobile professionnel utilise une valise de diagnostic homologuée (chez Sinnes : Abrites et ZedFull), un lecteur RFID pour identifier les puces transpondeur (ID46, ID48, HITAG 2), un outil de décodage mécanique pour lire le code de la serrure sans clé d\'origine, et une fraiseuse laser ou à codes pour tailler la clé. Sans ces équipements, un technicien ne peut pas programmer les clés des véhicules modernes.',
+  },
+  {
+    question: 'La garantie constructeur est-elle préservée après l\'intervention d\'un serrurier automobile ?',
+    answer: 'Oui, si le serrurier utilise les bons outils et les bonnes méthodes. Sinouhé Rochereau, formateur certifié chez Incarline, programme les clés selon les normes constructeurs. La procédure de programmation officielle (via OBD ou accès direct à l\'immobiliseur) est identique à celle du concessionnaire — la garantie est donc entièrement préservée.',
+  },
+  {
+    question: 'Est-il possible d\'ouvrir une voiture sans casser la serrure ?',
+    answer: 'Oui, dans la plupart des cas. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction — ni dégât sur la serrure, ni trace sur la carrosserie. La technique varie selon le modèle et la génération du véhicule. Certains véhicules récents avec serrure électronique nécessitent une approche différente (accès OBD), mais le résultat est identique : aucun dommage.',
+  },
+]
 
 const schema = {
   '@context': 'https://schema.org',
@@ -54,54 +80,18 @@ const schema = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: "Quelle est la différence entre un serrurier automobile et un serrurier de portes ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Un serrurier automobile est spécialisé exclusivement sur les véhicules : programmation de transpondeur, décodage de serrure de véhicule, duplication de clé avec puce électronique. Un serrurier de portes n'a pas les équipements pour programmer les systèmes immobiliseurs modernes (valise Abrites, ZedFull). Sinnes Automobiles n'intervient que sur les véhicules — c'est notre seul métier.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Combien coûte un serrurier automobile à Nice ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: `Le tarif dépend du type de clé : à partir de ${PRICES.cleSimple.sinnes}€ pour une clé simple, ${PRICES.cleCentralisee.sinnes}€ pour une clé centralisée, ${PRICES.cleMainsLibres.sinnes}€ pour une clé mains libres, ${PRICES.perteTotale.sinnes}€ en cas de perte totale sans double. Devis gratuit, prix identique 7j/7 — aucune majoration d'urgence.`,
-          },
-        },
-        {
-          '@type': 'Question',
-          name: "Quels outils utilise un vrai serrurier automobile professionnel ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Un serrurier automobile professionnel utilise une valise de diagnostic homologuée (chez Sinnes : Abrites et ZedFull), un lecteur RFID pour identifier les puces transpondeur (ID46, ID48, HITAG 2), un outil de décodage mécanique pour lire le code de la serrure sans clé d'origine, et une fraiseuse laser ou à codes pour tailler la clé. Sans ces équipements, un technicien ne peut pas programmer les clés des véhicules modernes.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: "La garantie constructeur est-elle préservée après l'intervention d'un serrurier automobile ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Oui, si le serrurier utilise les bons outils et les bonnes méthodes. Sinouhé Rochereau, formateur certifié chez Incarline, programme les clés selon les normes constructeurs. La procédure de programmation officielle (via OBD ou accès direct à l'immobiliseur) est identique à celle du concessionnaire — la garantie est donc entièrement préservée.",
-          },
-        },
-        {
-          '@type': 'Question',
-          name: "Est-il possible d'ouvrir une voiture sans casser la serrure ?",
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Oui, dans la plupart des cas. Sinouhé Rochereau utilise des techniques de crochetage professionnel sans effraction — ni dégât sur la serrure, ni trace sur la carrosserie. La technique varie selon le modèle et la génération du véhicule. Certains véhicules récents avec serrure électronique nécessitent une approche différente (accès OBD), mais le résultat est identique : aucun dommage.",
-          },
-        },
-      ],
+      mainEntity: FAQ_ITEMS.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
     },
     {
       '@type': 'Person',
       '@id': 'https://sinnes.fr/#sinouhe',
       name: 'Sinouhé Rochereau',
       jobTitle: 'Expert en programmation de clés automobiles',
+      knowsAbout: TEAM.sinouhe.knowsAbout,
       worksFor: { '@id': 'https://sinnes.fr/#organization' },
     },
   ],
@@ -117,6 +107,8 @@ const TRUST_ITEMS: TrustStripItem[] = [
   { icon: <IconWrench className="w-8 h-8" />, label: '40+ marques', sublabel: 'Renault, BMW, Toyota, Mercedes…' },
   { icon: <IconShield className="w-8 h-8" />, label: 'Garantie préservée', sublabel: 'Programmation officielle Abrites · ZedFull', href: '/reproduction-cle-voiture/' },
 ]
+
+const review = getReviewForPage('/serrurier-automobile-nice/')
 
 export default function SerrurierAutomobileNicePage() {
   return (
@@ -144,8 +136,8 @@ export default function SerrurierAutomobileNicePage() {
 
           {/* Badge avis — above the fold */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
-            <span className="text-[#FFD700] text-lg" aria-hidden="true">★★★★★</span>
-            <span className="font-body text-sm font-semibold text-white">57 avis Google · 5.0/5</span>
+            <span className="star-or text-lg" aria-hidden="true" style={{ color: '#FBBC04' }}>★★★★★</span>
+            <span className="font-body text-sm font-semibold text-white">58 avis Google · 5.0/5</span>
           </div>
 
           {/* CTA urgence — position haute */}
@@ -160,13 +152,13 @@ export default function SerrurierAutomobileNicePage() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
               </svg>
-              URGENCE — {NAP.phoneDisplay}
+              URGENCE : {NAP.phoneDisplay}
             </a>
             <p className="text-xs mt-2 font-body" style={{ color: 'rgba(255,255,255,0.6)' }}>7j/7 · Intervention rapide · Devis gratuit</p>
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight" style={{ color: '#FFFFFF' }}>
-            Serrurier automobile à Nice — Intervention 7j/7
+            {seoData['serrurier-automobile-nice'].h1} · Intervention 7j/7
           </h1>
 
           {/* Answer-first — 100 premiers mots */}
@@ -175,20 +167,16 @@ export default function SerrurierAutomobileNicePage() {
               {ORG.name} est votre serrurier automobile à Nice, disponible 7j/7 pour toute
               intervention sur votre clé de voiture. Perte de clé, double préventif, clé bloquée
               dans le contact, ouverture sans effraction : nous intervenons directement là où vous
-              êtes — domicile, lieu de travail, parking — sur Nice, Antibes, Cagnes-sur-Mer et Cannes.
+              êtes (domicile, lieu de travail, parking) sur Nice, Antibes, Cagnes-sur-Mer et Cannes.
               Tarifs à partir de {PRICES.cleSimple.sinnes}€. Devis gratuit, sans frais cachés.
-              Appelez maintenant :{' '}
-              <a href={`tel:${NAP.phoneTel}`} className="font-bold hover:underline" style={{ color: '#FFD700' }}>
-                {NAP.phoneDisplay}
-              </a>.
             </p>
             <p className="font-body text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
               Besoin d'une{' '}
-              <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>
+              <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
                 clé de voiture à Nice et alentours
               </a>{' '}
               ou d'un{' '}
-              <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#FFD700' }}>
+              <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
                 intervention à domicile
               </a>{' '}
               dans les meilleurs délais ? Contactez-nous.
@@ -196,16 +184,22 @@ export default function SerrurierAutomobileNicePage() {
           </div>
 
           {/* Byline Sinouhé — obligatoire */}
-          <p className="font-body text-sm border-l-4 border-[#FFD700] pl-4 mt-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.6)' }}>
-            Intervention assurée par <strong style={{ color: '#FFFFFF' }}>Sinouhé Rochereau</strong> — Expert en programmation
+          <p className="font-body text-sm border-l-4 border-[#EFAD42] pl-4 mt-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.6)' }}>
+            Intervention assurée par <strong style={{ color: '#FFFFFF' }}>Sinouhé Rochereau</strong>, expert en programmation
             de clés automobiles, formateur international chez Incarline.
             Commissaire au Grand Prix de Monaco depuis 2016.
           </p>
         </div>
       </section>
 
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
       {/* TRUST STRIP */}
       <TrustStrip theme="shade" items={TRUST_ITEMS} />
+
+      {/* AVIS GOOGLE RÉEL */}
+      {review && <SingleReview review={review} serviceName="Serrurier automobile Nice" serviceUrl="/serrurier-automobile-nice/" />}
+
 
       {/* ── CORPS PRINCIPAL ── */}
       <article className="bg-white py-16">
@@ -213,11 +207,11 @@ export default function SerrurierAutomobileNicePage() {
 
           {/* H2 #1 — Différenciation */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
-            Serrurier automobile à Nice : spécialiste clé de voiture, pas serrurier maison
+            {seoData['serrurier-automobile-nice'].h2[0]}
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Il existe une différence fondamentale entre un serrurier de portes et un serrurier
-            automobile. Chez {ORG.name}, nous intervenons exclusivement sur les véhicules — notre
+            automobile. Chez {ORG.name}, nous intervenons exclusivement sur les véhicules : notre
             expertise est pointue, nos outils sont professionnels : valise de diagnostic Abrites,
             ZedFull, lecteur RFID pour les puces ID46, ID48 et HITAG. Aucun généraliste ne dispose
             de ces équipements.
@@ -234,17 +228,17 @@ export default function SerrurierAutomobileNicePage() {
 
           {/* H2 #2 — Formation et certification (angle expertise) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
-            Sinouhé Rochereau — Formateur international, expert certifié
+            {seoData['serrurier-automobile-nice'].h2[1]}
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Sinouhé Rochereau n'est pas seulement serrurier automobile : il est formateur
             international certifié chez Incarline, l'un des organismes de référence en
             programmation de clés électroniques. Il forme d'autres techniciens à l'utilisation
-            des outils Abrites et ZedFull — les mêmes valises que celles des concessionnaires.
+            des outils Abrites et ZedFull, les mêmes valises que celles des concessionnaires.
           </p>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Cette expertise se traduit directement pour vous : Sinouhé peut traiter des cas
-            que d'autres serruriers refusent — véhicules récents avec immobiliseurs de
+            que d'autres serruriers refusent : véhicules récents avec immobiliseurs de
             dernière génération, systèmes HITAG 3 ou clés cryptées, perte totale sans aucune
             clé d'origine. Commissaire au Grand Prix de Monaco depuis 2016, il connaît les
             exigences de fiabilité que le milieu automobile de haut niveau impose.
@@ -255,7 +249,7 @@ export default function SerrurierAutomobileNicePage() {
             <a href="/programmation-cle-voiture/" className="text-primary font-semibold hover:underline">
               programmation de clé voiture
             </a>{' '}
-            — et pour comprendre notre zone d'intervention sur la Côte d'Azur, notre page{' '}
+            , et pour comprendre notre zone d'intervention sur la Côte d'Azur, notre page{' '}
             <a href="/cle-voiture-nice/" className="text-primary font-semibold hover:underline">
               clé de voiture à Nice et alentours
             </a>{' '}
@@ -264,49 +258,35 @@ export default function SerrurierAutomobileNicePage() {
 
           {/* H2 #3 — Zone de couverture (épurée, sans détails terrain) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
-            Zone d'intervention — Nice et Côte d'Azur
+            {seoData['serrurier-automobile-nice'].h2[2]}
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Appelez le{' '}
             <a href={`tel:${NAP.phoneTel}`} className="text-[#e53935] font-bold">
               {NAP.phoneDisplay}
             </a>{' '}
-            — intervention sous 2h dans toute la zone. Nous couvrons :
+            : intervention sous 2h dans toute la zone. Nous couvrons :
           </p>
           <ul className="font-body text-text-main leading-relaxed mb-8 grid grid-cols-2 md:grid-cols-3 gap-2">
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Nice</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Antibes</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Cagnes-sur-Mer</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Cannes</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Saint-Laurent-du-Var</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Villefranche-sur-Mer</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Menton</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Grasse</li>
-            <li className="flex items-center gap-2"><span className="text-[#FFD700]" aria-hidden="true">✓</span>Vence · Mougins</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Nice</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Antibes</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Cagnes-sur-Mer</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Cannes</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Saint-Laurent-du-Var</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Villefranche-sur-Mer</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Menton</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Grasse</li>
+            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Vence · Mougins</li>
           </ul>
 
           {/* H2 #3 — Urgence (KD 7) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
-            Serrurier automobile d'urgence Nice — Clé bloquée, perdue ou cassée
+            {seoData['serrurier-automobile-nice'].h2[3]}
           </h2>
-
-          {/* CTA urgence intégré */}
-          <div className="bg-[#e53935]/5 border-l-4 border-[#e53935] pl-6 py-4 mb-6 rounded-r-lg">
-            <p className="font-body text-text-main mb-3">
-              Situation d'urgence ? Ne restez pas bloqué.
-            </p>
-            <a
-              href={`tel:${NAP.phoneTel}`}
-              className="inline-flex items-center gap-2 bg-[#e53935] text-white font-body font-bold
-                         px-6 py-3 rounded-lg min-h-[44px] hover:bg-[#c62828] transition-colors"
-            >
-              Appeler maintenant — {NAP.phoneDisplay}
-            </a>
-          </div>
 
           <p className="font-body text-text-main leading-relaxed mb-4">
             Le process est simple : vous appelez, nous convenons d'un RDV immédiat, nous
-            intervenons sur place. Pas d'attente, pas de surfacturation d'urgence — le devis
+            intervenons sur place. Pas d'attente, pas de surfacturation d'urgence : le devis
             est gratuit et le prix est identique 7j/7. Pour un{' '}
             <a href="/urgence-cle-voiture/" className="text-primary font-semibold hover:underline">
               dépannage urgence clé
@@ -315,32 +295,30 @@ export default function SerrurierAutomobileNicePage() {
           </p>
 
           {/* Avis Denis Ribes — cas concret daté */}
-          <blockquote className="border-l-4 border-accent pl-4 italic text-text-muted my-8 bg-bg-shade py-4 pr-4 rounded-r-lg">
-            <p className="font-body">
-              &ldquo;Merci beaucoup à Sinouhé et Inès — en 5 minutes il a réussi à rencoder une clé
-              à Menton, ils nous ont sauvé la vie ! Entreprise très sérieuse, recommandation +++.&rdquo;
-            </p>
-            <footer className="font-body text-sm mt-2 not-italic">
-              — <strong>Denis Ribes</strong>, avis Google · Décembre 2025
-            </footer>
-          </blockquote>
+        </div>
+      </article>
+
+      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier-3" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+
+      <article className="bg-white py-16 px-4">
+        <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
 
           {/* H2 #4 — Nos interventions */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6 mt-12">
-            Nos interventions de serrurier automobile à Nice
+            {seoData['serrurier-automobile-nice'].h2[4]}
           </h2>
 
           <h3 className="font-heading font-bold text-xl text-third mt-6 mb-3">
-            Ouverture de véhicule sans effraction
+            {seoData['serrurier-automobile-nice'].h3[0]}
           </h3>
           <p className="font-body text-text-main leading-relaxed mb-4">
-            Porte claquée, clé restée à l'intérieur, serrure bloquée — Sinouhé utilise des
+            Porte claquée, clé restée à l'intérieur, serrure bloquée : Sinouhé utilise des
             techniques de crochetage professionnel qui préservent intégralement la serrure et
             la carrosserie. Aucun dégât, aucune trace d'intervention.
           </p>
 
           <h3 className="font-heading font-bold text-xl text-third mt-6 mb-3">
-            Reproduction et double de clé de voiture
+            {seoData['serrurier-automobile-nice'].h3[1]}
           </h3>
           <p className="font-body text-text-main leading-relaxed mb-4">
             Un double de clé préventif vous protège d'une perte future. Taille laser +
@@ -349,7 +327,7 @@ export default function SerrurierAutomobileNicePage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl text-third mt-6 mb-3">
-            Programmation de clé et transpondeur
+            {seoData['serrurier-automobile-nice'].h3[2]}
           </h3>
           <p className="font-body text-text-main leading-relaxed mb-4">
             La valise Abrites et l'outil ZedFull permettent de programmer les puces RFID
@@ -358,10 +336,10 @@ export default function SerrurierAutomobileNicePage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl text-third mt-6 mb-3">
-            Clé perdue sans double existant
+            {seoData['serrurier-automobile-nice'].h3[3]}
           </h3>
           <p className="font-body text-text-main leading-relaxed mb-8">
-            C'est le cas le plus complexe — mais pas impossible. Sans clé existante, la
+            C'est le cas le plus complexe, mais pas impossible. Sans clé existante, la
             programmation est réalisée via lecture directe de l'immobiliseur du calculateur.
             Résultat : une nouvelle clé fonctionnelle à partir de {PRICES.perteTotale.sinnes}€.
             Pour en savoir plus sur notre processus, découvrez notre service d'{' '}
@@ -372,7 +350,7 @@ export default function SerrurierAutomobileNicePage() {
 
           {/* H2 #5 — Tarifs */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6 mt-12">
-            Tarifs serrurier automobile Nice — Transparence totale
+            {seoData['serrurier-automobile-nice'].h2[5]}
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-6">
             Chez {ORG.name}, pas de surprises. Le devis est gratuit, les prix sont affichés.
@@ -414,60 +392,25 @@ export default function SerrurierAutomobileNicePage() {
             </table>
           </div>
 
-          <div className="text-center mb-12">
-            <a
-              href={`tel:${NAP.phoneTel}`}
-              className="btn-accent inline-flex items-center gap-2 px-8 py-4"
-            >
-              Devis gratuit — {NAP.phoneDisplay}
-            </a>
-          </div>
-
         </div>
       </article>
 
-      {/* ── CTA URGENCE MILIEU DE PAGE ── */}
-      <section className="bg-[#e53935] py-16 text-center text-white">
-        <div className="container-sinnes">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
-            Serrurier automobile à Nice disponible maintenant ?
-          </h2>
-          <p className="font-body text-xl mb-8 opacity-90">
-            7j/7 · Devis gratuit · Intervention rapide · Toutes marques
-          </p>
-          <a
-            href={`tel:${NAP.phoneTel}`}
-            className="inline-block bg-white text-[#e53935] font-body font-bold text-2xl
-                       px-12 py-5 rounded-lg min-h-[56px] hover:bg-gray-50 transition-colors shadow-lg"
-          >
-            {NAP.phoneDisplay}
-          </a>
-        </div>
-      </section>
+
+      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier-2" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
       {/* ── FAQ VISUEL (accordéon) ── */}
+
       <section className="bg-bg-shade py-16">
+
         <div className="container-sinnes max-w-[860px]">
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-10">
-            Questions fréquentes — Serrurier automobile à Nice
+            {seoData['serrurier-automobile-nice'].h2[6]}
           </h2>
-          <FAQAccordion />
+          <FAQAccordion items={FAQ_ITEMS} />
         </div>
       </section>
 
-      {/* ── CTA BAS DE PAGE ── */}
-      <section className="bg-white py-12 text-center">
-        <div className="container-sinnes">
-          <a
-            href={`tel:${NAP.phoneTel}`}
-            className="btn-accent btn-urgence inline-flex items-center gap-2 text-lg px-10 py-4 min-h-[56px]"
-          >
-            Appeler maintenant — {NAP.phoneDisplay}
-          </a>
-          <p className="font-body text-sm text-text-muted mt-3">7j/7 · Intervention rapide · Devis gratuit</p>
-        </div>
-      </section>
-
+      {/* STICKY MOBILE */}
     </>
   )
 }
