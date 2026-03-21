@@ -23,7 +23,7 @@ export const ORG = {
   logo: `${SITE_URL}/images/logo-avec-fond-noir.png`,
   logoWidth: 500,
   logoHeight: 500,
-  foundingDate: '2024',
+  foundingDate: '2025-02-17',
 } as const
 
 // ---------------------------------------------------------------------------
@@ -54,7 +54,7 @@ export const NAP = {
 
 export const GEO = {
   latitude: 43.7031,
-  longitude: 7.2620,
+  longitude: 7.2662,
 } as const
 
 // ---------------------------------------------------------------------------
