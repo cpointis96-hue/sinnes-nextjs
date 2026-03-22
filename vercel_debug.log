@@ -1,0 +1,18 @@
+> [debug] [2026-03-22T00:06:44.333Z] Vercel CLI 50.33.1
+> [debug] [2026-03-22T00:06:44.335Z] Agent/TTY/nonInteractive: isAgent=true agentName=antigravity stdin.isTTY=true --non-interactive=false explicitFalse=false => nonInteractive=false
+> [debug] [2026-03-22T00:06:44.335Z] user supplied a possible target for deployment or an extension
+> [debug] [2026-03-22T00:06:44.338Z] failed to find extension command with name "vercel---prod"
+> [debug] [2026-03-22T00:06:44.356Z] Setting target to production
+> [debug] [2026-03-22T00:06:44.357Z] Arrived at home directory
+> [debug] [2026-03-22T00:06:44.373Z] Found git root via "git rev-parse --show-toplevel" - detected "/Users/aiomi/Documents/Programmes/Sinnes-demo/sinnes-nextjs" as repo root
+> [debug] [2026-03-22T00:06:44.373Z] Spinner invoked (Loading scopes…) with a 1000ms delay
+> [debug] [2026-03-22T00:06:44.373Z] Using token from VERCEL_TOKEN environment variable, skipping token refresh.
+> [debug] [2026-03-22T00:06:44.384Z] #1 → GET https://api.vercel.com/v2/user
+> [debug] [2026-03-22T00:06:44.385Z] #2 → GET https://api.vercel.com/v1/teams
+> [debug] [2026-03-22T00:06:44.906Z] #1 ← 200 OK: sfo1::z74bj-1774138004829-9140d66caacc [522ms]
+> [debug] [2026-03-22T00:06:44.913Z] #2 ← 200 OK: sfo1::5j95f-1774138004809-e4919bad3e53 [528ms]
+> [debug] [2026-03-22T00:06:44.923Z] #3 → GET https://api.vercel.com/v2/user
+> [debug] [2026-03-22T00:06:45.223Z] #3 ← 200 OK: sfo1::tlfjx-1774138005017-fc0bd5d23427 [300ms]
+> [debug] [2026-03-22T00:06:45.225Z] #4 → GET https://api.vercel.com/teams/team_Hv4zkQjpwHO5FO6J5MKrfoZr
+> [debug] [2026-03-22T00:06:45.399Z] #4 ← 403 Forbidden: sfo1::h8h8l-1774138005321-a95db00b44ca [174ms]
+Error: An unexpected error occurred in deploy: TypeError: Cannot read properties of undefined (reading 'value')

@@ -154,7 +154,7 @@ export default function TarifCleVoiturePage() {
       </nav>
 
       {/* HERO */}
-      <section style={{ background: '#0A0A0A' }} className="text-white pt-20 pb-6 px-4">
+      <section style={{ background: '#0A0A0A' }} className="text-white pt-6 pb-6 px-4">
         <div className="container-sinnes text-center max-w-3xl mx-auto">
           {/* Badge avis */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">

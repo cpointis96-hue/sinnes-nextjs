@@ -122,7 +122,7 @@ export default function UrgenceCleVoiturePage() {
       </nav>
 
       {/* SECTION 2 — HERO */}
-      <section style={{ background: '#0A0A0A' }} className="pt-16 pb-6 px-4">
+      <section style={{ background: '#0A0A0A' }} className="pt-6 pb-6 px-4">
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>

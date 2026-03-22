@@ -131,7 +131,7 @@ export default function SerrurierAutomobileNicePage() {
       </nav>
 
       {/* ── HERO — CTA urgence + H1 + answer-first ── */}
-      <section style={{ background: '#0A0A0A' }} className="pt-12 md:pt-16 pb-6">
+      <section style={{ background: '#0A0A0A' }} className="pt-12 md:pt-6 pb-6">
         <div className="container-sinnes">
 
           {/* Badge avis — above the fold */}
