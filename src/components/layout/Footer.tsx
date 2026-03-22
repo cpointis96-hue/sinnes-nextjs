@@ -57,60 +57,50 @@ export default function Footer() {
           </div>
 
           {/* Colonne 2 — Contact */}
-          <div className="flex flex-col gap-6">
-
-            <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', color: '#EFAD42', textTransform: 'uppercase', fontWeight: 600 }}>
+          <div className="flex flex-col gap-3 md:pl-12">
+            <p className="font-heading font-bold text-[#EFAD42] text-lg tracking-wide uppercase">
               Nous contacter
             </p>
 
             <address
               itemScope
               itemType="https://schema.org/LocalBusiness"
-              className="not-italic flex flex-col"
-              style={{ gap: '0.55rem' }}
+              className="not-italic flex flex-col gap-3"
             >
               <meta itemProp="name" content={ORG.name} />
-              <span className="font-body " style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }} itemProp="streetAddress">
-                {NAP.address.streetAddress}
-              </span>
-              <span className="font-body " style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' }}>
-                <span itemProp="postalCode">{NAP.address.postalCode}</span>{' '}
-                <span itemProp="addressLocality">{NAP.address.addressLocality}</span>
-              </span>
-              <a
-                href={`tel:${NAP.phoneTel}`}
-                itemProp="telephone"
-                className="font-body font-semibold"
-                style={{ fontSize: '0.95rem', color: '#EFAD42', letterSpacing: '0.02em', marginTop: '0.25rem' }}
-                aria-label={`Appeler Sinnes Automobiles au ${NAP.phoneDisplay}`}
-              >
-                <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
-              </a>
+
               <a
                 href={`mailto:${NAP.email}`}
                 itemProp="email"
-                className="font-body"
-                style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)' }}
+                className="font-body text-sm text-white/60 hover:text-white transition-colors"
               >
                 {NAP.email}
               </a>
-              <span className="font-body" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.3)' }}>
-                {HOURS.display}
-              </span>
+
+              <div className="font-body text-sm text-white/50 mt-2">
+                <span itemProp="streetAddress">{NAP.address.streetAddress}</span>
+                <br />
+                <span itemProp="postalCode">{NAP.address.postalCode}</span>{' '}
+                <span itemProp="addressLocality">{NAP.address.addressLocality}</span>
+              </div>
+
+              <div className="font-body text-sm text-white/50">
+                Intervention {HOURS.display}
+              </div>
+
               {ORG.siret && (
-                <span className="font-body" style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.2)' }}>
-                  SIRET {ORG.siret}
-                </span>
+                <div className="font-body text-[0.7rem] text-white/30 mt-1">
+                  SIRET : {ORG.siret}
+                </div>
               )}
             </address>
 
-            <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
+            <div className="mt-4 pt-6 border-t border-white/10">
               <Link
                 href="/mentions-legales-et-politique-de-confidentialite/"
-                className="font-body"
-                style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.04em' }}
+                className="font-body text-sm text-white/40 hover:text-white transition-colors underline decoration-white/20 underline-offset-4"
               >
-                Mentions légales &amp; Confidentialité
+                Mentions légales & politique de confidentialité
               </Link>
             </div>
 

@@ -61,6 +61,14 @@ const schema = {
     { '@type': 'ListItem', position: 2, name: 'Qui sommes-nous', item: 'https://sinnes.fr/qui-sommes-nous/' },
    ],
   },
+  {
+   '@type': 'WebPage',
+   '@id': 'https://sinnes.fr/qui-sommes-nous/#webpage',
+   url: 'https://sinnes.fr/qui-sommes-nous/',
+   datePublished: '2026-03-01',
+   dateModified: '2026-03-22',
+   isPartOf: { '@id': 'https://sinnes.fr/#website' },
+  },
  ],
 }
 
@@ -123,13 +131,6 @@ export default function QuiSommesNousPage() {
       directement à votre domicile ou à l'atelier. Il prend en charge toutes les marques et
       toutes les générations, des véhicules les plus anciens aux modèles les plus récents.
      </p>
-     <a
-      href="/reproduction-cle-voiture/"
-      className="font-body font-semibold hover:underline"
-      style={{ color: '#EFAD42' }}
-     >
-      &rarr; Découvrir notre service de reproduction de clé
-     </a>
     </div>
    </section>
 

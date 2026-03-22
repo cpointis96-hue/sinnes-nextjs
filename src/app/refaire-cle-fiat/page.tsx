@@ -94,6 +94,8 @@ const schema = {
         '@type': 'WebPage',
         '@id': 'https://sinnes.fr/refaire-cle-fiat/#webpage',
         url: 'https://sinnes.fr/refaire-cle-fiat/',
+        datePublished: '2026-03-16',
+        dateModified: '2026-03-16',
         name: 'Refaire une clé Fiat à Nice · Double & Perte totale 7j/7',
         isPartOf: { '@id': 'https://sinnes.fr/#website' },
         about: { '@id': 'https://sinnes.fr/#organization' },
@@ -143,7 +145,7 @@ export default function RefaireCleFiatPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['refaire-cle-fiat'].h1} :<br />Fiat 500, Panda et toute la gamme
+            {seoData['refaire-cle-fiat'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -290,8 +292,9 @@ export default function RefaireCleFiatPage() {
             </table>
           </div>
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Vous avez un véhicule du groupe VAG ? Découvrez aussi notre page pour{' '}
-            <a href="/refaire-cle-audi/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Audi</a> à Nice.
+            Le transpondeur ID46 Fiat nécessite une intervention précise — consultez notre guide sur la{' '}
+            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation transpondeur Fiat</a>{' '}
+            pour comprendre le processus complet.
           </p>
         </div>
       </section>

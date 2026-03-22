@@ -81,6 +81,14 @@ const schema = {
       "jobTitle": "Expert en programmation de clés automobiles",
       "knowsAbout": TEAM.sinouhe.knowsAbout,
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sinnes.fr/urgence-cle-voiture/#webpage",
+      "url": "https://sinnes.fr/urgence-cle-voiture/",
+      "datePublished": "2026-03-10",
+      "dateModified": "2026-03-10",
+      "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
 }
@@ -130,7 +138,7 @@ export default function UrgenceCleVoiturePage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            {seoData['urgence-cle-voiture'].h1} :<br />Intervention immédiate 7j/7
+            {seoData['urgence-cle-voiture'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -208,7 +216,7 @@ export default function UrgenceCleVoiturePage() {
           </h2>
 
           <h3 className="font-heading font-bold text-xl mb-3" style={{ color: '#111111' }}>
-            Clé de voiture perdue : sans double
+            {seoData['urgence-cle-voiture'].h3[0]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             La situation la plus stressante : vous n'avez plus vos clés et aucun double n'existe.
@@ -219,7 +227,7 @@ export default function UrgenceCleVoiturePage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl mb-3" style={{ color: '#111111' }}>
-            Clé bloquée dans le contact ou cassée
+            {seoData['urgence-cle-voiture'].h3[1]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             Une clé cassée dans le barillet ou bloquée dans le contacteur nécessite une extraction
@@ -228,7 +236,7 @@ export default function UrgenceCleVoiturePage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl mb-3" style={{ color: '#111111' }}>
-            Véhicule fermé avec clés à l'intérieur
+            {seoData['urgence-cle-voiture'].h3[2]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
             Clés oubliées à l'intérieur, portière claquée automatiquement : Sinouhé ouvre votre
@@ -237,7 +245,7 @@ export default function UrgenceCleVoiturePage() {
           </p>
 
           <h3 className="font-heading font-bold text-xl mb-3" style={{ color: '#111111' }}>
-            Perte de la télécommande centralisée
+            {seoData['urgence-cle-voiture'].h3[3]}
           </h3>
           <p className="font-body leading-relaxed mb-6" style={{ color: '#111111' }}>
             Télécommande perdue ou défaillante : le véhicule ne répond plus à la commande d'ouverture centralisée.
@@ -284,7 +292,7 @@ export default function UrgenceCleVoiturePage() {
             Grasse, Vence et Mougins. Les interventions à Nice ne sont pas facturées de frais de déplacement.
           </p>
           <p className="font-body leading-relaxed mb-6" style={{ color: '#111111' }}>
-            Pour toutes les situations de <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>clé de voiture à Nice et alentours</a>, appelez
+            Pour toutes les situations de <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>urgence clé voiture sur Nice et la Côte d'Azur</a>, appelez
             directement le {NAP.phoneDisplay} : Sinouhé vous donne une estimation de délai en moins
             de 2 minutes.
           </p>        </div>

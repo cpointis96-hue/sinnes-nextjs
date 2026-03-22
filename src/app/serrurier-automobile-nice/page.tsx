@@ -94,6 +94,14 @@ const schema = {
       knowsAbout: TEAM.sinouhe.knowsAbout,
       worksFor: { '@id': 'https://sinnes.fr/#organization' },
     },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/serrurier-automobile-nice/#webpage',
+      url: 'https://sinnes.fr/serrurier-automobile-nice/',
+      datePublished: '2026-03-01',
+      dateModified: '2026-03-22',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
   ],
 }
 
@@ -140,23 +148,8 @@ export default function SerrurierAutomobileNicePage() {
             <span className="font-body text-sm font-semibold text-white">58 avis Google · 5.0/5</span>
           </div>
 
-          {/* CTA urgence — position haute */}
-          <div className="mb-8">
-            <a
-              href={`tel:${NAP.phoneTel}`}
-              className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg"
-              aria-label={`Urgence serrurier automobile Nice — Appeler ${NAP.phoneDisplay}`}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-              </svg>
-              URGENCE : {NAP.phoneDisplay}
-            </a>
-            <p className="text-xs mt-2 font-body" style={{ color: 'rgba(255,255,255,0.6)' }}>7j/7 · Intervention rapide · Devis gratuit</p>
-          </div>
-
           <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight" style={{ color: '#FFFFFF' }}>
-            {seoData['serrurier-automobile-nice'].h1} · Intervention 7j/7
+            {seoData['serrurier-automobile-nice'].h1}
           </h1>
 
           {/* Answer-first — 100 premiers mots */}
@@ -168,17 +161,24 @@ export default function SerrurierAutomobileNicePage() {
               êtes (domicile, lieu de travail, parking) sur Nice, Antibes, Cagnes-sur-Mer et Cannes.
               Tarifs à partir de {PRICES.cleSimple.sinnes}€. Devis gratuit, sans frais cachés.
             </p>
-            <p className="font-body text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-              Besoin d'une{' '}
-              <a href="/cle-voiture-nice/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
-                clé de voiture à Nice et alentours
-              </a>{' '}
-              ou d'un{' '}
-              <a href="/depannage-cle-domicile/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
-                intervention à domicile
-              </a>{' '}
-              dans les meilleurs délais ? Contactez-nous.
+            <p className="font-body text-base leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
+              Besoin d'une clé de voiture à Nice et alentours ou d'une intervention à domicile dans les meilleurs délais ? Contactez-nous.
             </p>
+
+            {/* CTA urgence — après le texte hero */}
+            <div className="mb-8">
+              <a
+                href={`tel:${NAP.phoneTel}`}
+                className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg"
+                aria-label={`Urgence serrurier automobile Nice — Appeler ${NAP.phoneDisplay}`}
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                URGENCE : {NAP.phoneDisplay}
+              </a>
+              <p className="text-xs mt-2 font-body" style={{ color: 'rgba(255,255,255,0.6)' }}>7j/7 · Intervention rapide · Devis gratuit</p>
+            </div>
           </div>
 
           {/* Byline Sinouhé — obligatoire */}
@@ -217,7 +217,7 @@ export default function SerrurierAutomobileNicePage() {
           <p className="font-body text-text-main leading-relaxed mb-8">
             Nos services de{' '}
             <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">
-              reproduction de clé
+              reproduction de clé de voiture
             </a>{' '}
             couvrent tous les types de véhicules : clé simple mécanique, clé centralisée à
             télécommande, clé mains libres et badge électronique. Chaque intervention est réalisée
@@ -241,41 +241,53 @@ export default function SerrurierAutomobileNicePage() {
             clé d'origine. Commissaire au Grand Prix de Monaco depuis 2016, il connaît les
             exigences de fiabilité que le milieu automobile de haut niveau impose.
           </p>
-          <p className="font-body text-text-main leading-relaxed mb-8">
+          <p className="font-body text-text-main leading-relaxed mb-4">
             Pour les détails techniques complets sur la programmation des puces transpondeur,
             consultez notre page{' '}
             <a href="/programmation-cle-voiture/" className="text-primary font-semibold hover:underline">
               programmation de clé voiture
-            </a>{' '}
-            , et pour comprendre notre zone d'intervention sur la Côte d'Azur, notre page{' '}
+            </a>.
+          </p>
+          <p className="font-body text-text-main leading-relaxed mb-8">
+            Notre page{' '}
             <a href="/cle-voiture-nice/" className="text-primary font-semibold hover:underline">
               clé de voiture à Nice et alentours
             </a>{' '}
-            détaille chaque quartier et commune couverts.
+            détaille chaque quartier et commune couverts sur la Côte d'Azur.
           </p>
 
-          {/* H2 #3 — Zone de couverture (épurée, sans détails terrain) */}
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
+        </div>
+      </article>
+
+      {/* ── ZONE D'INTERVENTION — fond noir branding ── */}
+      <section style={{ background: '#111111' }} className="py-10 px-4">
+        <div className="container-sinnes max-w-[860px]">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#EFAD42' }}>
             {seoData['serrurier-automobile-nice'].h2[2]}
           </h2>
-          <p className="font-body text-text-main leading-relaxed mb-4">
+          <p className="font-body text-base leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Appelez le{' '}
-            <a href={`tel:${NAP.phoneTel}`} className="text-[#e53935] font-bold">
+            <a href={`tel:${NAP.phoneTel}`} className="font-bold" style={{ color: '#e53935' }}>
               {NAP.phoneDisplay}
             </a>{' '}
             : intervention sous 2h dans toute la zone. Nous couvrons :
           </p>
-          <ul className="font-body text-text-main leading-relaxed mb-8 grid grid-cols-2 md:grid-cols-3 gap-2">
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Nice</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Antibes</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Cagnes-sur-Mer</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Cannes</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Saint-Laurent-du-Var</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Villefranche-sur-Mer</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Menton</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Grasse</li>
-            <li className="flex items-center gap-2"><span className="text-[#EFAD42]" aria-hidden="true">✓</span>Vence · Mougins</li>
+          <ul className="font-body leading-relaxed grid grid-cols-2 md:grid-cols-3 gap-3">
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Nice</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Antibes</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Cagnes-sur-Mer</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Cannes</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Saint-Laurent-du-Var</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Villefranche-sur-Mer</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Menton</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Grasse</li>
+            <li className="flex items-center gap-2" style={{ color: 'rgba(255,255,255,0.85)' }}><span style={{ color: '#EFAD42' }} aria-hidden="true">✓</span>Vence · Mougins</li>
           </ul>
+        </div>
+      </section>
+
+      <article className="bg-white py-8 px-4">
+        <div className="container-sinnes max-w-[860px]">
 
           {/* H2 #3 — Urgence (KD 7) */}
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-third mb-6">
@@ -287,9 +299,9 @@ export default function SerrurierAutomobileNicePage() {
             intervenons sur place. Pas d'attente, pas de surfacturation d'urgence : le devis
             est gratuit et le prix est identique 7j/7. Pour un{' '}
             <a href="/urgence-cle-voiture/" className="text-primary font-semibold hover:underline">
-              dépannage urgence clé
+              urgence clé voiture dans les Alpes-Maritimes
             </a>{' '}
-            dans les Alpes-Maritimes, Sinnes est disponible à toute heure.
+            , Sinnes est disponible à toute heure.
           </p>
 
           {/* Avis Denis Ribes — cas concret daté */}
@@ -319,7 +331,11 @@ export default function SerrurierAutomobileNicePage() {
             {seoData['serrurier-automobile-nice'].h3[1]}
           </h3>
           <p className="font-body text-text-main leading-relaxed mb-4">
-            Un double de clé préventif vous protège d'une perte future. Taille laser +
+            Un{' '}
+            <a href="/double-cle-voiture/" className="text-primary font-semibold hover:underline">
+              double de clé de voiture
+            </a>{' '}
+            préventif vous protège d'une perte future. Taille laser +
             programmation de la puce transpondeur en une seule intervention. Tous les constructeurs
             sont pris en charge.
           </p>
@@ -340,9 +356,9 @@ export default function SerrurierAutomobileNicePage() {
             C'est le cas le plus complexe, mais pas impossible. Sans clé existante, la
             programmation est réalisée via lecture directe de l'immobiliseur du calculateur.
             Résultat : une nouvelle clé fonctionnelle à partir de {PRICES.perteTotale.sinnes}€.
-            Pour en savoir plus sur notre processus, découvrez notre service d'{' '}
+            Pour en savoir plus sur notre processus, découvrez notre service de{' '}
             <a href="/depannage-cle-domicile/" className="text-primary font-semibold hover:underline">
-              intervention à domicile
+              dépannage clé voiture à domicile
             </a>.
           </p>
 
@@ -352,49 +368,74 @@ export default function SerrurierAutomobileNicePage() {
           </h2>
           <p className="font-body text-text-main leading-relaxed mb-6">
             Chez {ORG.name}, pas de surprises. Le devis est gratuit, les prix sont affichés.
-            Voici notre grille tarifaire comparée au concessionnaire :
+            Consultez notre page{' '}
+            <a href="/tarif-cle-voiture/" className="text-primary font-semibold hover:underline">
+              tarif clé voiture à Nice
+            </a>{' '}
+            pour le détail complet. Voici notre grille tarifaire comparée au concessionnaire :
           </p>
-
-          {/* Tableau des tarifs */}
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse font-body text-sm md:text-base">
-              <thead>
-                <tr className="bg-accent text-white">
-                  <th className="text-left p-3 font-bold rounded-tl-lg">Type de clé</th>
-                  <th className="text-center p-3 font-bold">Prix Sinnes</th>
-                  <th className="text-center p-3 font-bold rounded-tr-lg">Prix concessionnaire</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-white border-b border-card-border">
-                  <td className="p-3">Clé simple (sans télécommande)</td>
-                  <td className="p-3 text-center font-bold text-primary">À partir de {PRICES.cleSimple.sinnes}€</td>
-                  <td className="p-3 text-center text-text-muted">{PRICES.cleSimple.concessionnaire.min}-{PRICES.cleSimple.concessionnaire.max}€</td>
-                </tr>
-                <tr className="bg-bg-shade border-b border-card-border">
-                  <td className="p-3">Clé centralisée (télécommande)</td>
-                  <td className="p-3 text-center font-bold text-primary">À partir de {PRICES.cleCentralisee.sinnes}€</td>
-                  <td className="p-3 text-center text-text-muted">{PRICES.cleCentralisee.concessionnaire.min}-{PRICES.cleCentralisee.concessionnaire.max}€</td>
-                </tr>
-                <tr className="bg-white border-b border-card-border">
-                  <td className="p-3">Clé mains libres / badge</td>
-                  <td className="p-3 text-center font-bold text-primary">À partir de {PRICES.cleMainsLibres.sinnes}€</td>
-                  <td className="p-3 text-center text-text-muted">{PRICES.cleMainsLibres.concessionnaire.min}-{PRICES.cleMainsLibres.concessionnaire.max}€</td>
-                </tr>
-                <tr className="bg-bg-shade">
-                  <td className="p-3 rounded-bl-lg">Perte totale (sans double)</td>
-                  <td className="p-3 text-center font-bold text-primary">À partir de {PRICES.perteTotale.sinnes}€</td>
-                  <td className="p-3 text-center text-text-muted rounded-br-lg">{PRICES.perteTotale.concessionnaire.min}-{PRICES.perteTotale.concessionnaire.max}€</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
         </div>
       </article>
 
+      {/* SECTION TARIFS — FULL WIDTH DARK — COMPACT & ELEGANT */}
+      <section
+        style={{
+          background: '#0A0A0A',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+        className="py-16 px-4"
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '60%',
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(239,173,66,0.5), transparent)',
+          }}
+        />
 
-      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier-2" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+        <div className="container-sinnes max-w-4xl mx-auto">
+          {/* Tableau des tarifs */}
+          <div className="overflow-x-auto rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+            <table className="w-full text-left border-collapse min-w-[600px]">
+              <thead>
+                <tr className="bg-white/5">
+                  <th className="px-6 py-4 text-xs font-black uppercase tracking-widest text-accent/80 font-body">Type de clé</th>
+                  <th className="px-6 py-4 text-xs font-black uppercase tracking-widest text-accent/80 text-center font-body border-l border-white/5">Prix Sinnes</th>
+                  <th className="px-6 py-4 text-xs font-black uppercase tracking-widest text-white/30 text-center border-l border-white/5 font-body">Prix concessionnaire</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/5">
+                {[
+                  { label: 'Clé simple (sans télécommande)', p: PRICES.cleSimple },
+                  { label: 'Clé centralisée (télécommande)', p: PRICES.cleCentralisee },
+                  { label: 'Clé mains libres / badge', p: PRICES.cleMainsLibres },
+                  { label: 'Perte totale (sans double)', p: PRICES.perteTotale },
+                ].map((item, idx) => (
+                  <tr key={idx} className="hover:bg-white/5 transition-colors">
+                    <td className="px-6 py-4">
+                      <span className="font-body font-semibold text-white text-sm md:text-base">{item.label}</span>
+                    </td>
+                    <td className="px-6 py-4 text-center border-l border-white/5">
+                      <span className="font-heading font-bold text-xl md:text-2xl text-accent">À partir de {item.p.sinnes} €</span>
+                    </td>
+                    <td className="px-6 py-4 text-center text-white/40 font-body text-sm line-through border-l border-white/5">
+                      {item.p.concessionnaire.min} - {item.p.concessionnaire.max} €
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-serrurier-2" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#0A0A0A" /></div></div>
 
       {/* ── FAQ VISUEL (accordéon) ── */}
 

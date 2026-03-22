@@ -76,6 +76,14 @@ const schema = {
       "knowsAbout": TEAM.sinouhe.knowsAbout,
       "description": "Formateur international chez Incarline. Commissaire au Grand Prix de Monaco depuis 2016.",
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sinnes.fr/programmation-cle-voiture/#webpage",
+      "url": "https://sinnes.fr/programmation-cle-voiture/",
+      "datePublished": "2026-03-07",
+      "dateModified": "2026-03-22",
+      "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
 }
@@ -125,7 +133,7 @@ export default function ProgrammationCleVoiturePage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['programmation-cle-voiture'].h1} :<br />Transpondeur, télécommande et badge
+            {seoData['programmation-cle-voiture'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -181,8 +189,8 @@ export default function ProgrammationCleVoiturePage() {
             Une clé de voiture moderne a deux composantes distinctes : la lame mécanique (qui actionne
             la serrure physiquement) et le transpondeur électronique (qui autorise le démarrage).
             La taille de la lame relève de la mécanique pure : c'est ce que fait une machine à
-            graver. La programmation, elle, consiste à enregistrer le code unique du transpondeur
-            dans le calculateur immobiliseur du véhicule.
+            graver. La programmation — aussi appelée codage de clé voiture — consiste à enregistrer
+            le code unique du transpondeur dans le calculateur immobiliseur du véhicule.
           </p>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             Sans une programmation correcte, votre moteur démarrera peut-être une seconde, puis
@@ -231,30 +239,53 @@ export default function ProgrammationCleVoiturePage() {
             existante : opération rapide (15 à 20 minutes sur la plupart des marques).
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
+        </div>
+      </section>
+
+      {/* BLOC ÉQUIPEMENTS — fond noir, liste à puces jaune */}
+      <section style={{ background: '#111111' }} className="py-10 px-4">
+        <div className="container-sinnes max-w-3xl">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-8 " style={{ color: '#FFFFFF' }}>
             {seoData['programmation-cle-voiture'].h2[3]}
           </h2>
-          <p className="font-body leading-relaxed mb-4 text-text-muted">
-            Abrites et ZedFull sont les deux références mondiales en matière de valises de
-            programmation automobile professionnelles. Ce sont les mêmes outils qu'utilisent
-            les concessionnaires agréés et les garages spécialisés. Ils supportent les transpondeurs
-            ID46, ID48, HITAG2, HITAG Pro, PCF7936, DST80 : la quasi totalité des systèmes
-            immobiliseurs présents sur le marché depuis 1995.
-          </p>
-          <p className="font-body leading-relaxed mb-4 text-text-muted">
-            Sinouhé Rochereau est formateur certifié Incarline, ce qui signifie qu'il maîtrise
-            non seulement l'utilisation de ces outils, mais qu'il forme lui-même d'autres
-            professionnels à leur utilisation. Vous bénéficiez ainsi d'une expertise de
-            niveau formateur, bien au-delà de ce que propose un technicien lambda.
-          </p>
-          <p className="font-body leading-relaxed mb-8 text-text-muted">
-            Cette maîtrise technique se traduit directement : sa vitesse d'intervention est
-            supérieure à la moyenne, le taux de succès sur les premiers essais est de quasi
-            100%, et les délais sont respectés. Voir aussi notre service de <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">reproduction de clé</a>.
-          </p>
+          <ul className="space-y-6">
+            <li className="flex items-start gap-4">
+              <span style={{ color: '#D4A017' }} className="mt-1 text-2xl leading-none flex-shrink-0">▸</span>
+              <p className="font-body leading-relaxed" style={{ color: '#D4A017' }}>
+                <strong>Valises Abrites et ZedFull — le standard des professionnels.</strong>{' '}
+                Ces deux références mondiales sont les mêmes outils qu'utilisent les concessionnaires agréés
+                et les garages spécialisés. Elles supportent les transpondeurs ID46, ID48, HITAG2, HITAG Pro,
+                PCF7936, DST80 : la quasi-totalité des systèmes immobiliseurs présents sur le marché depuis 1995.
+              </p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span style={{ color: '#D4A017' }} className="mt-1 text-2xl leading-none flex-shrink-0">▸</span>
+              <p className="font-body leading-relaxed" style={{ color: '#D4A017' }}>
+                <strong>Formateur certifié Incarline — une expertise au-dessus du marché.</strong>{' '}
+                Sinouhé Rochereau ne se contente pas d'utiliser ces outils : il forme lui-même d'autres
+                professionnels à leur maîtrise. Vous bénéficiez d'une expertise de niveau formateur,
+                bien au-delà de ce que propose un technicien classique.
+              </p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span style={{ color: '#D4A017' }} className="mt-1 text-2xl leading-none flex-shrink-0">▸</span>
+              <p className="font-body leading-relaxed" style={{ color: '#D4A017' }}>
+                <strong>Résultats concrets : rapidité, fiabilité, ponctualité.</strong>{' '}
+                Cette maîtrise technique se traduit directement : vitesse d'intervention supérieure à la
+                moyenne, taux de succès sur les premiers essais de quasi 100%, et délais systématiquement
+                respectés.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* SUITE SECTION 5 */}
+      <section className="bg-white py-10 px-4">
+        <div className="container-sinnes max-w-3xl">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main ">
-            Programmation clé voiture à domicile : Nice et Côte d'Azur
+            {seoData['programmation-cle-voiture'].h2[4]}
           </h2>
           <p className="font-body leading-relaxed mb-4 text-text-muted">
             La programmation à domicile est l'une des grandes forces de Sinnes Automobiles.
@@ -284,8 +315,8 @@ export default function ProgrammationCleVoiturePage() {
             <li className="font-body">· <strong className="text-text-main">Toyota / Lexus</strong> : systèmes RFID 4D, 4F, DST80</li>
           </ul>
           <p className="font-body leading-relaxed mb-8 text-text-muted">
-            Pour les clés Audi spécifiquement, consultez notre page <a href="/refaire-cle-audi/" className="text-primary font-semibold hover:underline">programmation clé Audi</a>.
-            Pour Mercedes, voir <a href="/refaire-cle-mercedes/" className="text-primary font-semibold hover:underline">programmation clé Mercedes</a>.
+            Pour les clés Audi spécifiquement, consultez notre page <a href="/refaire-cle-audi/" className="text-primary font-semibold hover:underline">programmation clé Audi à Nice</a>.
+            Pour Mercedes, voir <a href="/refaire-cle-mercedes/" className="text-primary font-semibold hover:underline">programmation clé Mercedes à Nice</a>.
           </p>        </div>
       </section>
 

@@ -13,12 +13,12 @@ export default function Header() {
           {/* ── Logo ── */}
           <Link href="/" aria-label="Sinnes Automobiles — Accueil" className="flex-shrink-0">
             <Image
-              src="/images/logo-avec-fond-noir-150x150.png"
+              src="/images/logo-sinnes-automobiles.svg"
               alt="Sinnes Automobiles — Serrurier automobile Nice"
-              width={56}
-              height={56}
+              width={240}
+              height={100}
               priority
-              className="rounded-md"
+              className="object-contain h-12 sm:h-14 md:h-16 w-auto"
             />
           </Link>
 

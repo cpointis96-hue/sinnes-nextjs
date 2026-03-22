@@ -83,6 +83,14 @@ const schema = {
       "jobTitle": "Expert en programmation de clés automobiles",
       "knowsAbout": TEAM.sinouhe.knowsAbout,
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sinnes.fr/cle-voiture-perdue/#webpage",
+      "url": "https://sinnes.fr/cle-voiture-perdue/",
+      "datePublished": "2026-03-05",
+      "dateModified": "2026-03-22",
+      "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
 }
@@ -132,7 +140,7 @@ export default function CleVoiturePerdуePage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['cle-voiture-perdue'].h1} :<br />Solution d'urgence à Nice
+            {seoData['cle-voiture-perdue'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -183,8 +191,9 @@ export default function CleVoiturePerdуePage() {
             {seoData['cle-voiture-perdue'].h2[1]}
           </h2>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-            Pas de panique. La situation est stressante, mais elle a une solution rapide et peu onéreuse.
-            La première étape est d'appeler Sinnes Automobiles au <span className="whitespace-nowrap">{NAP.phoneDisplay}</span> : en deux minutes,
+            Pas de panique. Refaire une clé de voiture sans double est précisément la spécialité
+            de Sinnes Automobiles — et la situation se résout rapidement, à moindre frais.
+            La première étape est d'appeler au <span className="whitespace-nowrap">{NAP.phoneDisplay}</span> : en deux minutes,
             Sinouhé Rochereau vous confirme qu'il peut intervenir et vous donne un délai précis.
           </p>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -236,7 +245,7 @@ export default function CleVoiturePerdуePage() {
             {seoData['cle-voiture-perdue'].h2[3]}
           </h2>
 
-          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#D4A017' }}>
             {seoData['cle-voiture-perdue'].h3[0]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -246,7 +255,7 @@ export default function CleVoiturePerdуePage() {
             d'origine. Ce code est ensuite programmé sur la machine à taille laser.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#D4A017' }}>
             {seoData['cle-voiture-perdue'].h3[1]}
           </h3>
           <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -255,7 +264,7 @@ export default function CleVoiturePerdуePage() {
             à l'originale : ni trop souple, ni trop rigide, avec les mêmes tolerances d'usinage.
           </p>
 
-          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#FFFFFF' }}>
+          <h3 className="font-heading font-bold text-xl mb-3 " style={{ color: '#D4A017' }}>
             {seoData['cle-voiture-perdue'].h3[2]}
           </h3>
           <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -285,7 +294,12 @@ export default function CleVoiturePerdуePage() {
             prise de rendez-vous atelier). Sinnes intervient le jour même, en 1h30.
           </p>
           <p className="font-body leading-relaxed mb-8" style={{ color: '#111111' }}>
-            Pour le détail des tarifs par type de clé, consultez notre page <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarif en cas de perte totale</a>.
+            Vous voulez savoir exactement combien cela va vous coûter selon votre véhicule ?
+            Consultez notre guide sur le{' '}
+            <a href="/prix-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>prix d'une clé de voiture en cas de perte</a>{' '}
+            ou directement notre page{' '}
+            <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarif en cas de perte totale</a>{' '}
+            pour obtenir un devis précis.
           </p>
         </div>
       </section>

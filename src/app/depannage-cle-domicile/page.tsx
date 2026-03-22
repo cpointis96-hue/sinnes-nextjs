@@ -75,6 +75,14 @@ const schema = {
       "jobTitle": "Expert en programmation de clés automobiles",
       "knowsAbout": TEAM.sinouhe.knowsAbout,
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sinnes.fr/depannage-cle-domicile/#webpage",
+      "url": "https://sinnes.fr/depannage-cle-domicile/",
+      "datePublished": "2026-03-10",
+      "dateModified": "2026-03-10",
+      "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
 }
@@ -124,7 +132,7 @@ export default function DepannageCledomicilePage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            {seoData['depannage-cle-domicile'].h1} :<br />Intervention sur place Nice
+            {seoData['depannage-cle-domicile'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>

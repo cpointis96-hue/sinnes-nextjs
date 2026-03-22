@@ -94,6 +94,8 @@ const schema = {
         '@type': 'WebPage',
         '@id': 'https://sinnes.fr/refaire-cle-hyundai/#webpage',
         url: 'https://sinnes.fr/refaire-cle-hyundai/',
+        datePublished: '2026-03-15',
+        dateModified: '2026-03-15',
         name: 'Refaire une clé Hyundai à Nice · Double & Perte totale 7j/7',
         isPartOf: { '@id': 'https://sinnes.fr/#website' },
         about: { '@id': 'https://sinnes.fr/#organization' },
@@ -143,7 +145,7 @@ export default function RefaireCleHyundaiPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['refaire-cle-hyundai'].h1} :<br />Toutes générations Hyundai
+            {seoData['refaire-cle-hyundai'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -210,7 +212,7 @@ export default function RefaireCleHyundaiPage() {
             Chaque génération utilise un système de transpondeur différent, c'est pourquoi la maîtrise
             du système IMMO3 Hyundai est indispensable. Pour faire un{' '}
             <a href="/double-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
-              faire un double de clé voiture
+              double de clé Hyundai
             </a>{' '}
             dans les meilleures conditions, il faut identifier précisément le modèle, l'année et la
             variante équipée.
@@ -297,8 +299,9 @@ export default function RefaireCleHyundaiPage() {
             </table>
           </div>
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Vous avez une autre marque ? Découvrez aussi notre page pour{' '}
-            <a href="/refaire-cle-toyota/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Toyota</a> à Nice.
+            La clé Hyundai requiert une{' '}
+            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation de clé Hyundai</a>{' '}
+            spécifique — découvrez notre guide complet sur la programmation automobile.
           </p>
         </div>
       </section>

@@ -7,15 +7,19 @@ import { REVIEWS as ALL_REVIEWS } from './reviews'
 
 export const seoData = {
   home: {
-    title: 'Sinnes Automobiles — Reproduction de clé voiture Nice',
-    description: 'Spécialiste reproduction & double de clé de voiture à Nice. Intervention 7j/7, tous véhicules. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Perte de clé auto\u00A0?',
+    title: 'Sinnes Automobiles Nice | Serrurier automobile & Reproduction clé',
+    description: 'Serrurier automobile à Nice — Reproduction & double de clé voiture. Intervention 7j/7, tous véhicules. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Sinnes Automobiles\u00A0: Reproduction & Double de Clé Voiture à Nice',
     h2: [
       'Faites un double de clé en toute sécurité',
-      'Sinnes Automobiles c\'est un service à domicile, on vient à votre rencontre, où que vous soyez\u00A0!',
-      'Nos services',
-      'Qui sommes nous\u00A0?',
-      'Contactez-nous'
+      'Intervention à domicile à Nice\u00A0: votre serrurier vient à vous',
+      'Nos services de serrurier automobile à Nice',
+      'Sinouhé et Inès\u00A0: votre équipe de serruriers à Nice',
+      'Demandez votre devis clé voiture à Nice'
+    ],
+    h3: [
+      'Reproduction de clé de voiture',
+      'Vente de véhicule'
     ],
     images: {
       hero: 'Perte de clé auto - Service Sinnes Automobiles',
@@ -27,21 +31,22 @@ export const seoData = {
     }
   },
   'reproduction-cle-voiture': {
-    title: 'Reproduction de clé de voiture Nice — Spécialiste',
-    description: 'Reproduction et double de clé de voiture à Nice. Toutes marques, intervention 7j/7. À partir de 78€. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Reproduction de clé de voiture',
+    title: 'Reproduction clé voiture Nice | Dès 78€ | Sinnes Automobiles',
+    description: 'Reproduction et double de clé de voiture à Nice. Toutes marques, intervention 7j/7. À partir de 78€. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Reproduction de clé de voiture\u00A0: spécialiste Nice & Côte d\'Azur',
     h2: [
-      "Qu'est-ce que la reproduction de clé de voiture ?",
-      'Reproduction de clé avec ou sans original : deux situations',
-      'Notre méthode : taille laser + programmation transpondeur',
+      'Notre processus pour refaire votre clé de voiture',
+      'Reproduction de clé avec ou sans original\u00A0: deux situations',
+      'Notre méthode\u00A0: taille laser + programmation transpondeur',
       'Reproduction de clé pour plus de 40 marques de voiture',
-      'Tarifs reproduction de clé de voiture : Transparence totale',
+      'Tarifs reproduction de clé de voiture\u00A0: Transparence totale',
       'Pourquoi choisir Sinnes Automobiles plutôt qu\'un concessionnaire ?',
-      'Questions fréquentes : Reproduction de clé de voiture'
+      'Questions fréquentes\u00A0: Reproduction de clé de voiture'
     ],
     h3: [
       'Vous avez encore votre clé originale (double préventif)',
-      "Vous n'avez plus aucune clé (perte totale)"
+      "Vous n'avez plus aucune clé (perte totale)",
+      'Nos Tarifs'
     ],
     images: {
       main: 'Service de reproduction de clé de voiture Sinnes Automobiles'
@@ -51,17 +56,17 @@ export const seoData = {
     }
   },
   'serrurier-automobile-nice': {
-    title: 'Serrurier Automobile Nice — Intervention 7j/7',
-    description: 'Serrurier automobile à Nice spécialisé clé de voiture. Intervention 7j/7, Antibes, Cannes, Côte d\'Azur. Devis gratuit.',
-    h1: 'Serrurier Automobile à Nice',
+    title: 'Serrurier Automobile Nice | 7j/7 Urgence | Sinnes Automobiles',
+    description: 'Serrurier automobile Nice — Spécialiste clé de voiture. Intervention 7j/7 sur Côte d\'Azur. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Serrurier Automobile à Nice · Intervention 7j/7',
     h2: [
-      'Serrurier automobile à Nice : spécialiste clé de voiture, pas serrurier maison',
+      'Serrurier automobile à Nice\u00A0: spécialiste clé de voiture, pas serrurier maison',
       'Sinouhé Rochereau · Formateur international, expert certifié',
-      'Zone d\'intervention : Nice et Côte d\'Azur',
-      'Serrurier automobile d\'urgence Nice : Clé bloquée, perdue ou cassée',
-      'Nos interventions de serrurier automobile à Nice',
-      'Tarifs serrurier automobile Nice : Transparence totale',
-      'Questions fréquentes : Serrurier Automobile à Nice'
+      'Zone d\'intervention\u00A0: Nice, Cannes et Côte d\'Azur',
+      'Clé bloquée, perdue ou cassée à Nice\u00A0: intervention sans frais cachés, 7j/7',
+      'Ouverture, duplication, programmation, perte totale\u00A0: les 4 cas traités',
+      'Tarif clé voiture à Nice\u00A0: grille complète, jusqu\'à 3× moins cher qu\'en concession',
+      'Questions fréquentes'
     ],
     h3: [
       'Ouverture de véhicule sans effraction',
@@ -74,15 +79,15 @@ export const seoData = {
     }
   },
   'tarif-cle-voiture': {
-    title: 'Tarif clé de voiture — Prix à partir de 78€ Nice',
-    description: 'Décodage + taille laser + clonage transpondeur. Délai : 1-2h. Économisez sur le prix concessionnaire.',
-    h1: 'Tarif clé de voiture',
+    title: 'Tarif clé voiture Nice | Dès 78€ | Sinnes Automobiles',
+    description: 'Tarif clé voiture Nice — Décodage laser + programmation transpondeur dès 78€. 1-2h chrono. Jusqu\'à 300€ d\'économies vs concessionnaire. Devis\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Tarif clé de voiture\u00A0: Prix à partir de 78€',
     h2: [
-      'Grille tarifaire : Tous types de clés',
-      'Ce qui est inclus dans le tarif : aucune surprise',
+      'Grille tarifaire\u00A0: Tous types de clés',
+      'Ce qui est inclus dans le tarif\u00A0: aucune surprise',
       'Pourquoi nos tarifs sont inférieurs au concessionnaire ?',
       'Cas particuliers et suppléments éventuels',
-      'Questions fréquentes : Tarifs et paiement'
+      'Questions fréquentes\u00A0: Tarifs et paiement'
     ],
     h3: [
       'Frais de déplacement hors Nice',
@@ -94,18 +99,18 @@ export const seoData = {
     }
   },
   'programmation-cle-voiture': {
-    title: 'Programmation de clé voiture Nice — Transpondeur et badge',
-    description: 'Programmation clé voiture à Nice : transpondeur, télécommande, badge mains libres. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Programmation de clé de voiture',
+    title: 'Programmation clé voiture Nice | Code | Sinnes Automobiles',
+    description: 'Programmation clé voiture Nice — Transpondeur, télécommande, badge mains libres. Expert formateur Incarline. Devis\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Programmation de clé de voiture\u00A0: Transpondeur, télécommande et badge',
     h2: [
-      'Le processus de programmation',
-      'Programmation de clé voiture : qu\'est-ce que c\'est exactement ?',
-      'Reprogrammation clé voiture : les 3 cas de figure',
-      'Nos équipements professionnels : Abrites et ZedFull',
-      'Programmation de clé voiture à domicile : Nice et Côte d\'Azur',
-      'Programmation par marque : Audi, Mercedes, Renault...',
+      'Le processus de programmation de clé voiture',
+      'Programmation de clé voiture\u00A0: qu\'est-ce que c\'est exactement ?',
+      'Reprogrammation clé voiture\u00A0: les 3 cas de figure',
+      'Nos équipements professionnels\u00A0: Abrites et ZedFull',
+      'Programmation de clé voiture à domicile\u00A0: Nice et Côte d\'Azur',
+      'Programmation par marque\u00A0: Audi, Mercedes, Renault...',
       'Programmer votre clé voiture à Nice',
-      'Questions fréquentes : Programmation de clé'
+      'Questions fréquentes\u00A0: Programmation de clé'
     ],
     h3: [
       'Ajout d\'une nouvelle clé (vous avez encore l\'originale)',
@@ -120,21 +125,21 @@ export const seoData = {
     }
   },
   'double-cle-voiture': {
-    title: 'Double de clé voiture à Nice — Devis gratuit',
-    description: 'Faire un double de clé voiture à Nice : intervention rapide, toutes marques. À partir de 78€. Sinouhé Rochereau, expert automobile. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Double de clé de voiture',
+    title: 'Double clé voiture Nice | Devis Gratuit | Sinnes Automobiles',
+    description: 'Faire un double de clé voiture à Nice\u00A0: intervention rapide, toutes marques. À partir de 78€. Sinouhé Rochereau, expert automobile. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Double de clé de voiture\u00A0: Faire un double en toute sécurité',
     h2: [
       '4 étapes pour votre double de clé',
       'Pourquoi faire un double de clé voiture maintenant ?',
-      'Faire un double de clé voiture : comment ça marche ?',
+      'Faire un double de clé voiture\u00A0: comment ça marche ?',
       'Prix d\'un double de clé voiture',
-      'Double de clé Toyota, Hyundai : spécificités par marque',
+      'Double de clé Toyota, Hyundai, Renault et Fiat\u00A0: spécificités par marque',
       'Faire un double de clé voiture à Nice',
-      'Questions fréquentes : Double de clé voiture'
+      'Questions fréquentes\u00A0: Double de clé voiture'
     ],
     h3: [
-      'Avec la clé originale : copie par décodage',
-      'Sans la clé originale : décodage direct de la serrure'
+      'Avec la clé originale\u00A0: copie par décodage',
+      'Sans la clé originale\u00A0: décodage direct de la serrure'
     ],
     images: {
       main: 'Double de clé de voiture préventif'
@@ -144,18 +149,18 @@ export const seoData = {
     }
   },
   'cle-voiture-perdue': {
-    title: 'Clé de voiture perdue sans double — Solution Nice',
-    description: 'Clé de voiture perdue sans double à Nice ? Sinnes intervient en urgence : crochetage, décodage, nouvelle clé programmée. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Perte totale de clés de voiture',
+    title: 'Clé voiture perdue Nice | Sans double | Sinnes Automobiles',
+    description: 'Clé de voiture perdue sans double à Nice ? Sinnes intervient en urgence\u00A0: crochetage, décodage, nouvelle clé programmée. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Clé de Voiture Perdue à Nice\u00A0: Solution Sans Double en Urgence',
     h2: [
       '4 étapes pour récupérer votre clé',
-      'J\'ai perdu mes clés de voiture sans double : que faire ?',
-      'Crochetage professionnel : ouvrir votre voiture sans casse',
-      'Reconstituer une clé perdue : le processus complet',
+      'J\'ai perdu mes clés de voiture sans double\u00A0: que faire ?',
+      'Crochetage professionnel\u00A0: ouvrir votre voiture sans casse',
+      'Reconstituer une clé perdue\u00A0: le processus complet',
       'Combien coûte une clé perdue sans double ?',
-      'Prévenir la prochaine perte : l\'importance du double',
+      'Prévenir la prochaine perte\u00A0: l\'importance du double',
       'Clé perdue ? Appelez maintenant',
-      'Questions fréquentes : Clé de voiture perdue'
+      'Questions fréquentes\u00A0: Clé de voiture perdue'
     ],
     h3: [
       '1. Le crochetage et l\'ouverture du véhicule',
@@ -170,16 +175,22 @@ export const seoData = {
     }
   },
   'urgence-cle-voiture': {
-    title: 'Urgence clé voiture Nice — Intervention immédiate 7j/7',
+    title: 'Urgence clé voiture Nice | 24h/24 7j/7 | Sinnes Automobiles',
     description: 'Serrurier automobile d\'urgence à Nice. Clé bloquée, porte claquée, vol de clé. Intervention sous 30-45 minutes. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Dépannage Urgence Clé Voiture',
+    h1: 'Dépannage Urgence Clé Voiture\u00A0: Intervention immédiate 7j/7',
     h2: [
-      'Comment ça se passe ?',
-      'Serrurier voiture urgence : disponible autour de vous',
+      'Clé bloquée ou perdue\u00A0? Nous intervenons au plus vite',
+      'Serrurier voiture urgence\u00A0: disponible autour de vous',
       'Les 4 situations d\'urgence les plus fréquentes',
       'Pourquoi choisir Sinnes pour votre urgence ?',
-      'Zone d\'intervention : Nice et Côte d\'Azur',
-      'Questions fréquentes : Urgence clé voiture'
+      'Zone d\'intervention\u00A0: Nice et Côte d\'Azur',
+      'Questions fréquentes\u00A0: Urgence clé voiture'
+    ],
+    h3: [
+      'Clé de voiture perdue\u00A0: sans double',
+      'Clé bloquée dans le contact ou cassée',
+      "Véhicule fermé avec clés à l'intérieur",
+      'Perte de la télécommande centralisée'
     ],
     images: {
       main: 'Intervention d\'urgence serrurier auto'
@@ -189,16 +200,16 @@ export const seoData = {
     }
   },
   'depannage-cle-domicile': {
-    title: 'Dépannage clé voiture à domicile — Nice et Côte d\'Azur',
+    title: 'Dépannage clé domicile Nice | Côte d\'Azur | Sinnes Automobiles',
     description: 'Dépannage et programmation de clé voiture à domicile à Nice. Intervention sur place 7j/7. Sinouhé Rochereau se déplace avec son matériel. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Dépannage à domicile',
+    h1: 'Dépannage à domicile\u00A0: Intervention sur place Nice',
     h2: [
       'Comment se passe le dépannage à domicile ?',
-      'Programmation clé voiture à domicile : comment ça marche ?',
+      'Programmation clé voiture à domicile\u00A0: comment ça marche ?',
       'Zones d\'intervention à domicile',
       'Dépannage d\'urgence à domicile',
       'Intervention à domicile sur la Côte d\'Azur',
-      'Questions fréquentes : Dépannage clé à domicile'
+      'Questions fréquentes\u00A0: Dépannage clé à domicile'
     ],
     images: {
       main: 'Service mobile Sinnes Automobiles'
@@ -208,9 +219,9 @@ export const seoData = {
     }
   },
   'cle-voiture-transpondeur': {
-    title: 'Clé voiture transpondeur — Fonctionnement et programmation',
-    description: 'Clé voiture avec transpondeur : comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Tout savoir sur le transpondeur',
+    title: 'Clé voiture transpondeur Nice | Puce | Sinnes Automobiles',
+    description: 'Clé voiture avec transpondeur\u00A0: comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Transpondeur de Clé Voiture\u00A0: Fonctionnement et Programmation',
     h2: [
       'Comment fonctionne un transpondeur ?',
       'Qu\'est-ce qu\'un transpondeur dans une clé de voiture ?',
@@ -219,7 +230,7 @@ export const seoData = {
       'Peut-on cloner un transpondeur de clé voiture ?',
       'Reproduire ou programmer une clé à transpondeur',
       'Programmer votre clé transpondeur',
-      'Questions fréquentes : Clé voiture transpondeur'
+      'Questions fréquentes\u00A0: Clé voiture transpondeur'
     ],
     h3: [
       'Transpondeur fixe (ID60, ID33, T5)',
@@ -234,31 +245,31 @@ export const seoData = {
     }
   },
   'cle-voiture-nice': {
-    title: 'Clé de voiture Nice, Antibes, Cagnes-sur-Mer, Cannes',
+    title: 'Clé voiture Nice | Antibes Cannes Cagnes | Sinnes Automobiles',
     description: 'Reproduction et double de clé voiture à Nice, Antibes, Cagnes-sur-Mer et Cannes. Intervention mobile 7j/7. Sinouhé Rochereau. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Service local Clé de voiture',
+    h1: 'Reproduction et double de clé voiture à Nice, Antibes, Cagnes et Cannes',
     h2: [
-      'Comment se passe une intervention ?',
+      'Comment se passe une intervention à Nice\u00A0?',
       'Nos interventions à Nice, quartier par quartier',
-      'Intervention rapide sur Antibes : Sophia Antipolis, Vieil Antibes, Port Vauban',
-      'Dépannage à Cagnes-sur-Mer : de l\'Hippodrome au Haut-de-Cagnes',
-      'Serrurier auto à Cannes : Croisette, La Bocca et Palais des Festivals',
+      'Double de clé voiture Antibes\u00A0: Sophia Antipolis, Vieil Antibes, Port Vauban',
+      'Reproduction de clé voiture à Cagnes-sur-Mer',
+      'Serrurier auto à Cannes\u00A0: Croisette, La Bocca et Palais des Festivals',
       'Votre clé de voiture sur toute la Côte d\'Azur',
-      'Questions pratiques : Délais, accès et logistique par zone'
+      'Questions pratiques\u00A0: Délais, accès et logistique par zone'
     ],
     h3: [
-      'Vieux-Nice : intervention à pied obligatoire',
-      'Aéroport Nice Côte d\'Azur : clé perdue avant ou après un vol',
+      'Vieux-Nice\u00A0: intervention à pied obligatoire',
+      'Aéroport Nice Côte d\'Azur\u00A0: clé perdue avant ou après un vol',
       'Promenade des Anglais, Gare Nice-Ville, Quartier Libération',
-      'Sophia Antipolis : véhicules modernes, systèmes complexes',
-      'Vieil Antibes et remparts : accès piéton comme dans le Vieux-Nice',
-      'Port Vauban : plaisanciers et véhicules de passage',
-      'Hippodrome de la Côte d\'Azur : pics de demande les jours de courses',
-      'Haut-de-Cagnes : village médiéval perché, accès piéton',
-      'Cros-de-Cagnes : bord de mer, zone touristique',
-      'Palais des Festivals et Croisette : pics de demande pendant les événements',
+      'Sophia Antipolis\u00A0: véhicules modernes, systèmes complexes',
+      'Vieil Antibes et remparts\u00A0: accès piéton comme dans le Vieux-Nice',
+      'Port Vauban\u00A0: plaisanciers et véhicules de passage',
+      'Hippodrome de la Côte d\'Azur\u00A0: pics de demande les jours de courses',
+      'Haut-de-Cagnes\u00A0: village médiéval perché, accès piéton',
+      'Cros-de-Cagnes\u00A0: bord de mer, zone touristique',
+      'Palais des Festivals et Croisette\u00A0: pics de demande pendant les événements',
       'Rue d\'Antibes et parkings souterrains',
-      'La Bocca : quartier résidentiel, couvert sans supplément'
+      'La Bocca\u00A0: quartier résidentiel, couvert sans supplément'
     ],
     images: {
       main: 'Intervention Côte d\'Azur'
@@ -268,139 +279,139 @@ export const seoData = {
     }
   },
   'prix-cle-voiture': {
-    title: 'Prix clé voiture — Facteurs et fourchettes | Sinnes Nice',
-    description: 'Quel est le prix pour refaire une clé de voiture ? Variantes selon la marque, le modèle et la technologie (simple, centralisée, mains libres).',
-    h1: 'Prix d\'une reproduction de clé',
+    title: 'Prix clé voiture Nice | Facteurs | Sinnes Automobiles',
+    description: 'Prix pour refaire une clé de voiture à Nice\u00A0: à partir de 78€. Simple, centralisée ou mains libres. Comparez : jusqu\'à 300€ d\'économies vs concessionnaire. +33 6 75 54 04 11',
+    h1: 'Prix d\'une reproduction de clé\u00A0: Comparatif par type de clé',
     h2: [
-      'Comment obtenir votre prix ?',
+      'Comment obtenir votre prix pour refaire une clé voiture\u00A0?',
       'Quels facteurs font varier le prix d\'une clé voiture ?',
       'Prix d\'un double de clé voiture',
       'Ce qui est inclus dans le prix',
       'Pourquoi Sinnes coûte moins cher ?',
       'Obtenez votre prix maintenant',
-      'Questions fréquentes : Prix clé voiture'
+      'Questions fréquentes\u00A0: Prix clé voiture'
     ],
     images: {
       main: 'Coût d\'une clé automobile'
     }
   },
   'prix-cle-vs-concessionnaire': {
-    title: 'Serrurier auto vs concessionnaire — Jusqu\'à 6x moins cher',
-    description: 'Refaire une clé voiture chez un serrurier indépendant vs concessionnaire : comparatif prix, délais et garantie. Économisez jusqu\'à 300€.',
-    h1: 'Serrurier vs Concessionnaire',
+    title: 'Prix clé vs Concessionnaire | Jusqu\'à -60% | Sinnes Automobiles',
+    description: 'Refaire une clé voiture chez un serrurier indépendant vs concessionnaire à Nice\u00A0: comparatif prix, délais et garantie. Économisez jusqu\'à 300€. +33 6 75 54 04 11',
+    h1: 'Serrurier vs Concessionnaire\u00A0: Le comparatif Sinnes',
     h2: [
-      'Sinnes vs concessionnaire : les faits',
-      'Tableau comparatif : serrurier vs concessionnaire 2026',
+      'Sinnes vs concessionnaire\u00A0: les faits',
+      'Tableau comparatif\u00A0: serrurier vs concessionnaire 2026',
       'Pourquoi le concessionnaire coûte-t-il plus cher ?',
       'La garantie constructeur est-elle préservée chez Sinnes ?',
-      'Délais : concessionnaire vs Sinnes',
-      'Économisez jusqu\'à 80% sur votre clé de voiture',
-      'Questions fréquentes : Prix serrurier vs concessionnaire'
+      'Délais\u00A0: concessionnaire vs Sinnes',
+      'Économisez jusqu\'à 300€ sur votre clé de voiture',
+      'Questions fréquentes\u00A0: Prix serrurier vs concessionnaire'
     ],
     images: {
       main: 'Comparatif de prix clé auto'
     }
   },
   'refaire-cle-hyundai': {
-    title: 'Refaire une clé Hyundai à Nice · Toutes générations',
-    description: 'Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Hyundai',
+    title: 'Clé Hyundai Nice | Toutes générations | Sinnes Automobiles',
+    description: 'Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Hyundai à Nice\u00A0: Architecture IMMO3 Maîtrisée',
     h2: [
       'Comment fonctionne la reproduction de clé Hyundai ?',
-      'Refaire une clé Hyundai : modèles couverts',
-      'Le système IMMO3 Hyundai : pourquoi la programmation est indispensable',
-      'Tarif clé Hyundai : à partir de 78€',
+      'Refaire une clé Hyundai\u00A0: modèles couverts',
+      'Le système IMMO3 Hyundai\u00A0: pourquoi la programmation est indispensable',
+      'Tarif clé Hyundai\u00A0: à partir de 78€',
       'Refaites votre clé Hyundai maintenant',
-      'Questions fréquentes : Clé Hyundai'
+      'Questions fréquentes\u00A0: Clé Hyundai'
     ],
     images: {
       main: 'Programmation clé Hyundai à Nice'
     }
   },
   'refaire-cle-audi': {
-    title: 'Refaire une clé Audi à Nice · Programmation VAG officielle',
-    description: 'Reproduction clé Audi à Nice : A1, A3, A4, Q3, Q5. Système KESSY et VAG. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Audi',
+    title: 'Clé Audi Nice | Programmation VAG | Sinnes Automobiles',
+    description: 'Reproduction clé Audi à Nice\u00A0: A1, A3, A4, Q3, Q5. Système KESSY et VAG. Sinouhé Rochereau, formateur Incarline. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Audi à Nice\u00A0: Programmation VAG et KESSY',
     h2: [
       'Comment se déroule la programmation clé Audi ?',
-      'Clé Audi : modèles couverts à Nice',
-      'Système VAG et KESSY : pourquoi la programmation Audi est complexe',
-      'Tarif clé Audi : à partir de 120€',
+      'Clé Audi\u00A0: modèles couverts à Nice',
+      'Système VAG et KESSY\u00A0: pourquoi la programmation Audi est complexe',
+      'Tarif clé Audi\u00A0: à partir de 120€',
       'Refaites votre clé Audi maintenant',
-      'Questions fréquentes : Clé Audi'
+      'Questions fréquentes\u00A0: Clé Audi'
     ],
     images: {
       main: 'Programmation clé Audi système VAG'
     }
   },
   'refaire-cle-fiat': {
-    title: 'Refaire une clé Fiat 500 à Nice — Double et programmation',
-    description: 'Reproduction clé Fiat à Nice : Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Fiat',
+    title: 'Clé Fiat 500 Nice | Double Prog. | Sinnes Automobiles',
+    description: 'Reproduction clé Fiat à Nice\u00A0: Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Fiat à Nice\u00A0: 500, Panda et Transpondeur ID46',
     h2: [
       'Comment fonctionne la reproduction de clé Fiat ?',
-      'Clé Fiat : modèles couverts à Nice',
-      'Transpondeur ID46 Fiat : clonage ou programmation ?',
-      'Tarif clé Fiat : à partir de 78€',
+      'Clé Fiat\u00A0: modèles couverts à Nice',
+      'Transpondeur ID46 Fiat\u00A0: clonage ou programmation ?',
+      'Tarif clé Fiat\u00A0: à partir de 78€',
       'Refaites votre clé Fiat maintenant',
-      'Questions fréquentes : Clé Fiat'
+      'Questions fréquentes\u00A0: Clé Fiat'
     ],
     images: {
       main: 'Reproduction clé Fiat 500'
     }
   },
   'refaire-cle-toyota': {
-    title: 'Refaire une clé Toyota à Nice · Hybride et thermique',
-    description: 'Reproduction clé Toyota à Nice : Yaris, Corolla, RAV4, hybride et thermique. Smart Entry & Start. Sinouhé Rochereau. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Toyota',
+    title: 'Clé Toyota Nice | Hybride Thermique | Sinnes Automobiles',
+    description: 'Reproduction clé Toyota à Nice\u00A0: Yaris, Corolla, RAV4, hybride et thermique. Smart Entry & Start. Sinouhé Rochereau. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Toyota à Nice\u00A0: Hybride et Crypto G-chip',
     h2: [
       'Comment fonctionne la reproduction de clé Toyota ?',
-      'Clé Toyota : modèles couverts à Nice',
-      'Toyota Crypto G-chip : pourquoi la clé hybride est complexe',
-      'Tarif clé Toyota : à partir de 78€',
+      'Clé Toyota\u00A0: modèles couverts à Nice',
+      'Toyota Crypto G-chip\u00A0: pourquoi la clé hybride est complexe',
+      'Tarif clé Toyota\u00A0: à partir de 78€',
       'Refaites votre clé Toyota maintenant',
-      'Questions fréquentes : Clé Toyota'
+      'Questions fréquentes\u00A0: Clé Toyota'
     ],
     images: {
       main: 'Double de clé Toyota Hybride'
     }
   },
   'refaire-cle-mercedes': {
-    title: 'Refaire une clé Mercedes à Nice — Clé étoile et badge',
-    description: 'Reproduction clé Mercedes à Nice : Classe A, C, E, GLC. KESSY, clé étoile, ProxiKey. Sinouhé Rochereau, formateur Incarline. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Mercedes',
+    title: 'Clé Mercedes Nice | Étoile Badge | Sinnes Automobiles',
+    description: 'Reproduction clé Mercedes à Nice\u00A0: Classe A, C, E, GLC. KESSY, clé étoile, ProxiKey. Sinouhé Rochereau, formateur Incarline. +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Mercedes à Nice\u00A0: Clé Étoile et ProxiKey',
     h2: [
       'Comment fonctionne la reproduction de clé Mercedes ?',
-      'Clé Mercedes : modèles couverts à Nice',
-      'Clé étoile et ProxiKey Mercedes : programmation HiTag AES',
-      'Tarif clé Mercedes : à partir de 120€',
+      'Clé Mercedes\u00A0: modèles couverts à Nice',
+      'Clé étoile et ProxiKey Mercedes\u00A0: programmation HiTag AES',
+      'Tarif clé Mercedes\u00A0: à partir de 120€',
       'Refaites votre clé Mercedes maintenant',
-      'Questions fréquentes : Clé Mercedes'
+      'Questions fréquentes\u00A0: Clé Mercedes'
     ],
     images: {
       main: 'Programmation clé étoile Mercedes'
     }
   },
   'refaire-cle-renault': {
-    title: 'Refaire une clé Renault à Nice · Clé carte et clé à lame',
-    description: 'Reproduction clé Renault à Nice : Clio, Captur, Mégane, clé carte. Sinouhé Rochereau, expert IVER Renault. Devis gratuit : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Clé de voiture Renault',
+    title: 'Clé Renault Nice | Carte Lame | Sinnes Automobiles',
+    description: 'Reproduction clé Renault à Nice\u00A0: Clio, Captur, Mégane, clé carte. Sinouhé Rochereau, expert IVER Renault. Devis gratuit\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Refaire une Clé Renault à Nice\u00A0: Carte et Lame pour Captur, Clio, Mégane',
     h2: [
       'Comment fonctionne la reproduction de clé Renault ?',
-      'Clé Renault : modèles couverts à Nice',
-      'Clé carte Renault : le format le plus complexe du marché',
-      'Tarif clé Renault : à partir de 78€',
+      'Clé Renault\u00A0: modèles couverts à Nice',
+      'Clé carte Renault\u00A0: le format le plus complexe du marché',
+      'Tarif clé Renault\u00A0: à partir de 78€',
       'Refaites votre clé Renault maintenant',
-      'Questions fréquentes : Clé Renault'
+      'Questions fréquentes\u00A0: Clé Renault'
     ],
     images: {
       main: 'Reproduction carte Renault à Nice'
     }
   },
   'acheter-une-voiture': {
-    title: 'Acheter une voiture à Nice · Sinnes Automobiles',
-    description: 'Vente de voitures d\'occasion révisées et garanties à Nice. Découvrez notre sélection de véhicules sélectionnés avec soin par Sinouhé Rochereau.',
-    h1: 'Vente de véhicules d\'occasion',
+    title: 'Acheter voiture Nice | Sinnes Automobiles',
+    description: 'Voitures d\'occasion révisées et garanties à Nice. Sélection expert Sinnes. Essai sur RDV — Devis personnalisé\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Acheter une Voiture d\'Occasion à Nice avec Sinnes Automobiles',
     h2: [
       'Véhicules disponibles',
       'Contactez-nous pour le stock VO',
@@ -411,9 +422,9 @@ export const seoData = {
     }
   },
   'qui-sommes-nous': {
-    title: 'Qui sommes-nous · Sinnes Automobiles Nice',
-    description: 'Découvrez Sinouhé Rochereau et Inès Barthelemy, fondateurs de Sinnes Automobiles à Nice. Experts en reproduction de clé voiture et vente VO sur la Côte d\'Azur.',
-    h1: 'Qui sommes-nous\u00A0?',
+    title: 'Qui sommes-nous | Sinnes Automobiles Nice',
+    description: 'Sinouhé Rochereau (Formateur Incarline, Commissaire GP Monaco) & Inès Barthelemy — Sinnes Automobiles à Nice, experts clé voiture depuis 2016. +33 6 75 54 04 11',
+    h1: 'Sinnes Automobiles à Nice\u00A0: Serrurier Automobile et Expert Clé Voiture',
     h2: [
       'Sinouhé Rochereau · Référent technique',
       'Inès Barthelemy · Référente commerciale',
@@ -425,11 +436,11 @@ export const seoData = {
     }
   },
   'contactez-nous': {
-    title: 'Contactez Sinnes Automobiles — Devis gratuit · Nice',
-    description: 'Contactez Sinnes Automobiles pour un devis gratuit. Reproduction de clé, serrurier automobile Nice. Réponse rapide 7j/7 : +33\u00A06\u00A075\u00A054\u00A004\u00A011',
-    h1: 'Contactez-nous',
+    title: 'Contact | Sinnes Automobiles Nice | Devis gratuit',
+    description: 'Contactez Sinnes Automobiles pour un devis gratuit. Reproduction de clé, serrurier automobile Nice. Réponse rapide 7j/7\u00A0: +33\u00A06\u00A075\u00A054\u00A004\u00A011',
+    h1: 'Contactez Sinnes Automobiles à Nice\u00A0: Devis Gratuit pour Clé Voiture',
     h2: [
-      'Coordonnées',
+      'Nos coordonnées à Nice',
       'Demande de devis'
     ],
     images: {
@@ -437,25 +448,25 @@ export const seoData = {
     }
   },
   'mentions-legales-et-politique-de-confidentialite': {
-    title: 'Mentions légales et politique de confidentialité — Sinnes Automobiles',
+    title: 'Mentions légales | Sinnes Automobiles Nice',
     description: 'Mentions légales, politique de confidentialité et informations RGPD de Sinnes Automobiles, 4 rue Diderot, 06000 Nice.',
-    h1: 'Mentions Légales',
+    h1: 'Mentions Légales et Confidentialité de Sinnes Automobiles',
     h2: [
-      '1. Mentions légales',
-      '2. Politique de confidentialité'
+      'Mentions Légales',
+      'Politique de Confidentialité'
     ],
     h3: [
-      'Éditeur du site',
-      'Directeur de publication',
-      'Hébergeur',
-      'Propriété intellectuelle',
-      'Données collectées',
-      'Finalité du traitement',
-      'Base légale',
-      'Conservation des données',
+      'Informations Générales',
+      'Hébergement du Site Internet',
+      'Propriété Intellectuelle',
+      'Responsabilité',
+      'Données Personnelles Collectées',
+      'Finalité de la Collecte',
+      'Durée de Conservation des Données',
       'Partage des données',
-      'Cookies',
-      'Vos droits (RGPD)'
+      'Sécurité',
+      'Vos droits (RGPD)',
+      'Cookies'
     ],
     images: {}
   }

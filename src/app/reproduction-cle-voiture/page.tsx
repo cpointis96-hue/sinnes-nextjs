@@ -101,6 +101,14 @@ const schema = {
       knowsAbout: TEAM.sinouhe.knowsAbout,
       worksFor: { '@id': 'https://sinnes.fr/#organization' },
     },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/reproduction-cle-voiture/#webpage',
+      url: 'https://sinnes.fr/reproduction-cle-voiture/',
+      datePublished: '2026-03-01',
+      dateModified: '2026-03-22',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
   ],
 }
 
@@ -227,7 +235,7 @@ export default function ReproductionCleVoiturePage() {
             className="font-heading font-extrabold text-4xl md:text-5xl leading-tight mb-4 "
             style={{ color: '#FFFFFF' }}
           >
-            {seoData['reproduction-cle-voiture'].h1}, spécialiste Nice &amp; Côte d&apos;Azur
+            {seoData['reproduction-cle-voiture'].h1}
           </h1>
 
           <p className="font-body text-white/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -264,17 +272,15 @@ export default function ReproductionCleVoiturePage() {
         </div>
       </section>
 
-      {/* WHITE BAND SEPARATOR — SAME SPACING AS REVIEWS */}
-      <div className="bg-white py-8 border-t border-card-border">
+      {/* TRUST STRIP + REVIEW — collés aux blocs noirs */}
+      <div className="bg-white">
         <TrustStrip items={TRUST_ITEMS} theme="shade" />
         {review && (
-          <div className="mt-8">
-            <SingleReview
-              review={review}
-              serviceName="Reproduction de clé de voiture"
-              serviceUrl="/reproduction-cle-voiture/"
-            />
-          </div>
+          <SingleReview
+            review={review}
+            serviceName="Reproduction de clé de voiture"
+            serviceUrl="/reproduction-cle-voiture/"
+          />
         )}
       </div>
 
@@ -312,7 +318,7 @@ export default function ReproductionCleVoiturePage() {
             className="font-heading font-bold text-2xl md:text-3xl mb-2 text-center"
             style={{ color: '#EFAD42' }}
           >
-            Notre processus
+            {seoData['reproduction-cle-voiture'].h2[0]}
           </h2>
           <div
             style={{
@@ -359,7 +365,7 @@ export default function ReproductionCleVoiturePage() {
               {
                 num: '03',
                 title: "Taille & Programmation",
-                desc: <>Taille laser haute précision et <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation du transpondeur</a> via valise officielle (Abrites · ZedFull).</>
+                desc: "Taille laser haute précision et programmation du transpondeur via valise officielle (Abrites · ZedFull)."
               },
               {
                 num: '04',
@@ -412,13 +418,19 @@ export default function ReproductionCleVoiturePage() {
       <article className="bg-white pt-8 pb-8 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-text-main mb-6">
-            Tarifs reproduction de clé de voiture : Transparence totale
+            {seoData['reproduction-cle-voiture'].h2[4]}
           </h2>
+          <p className="font-body text-text-main leading-relaxed mb-6 font-semibold">
+            Pour refaire une clé de voiture, trois étapes sont nécessaires : décodage de la serrure
+            ou lecture de la clé originale, taille laser de la lame, puis programmation du
+            transpondeur dans le calculateur du véhicule. L&apos;ensemble de l&apos;intervention
+            se déroule sur place en 1 à 2h — sans remorquage, sans rendez-vous en concession.
+          </p>
           <p className="font-body text-text-muted leading-relaxed mb-4">
-            La reproduction de clé de voiture désigne l&apos;ensemble des opérations permettant de
-            créer une clé fonctionnelle pour votre véhicule, qu&apos;il s&apos;agisse d&apos;un double
-            préventif à partir de l&apos;original, ou d&apos;une recréation complète lorsque vous
-            n&apos;avez plus aucune clé en votre possession.
+            Que vous souhaitiez reproduire, copier ou faire un double de clé de voiture, la démarche
+            désigne la même réalité : créer une clé fonctionnelle pour votre véhicule, qu&apos;il
+            s&apos;agisse d&apos;un double préventif à partir de l&apos;original, ou d&apos;une
+            recréation complète lorsque vous n&apos;avez plus aucune clé en votre possession.
           </p>
           <p className="font-body text-text-muted leading-relaxed mb-4">
             Les clés de voiture modernes intègrent une puce électronique appelée transpondeur. Sans
@@ -438,6 +450,14 @@ export default function ReproductionCleVoiturePage() {
             </a>{' '}
             haute sécurité (ID46, ID48, HITAG 2), et la carte mains libres ou badge.
           </p>
+          <p className="font-body text-text-muted leading-relaxed mb-8">
+            À la différence d&apos;une réparation de clé voiture (remplacement d&apos;un boîtier
+            cassé, d&apos;une lame tordue ou d&apos;une pile), la reproduction recrée une clé
+            entièrement nouvelle — taille mécanique et programmation électronique incluses.
+            Et contrairement à un cordonnier, Sinnes Automobiles programme également le
+            transpondeur : sans cette étape, la lame taillée ne démarrerait pas le moteur
+            sur les véhicules modernes.
+          </p>
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[1]}
@@ -448,8 +468,8 @@ export default function ReproductionCleVoiturePage() {
           </h3>
           <p className="font-body text-text-muted leading-relaxed mb-4">
             C&apos;est la situation idéale. Sinouhé Rochereau décode la coupe de votre clé originale
-            puis taille une nouvelle lame à l&apos;identique, taille laser de précision, sans aucune
-            retouche nécessaire. La puce transpondeur est ensuite clonée ou programmée selon le
+            puis taille — ou grave — une nouvelle lame à l&apos;identique par laser de précision,
+            sans aucune retouche nécessaire. La puce transpondeur est ensuite clonée ou programmée selon le
             protocole spécifique à votre véhicule.
           </p>
           <p className="font-body text-text-muted leading-relaxed mb-4">
@@ -484,20 +504,22 @@ export default function ReproductionCleVoiturePage() {
           }}
         />
         <div className="container-sinnes max-w-3xl mx-auto">
-          <h3 className="font-heading font-bold text-3xl mb-8 text-center" style={{ color: '#EFAD42' }}>
+          <h3 className="font-heading font-bold text-2xl mb-4" style={{ color: '#EFAD42' }}>
             {seoData['reproduction-cle-voiture'].h3[1]}
           </h3>
-          <p className="font-body text-xl md:text-2xl leading-relaxed mb-8 text-white/80 text-center">
+          <p className="font-body text-base leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
             La{' '}
             <a href="/cle-voiture-perdue/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
               clé de voiture perdue
             </a>{' '}
-            sans aucun double est résolue dans la majorité des situations via crochetage professionnel
-            et extraction des codes d&apos;accès via valise diagnostic (Abrites / ZedFull).
+            sans aucun double est le cas le plus complexe — mais il reste résolu dans la grande
+            majorité des situations. Sinouhé procède au crochetage professionnel de la serrure ou
+            interroge la centrale électronique du véhicule via valise de diagnostic pour extraire
+            les codes d&apos;accès. Une nouvelle clé est ensuite recréée de zéro.
           </p>
-          <p className="font-body text-lg leading-relaxed text-white/60 text-center">
+          <p className="font-body text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
             Ce service est réalisé en atelier ou directement sur place selon la complexité. L&apos;ancien
-            jeu de clés est invalidé dans le calculateur pour sécuriser votre véhicule : repartez avec l&apos;esprit tranquille.
+            jeu de clés est invalidé dans le calculateur — votre véhicule est sécurisé.
           </p>
         </div>
       </section>
@@ -607,7 +629,7 @@ export default function ReproductionCleVoiturePage() {
         <div className="container-sinnes max-w-5xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="font-heading font-bold text-3xl md:text-5xl mb-4" style={{ color: '#EFAD42' }}>
-              Nos Tarifs
+              {seoData['reproduction-cle-voiture'].h3[2]}
             </h3>
             <p className="font-body text-white/50 text-sm max-w-lg mx-auto leading-relaxed">
               Comparez nos prix avec les réseaux constructeurs. Économisez jusqu&apos;à 80% sur vos doubles ou pertes totales.
@@ -619,36 +641,35 @@ export default function ReproductionCleVoiturePage() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-white/5">
-                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent/60">Prestation</th>
-                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent/60 text-center">Expert Sinnes</th>
-                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-white/30 text-center border-l border-white/5">Concessionnaire</th>
-                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent text-center border-l border-white/5">Économie</th>
+                  <th className="px-6 py-3 text-xs font-black uppercase tracking-widest text-accent/60 font-body">Prestation</th>
+                  <th className="px-6 py-3 text-xs font-black uppercase tracking-widest text-accent/60 text-center font-body">Expert Sinnes</th>
+                  <th className="px-6 py-3 text-xs font-black uppercase tracking-widest text-white/30 text-center border-l border-white/5 font-body">Concessionnaire</th>
+                  <th className="px-6 py-3 text-xs font-black uppercase tracking-widest text-accent text-center border-l border-white/5 font-body">Économie</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
                 {[
-                  { k: 'cleSimple', idx: <IconKeySimple className="w-6 h-6" /> },
-                  { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-6 h-6" /> },
-                  { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-6 h-6" /> },
-                  { k: 'perteTotale', idx: <IconKeyMainsLibres className="w-6 h-6" /> } // Note: Using mains libres icon for loss total if specific not found, or replace with appropriate
+                  { k: 'cleSimple', idx: <IconKeySimple className="w-5 h-5" /> },
+                  { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-5 h-5" /> },
+                  { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-5 h-5" /> },
+                  { k: 'perteTotale', idx: <IconKeyMainsLibres className="w-5 h-5" /> }
                 ].map((item) => {
                   const p = PRICES[item.k as keyof typeof PRICES];
                   if (!p) return null;
                   const avg = Math.round((p.concessionnaire.min + p.concessionnaire.max) / 2);
                   const s = Math.round(((avg - p.sinnes) / avg) * 100);
-                  // Ensure Perte Totale uses correct icon
-                  const icon = item.k === 'perteTotale' ? <IconPerteTotale className="w-6 h-6" /> : item.idx;
+                  const icon = item.k === 'perteTotale' ? <IconPerteTotale className="w-5 h-5" /> : item.idx;
 
                   return (
                     <tr key={item.k} className="hover:bg-white/5 transition-colors">
-                      <td className="px-8 py-6 flex items-center gap-4">
+                      <td className="px-6 py-3 flex items-center gap-3">
                         <span className="text-accent">{icon}</span>
-                        <span className="font-bold text-white text-lg">{p.label}</span>
+                        <span className="font-body font-semibold text-white text-sm">{p.label}</span>
                       </td>
-                      <td className="px-8 py-6 text-center text-3xl font-black text-white">{p.sinnes}€</td>
-                      <td className="px-8 py-6 text-center text-white/30 font-bold line-through border-l border-white/5">{avg}€ avg.</td>
-                      <td className="px-8 py-6 text-center border-l border-white/5">
-                        <span className="bg-accent/20 text-accent font-black py-1 px-4 rounded-full">-{s}%</span>
+                      <td className="px-6 py-3 text-center font-heading font-bold text-xl text-white">{p.sinnes} €</td>
+                      <td className="px-6 py-3 text-center text-white/30 font-body text-sm line-through border-l border-white/5">{avg} €</td>
+                      <td className="px-6 py-3 text-center border-l border-white/5">
+                        <span className="font-body font-semibold text-accent text-sm">-{s} %</span>
                       </td>
                     </tr>
                   )
@@ -658,50 +679,36 @@ export default function ReproductionCleVoiturePage() {
           </div>
 
           {/* Small Mobile List */}
-          <div className="sm:hidden space-y-4">
+          <div className="sm:hidden space-y-3">
             {[
-              { k: 'cleSimple', idx: <IconKeySimple className="w-6 h-6" /> },
-              { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-6 h-6" /> },
-              { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-6 h-6" /> },
-              { k: 'perteTotale', idx: <IconPerteTotale className="w-6 h-6" /> }
+              { k: 'cleSimple', idx: <IconKeySimple className="w-5 h-5" /> },
+              { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-5 h-5" /> },
+              { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-5 h-5" /> },
+              { k: 'perteTotale', idx: <IconPerteTotale className="w-5 h-5" /> }
             ].map((item) => {
               const p = PRICES[item.k as keyof typeof PRICES];
               if (!p) return null;
               const avg = Math.round((p.concessionnaire.min + p.concessionnaire.max) / 2);
               const s = Math.round(((avg - p.sinnes) / avg) * 100);
               return (
-                <div key={item.k} className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                  <div className="flex justify-between items-center mb-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-accent">{item.idx}</span>
-                      <h4 className="font-bold text-white text-sm">{p.label}</h4>
-                    </div>
-                    <span className="bg-accent/20 text-accent font-black text-[0.6rem] py-1 px-2 rounded-full">-{s}%</span>
+                <div key={item.k} className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between gap-4">
+                  <div className="flex items-center gap-2 flex-1 min-w-0">
+                    <span className="text-accent flex-shrink-0">{item.idx}</span>
+                    <p className="font-body font-semibold text-white text-xs truncate">{p.label}</p>
                   </div>
-                  <div className="flex justify-between items-end">
-                    <div>
-                      <p className="text-[0.6rem] uppercase tracking-widest text-white/40 mb-1">Expert Sinnes</p>
-                      <p className="text-2xl font-black text-white">{p.sinnes}€</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-[0.6rem] uppercase tracking-widest text-white/40 mb-1">Constructeur</p>
-                      <p className="text-xs font-bold text-white/30 line-through">{avg}€ avg.</p>
-                    </div>
+                  <div className="flex items-center gap-3 flex-shrink-0">
+                    <p className="font-heading font-bold text-white text-base">{p.sinnes} €</p>
+                    <p className="font-body text-xs text-white/30 line-through">{avg} €</p>
+                    <span className="font-body font-semibold text-accent text-xs">-{s} %</span>
                   </div>
                 </div>
               )
             })}
           </div>
 
-          <div className="text-center mt-8">
-            <a
-              href="/contactez-nous/"
-              className="inline-block font-body font-black text-lg px-12 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
-              style={{ background: '#EFAD42', color: '#0A0A0A' }}
-            >
-              Obtenir un devis gratuit
-            </a>
-          </div>
+          <p className="text-center mt-6 text-sm text-white/40 font-body italic">
+            Tarifs indicatifs · Devis précis établi après diagnostic de votre véhicule.
+          </p>
         </div>
       </section>
 

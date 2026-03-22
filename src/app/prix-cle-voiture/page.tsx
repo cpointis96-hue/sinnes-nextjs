@@ -50,6 +50,16 @@ const schema = {
    "description": "Guide complet des tarifs pour refaire une clé de voiture à Nice. Devis transparent, sans frais cachés, économie par rapport au réseau constructeur.",
    "provider": { "@id": "https://sinnes.fr/#organization" },
    "areaServed": AREA_SERVED_TYPED,
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Prix reproduction de clé de voiture — Sinnes Automobiles",
+    "itemListElement": [
+     { "@type": "Offer", "name": "Clé simple (sans télécommande)", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur. Délai : 1–2h." },
+     { "@type": "Offer", "name": "Clé centralisée (avec télécommande)", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur + télécommande. Délai : 2–3h." },
+     { "@type": "Offer", "name": "Clé mains libres / badge", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR", "description": "Programmation badge + décodage + insert de secours + télécommande. Délai : 2–4h." },
+     { "@type": "Offer", "name": "Perte totale (sans aucun double)", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR", "description": "Crochetage + décodage serrure + taille + programmation. Délai : selon complexité." }
+    ]
+   },
    "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": REVIEWS.ratingValue,
@@ -72,6 +82,8 @@ const schema = {
    "@type": "WebPage",
    "@id": "https://sinnes.fr/prix-cle-voiture/#webpage",
    "url": "https://sinnes.fr/prix-cle-voiture/",
+   "datePublished": "2026-03-14",
+   "dateModified": "2026-03-22",
    "name": "Prix clé voiture Nice — Guide complet des tarifs 2026",
    "isPartOf": { "@id": "https://sinnes.fr/#website" },
    "about": { "@id": "https://sinnes.fr/#organization" },
@@ -139,7 +151,7 @@ export default function PrixCleVoiturePage() {
      </div>
 
      <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-      {seoData['prix-cle-voiture'].h1} :<br />Comparatif par type de clé
+      {seoData['prix-cle-voiture'].h1}
      </h1>
 
      <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -186,10 +198,15 @@ export default function PrixCleVoiturePage() {
    {/* H2 BLOC 1 — dark (informative) */}
    <section style={{ background: '#111111' }} className="py-16 px-4">
     <div className="container-sinnes max-w-3xl">
-     <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
-      Chez Sinnes Automobiles, le prix d'une clé voiture se situe entre {PRICES.cleSimple.sinnes}€ et {PRICES.perteTotale.sinnes}€ selon le type
-      de clé et votre situation. Pour le détail ligne par ligne, consultez{' '}
-      <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>notre grille de tarifs détaillée</a>.
+     <p className="font-body leading-relaxed mb-4 font-semibold" style={{ color: '#FFFFFF' }}>
+      Le prix pour refaire une clé de voiture se situe entre {PRICES.cleSimple.sinnes} € (clé simple sans
+      télécommande) et {PRICES.perteTotale.sinnes} € (perte totale sans aucun double). Ces tarifs sont tout
+      compris : décodage, taille laser et programmation du transpondeur. Intervention à domicile
+      sur Nice et Côte d&apos;Azur, devis gratuit en 2 minutes.
+     </p>
+     <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.6)' }}>
+      Pour le détail ligne par ligne, consultez{' '}
+      <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>notre grille tarifaire complète</a>.
      </p>
 
      <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>

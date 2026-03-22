@@ -9,6 +9,7 @@ interface PricingPlan {
   conces: string
   features: string[]
   hasOr?: boolean
+  description: string
 }
 
 const PLANS: PricingPlan[] = [
@@ -18,6 +19,7 @@ const PLANS: PricingPlan[] = [
     conces: `${PRICES.cleSimple.concessionnaire.min}–${PRICES.cleSimple.concessionnaire.max}€`,
     features: ['Décodage de la clé', 'Taillage de la clé', 'Programmation'],
     hasOr: true,
+    description: 'Reproduction de clé voiture simple sans télécommande : décodage, taillage laser et programmation transpondeur. Délai : 1–2h.',
   },
   {
     title: 'Clé Centralisée',
@@ -29,6 +31,7 @@ const PLANS: PricingPlan[] = [
       'Programmation du transpondeur',
       'Programmation de la télécommande',
     ],
+    description: 'Reproduction de clé voiture centralisée avec télécommande : décodage, taillage laser, programmation transpondeur et télécommande. Délai : 2–3h.',
   },
   {
     title: 'Clé Mains Libres',
@@ -40,6 +43,7 @@ const PLANS: PricingPlan[] = [
       "Taillage de l'insert de secours",
       'Programmation de la télécommande',
     ],
+    description: 'Reproduction de clé mains libres ou badge : programmation, décodage, taillage insert de secours et télécommande. Délai : 2–4h.',
   },
   {
     title: 'Perte Totale',
@@ -51,6 +55,7 @@ const PLANS: PricingPlan[] = [
       'Taillage de la clé',
       'Programmation de la clé',
     ],
+    description: 'Reproduction de clé voiture en cas de perte totale sans aucun double : crochetage, décodage serrure, taillage et programmation.',
   },
 ]
 
@@ -96,6 +101,8 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       data-testid="pricing-card"
+      itemScope
+      itemType="https://schema.org/Offer"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -119,6 +126,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
       {/* Titre */}
       <h3
         className="font-heading"
+        itemProp="name"
         style={{
           fontSize: '1.25rem',
           fontWeight: 700,
@@ -130,6 +138,10 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
       >
         {plan.title}
       </h3>
+      <meta itemProp="description" content={plan.description} />
+      <meta itemProp="priceCurrency" content="EUR" />
+      <meta itemProp="availability" content="https://schema.org/InStock" />
+      <link itemProp="seller" href="https://sinnes.fr/#organization" />
 
       {/* Badge prix */}
       <div
@@ -149,7 +161,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         }}
       >
         <span className="font-body" style={{ fontSize: '1.25rem', fontWeight: 300, marginRight: 4, alignSelf: 'flex-start', marginTop: 4 }}>€</span>
-        <span className="font-heading" style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-0.04em', lineHeight: 1 }}>{plan.price}</span>
+        <span className="font-heading" itemProp="price" content={String(plan.price)} style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-0.04em', lineHeight: 1 }}>{plan.price}</span>
         <span className="font-body" style={{ fontSize: '0.625rem', fontWeight: 500, marginLeft: 8, opacity: 0.9, lineHeight: 1.2, textTransform: 'uppercase' }}>
           à partir de*
         </span>

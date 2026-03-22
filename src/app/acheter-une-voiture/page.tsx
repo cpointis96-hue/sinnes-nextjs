@@ -18,23 +18,35 @@ import { getReviewForPage } from '@/data/reviews'
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'AutoDealer',
-  '@id': 'https://sinnes.fr/acheter-une-voiture/#autodealer',
-  name: 'Sinnes Automobiles, Vente VO',
-  url: 'https://sinnes.fr/acheter-une-voiture/',
-  telephone: NAP.phoneTel,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '4 rue Diderot',
-    addressLocality: 'Nice',
-    postalCode: '06000',
-    addressCountry: 'FR',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 43.7031,
-    longitude: 7.2620,
-  },
+  '@graph': [
+    {
+      '@type': 'AutoDealer',
+      '@id': 'https://sinnes.fr/acheter-une-voiture/#autodealer',
+      name: 'Sinnes Automobiles, Vente VO',
+      url: 'https://sinnes.fr/acheter-une-voiture/',
+      telephone: NAP.phoneTel,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '4 rue Diderot',
+        addressLocality: 'Nice',
+        postalCode: '06000',
+        addressCountry: 'FR',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 43.7031,
+        longitude: 7.2620,
+      },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/acheter-une-voiture/#webpage',
+      url: 'https://sinnes.fr/acheter-une-voiture/',
+      datePublished: '2026-03-19',
+      dateModified: '2026-03-19',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
+  ],
 }
 
 const review = getReviewForPage('/acheter-une-voiture/')

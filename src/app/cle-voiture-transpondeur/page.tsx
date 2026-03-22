@@ -75,6 +75,14 @@ const schema = {
       "jobTitle": "Expert en programmation de clés automobiles",
       "knowsAbout": TEAM.sinouhe.knowsAbout,
       "worksFor": { "@id": "https://sinnes.fr/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://sinnes.fr/cle-voiture-transpondeur/#webpage",
+      "url": "https://sinnes.fr/cle-voiture-transpondeur/",
+      "datePublished": "2026-03-07",
+      "dateModified": "2026-03-07",
+      "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
 }
@@ -124,7 +132,7 @@ export default function CleVoitureTranspondeurPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            {seoData['cle-voiture-transpondeur'].h1} :<br />Fonctionnement et programmation
+            {seoData['cle-voiture-transpondeur'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -161,15 +169,15 @@ export default function CleVoitureTranspondeurPage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="shade" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Clé voiture transpondeur" serviceUrl="/cle-voiture-transpondeur/" />}
 
+      {/* TRUST STRIP */}
+      <TrustStrip theme="shade" items={TRUST_ITEMS} />
+
 
       {/* SECTION 5 — CORPS TEXTUEL */}
-      <section className="bg-white py-16 px-4">
+      <section className="bg-white pt-8 pb-16 px-4">
         <div className="container-sinnes max-w-3xl">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
@@ -212,43 +220,109 @@ export default function CleVoitureTranspondeurPage() {
             ID48, HITAG2, PCF7936, des termes que Sinouhé Rochereau manie au quotidien.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
+        </div>
+      </section>
+
+      {/* SECTION TYPES DE TRANSPONDEURS — dark styled */}
+      <section
+        style={{
+          background: '#0D0D0D',
+          borderTop: '1px solid rgba(212,160,23,0.35)',
+          borderBottom: '1px solid rgba(212,160,23,0.35)',
+        }}
+        className="py-16 px-4"
+      >
+        <div className="container-sinnes max-w-3xl">
+          {/* Liseré doré haut */}
+          <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, rgba(212,160,23,0.55) 50%, transparent)', marginBottom: '2.5rem' }} />
+
+          <h2 className="font-heading font-bold text-2xl md:text-3xl mb-10 text-center" style={{ color: '#EFAD42' }}>
             {seoData['cle-voiture-transpondeur'].h2[3]}
           </h2>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            {seoData['cle-voiture-transpondeur'].h3[0]}
-          </h3>
-          <p className="font-body leading-relaxed mb-4 text-text-muted">
-            Les transpondeurs fixes émettent toujours le même code, sans cryptage. Ils équipent
-            les véhicules plus anciens (1995–2005 pour la majorité). Leur principal avantage :
-            ils sont clonables : Sinouhé peut copier le code d'un transpondeur fixe sur une puce
-            vierge compatible en quelques minutes, sans connexion OBD au véhicule.
-            Types courants : PCF7935 (T5), Megamos ID48 sur les Renault ancien, transponders
-            ID60 sur certaines Fiat et Alfa Romeo.
-          </p>
+          <div className="flex flex-col gap-5">
+            {/* Transpondeur fixe */}
+            <div style={{ border: '1px solid rgba(212,160,23,0.22)', borderRadius: '12px', background: 'rgba(212,160,23,0.04)', padding: '1.4rem 1.6rem' }}>
+              <div className="flex gap-4 items-start">
+                <div style={{ color: '#EFAD42', flexShrink: 0, marginTop: '2px' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                    <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+                    <path d="M9 4v3M12 4v3M15 4v3M9 17v3M12 17v3M15 17v3M4 9h3M4 12h3M4 15h3M17 9h3M17 12h3M17 15h3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#EFAD42' }}>
+                    {seoData['cle-voiture-transpondeur'].h3[0]}
+                  </h3>
+                  <p className="font-body text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.72)' }}>
+                    Les transpondeurs fixes émettent toujours le même code, sans cryptage. Ils équipent
+                    les véhicules plus anciens (1995–2005 pour la majorité). Leur principal avantage :
+                    ils sont clonables : Sinouhé peut copier le code d'un transpondeur fixe sur une puce
+                    vierge compatible en quelques minutes, sans connexion OBD au véhicule.
+                    Types courants : PCF7935 (T5), Megamos ID48 sur les Renault ancien, transponders
+                    ID60 sur certaines Fiat et Alfa Romeo.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            {seoData['cle-voiture-transpondeur'].h3[1]}
-          </h3>
-          <p className="font-body leading-relaxed mb-4 text-text-muted">
-            Les transpondeurs cryptés utilisent des algorithmes de chiffrement : chaque transaction
-            entre la clé et le calculateur est unique. Impossible de les cloner directement.
-            L'ID46 est le plus répandu (PSA, Renault, Fiat, Lancia, Honda, Mazda). L'ID48 équipe
-            principalement les véhicules du groupe VAG (VW, Audi, Seat, Skoda, Porsche) jusqu'en 2011.
-            Le HITAG2 est présent sur les BMW, Opel et Volvo de certaines générations.
-            Pour programmer ces transpondeurs, une connexion OBD via valise Abrites est indispensable.
-          </p>
+            {/* Transpondeur crypté */}
+            <div style={{ border: '1px solid rgba(212,160,23,0.22)', borderRadius: '12px', background: 'rgba(212,160,23,0.04)', padding: '1.4rem 1.6rem' }}>
+              <div className="flex gap-4 items-start">
+                <div style={{ color: '#EFAD42', flexShrink: 0, marginTop: '2px' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                    <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+                    <path d="M9 4v3M12 4v3M15 4v3M9 17v3M12 17v3M15 17v3M4 9h3M4 12h3M4 15h3M17 9h3M17 12h3M17 15h3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#EFAD42' }}>
+                    {seoData['cle-voiture-transpondeur'].h3[1]}
+                  </h3>
+                  <p className="font-body text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.72)' }}>
+                    Les transpondeurs cryptés utilisent des algorithmes de chiffrement : chaque transaction
+                    entre la clé et le calculateur est unique. Impossible de les cloner directement.
+                    L'ID46 est le plus répandu (PSA, Renault, Fiat, Lancia, Honda, Mazda). L'ID48 équipe
+                    principalement les véhicules du groupe VAG (VW, Audi, Seat, Skoda, Porsche) jusqu'en 2011.
+                    Le HITAG2 est présent sur les BMW, Opel et Volvo de certaines générations.
+                    Pour programmer ces transpondeurs, une connexion OBD via valise Abrites est indispensable.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <h3 className="font-heading font-bold text-xl mb-3 text-text-main">
-            {seoData['cle-voiture-transpondeur'].h3[2]}
-          </h3>
-          <p className="font-body leading-relaxed mb-6 text-text-muted">
-            Les véhicules récents (après 2011-2015) utilisent des algorithmes encore plus robustes.
-            Le HITAG Pro équipe les VAG récents. Le DST80 est présent dans les Toyota et Lexus récents.
-            Ces systèmes nécessitent des outils spécialisés et des licences constructeur. C'est
-            exactement ce que propose Sinouhé avec ses équipements Abrites et ZedFull à jour.
-          </p>
+            {/* Transpondeur haute sécurité */}
+            <div style={{ border: '1px solid rgba(212,160,23,0.22)', borderRadius: '12px', background: 'rgba(212,160,23,0.04)', padding: '1.4rem 1.6rem' }}>
+              <div className="flex gap-4 items-start">
+                <div style={{ color: '#EFAD42', flexShrink: 0, marginTop: '2px' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                    <rect x="7" y="7" width="10" height="10" rx="1.5"/>
+                    <path d="M9 4v3M12 4v3M15 4v3M9 17v3M12 17v3M15 17v3M4 9h3M4 12h3M4 15h3M17 9h3M17 12h3M17 15h3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-heading font-bold text-lg mb-2" style={{ color: '#EFAD42' }}>
+                    {seoData['cle-voiture-transpondeur'].h3[2]}
+                  </h3>
+                  <p className="font-body text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.72)' }}>
+                    Les véhicules récents (après 2011-2015) utilisent des algorithmes encore plus robustes.
+                    Le HITAG Pro équipe les VAG récents. Le DST80 est présent dans les Toyota et Lexus récents.
+                    Ces systèmes nécessitent des outils spécialisés et des licences constructeur. C'est
+                    exactement ce que propose Sinouhé avec ses équipements Abrites et ZedFull à jour.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Liseré doré bas */}
+          <div style={{ height: '1px', background: 'linear-gradient(90deg, transparent, rgba(212,160,23,0.55) 50%, transparent)', marginTop: '2.5rem' }} />
+        </div>
+      </section>
+
+      {/* SUITE SECTION 5 — white */}
+      <section className="bg-white py-16 px-4">
+        <div className="container-sinnes max-w-3xl">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 text-text-main">
             {seoData['cle-voiture-transpondeur'].h2[4]}

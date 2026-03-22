@@ -94,6 +94,8 @@ const schema = {
         '@type': 'WebPage',
         '@id': 'https://sinnes.fr/refaire-cle-toyota/#webpage',
         url: 'https://sinnes.fr/refaire-cle-toyota/',
+        datePublished: '2026-03-17',
+        dateModified: '2026-03-17',
         name: 'Refaire une clé Toyota à Nice · Double & Perte totale 7j/7',
         isPartOf: { '@id': 'https://sinnes.fr/#website' },
         about: { '@id': 'https://sinnes.fr/#organization' },
@@ -143,7 +145,7 @@ export default function RefaireCleToyotaPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['refaire-cle-toyota'].h1} :<br />Hybride et thermique
+            {seoData['refaire-cle-toyota'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -289,8 +291,8 @@ export default function RefaireCleToyotaPage() {
             </table>
           </div>
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Vous avez une autre marque ? Découvrez aussi notre page pour{' '}
-            <a href="/refaire-cle-renault/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Renault</a> à Nice.
+            La puce Crypto G-chip Toyota est l&apos;une des plus sécurisées du marché — découvrez notre guide sur la{' '}
+            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation de clé Toyota hybride</a>.
           </p>
         </div>
       </section>

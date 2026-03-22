@@ -45,6 +45,14 @@ const schema = {
         { '@type': 'ListItem', position: 2, name: 'Contactez-nous', item: 'https://sinnes.fr/contactez-nous/' },
       ],
     },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/contactez-nous/#webpage',
+      url: 'https://sinnes.fr/contactez-nous/',
+      datePublished: '2026-03-01',
+      dateModified: '2026-03-01',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
   ],
 }
 

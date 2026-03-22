@@ -94,6 +94,8 @@ const schema = {
         '@type': 'WebPage',
         '@id': 'https://sinnes.fr/refaire-cle-mercedes/#webpage',
         url: 'https://sinnes.fr/refaire-cle-mercedes/',
+        datePublished: '2026-03-18',
+        dateModified: '2026-03-18',
         name: 'Refaire une clé Mercedes à Nice · Double & Perte totale 7j/7',
         isPartOf: { '@id': 'https://sinnes.fr/#website' },
         about: { '@id': 'https://sinnes.fr/#organization' },
@@ -148,7 +150,7 @@ export default function RefaireCleMercedesPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['refaire-cle-mercedes'].h1} :<br />Clé étoile et badge ProxiKey
+            {seoData['refaire-cle-mercedes'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -283,9 +285,9 @@ export default function RefaireCleMercedesPage() {
             </table>
           </div>
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Pour aller plus loin, consultez notre guide complet sur la{' '}
-            <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation clé voiture</a>,
-            tous les systèmes, toutes les marques.
+            La clé étoile Mercedes utilise le{' '}
+            <a href="/cle-voiture-transpondeur/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>transpondeur haute sécurité Mercedes HiTag AES</a>{' '}
+            — découvrez comment fonctionne ce système parmi les plus protégés du marché.
           </p>
         </div>
       </section>

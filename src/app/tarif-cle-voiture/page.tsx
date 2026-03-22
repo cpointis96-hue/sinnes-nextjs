@@ -117,6 +117,14 @@ const schema = {
       description: TEAM.ines.description,
       worksFor: { '@id': 'https://sinnes.fr/#organization' },
     },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/tarif-cle-voiture/#webpage',
+      url: 'https://sinnes.fr/tarif-cle-voiture/',
+      datePublished: '2026-03-03',
+      dateModified: '2026-03-22',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
   ],
 }
 
@@ -168,7 +176,7 @@ export default function TarifCleVoiturePage() {
             className="font-heading font-bold text-4xl md:text-5xl leading-tight mb-6"
             style={{ color: '#FFFFFF' }}
           >
-            {seoData['tarif-cle-voiture'].h1} : Prix à partir de {PRICES.cleSimple.sinnes}€
+            {seoData['tarif-cle-voiture'].h1}
           </h1>
 
           <p className="font-body text-white/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -208,19 +216,9 @@ export default function TarifCleVoiturePage() {
           {/* Cards pricing */}
           <PricingSection />
 
-          <div className="text-center mb-14">
-            <p className="font-body text-sm text-text-muted mb-5">
-              Tous les devis sont gratuits. Le prix final est confirmé avant toute intervention.
-            </p>
-            <a
-              href="/contactez-nous/"
-              className="inline-block bg-[#EFAD42] text-[#1a1a1a] font-body font-black text-lg
-                         px-10 py-4 rounded-lg min-h-[56px] shadow-lg
-                         hover:bg-[#D49436] hover:scale-[1.02] transition-all"
-            >
-              Obtenir un devis gratuit
-            </a>
-          </div>
+          <p className="font-body text-sm text-text-muted text-center mb-14">
+            Tous les devis sont gratuits. Le prix final est confirmé avant toute intervention.
+          </p>
 
         </div>
       </section>
@@ -248,32 +246,43 @@ export default function TarifCleVoiturePage() {
           <p className="font-body text-text-muted leading-relaxed mb-8">
             Pour le détail des prestations, consultez{' '}
             <a href="/reproduction-cle-voiture/" className="text-primary font-semibold hover:underline">
-              nos services de reproduction
-            </a>{' '}
-            de clé de voiture.
+              reproduction de clé de voiture à Nice
+            </a>.
           </p>
 
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
+        </div>
+      </article>
+
+      {/* SECTION SOMBRE : Pourquoi nos tarifs sont inférieurs */}
+      <section style={{ backgroundColor: '#0A0A0A' }} className="py-12 px-4">
+        <div className="container-sinnes max-w-3xl mx-auto">
+          <h2 style={{ color: '#EFAD42' }} className="font-heading font-bold text-2xl md:text-3xl mb-6">
             {seoData['tarif-cle-voiture'].h2[2]}
           </h2>
-          <p className="font-body text-text-muted leading-relaxed mb-4">
+          <p style={{ color: '#F0F3F7' }} className="font-body leading-relaxed mb-4 opacity-90">
             Un concessionnaire facture le même service entre 2 et 5 fois plus cher pour trois
             raisons structurelles : stocks imposants de clés vierges, frais généraux d&apos;un
             réseau agréé, et délais d&apos;approvisionnement commandés par le constructeur.
           </p>
-          <p className="font-body text-text-muted leading-relaxed mb-4">
+          <p style={{ color: '#F0F3F7' }} className="font-body leading-relaxed mb-4 opacity-90">
             Sinnes Automobiles travaille en flux tendu : les pièces sont commandées à la demande,
             les déplacements sont optimisés, et l&apos;expertise de Sinouhé Rochereau réduit le
             temps d&apos;intervention. Ce modèle permet de faire passer l&apos;économie directement
             sur le tarif client.
           </p>
-          <p className="font-body text-text-muted leading-relaxed mb-8">
+          <p style={{ color: '#F0F3F7' }} className="font-body leading-relaxed mb-8 opacity-90">
             Pour une analyse détaillée,{' '}
-            <a href="/prix-cle-vs-concessionnaire/" className="text-primary font-semibold hover:underline">
+            <a href="/prix-cle-vs-concessionnaire/" style={{ color: '#EFAD42' }} className="font-bold hover:opacity-80 underline decoration-[#EFAD42]/40 underline-offset-4 transition-all">
               tarif vs concessionnaire
             </a>{' '}
             : notre comparatif complet.
           </p>
+        </div>
+      </section>
+
+      {/* REPRISE CORPS TEXTUEL */}
+      <article className="bg-bg-shade pt-8 pb-16 px-4">
+        <div className="container-sinnes max-w-3xl mx-auto">
 
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['tarif-cle-voiture'].h2[3]}

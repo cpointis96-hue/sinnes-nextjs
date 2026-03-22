@@ -89,6 +89,8 @@ const schema = {
    '@type': 'WebPage',
    '@id': 'https://sinnes.fr/refaire-cle-audi/#webpage',
    url: 'https://sinnes.fr/refaire-cle-audi/',
+   datePublished: '2026-03-16',
+   dateModified: '2026-03-22',
    name: 'Refaire une clé Audi à Nice · Programmation VAG officielle',
    isPartOf: { '@id': 'https://sinnes.fr/#website' },
    about: { '@id': 'https://sinnes.fr/#organization' },
@@ -98,9 +100,9 @@ const schema = {
 }
 
 const steps = [
- { num: 1, title: 'Votre Audi', desc: "Identification de la génération et du système VAG : A3 8P, A4 B8, Q5 FY, KESSY ou lame escamotable" },
- { num: 2, title: 'Diagnostic', desc: 'Lecture du transpondeur Audi via Abrites — ID48, MegaCode ou HiTag Pro selon la génération' },
- { num: 3, title: 'Programmation', desc: 'Calcul PIN Code IMMO4/IMMO5 et injection dans le calculateur VAG — méthode certifiée Incarline' },
+ { num: 1, title: 'Votre Audi', desc: "Identification de votre modèle et de votre type de clé — lame escamotable classique ou badge sans contact (KESSY)" },
+ { num: 2, title: 'Diagnostic', desc: "Lecture du système électronique de votre Audi via valise professionnelle — chaque génération a ses spécificités" },
+ { num: 3, title: 'Programmation', desc: "La nouvelle clé est enregistrée dans le calculateur de votre voiture : votre Audi la reconnaît comme d'origine" },
  { num: 4, title: 'Garantie', desc: 'Clé opérationnelle, immobiliseur préservé, garantie constructeur Audi intacte' },
 ]
 
@@ -139,15 +141,16 @@ export default function RefaireCleAudiPage() {
      </div>
 
      <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-      {seoData['refaire-cle-audi'].h1} :<br />Programmation VAG officielle
+      {seoData['refaire-cle-audi'].h1}
      </h1>
 
      <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
-      Vous cherchez à refaire ou programmer une clé Audi à Nice ? Sinnes Automobiles intervient sur
-      toute la gamme : A1, A3 (8P/8V), A4 (B7/B8/B9), A5, A6, Q3, Q5, Q7 et TT. Sinouhé Rochereau
-      maîtrise le système VAG avec valise Abrites : calcul PIN Code IMMO4/IMMO5, programmation
-      KESSY et clés HiTag Pro. À partir de {PRICES.cleCentralisee.sinnes}€, devis gratuit.
-      appelez le <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>.
+      Vous avez perdu votre clé Audi, vous voulez en faire un double, ou votre clé ne démarre
+      plus ? Sinnes Automobiles intervient sur toute la gamme à Nice : A1, A3, A4, A5, A6, Q3,
+      Q5, Q7 et TT — y compris les modèles récents avec clé sans contact. Sinouhé Rochereau
+      est formateur international en programmation automobile : il connaît les systèmes Audi
+      mieux que beaucoup de concessionnaires. À partir de {PRICES.cleCentralisee.sinnes}€,
+      devis gratuit au <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>.
      </p>
 
      <a
@@ -189,26 +192,38 @@ export default function RefaireCleAudiPage() {
      <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6 " style={{ color: '#FFFFFF' }}>
       {seoData['refaire-cle-audi'].h2[1]}
      </h2>
-     <p className="font-body leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
-      Sinnes Automobiles intervient sur l'intégralité de la gamme Audi présente en France :
-      <strong style={{ color: '#FFFFFF' }}> A1</strong> (8X, GB),
-      <strong style={{ color: '#FFFFFF' }}> A3</strong> (8P de 2003, 8V de 2012, 8Y de 2020),
-      <strong style={{ color: '#FFFFFF' }}> A4</strong> (B7, B8, B9),
-      <strong style={{ color: '#FFFFFF' }}> A5</strong>,
-      <strong style={{ color: '#FFFFFF' }}> A6</strong> (C6, C7),
-      <strong style={{ color: '#FFFFFF' }}> Q3</strong>,
-      <strong style={{ color: '#FFFFFF' }}> Q5</strong> (FY),
-      <strong style={{ color: '#FFFFFF' }}> Q7</strong> et
-      <strong style={{ color: '#FFFFFF' }}> TT</strong>.
-     </p>
      <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
-      Audi appartient au groupe VAG (Volkswagen, Audi, Seat, Skoda, Cupra) : les systèmes
-      d'immobiliseur sont communs entre ces marques, ce qui permet à Sinouhé d'intervenir sur
-      l'ensemble du groupe avec les mêmes outils. Pour une{' '}
+      Sinnes Automobiles couvre l'intégralité de la gamme Audi commercialisée en France.
+      Citadines, berlines, SUV et coupés — chaque famille est prise en charge, y compris les
+      générations intermédiaires que beaucoup de serruriers ne maîtrisent pas faute d'outils.
+     </p>
+     <ul className="grid grid-cols-2 gap-x-10 gap-y-3 mb-8">
+      {[
+       { model: 'A1', gens: '8X, GB' },
+       { model: 'A3', gens: '8P · 8V · 8Y' },
+       { model: 'A4', gens: 'B7 · B8 · B9' },
+       { model: 'A5', gens: 'toutes générations' },
+       { model: 'A6', gens: 'C6, C7' },
+       { model: 'Q3', gens: 'toutes générations' },
+       { model: 'Q5', gens: 'FY' },
+       { model: 'Q7', gens: 'toutes générations' },
+       { model: 'TT', gens: '8J, 8S' },
+      ].map(({ model, gens }) => (
+       <li key={model} className="flex items-baseline gap-3">
+        <span className="font-heading font-bold text-lg" style={{ color: '#EFAD42', minWidth: '2.5rem' }}>{model}</span>
+        <span className="font-body text-sm" style={{ color: 'rgba(255,255,255,0.45)' }}>{gens}</span>
+       </li>
+      ))}
+     </ul>
+     <p className="font-body leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.8)' }}>
+      Audi fait partie du groupe Volkswagen — avec Seat, Skoda et Cupra. Ces marques partagent
+      la même architecture électronique, ce qui permet à Sinouhé d'intervenir sur toutes avec
+      les mêmes outils professionnels. Un VW Golf, un Seat Leon ou un Skoda Octavia récent :
+      même procédure, même niveau d'expertise. Pour en savoir plus sur la{' '}
       <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
-       programmation clé Audi
+       programmation de clé voiture
       </a>{' '}
-      ou pour tout autre véhicule VAG, le processus est identique.
+      en général, consultez notre page dédiée.
      </p>
     </div>
    </section>
@@ -220,29 +235,25 @@ export default function RefaireCleAudiPage() {
       {seoData['refaire-cle-audi'].h2[2]}
      </h2>
      <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
-      La difficulté spécifique aux Audi réside dans la multiplicité des systèmes d'immobiliseur
-      selon les générations. L'
-      <strong style={{ color: '#111111' }}>IMMO4</strong> équipe les modèles 2003–2012 (A3 8P, A4 B7/B8).
-      L'<strong style={{ color: '#111111' }}>IMMO5</strong> monte à bord des modèles 2012 et plus récents
-      (A3 8V, A4 B9, Q5 FY). La différence technique : l'IMMO5 nécessite un calcul de PIN Code
-      encore plus sécurisé via serveur Abrites en ligne.
+      Refaire une clé Audi est plus complexe qu'une clé ordinaire parce que chaque génération
+      utilise un système de sécurité différent. Concrètement : les modèles d'avant 2012 — A3,
+      A4, A6 de cette époque — fonctionnent avec l'IMMO4. Les versions plus récentes (A3 8V,
+      A4 B9, Q5...) utilisent l'IMMO5, dont le niveau de protection est plus élevé et qui
+      nécessite un serveur dédié pour déverrouiller la programmation. C'est ce que beaucoup
+      de serruriers ne peuvent pas faire — Sinouhé, si.
      </p>
      <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
-      La clé classique Audi avec lame escamotable et plip intégré utilise un transpondeur
-      <strong style={{ color: '#111111' }}> ID48</strong> (A3 8P, A4 B7) ou
-      <strong style={{ color: '#111111' }}> MegaCode / HiTag Pro</strong> pour les versions plus récentes.
-      La clé KESSY (Keyless Entry and Start System) est présente depuis l'A6 2011 et s'est
-      généralisée sur l'A4 B9 et les Q5/Q7 récents : il s'agit d'un badge sans contact qui
-      reconnaît le conducteur à proximité.
+      Côté format, votre clé Audi est soit une clé à lame escamotable avec télécommande intégrée
+      — celle que vous retournez pour faire sortir la lame — soit un badge plat que vous gardez
+      dans votre poche pendant que votre voiture vous reconnaît à proximité. Ce deuxième format,
+      appelé KESSY, est présent sur les A4, A6 et Q5/Q7 récents. Les deux formats se refont,
+      à des <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>tarifs différents selon le modèle</a>.
      </p>
      <p className="font-body leading-relaxed mb-8" style={{ color: '#111111' }}>
-      L'A3 8P (2003–2013) reste l'un des cas les plus fréquemment traités chez Sinnes : ce modèle
-      extrêmement répandu utilise l'ID48 avec IMMO4, une procédure maîtrisée et rapide. Dans tous
-      les cas, la programmation préserve la garantie constructeur Audi. Pour connaître le{' '}
-      <a href="/tarif-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>
-       tarif clé Audi
-      </a>{' '}
-      adapté à votre modèle, contactez-nous au <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>.
+      L'A3 8P (2003–2013) est le modèle qu'on nous confie le plus souvent : il est très répandu
+      et sa programmation est rapide. Quelle que soit votre génération, ce que nous faisons ne
+      touche pas à la garantie constructeur Audi — la procédure est non invasive. Appelez-nous
+      au <span className="whitespace-nowrap">{NAP.phoneDisplay}</span> pour un devis en deux minutes.
      </p>
     </div>
    </section>
@@ -277,8 +288,9 @@ export default function RefaireCleAudiPage() {
       </table>
      </div>
      <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-      Vous avez une autre marque haut de gamme ? Découvrez aussi notre page pour{' '}
-      <a href="/refaire-cle-mercedes/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Mercedes</a> à Nice.
+      Le système VAG utilise des technologies de{' '}
+      <a href="/cle-voiture-transpondeur/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>transpondeur clé Audi</a>{' '}
+      parmi les plus complexes du marché — découvrez comment fonctionne ce système.
      </p>
     </div>
    </section>

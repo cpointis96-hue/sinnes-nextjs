@@ -87,6 +87,8 @@ const schema = {
         '@type': 'WebPage',
         '@id': 'https://sinnes.fr/prix-cle-vs-concessionnaire/#webpage',
         url: 'https://sinnes.fr/prix-cle-vs-concessionnaire/',
+        datePublished: '2026-03-14',
+        dateModified: '2026-03-22',
         name: 'Prix clé voiture vs Concessionnaire Nice — Économie 80%',
         isPartOf: { '@id': 'https://sinnes.fr/#website' },
         about: { '@id': 'https://sinnes.fr/#organization' },
@@ -139,7 +141,7 @@ export default function PrixCleVsConcessionnairePage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-            {seoData['prix-cle-vs-concessionnaire'].h1} :<br />Le comparatif Sinnes
+            {seoData['prix-cle-vs-concessionnaire'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>

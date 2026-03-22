@@ -39,8 +39,8 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sinnes.fr'),
   title: {
-    default: 'Sinnes Automobiles — Reproduction de clé voiture Nice',
-    template: '%s | Sinnes Nice',
+    default: 'Sinnes Automobiles Nice | Serrurier automobile & Reproduction clé',
+    template: '%s',
   },
   description:
     'Reproduction et double de clé de voiture à Nice. Intervention 7j/7. Devis gratuit : +33 6 75 54 04 11',

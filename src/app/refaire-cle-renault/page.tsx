@@ -94,6 +94,8 @@ const schema = {
       '@type': 'WebPage',
       '@id': 'https://sinnes.fr/refaire-cle-renault/#webpage',
       url: 'https://sinnes.fr/refaire-cle-renault/',
+      datePublished: '2026-03-18',
+      dateModified: '2026-03-18',
       name: 'Refaire clé Renault Nice — Expertise Carte & Badge',
       isPartOf: { '@id': 'https://sinnes.fr/#website' },
       about: { '@id': 'https://sinnes.fr/#organization' },
@@ -148,7 +150,7 @@ export default function RefaireCleRenaultPage() {
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-            {seoData['refaire-cle-renault'].h1} :<br />Clé carte et clé à lame
+            {seoData['refaire-cle-renault'].h1}
           </h1>
 
           <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -298,8 +300,9 @@ export default function RefaireCleRenaultPage() {
             </table>
           </div>
           <p className="font-body leading-relaxed mt-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            Vous avez une autre marque ? Découvrez aussi notre page pour{' '}
-            <a href="/refaire-cle-fiat/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>refaire une clé Fiat</a> à Nice.
+            La clé carte Renault intègre un système de{' '}
+            <a href="/cle-voiture-transpondeur/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>transpondeur clé carte Renault</a>{' '}
+            parmi les plus complexes du marché — consultez notre guide dédié.
           </p>
         </div>
       </section>

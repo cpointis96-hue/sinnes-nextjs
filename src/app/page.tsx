@@ -135,6 +135,14 @@ const schema = {
         ],
       },
     },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://sinnes.fr/#webpage',
+      url: 'https://sinnes.fr/',
+      datePublished: '2026-03-01',
+      dateModified: '2026-03-22',
+      isPartOf: { '@id': 'https://sinnes.fr/#website' },
+    },
   ],
 }
 
@@ -145,7 +153,7 @@ const schema = {
 const TIMELINE = [
   {
     date: 'Janvier 2025',
-    titre: 'Ouverture de Sinnes Automobile',
+    titre: 'Ouverture de Sinnes Automobiles',
     texte:
       "Lancement de l'activité spécialisée dans la programmation et le codage de clés automobiles.",
   },
@@ -153,7 +161,7 @@ const TIMELINE = [
     date: 'Octobre 2025',
     titre: 'La vente de véhicules',
     texte:
-      "Sinnes Automobile élargit son savoir-faire en proposant désormais la vente de voitures sélectionnées avec soin.",
+      "Sinnes Automobiles élargit son savoir-faire en proposant désormais la vente de voitures sélectionnées avec soin.",
   },
 ]
 
@@ -340,7 +348,7 @@ export default function HomePage() {
                   />
                 </ScrollReveal>
                 <h3 className="font-heading font-bold text-xl text-card-title">
-                  Reproduction de clé de voiture
+                  {seoData.home.h3[0]}
                 </h3>
                 <p className="font-body text-text-muted leading-relaxed flex-1">
                   Vous avez perdu vos clés ou souhaitez refaire un double ? Nous avons une solution simple et rapide.
@@ -364,7 +372,7 @@ export default function HomePage() {
                   />
                 </ScrollReveal>
                 <h3 className="font-heading font-bold text-xl text-card-title">
-                  Vente de véhicule
+                  {seoData.home.h3[1]}
                 </h3>
                 <p className="font-body text-text-muted leading-relaxed flex-1">
                   Trouvez la voiture qui vous correspond parmi nos modèles récents et fiables, disponibles immédiatement.

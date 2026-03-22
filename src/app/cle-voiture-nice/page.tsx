@@ -51,7 +51,7 @@ const schema = {
    "name": "Clé de voiture Nice, Antibes, Cagnes-sur-Mer, Cannes",
    "description": "Service de reproduction et programmation de clé automobile à Nice et communes alentours. Intervention à domicile, chaque quartier connu.",
    "url": "https://sinnes.fr/cle-voiture-nice/",
-   "telephone": "+33675540411",
+   "telephone": NAP.phoneTel,
    "address": {
     "@type": "PostalAddress",
     "streetAddress": "4 rue Diderot",
@@ -100,6 +100,14 @@ const schema = {
    "name": "Inès Barthelemy",
    "jobTitle": "Co-fondatrice, gestion et relation client",
    "worksFor": { "@id": "https://sinnes.fr/#organization" }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://sinnes.fr/cle-voiture-nice/#webpage",
+   "url": "https://sinnes.fr/cle-voiture-nice/",
+   "datePublished": "2026-03-12",
+   "dateModified": "2026-03-22",
+   "isPartOf": { "@id": "https://sinnes.fr/#website" }
   }
  ]
 }
@@ -149,7 +157,7 @@ export default function CleVoitureNicePage() {
      </div>
 
      <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
-      {seoData['cle-voiture-nice'].h1} :<br />Nice, Antibes, Cagnes et Cannes
+      {seoData['cle-voiture-nice'].h1}
      </h1>
 
      <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -194,11 +202,11 @@ export default function CleVoitureNicePage() {
     </div>
    </section>
 
-   {/* TRUST STRIP */}
-   <TrustStrip theme="light" items={TRUST_ITEMS} />
-
    {/* AVIS GOOGLE RÉEL */}
    {review && <SingleReview review={review} serviceName="Clé de voiture Nice" serviceUrl="/cle-voiture-nice/" />}
+
+   {/* TRUST STRIP */}
+   <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
    {/* H2 BLOC 1 — dark */}
@@ -254,7 +262,7 @@ export default function CleVoitureNicePage() {
    <section className="bg-white pt-16 pb-6 px-4">
     <div className="container-sinnes max-w-3xl">
      <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#111111' }}>
-      Intervention rapide sur Antibes : Sophia Antipolis, Vieil Antibes, Port Vauban
+      {seoData['cle-voiture-nice'].h2[2]}
      </h2>
      <p className="font-body leading-relaxed mb-6" style={{ color: '#111111' }}>
       Antibes est la deuxième ville d'intervention après Nice.
@@ -307,7 +315,7 @@ export default function CleVoitureNicePage() {
    <section style={{ background: '#111111' }} className="pt-6 pb-16 px-4">
     <div className="container-sinnes max-w-3xl">
      <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6" style={{ color: '#FFFFFF' }}>
-      {seoData['cle-voiture-nice'].h2[2]}
+      {seoData['cle-voiture-nice'].h2[3]}
      </h2>
      <p className="font-body leading-relaxed mb-6" style={{ color: 'rgba(255,255,255,0.8)' }}>
       Délai depuis Nice : 20 à 30 minutes selon la zone de Cagnes visée.
@@ -381,11 +389,15 @@ export default function CleVoitureNicePage() {
       La Bocca à l'ouest de Cannes est couverte dans les mêmes conditions tarifaires
       que le centre-ville. Délai légèrement réduit depuis Nice via l'A8.
      </p>
-     <p className="font-body leading-relaxed" style={{ color: '#111111' }}>
-      Pour en savoir plus sur nos services :{' '}
-      <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>reproduction de clé voiture</a>{' '}
-      ou{' '}
-      <a href="/urgence-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>intervention d'urgence clé voiture</a>.
+     <p className="font-body leading-relaxed mb-6" style={{ color: '#111111' }}>
+      Sur l'ensemble de cette zone, chaque intervention suit le même protocole : diagnostic
+      du système immobiliseur, taille laser de la lame à la côte exacte du véhicule, puis
+      programmation du transpondeur via valise Abrites ou ZedFull. Toutes marques, tous
+      systèmes — du simple plip au badge mains libres crypté. Pour le détail complet de
+      cette méthode, consultez notre page{' '}
+      <a href="/reproduction-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>
+        reproduction de clé voiture à Nice
+      </a>.
      </p>
     </div>
    </section>

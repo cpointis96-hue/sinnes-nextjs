@@ -83,6 +83,14 @@ const schema = {
    "jobTitle": "Expert en programmation de clés automobiles",
    "knowsAbout": TEAM.sinouhe.knowsAbout,
    "worksFor": { "@id": "https://sinnes.fr/#organization" }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://sinnes.fr/double-cle-voiture/#webpage",
+   "url": "https://sinnes.fr/double-cle-voiture/",
+   "datePublished": "2026-03-05",
+   "dateModified": "2026-03-05",
+   "isPartOf": { "@id": "https://sinnes.fr/#website" }
   }
  ]
 }
@@ -132,7 +140,7 @@ export default function DoubleCleVoiturePage() {
      </div>
 
      <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>
-      {seoData['double-cle-voiture'].h1} :<br />Faire un double en toute sécurité
+      {seoData['double-cle-voiture'].h1}
      </h1>
 
      <p className="font-body text-lg leading-relaxed mb-8 max-w-2xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -290,6 +298,19 @@ export default function DoubleCleVoiturePage() {
       nécessitent une programmation OBD. Hyundai et Kia partagent souvent la même architecture
       électronique : pour les doubles de clé sur ces marques, consultez notre page
       dédiée à <a href="/refaire-cle-toyota/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>double de clé Toyota</a> ou <a href="/refaire-cle-hyundai/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>refaire une clé Hyundai</a>.
+     </p>
+     <p className="font-body leading-relaxed mb-4" style={{ color: '#111111' }}>
+      Vous avez une Renault Clio, une Mégane ou une Fiat 500 ? Bonne nouvelle : ce sont des
+      véhicules que Sinouhé connaît très bien, car ils font partie des modèles les plus courants
+      sur la Côte d'Azur. La procédure varie selon l'année de votre voiture. Certaines clés
+      se reproduisent rapidement, d'autres nécessitent une communication directe avec le
+      calculateur du véhicule. Dans tous les cas, pas d'inquiétude : Sinnes intervient sur
+      l'ensemble de la gamme, à l'atelier ou à domicile. Consultez la page dédiée pour votre
+      marque :{' '}
+      <a href="/refaire-cle-renault/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>double de clé Renault</a>{' '}
+      ou{' '}
+      <a href="/refaire-cle-fiat/" className="font-semibold hover:underline" style={{ color: '#e53935' }}>refaire une clé Fiat</a>.
+      Vous y trouverez les tarifs et la méthode adaptée à votre modèle.
      </p>
      <p className="font-body leading-relaxed mb-8" style={{ color: '#111111' }}>
       Pour les véhicules du groupe VAG (Volkswagen, Audi, Seat, Skoda), les systèmes HITAG2
