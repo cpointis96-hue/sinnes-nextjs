@@ -142,9 +142,7 @@ export default function UrgenceCleVoiturePage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
-                       text-xl px-8 py-4 rounded-lg min-h-[56px] motion-safe:animate-pulse
-                       hover:bg-[#c62828] transition-colors mb-8"
+            className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg motion-safe:animate-pulse mb-8"
           >
             URGENCE : {NAP.phoneDisplay}
           </a>
@@ -309,7 +307,7 @@ export default function UrgenceCleVoiturePage() {
       <div className="text-center py-12 bg-bg-shade">
         <a
           href={`tel:${NAP.phoneTel}`}
-          className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] motion-safe:animate-pulse hover:bg-[#c62828] transition-colors"
+          className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg motion-safe:animate-pulse"
         >
           URGENCE : {NAP.phoneDisplay}
         </a>

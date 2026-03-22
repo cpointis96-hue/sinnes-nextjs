@@ -138,9 +138,7 @@ export default function ProgrammationCleVoiturePage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
-                       text-lg md:text-xl px-6 md:px-8 py-4 rounded-lg min-h-[56px]
-                       hover:bg-[#c62828] transition-colors shadow-lg mb-8"
+            className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg mb-8"
           >
             Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
           </a>
@@ -324,7 +322,7 @@ export default function ProgrammationCleVoiturePage() {
 
       {/* SECTION 9 — CTA BAS + STICKY MOBILE */}
       <div className="text-center py-12 bg-bg-shade">
-        <a href={`tel:${NAP.phoneTel}`} className="btn-accent text-lg px-10 py-4 min-h-[56px]">
+        <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg">
           Appelez maintenant : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
         </a>
         <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>

@@ -663,8 +663,9 @@ export const REVIEW_AGGREGATE = {
   bestRating: '5',
 }
 
-export const GMB_REVIEWS_URL =
-  'https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk'
+import { SOCIAL } from '@/constants/siteConfig'
+
+export const GMB_REVIEWS_URL = SOCIAL.gmbReviewsUrl
 
 export function getHomepageReviews(): Review[] {
   return REVIEWS.filter((r) => r.homepage && r.text.trim() !== '')

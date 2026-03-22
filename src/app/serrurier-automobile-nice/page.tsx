@@ -144,9 +144,7 @@ export default function SerrurierAutomobileNicePage() {
           <div className="mb-8">
             <a
               href={`tel:${NAP.phoneTel}`}
-              className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
-                         text-lg md:text-xl px-6 md:px-8 py-4 rounded-lg min-h-[56px]
-                         hover:bg-[#c62828] transition-colors shadow-lg"
+              className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg"
               aria-label={`Urgence serrurier automobile Nice — Appeler ${NAP.phoneDisplay}`}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

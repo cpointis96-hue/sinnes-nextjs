@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -37,6 +37,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+const review = getReviewForPage('/refaire-cle-mercedes/')
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -44,13 +46,31 @@ const schema = {
       '@type': 'Service',
       '@id': 'https://sinnes.fr/refaire-cle-mercedes/#service',
       name: 'Reproduction clé Mercedes Nice',
+      serviceType: 'Car Key Specialist',
+      description: 'Expert en reproduction et programmation de clés Mercedes (Classe A, C, E, GLC) à Nice. Spécialiste HiTag AES et ProxiKey.',
       provider: { '@id': 'https://sinnes.fr/#organization' },
-      areaServed: [
-        { '@type': 'City', name: 'Nice' },
-        { '@type': 'City', name: 'Antibes' },
-        { '@type': 'City', name: 'Cagnes-sur-Mer' },
-        { '@type': 'City', name: 'Cannes' },
-      ],
+      areaServed: AREA_SERVED_TYPED,
+      brand: {
+        "@type": "Brand",
+        "name": "Mercedes-Benz",
+        "sameAs": ENTITY_LINKS.mercedes
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": REVIEWS.ratingValue,
+        "reviewCount": REVIEWS.reviewCount,
+        "bestRating": REVIEWS.bestRating
+      },
+      "review": review ? {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": review.author },
+        "datePublished": review.date,
+        "reviewRating": {
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": review.text
+      } : undefined
     },
     {
       '@type': 'BreadcrumbList',
@@ -69,15 +89,22 @@ const schema = {
         acceptedAnswer: { '@type': 'Answer', text: item.answer },
       })),
     },
-    {
-      '@type': 'Person',
-      '@id': 'https://sinnes.fr/#sinouhe',
-      name: 'Sinouhé Rochereau',
-      jobTitle: 'Expert en programmation de clés automobiles',
-      knowsAbout: TEAM.sinouhe.knowsAbout,
-      worksFor: { '@id': 'https://sinnes.fr/#organization' },
-    },
-  ],
+      SINOUHE_FULL_ENTITY,
+      {
+        '@type': 'WebPage',
+        '@id': 'https://sinnes.fr/refaire-cle-mercedes/#webpage',
+        url: 'https://sinnes.fr/refaire-cle-mercedes/',
+        name: 'Refaire une clé Mercedes à Nice · Double & Perte totale 7j/7',
+        isPartOf: { '@id': 'https://sinnes.fr/#website' },
+        about: { '@id': 'https://sinnes.fr/#organization' },
+        mentions: [
+          { '@id': ENTITY_LINKS.mercedes },
+          { '@id': ENTITY_LINKS.locksmith },
+          { '@id': ENTITY_LINKS.immobilizer }
+        ],
+        mainEntity: { '@id': 'https://sinnes.fr/refaire-cle-mercedes/#service' }
+      }
+    ],
 }
 
 const steps = [
@@ -95,7 +122,6 @@ const TRUST_ITEMS: TrustStripItem[] = [
   { icon: <IconShield />, label: 'Garantie constructeur', sublabel: 'Méthode non-invasive' },
 ]
 
-const review = getReviewForPage('/refaire-cle-mercedes/')
 
 export default function RefaireCleMercedesPage() {
   return (
@@ -118,7 +144,7 @@ export default function RefaireCleMercedesPage() {
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
-            <span className="font-body text-sm font-semibold" style={{ color: '#FFFFFF' }}>58 avis Google · 5.0/5</span>
+            <span className="font-body text-sm font-semibold" style={{ color: '#FFFFFF' }}>{REVIEWS.reviewCount} avis Google · {REVIEWS.ratingValue}/5</span>
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6 " style={{ color: '#FFFFFF' }}>

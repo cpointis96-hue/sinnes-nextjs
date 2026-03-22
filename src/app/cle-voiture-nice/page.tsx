@@ -165,9 +165,7 @@ export default function CleVoitureNicePage() {
 
      <a
       href={`tel:${NAP.phoneTel}`}
-      className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
-              text-lg md:text-xl px-6 md:px-8 py-4 rounded-lg min-h-[56px]
-              hover:bg-[#c62828] transition-colors shadow-lg mb-8"
+      className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg mb-8"
      >
        Devis gratuit : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
      </a>
@@ -427,7 +425,7 @@ export default function CleVoitureNicePage() {
    <div className="text-center py-12 bg-bg-shade">
     <a
      href={`tel:${NAP.phoneTel}`}
-     className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] hover:bg-[#c62828] transition-colors shadow-lg"
+     className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg shadow-lg"
     >
      URGENCE : {NAP.phoneDisplay}
     </a>

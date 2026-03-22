@@ -1,0 +1,4730 @@
+[
+  {
+    "path": "/",
+    "meta": {
+      "title": "Sinnes Automobiles — Reproduction de clé voiture Nice",
+      "metaDescription": "Spécialiste reproduction & double de clé de voiture à Nice. Intervention 7j/7, tous véhicules. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "PERTE DE CLÉ AUTO ?"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 471,
+      "scoreSémantiqueGlobal": "14.65%",
+      "motsLesPlusFrequents": [
+        "sinnes (10)",
+        "clé (9)",
+        "automobiles (9)",
+        "nice (8)",
+        "automobile (7)",
+        "clés (7)",
+        "nos (6)",
+        "double (5)",
+        "ont (5)",
+        "après (5)",
+        "service (4)",
+        "déplacement (4)",
+        "voiture (4)",
+        "guide (4)",
+        "très (4)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 9,
+          "density": "1.91%"
+        },
+        "clés": {
+          "count": 7,
+          "density": "1.49%"
+        },
+        "voiture": {
+          "count": 4,
+          "density": "0.85%"
+        },
+        "automobile": {
+          "count": 7,
+          "density": "1.49%"
+        },
+        "auto": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "6.16%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 3,
+          "density": "0.64%"
+        },
+        "double": {
+          "count": 5,
+          "density": "1.06%"
+        },
+        "refaire": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "duplication": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "programmation": {
+          "count": 3,
+          "density": "0.64%"
+        },
+        "programmer": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "3.18%"
+      },
+      "Expertise Technique": {
+        "électronique": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "0.21%"
+      },
+      "Urgence & Dépannage": {
+        "perdu": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "perte": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "domicile": {
+          "count": 3,
+          "density": "0.64%"
+        },
+        "intervention": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "neiman": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "2.12%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "tarif": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "tarifs": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "devis": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "_ScoreCatégorie": "1.27%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 8,
+          "density": "1.70%"
+        },
+        "_ScoreCatégorie": "1.70%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 9,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "En savoir plus",
+          "href": "/qui-sommes-nous/",
+          "contexte": "Qui sommes nous ?\nJANVIER 2025\nOuverture de Sinnes Automobile\n\nLancement de l'activité spécialisée dans la programmation et le codage de clés automobi..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "Vous avez une question, besoin d'une assistance ou souhaitez en savoir plus sur nos services ? Nous sommes là pour vous aider ! Consultez nos tarifs d..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/reproduction-cle-voiture/",
+    "meta": {
+      "title": "Reproduction de clé de voiture Nice — Spécialiste | Sinnes Nice",
+      "metaDescription": "Reproduction et double de clé de voiture à Nice. Toutes marques, intervention 7j/7. À partir de 78€. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Reproduction de clé de voiture, spécialiste Nice & Côte d'Azur"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 685,
+      "scoreSémantiqueGlobal": "24.67%",
+      "motsLesPlusFrequents": [
+        "clé (39)",
+        "sans (14)",
+        "voiture (10)",
+        "programmation (10)",
+        "reproduction (9)",
+        "perte (8)",
+        "totale (8)",
+        "double (8)",
+        "électronique (7)",
+        "automobiles (7)",
+        "véhicule (7)",
+        "constructeur (6)",
+        "devis (6)",
+        "mains (6)",
+        "taille (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 39,
+          "density": "5.69%"
+        },
+        "clés": {
+          "count": 4,
+          "density": "0.58%"
+        },
+        "voiture": {
+          "count": 10,
+          "density": "1.46%"
+        },
+        "automobile": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "véhicule": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "_ScoreCatégorie": "9.20%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 9,
+          "density": "1.31%"
+        },
+        "double": {
+          "count": 8,
+          "density": "1.17%"
+        },
+        "faire": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "programmation": {
+          "count": 10,
+          "density": "1.46%"
+        },
+        "_ScoreCatégorie": "4.09%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "télécommande": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "puce": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "électronique": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "carte": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "lame": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "laser": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "4.09%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "perte": {
+          "count": 8,
+          "density": "1.17%"
+        },
+        "urgence": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "domicile": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "intervention": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "crochetage": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "ouverture": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "serrure": {
+          "count": 4,
+          "density": "0.58%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "3.94%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "tarifs": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "devis": {
+          "count": 6,
+          "density": "0.88%"
+        },
+        "concessionnaire": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "garantie": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "achat": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "2.77%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "0.58%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 12,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Laser + transpondeur\n\nAbrites & ZedFull · garantie constructeur préservée",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "78 €\n\nÀ partir de : clé simple, centralisée, mains libres\n\n40+ marques\n\nRenault, Toyota, BMW, Mercedes, VW, Hyundai, Audi, Fiat…\n\nLaser + transpondeur..."
+        },
+        {
+          "ancre": "clé à transpondeur",
+          "href": "/cle-voiture-transpondeur/",
+          "contexte": "Les types de clés les plus courants sont : la clé simple (lame métallique + transpondeur basique), la clé centralisée (avec télécommande d'ouverture/f..."
+        },
+        {
+          "ancre": "faire un double de clé",
+          "href": "/double-cle-voiture/",
+          "contexte": "Délai moyen : 1h à 2h sur place. Nous vous recommandons vivement de faire un double de clé dès l'achat de votre véhicule : c'est le moyen le plus écon..."
+        },
+        {
+          "ancre": "clé de voiture perdue",
+          "href": "/cle-voiture-perdue/",
+          "contexte": "La clé de voiture perdue sans aucun double est le cas le plus complexe, mais il reste résolu dans la grande majorité des situations. Sinouhé procède a..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/serrurier-automobile-nice/",
+    "meta": {
+      "title": "Serrurier Automobile Nice — Intervention 7j/7 | Sinnes Nice",
+      "metaDescription": "Serrurier automobile à Nice spécialisé clé de voiture. Intervention 7j/7, Antibes, Cannes, Côte d'Azur. Devis gratuit.",
+      "h1": [
+        "Serrurier Automobile à Nice · Intervention 7j/7"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 686,
+      "scoreSémantiqueGlobal": "27.55%",
+      "motsLesPlusFrequents": [
+        "clé (31)",
+        "automobile (17)",
+        "serrurier (17)",
+        "intervention (13)",
+        "sans (13)",
+        "nice (12)",
+        "programmation (9)",
+        "partir (8)",
+        "sinouhé (7)",
+        "véhicules (7)",
+        "serrure (7)",
+        "automobiles (6)",
+        "voiture (6)",
+        "double (6)",
+        "rochereau (6)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 31,
+          "density": "4.52%"
+        },
+        "clés": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "voiture": {
+          "count": 6,
+          "density": "0.87%"
+        },
+        "automobile": {
+          "count": 17,
+          "density": "2.48%"
+        },
+        "véhicule": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "_ScoreCatégorie": "9.04%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "double": {
+          "count": 6,
+          "density": "0.87%"
+        },
+        "duplication": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "programmation": {
+          "count": 9,
+          "density": "1.31%"
+        },
+        "programmer": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "_ScoreCatégorie": "3.06%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 4,
+          "density": "0.58%"
+        },
+        "télécommande": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "puce": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "électronique": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "laser": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "diagnostic": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "obd": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "immobiliseur": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "code": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "3.21%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "perte": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "bloquée": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "urgence": {
+          "count": 4,
+          "density": "0.58%"
+        },
+        "dépannage": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "domicile": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "intervention": {
+          "count": 13,
+          "density": "1.90%"
+        },
+        "rapide": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "crochetage": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "effraction": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "ouverture": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "serrure": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "6.56%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "tarif": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "tarifs": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "concessionnaire": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "garantie": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "_ScoreCatégorie": "2.62%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 12,
+          "density": "1.75%"
+        },
+        "antibes": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "cannes": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "cagnes": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "azur": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "alpes-maritimes": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "3.06%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 12,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "clé de voiture à Nice et alentours",
+          "href": "/cle-voiture-nice/",
+          "contexte": "Besoin d'une clé de voiture à Nice et alentours ou d'un intervention à domicile dans les meilleurs délais ? Contactez-nous...."
+        },
+        {
+          "ancre": "intervention à domicile",
+          "href": "/depannage-cle-domicile/",
+          "contexte": "Besoin d'une clé de voiture à Nice et alentours ou d'un intervention à domicile dans les meilleurs délais ? Contactez-nous...."
+        },
+        {
+          "ancre": "7j/7\n\nNice · Antibes · Cagnes · Cannes",
+          "href": "/urgence-cle-voiture/",
+          "contexte": "78 €\n\nÀ partir de\n\n7j/7\n\nNice · Antibes · Cagnes · Cannes\n\n40+ marques\n\nRenault, BMW, Toyota, Mercedes…\n\nGarantie préservée\n\nProgrammation officielle ..."
+        },
+        {
+          "ancre": "programmation de clé voiture",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "Pour les détails techniques complets sur la programmation des puces transpondeur, consultez notre page programmation de clé voiture , et pour comprend..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/tarif-cle-voiture/",
+    "meta": {
+      "title": "Tarif clé de voiture — Prix à partir de 78€ Nice | Sinnes Nice",
+      "metaDescription": "Décodage + taille laser + clonage transpondeur. Délai : 1-2h. Économisez sur le prix concessionnaire.",
+      "h1": [
+        "Tarif clé de voiture : Prix à partir de 78€"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 429,
+      "scoreSémantiqueGlobal": "21.91%",
+      "motsLesPlusFrequents": [
+        "devis (14)",
+        "clé (13)",
+        "concessionnaire (10)",
+        "sinnes (8)",
+        "intervention (8)",
+        "nice (7)",
+        "déplacement (7)",
+        "automobiles (6)",
+        "frais (6)",
+        "totale (6)",
+        "prix (5)",
+        "partir (5)",
+        "tarif (5)",
+        "simple (4)",
+        "centralisée (4)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 13,
+          "density": "3.03%"
+        },
+        "clés": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "voiture": {
+          "count": 3,
+          "density": "0.70%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "4.20%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "faire": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "programmation": {
+          "count": 2,
+          "density": "0.47%"
+        },
+        "_ScoreCatégorie": "1.17%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "carte": {
+          "count": 2,
+          "density": "0.47%"
+        },
+        "lame": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "1.40%"
+      },
+      "Urgence & Dépannage": {
+        "perte": {
+          "count": 4,
+          "density": "0.93%"
+        },
+        "domicile": {
+          "count": 2,
+          "density": "0.47%"
+        },
+        "intervention": {
+          "count": 8,
+          "density": "1.86%"
+        },
+        "crochetage": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "3.73%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 5,
+          "density": "1.17%"
+        },
+        "tarif": {
+          "count": 5,
+          "density": "1.17%"
+        },
+        "tarifs": {
+          "count": 3,
+          "density": "0.70%"
+        },
+        "devis": {
+          "count": 14,
+          "density": "3.26%"
+        },
+        "concessionnaire": {
+          "count": 10,
+          "density": "2.33%"
+        },
+        "_ScoreCatégorie": "8.62%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 7,
+          "density": "1.63%"
+        },
+        "antibes": {
+          "count": 2,
+          "density": "0.47%"
+        },
+        "cannes": {
+          "count": 2,
+          "density": "0.47%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "2.80%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "tarif vs concessionnaire",
+          "href": "/prix-cle-vs-concessionnaire/",
+          "contexte": "Pour une analyse détaillée, tarif vs concessionnaire : notre comparatif complet...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "Trois façons de nous contacter : appel direct au +33 6 75 54 04 11 (réponse sous 30 min en journée), formulaire en ligne, ou e-mail à contact@sinnes.f..."
+        },
+        {
+          "ancre": "prix par type de clé",
+          "href": "/prix-cle-voiture/",
+          "contexte": "Questions fréquentes : Tarifs et paiement\nQuel est le prix pour reproduire une clé de voiture à Nice ?\n+\n\nChez Sinnes Automobiles à Nice, les tarifs s..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/cle-voiture-transpondeur/",
+    "meta": {
+      "title": "Clé voiture transpondeur — Fonctionnement et programmation | Sinnes Nice",
+      "metaDescription": "Clé voiture avec transpondeur : comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33 6 75 54 04 11",
+      "h1": [
+        "Tout savoir sur le transpondeur :\nFonctionnement et programmation"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 735,
+      "scoreSémantiqueGlobal": "22.59%",
+      "motsLesPlusFrequents": [
+        "transpondeur (35)",
+        "clé (25)",
+        "puce (11)",
+        "code (10)",
+        "calculateur (10)",
+        "immobiliseur (10)",
+        "voiture (9)",
+        "sinouhé (9)",
+        "transpondeurs (9)",
+        "sans (8)",
+        "antenne (8)",
+        "moteur (7)",
+        "id48 (7)",
+        "même (6)",
+        "lame (6)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 25,
+          "density": "3.40%"
+        },
+        "clés": {
+          "count": 2,
+          "density": "0.27%"
+        },
+        "voiture": {
+          "count": 9,
+          "density": "1.22%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "véhicule": {
+          "count": 6,
+          "density": "0.82%"
+        },
+        "_ScoreCatégorie": "5.85%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "double": {
+          "count": 3,
+          "density": "0.41%"
+        },
+        "copie": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "copier": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "programmation": {
+          "count": 6,
+          "density": "0.82%"
+        },
+        "programmer": {
+          "count": 4,
+          "density": "0.54%"
+        },
+        "_ScoreCatégorie": "2.18%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 35,
+          "density": "4.76%"
+        },
+        "puce": {
+          "count": 11,
+          "density": "1.50%"
+        },
+        "électronique": {
+          "count": 5,
+          "density": "0.68%"
+        },
+        "lame": {
+          "count": 6,
+          "density": "0.82%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "obd": {
+          "count": 4,
+          "density": "0.54%"
+        },
+        "immobiliseur": {
+          "count": 10,
+          "density": "1.36%"
+        },
+        "code": {
+          "count": 10,
+          "density": "1.36%"
+        },
+        "clonage": {
+          "count": 3,
+          "density": "0.41%"
+        },
+        "_ScoreCatégorie": "11.56%"
+      },
+      "Urgence & Dépannage": {
+        "urgence": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "domicile": {
+          "count": 2,
+          "density": "0.27%"
+        },
+        "intervention": {
+          "count": 4,
+          "density": "0.54%"
+        },
+        "rapide": {
+          "count": 3,
+          "density": "0.41%"
+        },
+        "_ScoreCatégorie": "1.36%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "tarifs": {
+          "count": 1,
+          "density": "0.14%"
+        },
+        "devis": {
+          "count": 2,
+          "density": "0.27%"
+        },
+        "_ScoreCatégorie": "0.54%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 4,
+          "density": "0.54%"
+        },
+        "azur": {
+          "count": 4,
+          "density": "0.54%"
+        },
+        "_ScoreCatégorie": "1.09%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 11,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Programmation OBD\n\nAbrites · ZedFull",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "RFID 125 kHz\n\nID46, ID48, HITAG, DST80\n\nClonage possible\n\nTranspondeurs fixes T5, ID60\n\nProgrammation OBD\n\nAbrites · ZedFull\n\n78 €\n\nÀ partir de..."
+        },
+        {
+          "ancre": "obtenir un double de clé à transpondeur",
+          "href": "/double-cle-voiture/",
+          "contexte": "Pour obtenir un double de clé à transpondeur, Sinouhé Rochereau réalise le taillage de la lame et la programmation du transpondeur dans la même interv..."
+        },
+        {
+          "ancre": "clé transpondeur Audi",
+          "href": "/refaire-cle-audi/",
+          "contexte": "Vous avez une Audi ou un véhicule du groupe VAG ? Consultez notre page dédiée à la clé transpondeur Audi, IMMO4, IMMO5 et KESSY couverts...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/cle-voiture-perdue/",
+    "meta": {
+      "title": "Clé de voiture perdue sans double — Solution Nice | Sinnes Nice",
+      "metaDescription": "Clé de voiture perdue sans double à Nice ? Sinnes intervient en urgence : crochetage, décodage, nouvelle clé programmée. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Perte totale de clés de voiture :\nSolution d'urgence à Nice"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 616,
+      "scoreSémantiqueGlobal": "28.25%",
+      "motsLesPlusFrequents": [
+        "sans (15)",
+        "serrure (15)",
+        "clé (13)",
+        "double (12)",
+        "crochetage (12)",
+        "sinouhé (11)",
+        "voiture (10)",
+        "décodage (9)",
+        "transpondeur (8)",
+        "véhicule (8)",
+        "lame (7)",
+        "laser (7)",
+        "intervention (7)",
+        "programmation (7)",
+        "urgence (6)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 13,
+          "density": "2.11%"
+        },
+        "clés": {
+          "count": 5,
+          "density": "0.81%"
+        },
+        "voiture": {
+          "count": 10,
+          "density": "1.62%"
+        },
+        "automobile": {
+          "count": 4,
+          "density": "0.65%"
+        },
+        "véhicule": {
+          "count": 8,
+          "density": "1.30%"
+        },
+        "_ScoreCatégorie": "6.49%"
+      },
+      "Action Principale": {
+        "double": {
+          "count": 12,
+          "density": "1.95%"
+        },
+        "refaire": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "faire": {
+          "count": 3,
+          "density": "0.49%"
+        },
+        "programmation": {
+          "count": 7,
+          "density": "1.14%"
+        },
+        "_ScoreCatégorie": "3.73%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 8,
+          "density": "1.30%"
+        },
+        "télécommande": {
+          "count": 3,
+          "density": "0.49%"
+        },
+        "lame": {
+          "count": 7,
+          "density": "1.14%"
+        },
+        "laser": {
+          "count": 7,
+          "density": "1.14%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "obd": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "immobiliseur": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "code": {
+          "count": 4,
+          "density": "0.65%"
+        },
+        "_ScoreCatégorie": "5.19%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 5,
+          "density": "0.81%"
+        },
+        "perdu": {
+          "count": 3,
+          "density": "0.49%"
+        },
+        "perte": {
+          "count": 4,
+          "density": "0.65%"
+        },
+        "urgence": {
+          "count": 6,
+          "density": "0.97%"
+        },
+        "intervention": {
+          "count": 7,
+          "density": "1.14%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.32%"
+        },
+        "crochetage": {
+          "count": 12,
+          "density": "1.95%"
+        },
+        "effraction": {
+          "count": 5,
+          "density": "0.81%"
+        },
+        "ouverture": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "serrure": {
+          "count": 15,
+          "density": "2.44%"
+        },
+        "barillet": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "_ScoreCatégorie": "9.90%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 2,
+          "density": "0.32%"
+        },
+        "tarif": {
+          "count": 4,
+          "density": "0.65%"
+        },
+        "tarifs": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "devis": {
+          "count": 3,
+          "density": "0.49%"
+        },
+        "concessionnaire": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "_ScoreCatégorie": "1.79%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 3,
+          "density": "0.49%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "cannes": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "cagnes": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.16%"
+        },
+        "_ScoreCatégorie": "1.14%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Intervention urgence\n\nRéponse immédiate 7j/7",
+          "href": "/urgence-cle-voiture/",
+          "contexte": "Intervention urgence\n\nRéponse immédiate 7j/7\n\nSans double possible\n\nDécodage serrure · Gravure laser\n\n240 €\n\nÀ partir de\n\nZéro effraction\n\nCrochetage ..."
+        },
+        {
+          "ancre": "pourquoi avoir un double de clé",
+          "href": "/double-cle-voiture/",
+          "contexte": "Une fois votre nouvelle clé en main, nous vous recommandons vivement de faire réaliser un double préventif immédiatement. Le coût est nettement inféri..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/cle-voiture-nice/",
+    "meta": {
+      "title": "Clé de voiture Nice, Antibes, Cagnes-sur-Mer, Cannes | Sinnes Nice",
+      "metaDescription": "Reproduction et double de clé voiture à Nice, Antibes, Cagnes-sur-Mer et Cannes. Intervention mobile 7j/7. Sinouhé Rochereau. +33 6 75 54 04 11",
+      "h1": [
+        "Service local Clé de voiture :\nNice, Antibes, Cagnes et Cannes"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 810,
+      "scoreSémantiqueGlobal": "15.56%",
+      "motsLesPlusFrequents": [
+        "nice (25)",
+        "intervention (18)",
+        "depuis (17)",
+        "sinouhé (14)",
+        "clé (13)",
+        "antibes (13)",
+        "parking (13)",
+        "délai (13)",
+        "minutes (12)",
+        "accès (10)",
+        "zone (9)",
+        "cannes (9)",
+        "côte (8)",
+        "voiture (7)",
+        "antipolis (7)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 13,
+          "density": "1.60%"
+        },
+        "clés": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "voiture": {
+          "count": 7,
+          "density": "0.86%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "auto": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "véhicule": {
+          "count": 6,
+          "density": "0.74%"
+        },
+        "_ScoreCatégorie": "3.58%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 2,
+          "density": "0.25%"
+        },
+        "programmation": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "_ScoreCatégorie": "0.37%"
+      },
+      "Expertise Technique": {
+        "télécommande": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "_ScoreCatégorie": "0.12%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 2,
+          "density": "0.25%"
+        },
+        "perte": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "urgence": {
+          "count": 3,
+          "density": "0.37%"
+        },
+        "dépannage": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "domicile": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "intervention": {
+          "count": 18,
+          "density": "2.22%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.25%"
+        },
+        "_ScoreCatégorie": "3.46%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "tarifs": {
+          "count": 1,
+          "density": "0.12%"
+        },
+        "devis": {
+          "count": 6,
+          "density": "0.74%"
+        },
+        "_ScoreCatégorie": "0.99%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 25,
+          "density": "3.09%"
+        },
+        "antibes": {
+          "count": 13,
+          "density": "1.60%"
+        },
+        "cannes": {
+          "count": 9,
+          "density": "1.11%"
+        },
+        "cagnes": {
+          "count": 5,
+          "density": "0.62%"
+        },
+        "azur": {
+          "count": 5,
+          "density": "0.62%"
+        },
+        "_ScoreCatégorie": "7.04%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Intervention < 2h\n\nSur la Côte d'Azur",
+          "href": "/urgence-cle-voiture/",
+          "contexte": "Nice · Antibes · Cagnes · Cannes\n\nZone d'intervention\n\n7j/7\n\nWeek-ends et jours fériés\n\nIntervention < 2h\n\nSur la Côte d'Azur\n\nDomicile inclus\n\nInterv..."
+        },
+        {
+          "ancre": "Domicile inclus\n\nIntervention à domicile",
+          "href": "/depannage-cle-domicile/",
+          "contexte": "Nice · Antibes · Cagnes · Cannes\n\nZone d'intervention\n\n7j/7\n\nWeek-ends et jours fériés\n\nIntervention < 2h\n\nSur la Côte d'Azur\n\nDomicile inclus\n\nInterv..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/programmation-cle-voiture/",
+    "meta": {
+      "title": "Programmation de clé voiture Nice — Transpondeur et badge | Sinnes Nice",
+      "metaDescription": "Programmation clé voiture à Nice : transpondeur, télécommande, badge mains libres. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Programmation de clé de voiture :\nTranspondeur, télécommande et badge"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 685,
+      "scoreSémantiqueGlobal": "23.80%",
+      "motsLesPlusFrequents": [
+        "clé (30)",
+        "programmation (19)",
+        "clés (11)",
+        "voiture (10)",
+        "sinouhé (10)",
+        "transpondeur (8)",
+        "abrites (8)",
+        "télécommande (7)",
+        "domicile (7)",
+        "immobiliseur (7)",
+        "rochereau (6)",
+        "codes (6)",
+        "intervention (6)",
+        "automobiles (5)",
+        "nice (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 30,
+          "density": "4.38%"
+        },
+        "clés": {
+          "count": 11,
+          "density": "1.61%"
+        },
+        "voiture": {
+          "count": 10,
+          "density": "1.46%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "véhicule": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "_ScoreCatégorie": "8.32%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 4,
+          "density": "0.58%"
+        },
+        "copie": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "programmation": {
+          "count": 19,
+          "density": "2.77%"
+        },
+        "reprogrammation": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "programmer": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "_ScoreCatégorie": "3.94%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 8,
+          "density": "1.17%"
+        },
+        "télécommande": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "plip": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "carte": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "centralisation": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "lame": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "laser": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "obd": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "immobiliseur": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "code": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "_ScoreCatégorie": "5.99%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 3,
+          "density": "0.44%"
+        },
+        "perdu": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "perte": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "domicile": {
+          "count": 7,
+          "density": "1.02%"
+        },
+        "intervention": {
+          "count": 6,
+          "density": "0.88%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "serrure": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "_ScoreCatégorie": "3.21%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "tarif": {
+          "count": 1,
+          "density": "0.15%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "_ScoreCatégorie": "1.02%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 5,
+          "density": "0.73%"
+        },
+        "antibes": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "cannes": {
+          "count": 2,
+          "density": "0.29%"
+        },
+        "_ScoreCatégorie": "1.31%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 12,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "7j/7\n\nAtelier ou à domicile",
+          "href": "/depannage-cle-domicile/",
+          "contexte": "Abrites · ZedFull\n\nÉquipements certifiés\n\n7j/7\n\nAtelier ou à domicile\n\nToutes marques\n\nVAG, PSA, BMW, Mercedes…\n\nDevis gratuit\n\nTarif ferme avant inte..."
+        },
+        {
+          "ancre": "clé à transpondeur",
+          "href": "/cle-voiture-transpondeur/",
+          "contexte": "Pour tout comprendre sur la technologie des puces de clé, consultez notre page dédiée à la clé à transpondeur. Pour la reproduction complète incluant ..."
+        },
+        {
+          "ancre": "programmation clé Audi",
+          "href": "/refaire-cle-audi/",
+          "contexte": "Pour les clés Audi spécifiquement, consultez notre page programmation clé Audi. Pour Mercedes, voir programmation clé Mercedes...."
+        },
+        {
+          "ancre": "programmation clé Mercedes",
+          "href": "/refaire-cle-mercedes/",
+          "contexte": "Pour les clés Audi spécifiquement, consultez notre page programmation clé Audi. Pour Mercedes, voir programmation clé Mercedes...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/urgence-cle-voiture/",
+    "meta": {
+      "title": "Urgence clé voiture Nice — Intervention immédiate 7j/7 | Sinnes Nice",
+      "metaDescription": "Serrurier automobile d'urgence à Nice. Clé bloquée, porte claquée, vol de clé. Intervention sous 30-45 minutes. +33 6 75 54 04 11",
+      "h1": [
+        "Dépannage Urgence Clé Voiture :\nIntervention immédiate 7j/7"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 523,
+      "scoreSémantiqueGlobal": "25.81%",
+      "motsLesPlusFrequents": [
+        "urgence (15)",
+        "clé (13)",
+        "intervention (13)",
+        "sinouhé (12)",
+        "nice (11)",
+        "voiture (9)",
+        "sans (9)",
+        "sinnes (7)",
+        "rochereau (6)",
+        "perdue (5)",
+        "moins (5)",
+        "véhicule (5)",
+        "bloquée (4)",
+        "automobiles (4)",
+        "intervient (4)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 13,
+          "density": "2.49%"
+        },
+        "clés": {
+          "count": 3,
+          "density": "0.57%"
+        },
+        "voiture": {
+          "count": 9,
+          "density": "1.72%"
+        },
+        "automobile": {
+          "count": 4,
+          "density": "0.76%"
+        },
+        "véhicule": {
+          "count": 5,
+          "density": "0.96%"
+        },
+        "_ScoreCatégorie": "6.50%"
+      },
+      "Action Principale": {
+        "double": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "programmation": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "0.38%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "télécommande": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "lame": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "laser": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "immobiliseur": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "code": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "1.72%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 5,
+          "density": "0.96%"
+        },
+        "perdu": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "perte": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "cassée": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "bloquée": {
+          "count": 4,
+          "density": "0.76%"
+        },
+        "urgence": {
+          "count": 15,
+          "density": "2.87%"
+        },
+        "domicile": {
+          "count": 4,
+          "density": "0.76%"
+        },
+        "intervention": {
+          "count": 13,
+          "density": "2.49%"
+        },
+        "rapide": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "crochetage": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "effraction": {
+          "count": 3,
+          "density": "0.57%"
+        },
+        "ouverture": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "serrure": {
+          "count": 3,
+          "density": "0.57%"
+        },
+        "barillet": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "contact": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "_ScoreCatégorie": "11.47%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "tarif": {
+          "count": 3,
+          "density": "0.57%"
+        },
+        "tarifs": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "devis": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "concessionnaire": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "1.72%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 11,
+          "density": "2.10%"
+        },
+        "antibes": {
+          "count": 4,
+          "density": "0.76%"
+        },
+        "cannes": {
+          "count": 3,
+          "density": "0.57%"
+        },
+        "cagnes": {
+          "count": 2,
+          "density": "0.38%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "4.02%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 11,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Nice · Antibes · Cagnes · Cannes\n\nZone d'intervention",
+          "href": "/cle-voiture-nice/",
+          "contexte": "< 2h\n\nSur Nice et la Côte d'Azur\n\n7j/7\n\nWeek-ends et jours fériés\n\nNice · Antibes · Cagnes · Cannes\n\nZone d'intervention\n\n78 €\n\nÀ partir de..."
+        },
+        {
+          "ancre": "clé de voiture perdue",
+          "href": "/cle-voiture-perdue/",
+          "contexte": "La situation la plus stressante : vous n'avez plus vos clés et aucun double n'existe. Sinouhé procède au crochetage sans effraction, décode mécaniquem..."
+        },
+        {
+          "ancre": "l'intervention à domicile",
+          "href": "/depannage-cle-domicile/",
+          "contexte": "Pour un déplacement à votre domicile ou sur votre lieu de travail, consultez notre page sur l'intervention à domicile...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/depannage-cle-domicile/",
+    "meta": {
+      "title": "Dépannage clé voiture à domicile — Nice et Côte d'Azur | Sinnes Nice",
+      "metaDescription": "Dépannage et programmation de clé voiture à domicile à Nice. Intervention sur place 7j/7. Sinouhé Rochereau se déplace avec son matériel. +33 6 75 54 04 11",
+      "h1": [
+        "Dépannage à domicile :\nIntervention sur place Nice"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 456,
+      "scoreSémantiqueGlobal": "24.12%",
+      "motsLesPlusFrequents": [
+        "domicile (14)",
+        "clé (14)",
+        "frais (13)",
+        "intervention (12)",
+        "sinouhé (7)",
+        "voiture (7)",
+        "nice (7)",
+        "urgence (7)",
+        "machine (6)",
+        "taille (6)",
+        "véhicule (6)",
+        "déplacement (6)",
+        "rochereau (5)",
+        "valise (5)",
+        "abrites (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 14,
+          "density": "3.07%"
+        },
+        "voiture": {
+          "count": 7,
+          "density": "1.54%"
+        },
+        "automobile": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "véhicule": {
+          "count": 6,
+          "density": "1.32%"
+        },
+        "_ScoreCatégorie": "6.36%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "programmation": {
+          "count": 5,
+          "density": "1.10%"
+        },
+        "programmer": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "_ScoreCatégorie": "1.75%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "lame": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "laser": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "_ScoreCatégorie": "1.32%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "bloquée": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "urgence": {
+          "count": 7,
+          "density": "1.54%"
+        },
+        "dépannage": {
+          "count": 5,
+          "density": "1.10%"
+        },
+        "domicile": {
+          "count": 14,
+          "density": "3.07%"
+        },
+        "intervention": {
+          "count": 12,
+          "density": "2.63%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "serrure": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "_ScoreCatégorie": "9.87%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "tarif": {
+          "count": 1,
+          "density": "0.22%"
+        },
+        "tarifs": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "devis": {
+          "count": 4,
+          "density": "0.88%"
+        },
+        "_ScoreCatégorie": "1.75%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 7,
+          "density": "1.54%"
+        },
+        "antibes": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "cannes": {
+          "count": 3,
+          "density": "0.66%"
+        },
+        "azur": {
+          "count": 2,
+          "density": "0.44%"
+        },
+        "_ScoreCatégorie": "3.07%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 11,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Toute la Côte d'Azur\n\nNice et alentours",
+          "href": "/cle-voiture-nice/",
+          "contexte": "Matériel complet\n\nAbrites · Machine taille laser\n\n7j/7\n\nDomicile · Bureau · Parking\n\nToute la Côte d'Azur\n\nNice et alentours\n\n0€ frais Nice\n\nSans frai..."
+        },
+        {
+          "ancre": "programmation clé voiture à domicile",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "Pour plus de détails sur les techniques utilisées, consultez notre page programmation clé voiture à domicile : transpondeurs fixes, cryptés et badges ..."
+        },
+        {
+          "ancre": "urgence clé voiture",
+          "href": "/urgence-cle-voiture/",
+          "contexte": "Pour les situations d'urgence immédiate, consultez notre page urgence clé voiture...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/prix-cle-voiture/",
+    "meta": {
+      "title": "Prix clé voiture — Facteurs et fourchettes | Sinnes Nice | Sinnes Nice",
+      "metaDescription": "Quel est le prix pour refaire une clé de voiture ? Variantes selon la marque, le modèle et la technologie (simple, centralisée, mains libres).",
+      "h1": [
+        "Prix d'une reproduction de clé :\nComparatif par type de clé"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 539,
+      "scoreSémantiqueGlobal": "27.27%",
+      "motsLesPlusFrequents": [
+        "clé (26)",
+        "prix (17)",
+        "sinnes (11)",
+        "télécommande (11)",
+        "tarif (11)",
+        "sans (9)",
+        "voiture (8)",
+        "partir (8)",
+        "programmation (8)",
+        "transpondeur (8)",
+        "simple (7)",
+        "devis (7)",
+        "automobiles (6)",
+        "mains (6)",
+        "libres (6)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 26,
+          "density": "4.82%"
+        },
+        "clés": {
+          "count": 2,
+          "density": "0.37%"
+        },
+        "voiture": {
+          "count": 8,
+          "density": "1.48%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "véhicule": {
+          "count": 3,
+          "density": "0.56%"
+        },
+        "_ScoreCatégorie": "7.42%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 2,
+          "density": "0.37%"
+        },
+        "double": {
+          "count": 6,
+          "density": "1.11%"
+        },
+        "refaire": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "faire": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "programmation": {
+          "count": 8,
+          "density": "1.48%"
+        },
+        "reprogrammation": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "3.53%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 8,
+          "density": "1.48%"
+        },
+        "télécommande": {
+          "count": 11,
+          "density": "2.04%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "lame": {
+          "count": 4,
+          "density": "0.74%"
+        },
+        "laser": {
+          "count": 4,
+          "density": "0.74%"
+        },
+        "obd": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "code": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "5.75%"
+      },
+      "Urgence & Dépannage": {
+        "perdu": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "perte": {
+          "count": 3,
+          "density": "0.56%"
+        },
+        "intervention": {
+          "count": 2,
+          "density": "0.37%"
+        },
+        "rapide": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "crochetage": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "serrure": {
+          "count": 2,
+          "density": "0.37%"
+        },
+        "_ScoreCatégorie": "1.86%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 17,
+          "density": "3.15%"
+        },
+        "tarif": {
+          "count": 11,
+          "density": "2.04%"
+        },
+        "tarifs": {
+          "count": 5,
+          "density": "0.93%"
+        },
+        "devis": {
+          "count": 7,
+          "density": "1.30%"
+        },
+        "concessionnaire": {
+          "count": 5,
+          "density": "0.93%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "8.53%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 1,
+          "density": "0.19%"
+        },
+        "_ScoreCatégorie": "0.19%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 11,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Jusqu'à 80% moins cher\n\nvs concessionnaire",
+          "href": "/prix-cle-vs-concessionnaire/",
+          "contexte": "78 €\n\nÀ partir de\n\nDevis gratuit\n\nTarif ferme en 2 minutes\n\nJusqu'à 80% moins cher\n\nvs concessionnaire\n\nPrix tout compris\n\nDécodage + taille + program..."
+        },
+        {
+          "ancre": "refaire une clé en cas de perte totale",
+          "href": "/cle-voiture-perdue/",
+          "contexte": "Si vous avez perdu toutes vos clés sans conserver de double, la situation est différente : le tarif monte jusqu'à 240€, car elle inclut le crochetage ..."
+        },
+        {
+          "ancre": "faire un double de clé voiture",
+          "href": "/double-cle-voiture/",
+          "contexte": "Pour tout savoir sur le processus, consultez notre page faire un double de clé voiture...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/double-cle-voiture/",
+    "meta": {
+      "title": "Double de clé voiture à Nice — Devis gratuit | Sinnes Nice",
+      "metaDescription": "Faire un double de clé voiture à Nice : intervention rapide, toutes marques. À partir de 78€. Sinouhé Rochereau, expert automobile. +33 6 75 54 04 11",
+      "h1": [
+        "Double de clé de voiture :\nFaire un double en toute sécurité"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 550,
+      "scoreSémantiqueGlobal": "28.18%",
+      "motsLesPlusFrequents": [
+        "clé (39)",
+        "double (24)",
+        "voiture (11)",
+        "faire (10)",
+        "partir (10)",
+        "originale (9)",
+        "sans (9)",
+        "perte (8)",
+        "sinouhé (8)",
+        "totale (7)",
+        "cas (7)",
+        "devis (5)",
+        "gratuit (5)",
+        "clés (5)",
+        "lame (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 39,
+          "density": "7.09%"
+        },
+        "clés": {
+          "count": 5,
+          "density": "0.91%"
+        },
+        "voiture": {
+          "count": 11,
+          "density": "2.00%"
+        },
+        "véhicule": {
+          "count": 3,
+          "density": "0.55%"
+        },
+        "_ScoreCatégorie": "10.55%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "double": {
+          "count": 24,
+          "density": "4.36%"
+        },
+        "refaire": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "copie": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "faire": {
+          "count": 10,
+          "density": "1.82%"
+        },
+        "programmation": {
+          "count": 3,
+          "density": "0.55%"
+        },
+        "_ScoreCatégorie": "7.27%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 4,
+          "density": "0.73%"
+        },
+        "télécommande": {
+          "count": 4,
+          "density": "0.73%"
+        },
+        "puce": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "lame": {
+          "count": 5,
+          "density": "0.91%"
+        },
+        "laser": {
+          "count": 3,
+          "density": "0.55%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "obd": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "code": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "_ScoreCatégorie": "4.36%"
+      },
+      "Urgence & Dépannage": {
+        "perte": {
+          "count": 8,
+          "density": "1.45%"
+        },
+        "urgence": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "domicile": {
+          "count": 3,
+          "density": "0.55%"
+        },
+        "intervention": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "serrure": {
+          "count": 4,
+          "density": "0.73%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "_ScoreCatégorie": "3.64%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 3,
+          "density": "0.55%"
+        },
+        "tarif": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "tarifs": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "0.91%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "_ScoreCatégorie": "2.00%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "_ScoreCatégorie": "0.36%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 12,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "en cas de perte totale de vos clés",
+          "href": "/cle-voiture-perdue/",
+          "contexte": "Trois cas de figure justifient de faire un double de clé : le double préventif (vous n'avez qu'une seule clé et souhaitez en avoir une de secours), le..."
+        },
+        {
+          "ancre": "prix d'un double de clé",
+          "href": "/prix-cle-voiture/",
+          "contexte": "* Tarifs indicatifs — devis personnalisé gratuit selon marque et modèle au +33 6 75 54 04 11. Consultez notre page prix d'un double de clé pour le dét..."
+        },
+        {
+          "ancre": "double de clé Toyota",
+          "href": "/refaire-cle-toyota/",
+          "contexte": "Chaque constructeur a ses propres systèmes de transpondeur et de centralisation. Toyota utilise des systèmes RFID spécifiques (notamment sur les hybri..."
+        },
+        {
+          "ancre": "refaire une clé Hyundai",
+          "href": "/refaire-cle-hyundai/",
+          "contexte": "Chaque constructeur a ses propres systèmes de transpondeur et de centralisation. Toyota utilise des systèmes RFID spécifiques (notamment sur les hybri..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/prix-cle-vs-concessionnaire/",
+    "meta": {
+      "title": "Serrurier auto vs concessionnaire — Jusqu'à 6x moins cher | Sinnes Nice",
+      "metaDescription": "Refaire une clé voiture chez un serrurier indépendant vs concessionnaire : comparatif prix, délais et garantie. Économisez jusqu'à 300€.",
+      "h1": [
+        "Serrurier vs Concessionnaire :\nLe comparatif Sinnes"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 553,
+      "scoreSémantiqueGlobal": "15.91%",
+      "motsLesPlusFrequents": [
+        "clé (17)",
+        "concessionnaire (14)",
+        "sinnes (13)",
+        "chez (10)",
+        "constructeur (10)",
+        "même (8)",
+        "délai (7)",
+        "automobiles (7)",
+        "véhicule (7)",
+        "garantie (6)",
+        "serrurier (6)",
+        "semaines (5)",
+        "abrites (5)",
+        "zedfull (5)",
+        "intervention (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 17,
+          "density": "3.07%"
+        },
+        "voiture": {
+          "count": 3,
+          "density": "0.54%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "auto": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "véhicule": {
+          "count": 7,
+          "density": "1.27%"
+        },
+        "_ScoreCatégorie": "5.24%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 3,
+          "density": "0.54%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "refaire": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "faire": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "programmation": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "_ScoreCatégorie": "1.63%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "lame": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "laser": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "diagnostic": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "immobiliseur": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "_ScoreCatégorie": "0.90%"
+      },
+      "Urgence & Dépannage": {
+        "perte": {
+          "count": 4,
+          "density": "0.72%"
+        },
+        "domicile": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "intervention": {
+          "count": 5,
+          "density": "0.90%"
+        },
+        "rapide": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "_ScoreCatégorie": "2.17%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 4,
+          "density": "0.72%"
+        },
+        "tarif": {
+          "count": 3,
+          "density": "0.54%"
+        },
+        "tarifs": {
+          "count": 2,
+          "density": "0.36%"
+        },
+        "devis": {
+          "count": 3,
+          "density": "0.54%"
+        },
+        "concessionnaire": {
+          "count": 14,
+          "density": "2.53%"
+        },
+        "garantie": {
+          "count": 6,
+          "density": "1.08%"
+        },
+        "_ScoreCatégorie": "5.79%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 1,
+          "density": "0.18%"
+        },
+        "_ScoreCatégorie": "0.18%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "prix d'une clé voiture",
+          "href": "/prix-cle-voiture/",
+          "contexte": "Pour les tarifs détaillés, consultez notre grille de tarifs Sinnes et notre page prix d'une clé voiture...."
+        },
+        {
+          "ancre": "faire un double de clé plutôt qu'attendre le concessionnaire",
+          "href": "/double-cle-voiture/",
+          "contexte": "La meilleure protection : faire un double de clé plutôt qu'attendre le concessionnaire, à partir de 78€, aujourd'hui même, sans délai...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-audi/",
+    "meta": {
+      "title": "Refaire une clé Audi à Nice · Programmation VAG officielle | Sinnes Nice",
+      "metaDescription": "Reproduction clé Audi à Nice : A1, A3, A4, Q3, Q5. Système KESSY et VAG. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Audi :\nProgrammation VAG officielle"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 419,
+      "scoreSémantiqueGlobal": "18.14%",
+      "motsLesPlusFrequents": [
+        "audi (24)",
+        "clé (17)",
+        "vag (8)",
+        "partir (7)",
+        "programmation (6)",
+        "abrites (6)",
+        "immo4 (6)",
+        "immo5 (6)",
+        "kessy (6)",
+        "refaire (5)",
+        "132 (4)",
+        "2003 (4)",
+        "nice (4)",
+        "gamme (4)",
+        "sinouhé (4)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 17,
+          "density": "4.06%"
+        },
+        "clés": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "voiture": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "_ScoreCatégorie": "5.01%"
+      },
+      "Action Principale": {
+        "refaire": {
+          "count": 5,
+          "density": "1.19%"
+        },
+        "programmation": {
+          "count": 6,
+          "density": "1.43%"
+        },
+        "programmer": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "_ScoreCatégorie": "2.86%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 3,
+          "density": "0.72%"
+        },
+        "plip": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "lame": {
+          "count": 4,
+          "density": "0.95%"
+        },
+        "immobiliseur": {
+          "count": 3,
+          "density": "0.72%"
+        },
+        "code": {
+          "count": 4,
+          "density": "0.95%"
+        },
+        "_ScoreCatégorie": "3.82%"
+      },
+      "Urgence & Dépannage": {
+        "domicile": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "intervention": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "neiman": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "_ScoreCatégorie": "1.91%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "tarif": {
+          "count": 3,
+          "density": "0.72%"
+        },
+        "devis": {
+          "count": 4,
+          "density": "0.95%"
+        },
+        "concessionnaire": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "garantie": {
+          "count": 2,
+          "density": "0.48%"
+        },
+        "_ScoreCatégorie": "2.86%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 4,
+          "density": "0.95%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "cannes": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.24%"
+        },
+        "_ScoreCatégorie": "1.67%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "programmation clé Audi",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "Audi appartient au groupe VAG (Volkswagen, Audi, Seat, Skoda, Cupra) : les systèmes d'immobiliseur sont communs entre ces marques, ce qui permet à Sin..."
+        },
+        {
+          "ancre": "refaire une clé Mercedes",
+          "href": "/refaire-cle-mercedes/",
+          "contexte": "Vous avez une autre marque haut de gamme ? Découvrez aussi notre page pour refaire une clé Mercedes à Nice...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-fiat/",
+    "meta": {
+      "title": "Refaire une clé Fiat 500 à Nice — Double et programmation | Sinnes Nice",
+      "metaDescription": "Reproduction clé Fiat à Nice : Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Fiat :\nFiat 500, Panda et toute la gamme"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 432,
+      "scoreSémantiqueGlobal": "19.44%",
+      "motsLesPlusFrequents": [
+        "fiat (27)",
+        "clé (19)",
+        "500 (8)",
+        "ducato (7)",
+        "partir (7)",
+        "transpondeur (6)",
+        "id46 (6)",
+        "télécommande (6)",
+        "panda (5)",
+        "nice (5)",
+        "intervient (5)",
+        "sinouhé (5)",
+        "rochereau (5)",
+        "programmation (5)",
+        "abrites (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 19,
+          "density": "4.40%"
+        },
+        "voiture": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "véhicule": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "_ScoreCatégorie": "5.56%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "refaire": {
+          "count": 4,
+          "density": "0.93%"
+        },
+        "faire": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "programmation": {
+          "count": 5,
+          "density": "1.16%"
+        },
+        "_ScoreCatégorie": "2.78%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 6,
+          "density": "1.39%"
+        },
+        "télécommande": {
+          "count": 6,
+          "density": "1.39%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "obd": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "immobiliseur": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "clonage": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "_ScoreCatégorie": "4.17%"
+      },
+      "Urgence & Dépannage": {
+        "domicile": {
+          "count": 3,
+          "density": "0.69%"
+        },
+        "intervention": {
+          "count": 3,
+          "density": "0.69%"
+        },
+        "rapide": {
+          "count": 3,
+          "density": "0.69%"
+        },
+        "_ScoreCatégorie": "2.08%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "tarif": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "1.16%"
+        },
+        "concessionnaire": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "2.31%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 5,
+          "density": "1.16%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "cannes": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "azur": {
+          "count": 4,
+          "density": "0.93%"
+        },
+        "_ScoreCatégorie": "2.55%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "double de clé Fiat",
+          "href": "/double-cle-voiture/",
+          "contexte": "Pour réaliser un double de clé Fiat dans les meilleures conditions, il est essentiel d'identifier le modèle exact et l'année de fabrication, car les s..."
+        },
+        {
+          "ancre": "refaire une clé Audi",
+          "href": "/refaire-cle-audi/",
+          "contexte": "Vous avez un véhicule du groupe VAG ? Découvrez aussi notre page pour refaire une clé Audi à Nice...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-hyundai/",
+    "meta": {
+      "title": "Refaire une clé Hyundai à Nice · Toutes générations | Sinnes Nice",
+      "metaDescription": "Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Hyundai :\nToutes générations Hyundai"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 483,
+      "scoreSémantiqueGlobal": "15.94%",
+      "motsLesPlusFrequents": [
+        "hyundai (24)",
+        "clé (17)",
+        "ioniq (9)",
+        "partir (9)",
+        "modèles (8)",
+        "2010 (6)",
+        "tucson (6)",
+        "système (6)",
+        "abrites (6)",
+        "i10 (5)",
+        "maîtrise (5)",
+        "immo3 (5)",
+        "programmation (5)",
+        "via (5)",
+        "transpondeur (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 17,
+          "density": "3.52%"
+        },
+        "clés": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "voiture": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "véhicule": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "_ScoreCatégorie": "4.76%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "refaire": {
+          "count": 4,
+          "density": "0.83%"
+        },
+        "copie": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "faire": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "programmation": {
+          "count": 5,
+          "density": "1.04%"
+        },
+        "_ScoreCatégorie": "2.90%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 5,
+          "density": "1.04%"
+        },
+        "télécommande": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "immobiliseur": {
+          "count": 3,
+          "density": "0.62%"
+        },
+        "clonage": {
+          "count": 3,
+          "density": "0.62%"
+        },
+        "_ScoreCatégorie": "2.90%"
+      },
+      "Urgence & Dépannage": {
+        "domicile": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "intervention": {
+          "count": 3,
+          "density": "0.62%"
+        },
+        "rapide": {
+          "count": 3,
+          "density": "0.62%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "1.86%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "tarif": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "devis": {
+          "count": 3,
+          "density": "0.62%"
+        },
+        "concessionnaire": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "garantie": {
+          "count": 2,
+          "density": "0.41%"
+        },
+        "_ScoreCatégorie": "2.07%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 4,
+          "density": "0.83%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "cannes": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "1.45%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "faire un double de clé voiture",
+          "href": "/double-cle-voiture/",
+          "contexte": "Chaque génération utilise un système de transpondeur différent, c'est pourquoi la maîtrise du système IMMO3 Hyundai est indispensable. Pour faire un f..."
+        },
+        {
+          "ancre": "refaire une clé Toyota",
+          "href": "/refaire-cle-toyota/",
+          "contexte": "Vous avez une autre marque ? Découvrez aussi notre page pour refaire une clé Toyota à Nice...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-mercedes/",
+    "meta": {
+      "title": "Refaire une clé Mercedes à Nice — Clé étoile et badge | Sinnes Nice",
+      "metaDescription": "Reproduction clé Mercedes à Nice : Classe A, C, E, GLC. KESSY, clé étoile, ProxiKey. Sinouhé Rochereau, formateur Incarline. +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Mercedes :\nClé étoile et badge ProxiKey"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 438,
+      "scoreSémantiqueGlobal": "15.30%",
+      "motsLesPlusFrequents": [
+        "mercedes (22)",
+        "clé (20)",
+        "classe (18)",
+        "partir (9)",
+        "étoile (7)",
+        "badge (7)",
+        "glc (7)",
+        "smart (7)",
+        "proxikey (7)",
+        "132 (6)",
+        "gle (6)",
+        "hitag (6)",
+        "w176 (6)",
+        "programmation (5)",
+        "aes (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 20,
+          "density": "4.57%"
+        },
+        "voiture": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "automobile": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "5.71%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "refaire": {
+          "count": 4,
+          "density": "0.91%"
+        },
+        "programmation": {
+          "count": 5,
+          "density": "1.14%"
+        },
+        "_ScoreCatégorie": "2.28%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 5,
+          "density": "1.14%"
+        },
+        "télécommande": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "plip": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "lame": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "2.28%"
+      },
+      "Urgence & Dépannage": {
+        "intervention": {
+          "count": 4,
+          "density": "0.91%"
+        },
+        "rapide": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "contact": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "1.37%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "tarif": {
+          "count": 4,
+          "density": "0.91%"
+        },
+        "devis": {
+          "count": 4,
+          "density": "0.91%"
+        },
+        "concessionnaire": {
+          "count": 2,
+          "density": "0.46%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "2.74%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 3,
+          "density": "0.68%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.23%"
+        },
+        "_ScoreCatégorie": "0.91%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 9,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "programmation clé Mercedes",
+          "href": "/programmation-cle-voiture/",
+          "contexte": "Pour réaliser une programmation clé Mercedes dans les meilleures conditions, il est indispensable d'identifier précisément la génération du véhicule :..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-renault/",
+    "meta": {
+      "title": "Refaire une clé Renault à Nice · Clé carte et clé à lame | Sinnes Nice",
+      "metaDescription": "Reproduction clé Renault à Nice : Clio, Captur, Mégane, clé carte. Sinouhé Rochereau, expert IVER Renault. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Renault :\nClé carte et clé à lame"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 480,
+      "scoreSémantiqueGlobal": "20.21%",
+      "motsLesPlusFrequents": [
+        "clé (26)",
+        "renault (22)",
+        "carte (15)",
+        "mégane (11)",
+        "partir (11)",
+        "clio (10)",
+        "iver (9)",
+        "laguna (7)",
+        "kadjar (7)",
+        "refaire (6)",
+        "badge (6)",
+        "sinouhé (5)",
+        "rochereau (5)",
+        "smart (5)",
+        "devis (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 26,
+          "density": "5.42%"
+        },
+        "voiture": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "véhicule": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "_ScoreCatégorie": "6.25%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "double": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "refaire": {
+          "count": 6,
+          "density": "1.25%"
+        },
+        "programmation": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "_ScoreCatégorie": "2.29%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "carte": {
+          "count": 15,
+          "density": "3.13%"
+        },
+        "immobiliseur": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "code": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "clonage": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "_ScoreCatégorie": "5.42%"
+      },
+      "Urgence & Dépannage": {
+        "perdue": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "domicile": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "intervention": {
+          "count": 4,
+          "density": "0.83%"
+        },
+        "rapide": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "_ScoreCatégorie": "2.08%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "tarif": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "1.04%"
+        },
+        "concessionnaire": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "garantie": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "2.29%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 4,
+          "density": "0.83%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "cannes": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "azur": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "_ScoreCatégorie": "1.88%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "double de clé Renault",
+          "href": "/double-cle-voiture/",
+          "contexte": "Pour réaliser un double de clé Renault dans les meilleures conditions, l'identification précise du modèle et de l'année est indispensable : les systèm..."
+        },
+        {
+          "ancre": "refaire une clé Fiat",
+          "href": "/refaire-cle-fiat/",
+          "contexte": "Vous avez une autre marque ? Découvrez aussi notre page pour refaire une clé Fiat à Nice...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/refaire-cle-toyota/",
+    "meta": {
+      "title": "Refaire une clé Toyota à Nice · Hybride et thermique | Sinnes Nice",
+      "metaDescription": "Reproduction clé Toyota à Nice : Yaris, Corolla, RAV4, hybride et thermique. Smart Entry & Start. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11",
+      "h1": [
+        "Clé de voiture Toyota :\nHybride et thermique"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 477,
+      "scoreSémantiqueGlobal": "14.05%",
+      "motsLesPlusFrequents": [
+        "toyota (28)",
+        "clé (19)",
+        "partir (11)",
+        "modèles (9)",
+        "hybride (8)",
+        "yaris (8)",
+        "g-chip (8)",
+        "corolla (7)",
+        "rav4 (7)",
+        "smart (7)",
+        "auris (6)",
+        "c-hr (6)",
+        "sinouhé (6)",
+        "rochereau (6)",
+        "refaire (5)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 19,
+          "density": "3.98%"
+        },
+        "voiture": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "4.61%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "double": {
+          "count": 5,
+          "density": "1.05%"
+        },
+        "refaire": {
+          "count": 5,
+          "density": "1.05%"
+        },
+        "programmation": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "_ScoreCatégorie": "3.14%"
+      },
+      "Expertise Technique": {
+        "transpondeur": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "télécommande": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "plip": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "électronique": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "centralisation": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "clonage": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "_ScoreCatégorie": "1.89%"
+      },
+      "Urgence & Dépannage": {
+        "intervention": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "rapide": {
+          "count": 2,
+          "density": "0.42%"
+        },
+        "_ScoreCatégorie": "1.05%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "tarif": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "devis": {
+          "count": 5,
+          "density": "1.05%"
+        },
+        "garantie": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "_ScoreCatégorie": "2.52%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 3,
+          "density": "0.63%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.21%"
+        },
+        "_ScoreCatégorie": "0.84%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 10,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "double de clé Toyota",
+          "href": "/double-cle-voiture/",
+          "contexte": "Pour réaliser un double de clé Toyota en toute sécurité, l'identification précise du système électronique embarqué est indispensable, car Toyota utili..."
+        },
+        {
+          "ancre": "refaire une clé Renault",
+          "href": "/refaire-cle-renault/",
+          "contexte": "Vous avez une autre marque ? Découvrez aussi notre page pour refaire une clé Renault à Nice...."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/acheter-une-voiture/",
+    "meta": {
+      "title": "Acheter une voiture à Nice · Sinnes Automobiles | Sinnes Nice",
+      "metaDescription": "Vente de voitures d'occasion révisées et garanties à Nice. Découvrez notre sélection de véhicules sélectionnés avec soin par Sinouhé Rochereau.",
+      "h1": [
+        "Vente de véhicules d'occasion"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 111,
+      "scoreSémantiqueGlobal": "5.41%",
+      "motsLesPlusFrequents": [
+        "véhicules (6)",
+        "vente (3)",
+        "occasion (3)",
+        "véhicule (3)",
+        "connaître (3)",
+        "stock (3)",
+        "côte (2)",
+        "sinouhé (2)",
+        "rochereau (2)",
+        "avant (2)",
+        "mise (2)",
+        "disponibles (2)",
+        "barthelemy (2)",
+        "avis (2)",
+        "2025 (1)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "véhicule": {
+          "count": 3,
+          "density": "2.70%"
+        },
+        "_ScoreCatégorie": "2.70%"
+      },
+      "Action Principale": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Expertise Technique": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Urgence & Dépannage": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.90%"
+        },
+        "_ScoreCatégorie": "0.90%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 1,
+          "density": "0.90%"
+        },
+        "azur": {
+          "count": 1,
+          "density": "0.90%"
+        },
+        "_ScoreCatégorie": "1.80%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 8,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/contactez-nous/",
+    "meta": {
+      "title": "Contactez Sinnes Automobiles — Devis gratuit · Nice | Sinnes Nice",
+      "metaDescription": "Contactez Sinnes Automobiles pour un devis gratuit. Reproduction de clé, serrurier automobile Nice. Réponse rapide 7j/7 : +33 6 75 54 04 11",
+      "h1": [
+        "Contactez-nous"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 55,
+      "scoreSémantiqueGlobal": "10.91%",
+      "motsLesPlusFrequents": [
+        "côte (2)",
+        "2026 (1)",
+        "contactez-nousdevis (1)",
+        "gratuit (1)",
+        "intervention (1)",
+        "nice (1)",
+        "azurcoordonnéestéléphone (1)",
+        "11adresse4 (1)",
+        "rue (1)",
+        "diderot06000 (1)",
+        "nicehoraires7j (1)",
+        "rendez-vous8h00 (1)",
+        "20h00zone (1)",
+        "interventionnice (1)",
+        "antibes (1)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clés": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "voiture": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "véhicule": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "_ScoreCatégorie": "5.45%"
+      },
+      "Action Principale": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Expertise Technique": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Urgence & Dépannage": {
+        "intervention": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "_ScoreCatégorie": "1.82%"
+      },
+      "Commercial & Tarifs": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "antibes": {
+          "count": 1,
+          "density": "1.82%"
+        },
+        "_ScoreCatégorie": "3.64%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 8,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  },
+  {
+    "path": "/qui-sommes-nous/",
+    "meta": {
+      "title": "Qui sommes-nous · Sinnes Automobiles Nice | Sinnes Nice",
+      "metaDescription": "Découvrez Sinouhé Rochereau et Inès Barthelemy, fondateurs de Sinnes Automobiles à Nice. Experts en reproduction de clé voiture et vente VO sur la Côte d'Azur.",
+      "h1": [
+        "Qui sommes-nous ?"
+      ]
+    },
+    "statistiques": {
+      "totalWords_hors_stopwords": 303,
+      "scoreSémantiqueGlobal": "11.55%",
+      "motsLesPlusFrequents": [
+        "sinnes (9)",
+        "automobiles (6)",
+        "reproduction (6)",
+        "clé (6)",
+        "véhicules (5)",
+        "inès (5)",
+        "vente (4)",
+        "sinouhé (4)",
+        "son (4)",
+        "voiture (3)",
+        "occasion (3)",
+        "rochereau (3)",
+        "barthelemy (3)",
+        "référence (3)",
+        "exigence (3)"
+      ]
+    },
+    "analyse_metamots": {
+      "Tête de traîne": {
+        "clé": {
+          "count": 6,
+          "density": "1.98%"
+        },
+        "clés": {
+          "count": 1,
+          "density": "0.33%"
+        },
+        "voiture": {
+          "count": 3,
+          "density": "0.99%"
+        },
+        "automobile": {
+          "count": 1,
+          "density": "0.33%"
+        },
+        "_ScoreCatégorie": "3.63%"
+      },
+      "Action Principale": {
+        "reproduction": {
+          "count": 6,
+          "density": "1.98%"
+        },
+        "programmation": {
+          "count": 1,
+          "density": "0.33%"
+        },
+        "_ScoreCatégorie": "2.31%"
+      },
+      "Expertise Technique": {
+        "_ScoreCatégorie": "0.00%"
+      },
+      "Urgence & Dépannage": {
+        "domicile": {
+          "count": 1,
+          "density": "0.33%"
+        },
+        "intervention": {
+          "count": 2,
+          "density": "0.66%"
+        },
+        "_ScoreCatégorie": "0.99%"
+      },
+      "Commercial & Tarifs": {
+        "prix": {
+          "count": 1,
+          "density": "0.33%"
+        },
+        "devis": {
+          "count": 3,
+          "density": "0.99%"
+        },
+        "_ScoreCatégorie": "1.32%"
+      },
+      "Géolocalisation": {
+        "nice": {
+          "count": 3,
+          "density": "0.99%"
+        },
+        "antibes": {
+          "count": 2,
+          "density": "0.66%"
+        },
+        "cannes": {
+          "count": 2,
+          "density": "0.66%"
+        },
+        "azur": {
+          "count": 3,
+          "density": "0.99%"
+        },
+        "_ScoreCatégorie": "3.30%"
+      }
+    },
+    "analyse_maillage_interne": {
+      "total_liens_internes": 8,
+      "ancres_et_contextes_semantiques": [
+        {
+          "ancre": "Accueil",
+          "href": "/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Reproduction de clé",
+          "href": "/reproduction-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Serrurier Nice",
+          "href": "/serrurier-automobile-nice/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Tarifs",
+          "href": "/tarif-cle-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Acheter une voiture",
+          "href": "/acheter-une-voiture/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "Contact",
+          "href": "/contactez-nous/",
+          "contexte": "Accueil\nReproduction de clé\nSerrurier Nice\nTarifs\nAcheter une voiture\nContact..."
+        },
+        {
+          "ancre": "contact@sinnes.fr",
+          "href": "mailto:contact@sinnes.fr",
+          "contexte": "4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014..."
+        },
+        {
+          "ancre": "Mentions légales & Confidentialité",
+          "href": "/mentions-legales-et-politique-de-confidentialite/",
+          "contexte": "NOUS CONTACTER\n\n4 rue Diderot\n06000 Nice\n+33 6 75 54 04 11\ncontact@sinnes.fr\n7j/7 sur rendez-vous\nSIRET 940 997 927 00014\nMentions légales & Confident..."
+        }
+      ]
+    }
+  }
+]

@@ -136,8 +136,7 @@ export default function CleVoitureTranspondeurPage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-accent text-text-inverse font-body font-bold
-                       text-xl px-8 py-4 rounded-lg min-h-[56px] hover:bg-accent-dark transition-colors mb-8"
+            className="btn-accent inline-flex items-center gap-3 font-body font-bold rounded-lg mb-8"
           >
             Devis gratuit : {NAP.phoneDisplay}
           </a>
@@ -331,7 +330,7 @@ export default function CleVoitureTranspondeurPage() {
       <div className="text-center py-12 bg-bg-shade">
         <a
           href={`tel:${NAP.phoneTel}`}
-          className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] hover:bg-[#c62828] transition-colors"
+          className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg"
         >
           URGENCE : {NAP.phoneDisplay}
         </a>

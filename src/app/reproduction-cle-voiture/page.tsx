@@ -242,19 +242,13 @@ export default function ReproductionCleVoiturePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
               href={`tel:${NAP.phoneTel}`}
-              className="inline-flex items-center justify-center gap-3 bg-[#e53935] text-white
-                         font-body font-bold text-xl px-8 py-4 rounded-lg min-h-[56px]
-                         hover:bg-[#c62828] transition-colors"
+              className="btn-accent btn-urgence inline-flex items-center justify-center gap-3 font-body font-bold rounded-lg"
             >
           Urgence 7j/7 : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
             </a>
             <a
               href="/contactez-nous/"
-              className="inline-flex items-center justify-center bg-[#EFAD42] text-[#1a1a1a]
-                         font-body font-black text-xl px-8 py-4 rounded-lg min-h-[56px]
-                         shadow-[0_4px_14px_0_rgba(239,173,66,0.39)]
-                         hover:bg-[#D49436] hover:shadow-[0_6px_20px_rgba(239,173,66,0.23)]
-                         hover:scale-[1.02] transition-all"
+              className="btn-accent inline-flex items-center justify-center font-body font-black rounded-lg shadow-[0_4px_14px_0_rgba(239,173,66,0.39)] hover:shadow-[0_6px_20px_rgba(239,173,66,0.23)] hover:scale-[1.02]"
             >
               Obtenir un devis gratuit
             </a>
@@ -682,7 +676,7 @@ export default function ReproductionCleVoiturePage() {
 
       {/* SECTION 9 — CTA BAS */}
       <div className="text-center py-12 bg-bg-shade">
-        <a href={`tel:${NAP.phoneTel}`} className="btn-accent text-lg px-10 py-4 min-h-[56px]">
+        <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg">
           Appelez maintenant : {NAP.phoneDisplay}
         </a>
         <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>

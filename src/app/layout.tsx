@@ -3,6 +3,7 @@ import { Playfair_Display, Maven_Pro, Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import { ORG, NAP, GEO, HOURS, SAME_AS } from '@/constants/siteConfig'
 
 // ---------------------------------------------------------------------------
 // FONTS — next/font/google (zéro @import externe, display:swap = CLS 0)
@@ -76,6 +77,58 @@ export default function RootLayout({
         injectés par extensions navigateur (ex: Grammarly, LastPass).
       */}
       <body suppressHydrationWarning className="font-body text-text-main bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://sinnes.fr/#website",
+                  "url": "https://sinnes.fr/",
+                  "name": "Sinnes Automobiles",
+                  "publisher": { "@id": "https://sinnes.fr/#organization" },
+                  "inLanguage": "fr-FR"
+                },
+                {
+                  "@type": ["Organization", "LocalBusiness", "AutomotiveBusiness"],
+                  "@id": "https://sinnes.fr/#organization",
+                  "name": ORG.name,
+                  "legalName": ORG.legalName,
+                  "identifier": ORG.siret,
+                  "foundingDate": ORG.foundingDate,
+                  "url": ORG.url,
+                  "logo": ORG.logo,
+                  "telephone": NAP.phoneTel,
+                  "email": NAP.email,
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": NAP.address.streetAddress,
+                    "addressLocality": NAP.address.addressLocality,
+                    "postalCode": NAP.address.postalCode,
+                    "addressCountry": NAP.address.addressCountry,
+                    "addressRegion": NAP.address.addressRegion
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": GEO.latitude,
+                    "longitude": GEO.longitude
+                  },
+                  "openingHours": HOURS.schemaValue,
+                  "sameAs": SAME_AS,
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": NAP.phoneTel,
+                    "contactType": "customer service",
+                    "areaServed": "FR",
+                    "availableLanguage": ["French"]
+                  }
+                }
+              ]
+            })
+          }}
+        />
         <Header />
         {/*
           padding-top = hauteur du header fixe (72px) pour éviter le content shift.

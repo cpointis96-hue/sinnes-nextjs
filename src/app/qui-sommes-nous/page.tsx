@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM } from '@/constants/siteConfig'
+import { NAP, TEAM, REVIEWS } from '@/constants/siteConfig'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
 import { seoData } from '@/data/seoData'
@@ -214,9 +214,9 @@ export default function QuiSommesNousPage() {
        </div>
        <div>
         <p className="font-body text-sm font-semibold mb-1" style={{ color: '#EFAD42' }}>2026 et au-delà</p>
-        <p className="font-heading font-bold text-xl mb-2" style={{ color: '#FFFFFF' }}>58 avis · 5.0/5 · La référence Nice</p>
+        <p className="font-heading font-bold text-xl mb-2" style={{ color: '#FFFFFF' }}>{REVIEWS.reviewCount} avis · {REVIEWS.ratingValue}/5 · La référence Nice</p>
         <p className="font-body leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-         58 avis Google avec une note parfaite de 5.0/5. Des clients de Nice, Antibes,
+         {REVIEWS.reviewCount} avis Google avec une note parfaite de {REVIEWS.ratingValue}/5. Des clients de Nice, Antibes,
          Cagnes-sur-Mer, Cannes et Menton font confiance à Sinnes Automobiles. L'ambition :
          rester la référence indépendante de la reproduction de clé voiture sur la Côte d'Azur.
         </p>

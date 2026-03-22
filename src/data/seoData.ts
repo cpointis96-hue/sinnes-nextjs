@@ -466,34 +466,3 @@ export const seoData = {
  * Les textes sont importés du fichier source src/data/reviews.ts
  */
 export const reviewsData = ALL_REVIEWS
-
-// ---------------------------------------------------------------------------
-// SOURCES AUTORITAIRES — Liens de référence pour profils externes
-// Base centralisée de tous les profils vérifiés (annuaires, registres, réseaux).
-// Utilisé pour les sameAs dans les schemas JSON-LD et comme référence interne.
-// ---------------------------------------------------------------------------
-
-export const SOURCES = {
-  /** Profils entreprise (Organization → sameAs) */
-  enterprise: {
-    gmb: 'https://www.google.com/maps/place/Sinnes+Automobiles/@43.7362735,7.105321,11z/data=!3m1!4b1!4m6!3m5!1s0x87fcb222a35de80b:0x2b059f74f9909f37!8m2!3d43.7361438!4d7.2701284!16s%2Fg%2F11x0g8czf3?entry=ttu',
-    gmbPlaceId: '0x87fcb222a35de80b:0x2b059f74f9909f37',
-    gmbKnowledgeGraphId: '/g/11x0g8czf3',
-    societeCom: 'https://www.societe.com/societe/sinnes-automobiles-940997927.html',
-    lefigaroEntreprises: 'https://entreprises.lefigaro.fr/sinnes-automobiles-06/entreprise-940997927',
-    facebook: 'https://www.facebook.com/people/Sinnes-Automobiles/61572526535843/',
-    instagram: 'https://www.instagram.com/sinnes_automobiles/',
-    linkedin: 'https://www.linkedin.com/company/106317844',
-  },
-  /** Profils dirigeant Sinouhé Rochereau (Person → sameAs) */
-  sinouhe: {
-    pappers: 'https://www.pappers.fr/dirigeant/sinouhe_rochereau_1996-03',
-    infonet: 'https://infonet.fr/dirigeants/66aa9fe95da7ac2c4b5d8f48/',
-    societeCom: 'https://www.societe.com/manager/Sinouhe.ROCHEREAU.tbf-QSctD_i.html',
-  },
-  /** Profils dirigeante Inès Barthelemy (Person → sameAs) */
-  ines: {
-    infonet: 'https://infonet.fr/dirigeants/67d274ebcc8b3a47c0084462/',
-    societeCom: 'https://www.societe.com/manager/Ines.BARTHELEMY.6HAmNw7pT9X.html',
-  },
-} as const

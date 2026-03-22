@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { NAP } from '@/constants/siteConfig'
+import { Turnstile } from '@marsidev/react-turnstile'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ export default function ContactForm() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [token, setToken] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -95,12 +97,22 @@ export default function ContactForm() {
           style={{ background: '#1A1A1A', color: '#FFFFFF', border: '1px solid rgba(255,255,255,0.1)' }}
         />
       </div>
+      <div className="mt-4 flex justify-center">
+        <Turnstile 
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'} 
+          onSuccess={(t) => setToken(t)} 
+          options={{ theme: 'dark' }}
+        />
+      </div>
       <button
         type="submit"
-        className="w-full font-body font-bold text-lg py-4 rounded-lg min-h-[56px] hover:opacity-90 transition-opacity"
-        style={{ background: '#EFAD42', color: '#0A0A0A' }}
+        disabled={!token}
+        className={`w-full font-body font-bold text-lg py-4 rounded-lg min-h-[56px] transition-all ${
+          token ? 'hover:opacity-90 shadow-lg' : 'opacity-50 cursor-not-allowed'
+        }`}
+        style={{ background: token ? '#EFAD42' : '#333333', color: token ? '#0A0A0A' : '#888888' }}
       >
-        Envoyer ma demande
+        {token ? 'Envoyer ma demande' : 'Vérification en cours...'}
       </button>
       <p className="font-body text-xs text-center" style={{ color: 'rgba(255,255,255,0.4)' }}>
         Ou appelez directement le{' '}

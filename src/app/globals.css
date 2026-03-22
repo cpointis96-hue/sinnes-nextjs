@@ -19,39 +19,39 @@
 
 :root {
   /* Or brand */
-  --sinnes-or:           #EFAD42;
-  --sinnes-or-sombre:    #D49436;
+  --sinnes-or: #EFAD42;
+  --sinnes-or-sombre: #D49436;
 
   /* Fonds sombres */
-  --sinnes-noir:         #0A0A0A;
-  --sinnes-surface:      #1A1A1A;
+  --sinnes-noir: #0A0A0A;
+  --sinnes-surface: #1A1A1A;
 
   /* Fonds clairs */
-  --sinnes-blanc:        #FFFFFF;
-  --sinnes-nuance:       #F0F3F7;
+  --sinnes-blanc: #FFFFFF;
+  --sinnes-nuance: #F0F3F7;
 
   /* Textes */
-  --sinnes-texte:        #111111;
-  --sinnes-discret:      #6B7280;
+  --sinnes-texte: #111111;
+  --sinnes-discret: #6B7280;
 
   /* Urgence */
-  --sinnes-rouge:        #E53935;
+  --sinnes-rouge: #E53935;
   --sinnes-rouge-sombre: #C62828;
 
   /* Layout */
-  --container-max:  1140px;
-  --header-height:  72px;
+  --container-max: 1140px;
+  --header-height: 72px;
 
   /* Aliases CSS pour compatibilité (référencés dans les composants existants) */
-  --color-accent:        var(--sinnes-or);
-  --color-accent-dark:   var(--sinnes-or-sombre);
-  --color-cta-urgence:   var(--sinnes-rouge);
-  --color-text-main:     var(--sinnes-texte);
-  --color-bg-shade:      var(--sinnes-nuance);
-  --color-bg-card:       var(--sinnes-blanc);
-  --color-card-border:   rgba(17, 24, 39, 0.1);
-  --color-third:         var(--sinnes-texte);
-  --color-sold-badge:    var(--sinnes-rouge);
+  --color-accent: var(--sinnes-or);
+  --color-accent-dark: var(--sinnes-or-sombre);
+  --color-cta-urgence: var(--sinnes-rouge);
+  --color-text-main: var(--sinnes-texte);
+  --color-bg-shade: var(--sinnes-nuance);
+  --color-bg-card: var(--sinnes-blanc);
+  --color-card-border: rgba(17, 24, 39, 0.1);
+  --color-third: var(--sinnes-texte);
+  --color-sold-badge: var(--sinnes-rouge);
 }
 
 /* ---------------------------------------------------------------------------
@@ -68,7 +68,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -89,7 +90,12 @@ body {
    TYPOGRAPHIE DE BASE
    --------------------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-playfair, "Playfair Display", Georgia, serif);
   font-weight: 700;
   color: var(--sinnes-texte);
@@ -97,7 +103,12 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-p, li, button, label, input, textarea {
+p,
+li,
+button,
+label,
+input,
+textarea {
   font-family: var(--font-maven, "Maven Pro", system-ui, sans-serif);
 }
 
@@ -178,20 +189,48 @@ p, li, button, label, input, textarea {
    --------------------------------------------------------------------------- */
 
 @keyframes fade-in-down {
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounce-in {
-  0%   { opacity: 0; transform: scale(0.3); }
-  50%  { opacity: 1; transform: scale(1.05); }
-  70%  { transform: scale(0.9); }
-  100% { opacity: 1; transform: scale(1); }
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes zoom-in {
-  from { opacity: 0; transform: scale(0.95); }
-  to   { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 
@@ -219,19 +258,20 @@ p, li, button, label, input, textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: var(--sinnes-or);
   color: var(--sinnes-blanc);
   font-family: var(--font-maven, "Maven Pro", sans-serif);
   font-weight: 600;
   font-size: 1rem;
-  padding: 10px 16px;
+  padding: 12px 24px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: background-color 0.25s ease, transform 0.15s ease;
   text-decoration: none;
-  min-height: 44px;
-  min-width: 44px;
+  min-height: 64px;
+  min-width: 140px;
 }
 
 .btn-accent:hover,
@@ -282,7 +322,8 @@ p, li, button, label, input, textarea {
    --------------------------------------------------------------------------- */
 
 .star-or {
-  color: #FBBC04 !important; /* jaune officiel Google reviews */
+  color: #FBBC04 !important;
+  /* jaune officiel Google reviews */
   display: inline;
 }
 

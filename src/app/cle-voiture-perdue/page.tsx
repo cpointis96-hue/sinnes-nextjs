@@ -145,9 +145,7 @@ export default function CleVoiturePerdуePage() {
 
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold
-                       text-xl px-8 py-4 rounded-lg min-h-[56px] animate-pulse
-                       hover:bg-[#c62828] transition-colors mb-8"
+            className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg animate-pulse mb-8"
           >
             URGENCE : {NAP.phoneDisplay}
           </a>
@@ -318,8 +316,8 @@ export default function CleVoiturePerdуePage() {
           </p>
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="inline-block bg-white text-[#e53935] font-body font-bold text-2xl
-                       px-12 py-5 rounded-lg min-h-[56px] hover:bg-gray-100 transition-colors shadow-lg"
+            className="inline-flex items-center justify-center bg-white text-[#e53935] font-body font-bold text-xl md:text-2xl rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+            style={{ minHeight: '64px', padding: '12px 24px' }}
           >
             URGENCE : {NAP.phoneDisplay}
           </a>
@@ -342,7 +340,7 @@ export default function CleVoiturePerdуePage() {
       <div className="text-center py-12 bg-bg-shade">
         <a
           href={`tel:${NAP.phoneTel}`}
-          className="inline-flex items-center gap-3 bg-[#e53935] text-white font-body font-bold text-lg px-10 py-4 rounded-lg min-h-[56px] hover:bg-[#c62828] transition-colors"
+          className="btn-accent btn-urgence inline-flex items-center gap-3 font-body font-bold rounded-lg"
         >
           URGENCE : {NAP.phoneDisplay}
         </a>

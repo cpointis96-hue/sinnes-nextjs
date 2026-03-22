@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS } from '@/constants/siteConfig'
+import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS, GEO, AREA_SERVED, ENTITY_LINKS, SOURCES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import { seoData } from '@/data/seoData'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import { BrandsCarousel, ReviewsCarousel } from './DynamicCarousels'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
+import { getHomepageReviews } from '@/data/reviews'
 
 // ─────────────────────────────────────────────────────────────
 // METADATA
@@ -21,9 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-// ─────────────────────────────────────────────────────────────
-// SCHEMA JSON-LD — @graph Organization + LocalBusiness
-// ─────────────────────────────────────────────────────────────
+const homepageReviews = getHomepageReviews()
 
 const schema = {
   '@context': 'https://schema.org',
@@ -32,6 +31,9 @@ const schema = {
       '@type': ['Organization', 'LocalBusiness', 'AutomotiveBusiness'],
       '@id': 'https://sinnes.fr/#organization',
       name: ORG.name,
+      legalName: ORG.legalName,
+      foundingDate: ORG.foundingDate,
+      identifier: ORG.siret,
       url: ORG.url,
       telephone: NAP.phoneTel,
       email: NAP.email,
@@ -43,50 +45,93 @@ const schema = {
         addressCountry: NAP.address.addressCountry,
         addressRegion: NAP.address.addressRegion,
       },
-      geo: { '@type': 'GeoCoordinates', latitude: 43.7031, longitude: 7.262 },
-      openingHours: 'Mo-Su 00:00-23:59',
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: GEO.latitude,
+        longitude: GEO.longitude,
+      },
+      openingHours: HOURS.schemaValue,
       priceRange: '€€',
+      numberOfEmployees: {
+        '@type': 'QuantitativeValue',
+        value: 2
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: NAP.phoneTel,
+        contactType: 'customer service',
+        areaServed: 'FR',
+        availableLanguage: ['French']
+      },
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: REVIEWS.ratingValue,
         reviewCount: REVIEWS.reviewCount,
         bestRating: REVIEWS.bestRating,
       },
-      areaServed: {
-        '@type': 'GeoCircle',
-        geoMidpoint: { '@type': 'GeoCoordinates', latitude: 43.7031, longitude: 7.262 },
-        geoRadius: '40000',
-      },
+      review: homepageReviews.map((r) => ({
+        '@type': 'Review',
+        author: { '@type': 'Person', name: r.author },
+        datePublished: r.date,
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5',
+        },
+        reviewBody: r.text,
+      })),
+      areaServed: AREA_SERVED_TYPED,
       sameAs: [
         SOCIAL.facebook,
         SOCIAL.instagram,
         SOCIAL.linkedin,
         SOCIAL.googleMaps,
+        SOURCES.enterprise.societeCom,
+        SOURCES.enterprise.lefigaroEntreprises,
+        ENTITY_LINKS.nice,
+        ENTITY_LINKS.locksmith,
       ],
       employee: [
+        SINOUHE_FULL_ENTITY,
         {
           '@type': 'Person',
-          '@id': 'https://sinnes.fr/#sinouhe',
-          name: TEAM.sinouhe.name,
-          jobTitle: TEAM.sinouhe.jobTitle,
-          knowsAbout: TEAM.sinouhe.knowsAbout,
-          description: TEAM.sinouhe.description,
-        },
-        {
-          '@type': 'Person',
-          '@id': 'https://sinnes.fr/#ines',
+          '@id': TEAM.ines.id,
           name: TEAM.ines.name,
           jobTitle: TEAM.ines.jobTitle,
+          sameAs: [
+            SOURCES.ines.societeCom,
+            SOURCES.ines.infonet
+          ]
         },
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Reproduction & double de clé de voiture',
         itemListElement: [
-          { '@type': 'Offer', name: 'Clé simple (sans télécommande)', price: String(PRICES.cleSimple.sinnes), priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Clé centralisée (télécommande)', price: String(PRICES.cleCentralisee.sinnes), priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Clé mains libres / badge', price: String(PRICES.cleMainsLibres.sinnes), priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Perte totale (sans double)', price: String(PRICES.perteTotale.sinnes), priceCurrency: 'EUR' },
+          {
+            '@type': 'Offer',
+            name: 'Clé simple (sans télécommande)',
+            price: String(PRICES.cleSimple.sinnes),
+            priceCurrency: 'EUR',
+          },
+          {
+            '@type': 'Offer',
+            name: 'Clé centralisée (télécommande)',
+            price: String(PRICES.cleCentralisee.sinnes),
+            priceCurrency: 'EUR',
+          },
+          {
+            '@type': 'Offer',
+            name: 'Clé mains libres / badge',
+            price: String(PRICES.cleMainsLibres.sinnes),
+            priceCurrency: 'EUR',
+          },
+          {
+            '@type': 'Offer',
+            name: 'Perte totale (sans double)',
+            price: String(PRICES.perteTotale.sinnes),
+            priceCurrency: 'EUR',
+          },
         ],
       },
     },
@@ -128,7 +173,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 1 — HERO (vidéo fond + carte blanche gauche)
       ═══════════════════════════════════════════════════ */}
-      <section className="relative flex items-center overflow-hidden bg-[#1a1a1a]" style={{minHeight: '52vh'}}>
+      <section className="relative flex items-center overflow-hidden bg-[#1a1a1a]" style={{ minHeight: '52vh' }}>
 
         {/* Vidéo fond — couvre exactement la section */}
         <video
@@ -153,7 +198,7 @@ export default function HomePage() {
             {/* Badge avis */}
             <div className="inline-flex items-center gap-2 bg-[#FFFFFF] px-3 py-1.5 rounded-full mb-6 border border-[#EFAD42]/20">
               <span className="star-or text-base leading-none" aria-hidden="true" style={{ color: '#FBBC04' }}>★★★★★</span>
-              <span className="font-body text-[#1a1a1a] text-xs font-bold tracking-wide">58 avis Google · 5.0/5</span>
+              <span className="font-body text-[#1a1a1a] text-xs font-bold tracking-wide">{REVIEWS.reviewCount} avis Google · {REVIEWS.ratingValue}/5</span>
             </div>
 
             {/* H1 — noir sur blanc, choc visuel immédiat */}
@@ -175,7 +220,7 @@ export default function HomePage() {
             {/* CTA principal */}
             <a
               href={`tel:${NAP.phoneTel}`}
-              className="btn-accent inline-flex items-center gap-3 px-8 py-4 text-lg md:text-xl font-bold rounded-lg transition-colors shadow-lg"
+              className="btn-accent inline-flex items-center gap-3 text-lg md:text-xl font-bold rounded-lg transition-colors shadow-lg"
             >
               Demandez votre devis : {NAP.phoneDisplay}
             </a>
@@ -244,7 +289,7 @@ export default function HomePage() {
               </ScrollReveal>
 
               <ScrollReveal animation="bounceIn" delay={0.2} className="inline-block">
-                <a href="/contactez-nous/" className="btn-accent inline-flex items-center gap-2 px-6 py-3 font-semibold tracking-wide">
+                <a href="/contactez-nous/" className="btn-accent inline-flex items-center justify-center gap-2 font-semibold tracking-wide rounded-lg">
                   CONTACTEZ-NOUS
                 </a>
               </ScrollReveal>
@@ -431,9 +476,9 @@ export default function HomePage() {
               </p>
 
               <a href={`tel:${NAP.phoneTel}`}
-                 className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4 hover:bg-white/20 transition-colors group">
+                className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4 hover:bg-white/20 transition-colors group">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-accent flex-shrink-0" aria-hidden="true">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                 </svg>
                 <span className="font-body font-bold text-accent text-lg group-hover:text-accent-dark transition-colors">
                   {NAP.phoneDisplay}
@@ -441,16 +486,16 @@ export default function HomePage() {
               </a>
 
               <a href={`mailto:${NAP.email}`}
-                 className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4 hover:bg-white/20 transition-colors">
+                className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4 hover:bg-white/20 transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-accent flex-shrink-0" aria-hidden="true">
-                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
                 <span className="font-body text-white/90">{NAP.email}</span>
               </a>
 
               <div className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-accent flex-shrink-0" aria-hidden="true">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
                 <div>
                   <span className="font-body text-white/90 block">
@@ -462,7 +507,7 @@ export default function HomePage() {
 
               <div className="flex items-center gap-4 bg-white/10 rounded-xl px-5 py-4">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-accent flex-shrink-0" aria-hidden="true">
-                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" />
                 </svg>
                 <span className="font-body text-white/90">Nous venons à votre rencontre*</span>
               </div>
@@ -517,7 +562,7 @@ export default function HomePage() {
       <section className="bg-bg-shade pt-6 pb-16" aria-label="Avis clients Google">
         <div className="container-sinnes">
 
-              <ReviewsCarousel />
+          <ReviewsCarousel />
 
         </div>
       </section>

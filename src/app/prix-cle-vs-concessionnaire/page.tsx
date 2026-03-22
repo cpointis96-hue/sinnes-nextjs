@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconClock, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -37,14 +37,35 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+const review = getReviewForPage('/prix-cle-vs-concessionnaire/')
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Service",
       "@id": "https://sinnes.fr/prix-cle-vs-concessionnaire/#service",
-      "name": "Serrurier automobile indépendant Nice — tarif vs concessionnaire",
-      "provider": { "@id": "https://sinnes.fr/#organization" }
+      "name": "Serrurier automobile Nice — Comparaison tarifs",
+      "serviceType": "Locksmith Price Comparison",
+      "description": "Comparatif des prix pour refaire une clé de voiture à Nice : Sinnes Automobiles vs concessionnaires officiels.",
+      "provider": { "@id": "https://sinnes.fr/#organization" },
+      "areaServed": AREA_SERVED_TYPED,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": REVIEWS.ratingValue,
+        "reviewCount": REVIEWS.reviewCount,
+        "bestRating": REVIEWS.bestRating
+      },
+      "review": review ? {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": review.author },
+        "datePublished": review.date,
+        "reviewRating": {
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": review.text
+      } : undefined
     },
     {
       "@type": "BreadcrumbList",
@@ -61,16 +82,17 @@ const schema = {
         "acceptedAnswer": { "@type": "Answer", "text": item.answer }
       }))
     },
-    {
-      "@type": "Person",
-      "@id": "https://sinnes.fr/#ines",
-      "name": TEAM.ines.name,
-      "jobTitle": TEAM.ines.jobTitle,
-      "knowsAbout": TEAM.ines.knowsAbout,
-      "description": TEAM.ines.description,
-      "worksFor": { "@id": "https://sinnes.fr/#organization" }
-    }
-  ]
+      SINOUHE_FULL_ENTITY,
+      {
+        '@type': 'WebPage',
+        '@id': 'https://sinnes.fr/prix-cle-vs-concessionnaire/#webpage',
+        url: 'https://sinnes.fr/prix-cle-vs-concessionnaire/',
+        name: 'Prix clé voiture vs Concessionnaire Nice — Économie 80%',
+        isPartOf: { '@id': 'https://sinnes.fr/#website' },
+        about: { '@id': 'https://sinnes.fr/#organization' },
+        mainEntity: { '@id': 'https://sinnes.fr/prix-cle-vs-concessionnaire/#service' }
+      }
+    ]
 }
 
 const steps = [
@@ -88,7 +110,6 @@ const TRUST_ITEMS: TrustStripItem[] = [
   { icon: <IconShield className="w-8 h-8" />, label: 'Garantie préservée', sublabel: 'Programmation officielle', href: '/reproduction-cle-voiture/' },
 ]
 
-const review = getReviewForPage('/prix-cle-vs-concessionnaire/')
 
 export default function PrixCleVsConcessionnairePage() {
   return (
@@ -114,7 +135,7 @@ export default function PrixCleVsConcessionnairePage() {
         <div className="container-sinnes">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
             <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
-            <span className="font-body text-white text-sm font-semibold">58 avis Google · 5.0/5</span>
+            <span className="font-body text-white text-sm font-semibold">{REVIEWS.reviewCount} avis Google · {REVIEWS.ratingValue}/5</span>
           </div>
 
           <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
@@ -326,7 +347,7 @@ export default function PrixCleVsConcessionnairePage() {
 
       {/* SECTION 9 — CTA BAS + STICKY MOBILE */}
       <div className="text-center py-12 bg-bg-shade">
-        <a href={`tel:${NAP.phoneTel}`} className="btn-accent text-lg px-10 py-4 min-h-[56px]">
+        <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg">
           Appelez maintenant : {NAP.phoneDisplay}
         </a>
         <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>

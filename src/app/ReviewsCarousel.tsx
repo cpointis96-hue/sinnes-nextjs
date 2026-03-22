@@ -3,38 +3,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
-import { getHomepageReviews, GMB_REVIEWS_URL } from '@/data/reviews'
+import { getHomepageReviews } from '@/data/reviews'
+import { REVIEWS, SOCIAL } from '@/constants/siteConfig'
 
-function buildCarouselSchema(reviews: ReturnType<typeof getHomepageReviews>) {
- return JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Sinnes Automobiles',
-  '@id': 'https://sinnes.fr/#business',
-  aggregateRating: {
-   '@type': 'AggregateRating',
-   ratingValue: '5.0',
-   reviewCount: '58',
-  },
-  review: reviews.map((r) => ({
-   '@type': 'Review',
-   author: { '@type': 'Person', name: r.author },
-   datePublished: r.date,
-   reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-   reviewBody: r.text,
-  })),
- })
-}
+const GMB_REVIEWS_URL = SOCIAL.gmbReviewsUrl
 
 export default function ReviewsCarousel() {
- const reviews = getHomepageReviews()
+  const reviews = getHomepageReviews()
 
- return (
-  <>
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: buildCarouselSchema(reviews) }}
-   />
+  return (
+    <>
    {/* Badge global */}
    <div className="flex flex-col items-center gap-3 mb-8">
     <div className="inline-flex items-center gap-2 bg-white border border-card-border rounded-full px-5 py-2.5 shadow-sm">
@@ -47,8 +25,8 @@ export default function ReviewsCarousel() {
      </svg>
      <span className="font-body font-bold text-text-main text-sm">Avis Google</span>
      <span className="font-body text-2xl leading-none" aria-hidden="true" style={{ color: '#FBBC04' }}>★★★★★</span>
-     <span className="font-body font-bold text-text-main text-sm">5.0 / 5</span>
-     <span className="font-body text-xs text-text-muted">· 58 avis</span>
+     <span className="font-body font-bold text-text-main text-sm">{REVIEWS.ratingValue} / 5</span>
+     <span className="font-body text-xs text-text-muted">· {REVIEWS.reviewCount} avis</span>
     </div>
    </div>
 
@@ -67,7 +45,7 @@ export default function ReviewsCarousel() {
     {reviews.map((review) => (
      <SwiperSlide key={review.id}>
       <a
-       href="https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs"
+       href={GMB_REVIEWS_URL}
        target="_blank"
        rel="noopener noreferrer"
        className="block h-full cursor-pointer hover:opacity-95 transition-opacity duration-200"
@@ -106,7 +84,7 @@ export default function ReviewsCarousel() {
      target="_blank"
      className="font-body text-sm text-primary font-semibold hover:underline"
     >
-     Voir nos 58 avis Google →
+     Voir nos {REVIEWS.reviewCount} avis Google →
     </a>
    </div>
   </>

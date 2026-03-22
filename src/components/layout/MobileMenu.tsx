@@ -91,7 +91,7 @@ export default function MobileMenu() {
         <div className="mt-auto">
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="btn-accent btn-urgence w-full text-center block px-4 py-3 rounded-btn font-body font-semibold text-base"
+            className="btn-accent btn-urgence w-full rounded-btn font-body font-semibold text-base"
             style={{ backgroundColor: '#E53935', color: '#FFFFFF' }}
             aria-label={`Appeler Sinnes Automobiles au ${NAP.phoneDisplay}`}
           >

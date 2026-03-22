@@ -97,7 +97,7 @@ export const AREA_SERVED = {
 
 export const REVIEWS = {
   ratingValue: '5.0',
-  reviewCount: '57',
+  reviewCount: '58',
   bestRating: '5',
   worstRating: '1',
 } as const
@@ -111,6 +111,10 @@ export const SOCIAL = {
   instagram: 'https://www.instagram.com/sinnes_automobiles/',
   linkedin: 'https://www.linkedin.com/company/106317844',
   googleMaps: 'https://www.google.com/maps/place/Sinnes+Automobiles/',
+  /** PlaceID officiel GMB pour Sinnes Automobiles Nice */
+  gmbPlaceId: 'ChIJl4_C8y7QzRIR_0Vn9YmYrGk',
+  /** URL directe vers les avis Google */
+  gmbReviewsUrl: 'https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk',
 } as const
 
 export const SAME_AS: string[] = [
@@ -205,3 +209,99 @@ export const NAV_ITEMS = [
 
 export const GOOGLE_MAPS_EMBED_SRC =
   'https://maps.google.com/maps?q=4+rue+diderot+nice+06000&output=embed&hl=fr'
+
+// ---------------------------------------------------------------------------
+// INFRASTRUCTURE SÉMANTIQUE (Entity-First 2026)
+// ---------------------------------------------------------------------------
+
+/** 
+ * Mapping des IDs Wikidata vérifiés pour le Knowledge Graph.
+ * Source de vérité pour les sameAs et about.
+ */
+export const ENTITY_LINKS = {
+  nice: "https://www.wikidata.org/wiki/Q33959",
+  antibes: "https://www.wikidata.org/wiki/Q126898",
+  cannes: "https://www.wikidata.org/wiki/Q39984",
+  cagnes: "https://www.wikidata.org/wiki/Q193832",
+  cotedazur: "https://www.wikidata.org/wiki/Q182822",
+  alpesmar: "https://www.wikidata.org/wiki/Q3139",
+  monacogp: "https://www.wikidata.org/wiki/Q9102",
+  locksmith: "https://www.wikidata.org/wiki/Q3479990",
+  immobilizer: "https://www.wikidata.org/wiki/Q1571429",
+  rfid: "https://www.wikidata.org/wiki/Q104954",
+  renault: "https://www.wikidata.org/wiki/Q6686",
+  audi: "https://www.wikidata.org/wiki/Q23317",
+  mercedes: "https://www.wikidata.org/wiki/Q36008",
+  toyota: "https://www.wikidata.org/wiki/Q53268",
+  hyundai: "https://www.wikidata.org/wiki/Q55931",
+  fiat: "https://www.wikidata.org/wiki/Q27510",
+  vwgroup: "https://www.wikidata.org/wiki/Q156578",
+} as const
+
+/** 
+ * Profils autoritaires externes (E-E-A-T).
+ * Utilisé pour croiser les signaux de confiance GMB, SIRENE et réseaux.
+ */
+export const SOURCES = {
+  enterprise: {
+    gmb: 'https://www.google.com/maps/place/Sinnes+Automobiles/@43.7362735,7.105321,11z/data=!3m1!4b1!4m6!3m5!1s0x87fcb222a35de80b:0x2b059f74f9909f37!8m2!3d43.7361438!4d7.2701284!16s%2Fg%2F11x0g8czf3?entry=ttu',
+    societeCom: 'https://www.societe.com/societe/sinnes-automobiles-940997927.html',
+    lefigaroEntreprises: 'https://entreprises.lefigaro.fr/sinnes-automobiles-06/entreprise-940997927',
+  },
+  sinouhe: {
+    pappers: 'https://www.pappers.fr/dirigeant/sinouhe_rochereau_1996-03',
+    infonet: 'https://infonet.fr/dirigeants/66aa9fe95da7ac2c4b5d8f48/',
+    societeCom: 'https://www.societe.com/manager/Sinouhe.ROCHEREAU.tbf-QSctD_i.html',
+  },
+  ines: {
+    infonet: 'https://infonet.fr/dirigeants/67d274ebcc8b3a47c0084462/',
+    societeCom: 'https://www.societe.com/manager/Ines.BARTHELEMY.6HAmNw7pT9X.html',
+  },
+} as const
+
+/**
+ * Villes desservies typées pour injection JSON-LD directe.
+ */
+export const AREA_SERVED_TYPED = [
+  { '@type': 'City' as const, name: 'Nice', sameAs: ENTITY_LINKS.nice },
+  { '@type': 'City' as const, name: 'Antibes', sameAs: ENTITY_LINKS.antibes },
+  { '@type': 'City' as const, name: 'Cagnes-sur-Mer', sameAs: ENTITY_LINKS.cagnes },
+  { '@type': 'City' as const, name: 'Cannes', sameAs: ENTITY_LINKS.cannes },
+]
+
+/**
+ * Entité Person maximale pour Sinouhé Rochereau.
+ */
+export const SINOUHE_FULL_ENTITY = {
+  '@type': 'Person' as const,
+  '@id': TEAM.sinouhe.id,
+  name: TEAM.sinouhe.name,
+  jobTitle: TEAM.sinouhe.jobTitle,
+  description: TEAM.sinouhe.description,
+  sameAs: [
+    SOCIAL.linkedin,
+    SOURCES.sinouhe.pappers,
+    SOURCES.sinouhe.infonet,
+    SOURCES.sinouhe.societeCom,
+    ENTITY_LINKS.monacogp,
+  ],
+  hasCredential: [
+    {
+      '@type': 'EducationalOccupationalCredential' as const,
+      name: 'Formateur international Incarline',
+      credentialCategory: 'certification',
+    },
+  ],
+  memberOf: [
+    {
+      '@type': 'SportsOrganization' as const,
+      name: 'Grand Prix de Monaco',
+      sameAs: ENTITY_LINKS.monacogp,
+    },
+  ],
+  knowsAbout: [
+    { '@type': 'Thing' as const, name: 'Programmation de clé automobile', sameAs: ENTITY_LINKS.locksmith },
+    { '@type': 'Thing' as const, name: 'Transpondeur RFID', sameAs: ENTITY_LINKS.rfid },
+    { '@type': 'Thing' as const, name: 'Immobiliseur électronique', sameAs: ENTITY_LINKS.immobilizer },
+  ],
+}

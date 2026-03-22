@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconShield, IconWrench } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -37,25 +37,45 @@ const FAQ_ITEMS: FAQItem[] = [
  },
 ]
 
+const review = getReviewForPage('/prix-cle-voiture/')
+
 const schema = {
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "Article",
-   "@id": "https://sinnes.fr/prix-cle-voiture/#article",
-   "headline": "Prix clé voiture — Facteurs et fourchettes",
-   "description": "Les facteurs qui influencent le prix d'une clé voiture : type de clé, marque, âge du véhicule, type de transpondeur.",
-   "datePublished": "2025-01-20T08:00:00+01:00",
-   "dateModified": "2026-03-20T08:00:00+01:00",
-   "author": { "@id": "https://sinnes.fr/#ines" },
-   "publisher": { "@id": "https://sinnes.fr/#organization" },
-   "about": {
-    "@type": "Service",
-    "@id": "https://sinnes.fr/#service-cle",
-    "name": "Reproduction de clé de voiture",
-    "priceRange": `${PRICES.cleSimple.sinnes}€–${PRICES.perteTotale.sinnes}€`,
-    "provider": { "@id": "https://sinnes.fr/#organization" }
-   }
+   "@type": "Service",
+   "@id": "https://sinnes.fr/prix-cle-voiture/#service",
+   "name": "Tarifs reproduction clé voiture Nice",
+   "serviceType": "Locksmith Pricing Information",
+   "description": "Guide complet des tarifs pour refaire une clé de voiture à Nice. Devis transparent, sans frais cachés, économie par rapport au réseau constructeur.",
+   "provider": { "@id": "https://sinnes.fr/#organization" },
+   "areaServed": AREA_SERVED_TYPED,
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": REVIEWS.ratingValue,
+    "reviewCount": REVIEWS.reviewCount,
+    "bestRating": REVIEWS.bestRating
+   },
+   "review": review ? {
+    "@type": "Review",
+    "author": { "@type": "Person", "name": review.author },
+    "datePublished": review.date,
+    "reviewRating": {
+     "ratingValue": "5",
+     "bestRating": "5"
+    },
+    "reviewBody": review.text
+   } : undefined
+  },
+  SINOUHE_FULL_ENTITY,
+  {
+   "@type": "WebPage",
+   "@id": "https://sinnes.fr/prix-cle-voiture/#webpage",
+   "url": "https://sinnes.fr/prix-cle-voiture/",
+   "name": "Prix clé voiture Nice — Guide complet des tarifs 2026",
+   "isPartOf": { "@id": "https://sinnes.fr/#website" },
+   "about": { "@id": "https://sinnes.fr/#organization" },
+   "mainEntity": { "@id": "https://sinnes.fr/prix-cle-voiture/#service" }
   },
   {
    "@type": "BreadcrumbList",
@@ -71,15 +91,6 @@ const schema = {
     "name": item.question,
     "acceptedAnswer": { "@type": "Answer", "text": item.answer }
    }))
-  },
-  {
-   "@type": "Person",
-   "@id": "https://sinnes.fr/#ines",
-   "name": TEAM.ines.name,
-   "jobTitle": TEAM.ines.jobTitle,
-   "knowsAbout": TEAM.ines.knowsAbout,
-   "description": TEAM.ines.description,
-   "worksFor": { "@id": "https://sinnes.fr/#organization" }
   }
  ]
 }
@@ -99,7 +110,6 @@ const TRUST_ITEMS: TrustStripItem[] = [
  { icon: <IconWrench className="w-8 h-8" />, label: 'Prix tout compris', sublabel: 'Décodage + taille + programmation' },
 ]
 
-const review = getReviewForPage('/prix-cle-voiture/')
 
 export default function PrixCleVoiturePage() {
  return (
@@ -125,7 +135,7 @@ export default function PrixCleVoiturePage() {
     <div className="container-sinnes">
      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full mb-6">
       <span className="star-or text-lg" style={{ color: '#FBBC04' }}>★★★★★</span>
-      <span className="font-body text-white text-sm font-semibold">58 avis Google · 5.0/5</span>
+      <span className="font-body text-white text-sm font-semibold">{REVIEWS.reviewCount} avis Google · {REVIEWS.ratingValue}/5</span>
      </div>
 
      <h1 className="font-heading font-bold text-3xl md:text-5xl leading-tight mb-6" style={{ color: '#FFFFFF' }}>
@@ -319,7 +329,7 @@ export default function PrixCleVoiturePage() {
 
    {/* SECTION 9 — CTA BAS + STICKY MOBILE */}
    <div className="text-center py-12 bg-bg-shade">
-    <a href={`tel:${NAP.phoneTel}`} className="btn-accent text-lg px-10 py-4 min-h-[56px]">
+    <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg">
      Appelez maintenant : {NAP.phoneDisplay}
     </a>
     <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>

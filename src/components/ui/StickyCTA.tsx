@@ -23,7 +23,7 @@ export default function StickyCTA({
     setMounted(true)
     const handleScroll = () => {
       const currentScrollY = window.scrollY
-      
+
       if (currentScrollY <= scrollThreshold) {
         setIsVisible(false)
       }
@@ -42,7 +42,7 @@ export default function StickyCTA({
 
   const defaultLabel = variant === 'urgency' ? 'URGENCE' : 'Obtenir un devis gratuit'
   const displayLabel = label || defaultLabel
-  
+
   const bgColor = variant === 'urgency' ? '#e53935' : '#EFAD42'
   const textColor = variant === 'urgency' ? '#FFFFFF' : '#0A0A0A'
 
@@ -61,8 +61,8 @@ export default function StickyCTA({
         >
           <a
             href={`tel:${NAP.phoneTel}`}
-            className="flex items-center justify-center w-full font-body font-bold py-4 min-h-[58px] transition-transform active:scale-[0.98]"
-            style={{ backgroundColor: bgColor, color: textColor }}
+            className="flex items-center justify-center w-full font-body font-bold transition-transform active:scale-[0.98]"
+            style={{ backgroundColor: bgColor, color: textColor, minHeight: '64px' }}
           >
             <span className="text-[15px] min-[340px]:text-base sm:text-lg">
               {displayLabel} : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
