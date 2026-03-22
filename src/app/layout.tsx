@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     canonical: 'https://sinnes.fr/',
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
   openGraph: {
     siteName: 'Sinnes Automobiles',
