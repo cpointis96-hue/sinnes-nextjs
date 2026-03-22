@@ -40,7 +40,7 @@ export default function SingleReview({ review, serviceName, serviceUrl }: Props)
   return (
     <section
       style={{ background: '#111111', borderTop: '1px solid rgba(239,173,66,0.15)', borderBottom: '1px solid rgba(239,173,66,0.15)' }}
-      className="pt-4 pb-6 px-4"
+      className="py-4 px-4"
       aria-label="Avis client Google"
     >
       {/* Schema JSON-LD Service + Review + AggregateRating */}

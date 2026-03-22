@@ -182,7 +182,7 @@ const TRUST_ITEMS: TrustStripItem[] = [
     sublabel: 'À domicile : Nice, Antibes, Cagnes-sur-Mer, Cannes',
     href: '/serrurier-automobile-nice/',
   },
-]
+ ]
 
 const review = getReviewForPage('/reproduction-cle-voiture/')
 
@@ -212,7 +212,7 @@ export default function ReproductionCleVoiturePage() {
         </div>
       </nav>
 
-      {/* HERO */}
+      {/* HERO SECTION — FULL WIDTH DARK — ALL CONTENT PRESERVED */}
       <section style={{ background: '#0A0A0A' }} className="text-white pt-6 pb-6 px-4">
         <div className="container-sinnes text-center max-w-3xl mx-auto">
           {/* Badge avis */}
@@ -224,27 +224,27 @@ export default function ReproductionCleVoiturePage() {
           </div>
 
           <h1
-            className="font-heading font-extrabold text-4xl md:text-5xl leading-tight mb-6 "
+            className="font-heading font-extrabold text-4xl md:text-5xl leading-tight mb-4 "
             style={{ color: '#FFFFFF' }}
           >
             {seoData['reproduction-cle-voiture'].h1}, spécialiste Nice &amp; Côte d&apos;Azur
           </h1>
 
           <p className="font-body text-white/80 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Expert en programmation électronique et taille laser haute sécurité. 
-            Sinnes Automobiles intervient pour la reproduction de votre clé de voiture à Nice, 
-            même sans original (perte totale). Nous recréons votre clé de A à Z via décodage 
-            de serrure et programmation valise officielle. Intervention mobile 7j/7. 
+            Expert en programmation électronique et taille laser haute sécurité.
+            Sinnes Automobiles intervient pour la reproduction de votre clé de voiture à Nice,
+            même sans original (perte totale). Nous recréons votre clé de A à Z via décodage
+            de serrure et programmation valise officielle. Intervention mobile 7j/7.
             Garantie constructeur préservée.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
               href={`tel:${NAP.phoneTel}`}
               className="btn-accent btn-urgence inline-flex items-center justify-center gap-3 font-body font-bold rounded-lg"
             >
-          Urgence 7j/7 : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
+              Urgence 7j/7 : <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
             </a>
             <a
               href="/contactez-nous/"
@@ -264,98 +264,153 @@ export default function ReproductionCleVoiturePage() {
         </div>
       </section>
 
-      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+      {/* WHITE BAND SEPARATOR — SAME SPACING AS REVIEWS */}
+      <div className="bg-white py-8 border-t border-card-border">
+        <TrustStrip items={TRUST_ITEMS} theme="shade" />
+        {review && (
+          <div className="mt-8">
+            <SingleReview
+              review={review}
+              serviceName="Reproduction de clé de voiture"
+              serviceUrl="/reproduction-cle-voiture/"
+            />
+          </div>
+        )}
+      </div>
 
-      {/* 4 ÉTAPES — mobile-first, lisible, impactant */}
-      <section className="bg-white pt-6 pb-14 px-5" aria-label="Notre processus en 4 étapes">
-        <div className="container-sinnes max-w-2xl mx-auto md:max-w-none">
+      <div className="bg-white">
+        <div className="container-sinnes">
+          <DiagonalDivider id="dd-reproduction-top" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" />
+        </div>
+      </div>
 
-          <p className="font-body text-[#6B7280] text-xs uppercase tracking-[0.2em] text-center mb-12">
+      {/* 4 ÉTAPES — PREMIUM DARK — FULL WIDTH — REWORKED ANIMATION STYLE */}
+      <section
+        style={{
+          background: 'linear-gradient(170deg, #0A0A0A 0%, #111111 50%, #0d0b07 100%)',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+        className="pt-8 pb-10 px-4"
+        aria-label="Notre processus en 4 étapes"
+      >
+        {/* Glow effect */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '50%',
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(239,173,66,0.4), transparent)',
+          }}
+        />
+
+        <div className="container-sinnes max-w-2xl mx-auto">
+          <h2
+            className="font-heading font-bold text-2xl md:text-3xl mb-2 text-center"
+            style={{ color: '#EFAD42' }}
+          >
             Notre processus
+          </h2>
+          <div
+            style={{
+              width: 50,
+              height: 2,
+              borderRadius: 1,
+              background: 'linear-gradient(90deg, transparent, #EFAD42, transparent)',
+              margin: '0 auto 1.5rem',
+              opacity: 0.5,
+            }}
+          />
+
+          <p className="font-body text-center text-white/60 text-sm mb-8 max-w-md mx-auto leading-relaxed">
+            Double préventif ou perte totale : voici comment se déroule
+            la reproduction de votre clé de voiture, étape par étape.
           </p>
 
-          {/* Mobile: colonne avec ligne verticale — Desktop: rangée */}
-          <div className="relative flex flex-col md:flex-row md:items-start md:gap-0">
-
-            {/* Ligne verticale mobile uniquement */}
+          <div style={{ position: 'relative' }}>
+            {/* Vertical Line */}
             <div
-              className="absolute left-[27px] top-12 bottom-12 w-px md:hidden"
-              style={{ background: 'linear-gradient(to bottom, #EFAD42, rgba(239,173,66,0.1))' }}
+              style={{
+                position: 'absolute',
+                left: 22,
+                top: 28,
+                bottom: 28,
+                width: 2,
+                background: 'linear-gradient(to bottom, #EFAD42, rgba(239,173,66,0.15))',
+                borderRadius: 1,
+              }}
               aria-hidden="true"
             />
 
             {[
-              { n: '01', title: 'Votre besoin', desc: 'Double préventif, clé perdue, endommagée ou perte totale' },
-              { n: '02', title: 'Diagnostic', desc: 'Décodage serrure ou centrale électronique sur place' },
-              { n: '03', title: 'Taille & Programmation', desc: 'Taille laser + programmation transpondeur (Abrites · ZedFull)' },
-              { n: '04', title: 'Clé prête', desc: 'Votre véhicule démarre — garantie constructeur préservée', last: true },
+              {
+                num: '01',
+                title: "Votre besoin",
+                desc: <>Appelez Sinnes au <a href={`tel:${NAP.phoneTel}`} className="font-bold hover:underline" style={{ color: '#EFAD42' }}>{NAP.phoneDisplay}</a> — Sinouhé identifie votre situation (double, clé perdue ou endommagée).</>
+              },
+              {
+                num: '02',
+                title: "Diagnostic sur place",
+                desc: "Arrivée express. Décodage de la serrure mécanique ou interrogation de la centrale électronique du véhicule."
+              },
+              {
+                num: '03',
+                title: "Taille & Programmation",
+                desc: <>Taille laser haute précision et <a href="/programmation-cle-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>programmation du transpondeur</a> via valise officielle (Abrites · ZedFull).</>
+              },
+              {
+                num: '04',
+                title: "Clé prête — repartez",
+                desc: "Votre véhicule démarre immédiatement. Garantie constructeur préservée, aucun remorquage nécessaire."
+              }
             ].map((step, i) => (
-              <div
-                key={i}
-                className="flex-1 flex items-start gap-8 pb-10 last:pb-0 md:flex-col md:items-center md:pb-0 md:px-6 md:text-center relative"
-              >
-                {/* Numéro */}
+              <div key={i} className="flex gap-6 pb-8 last:pb-0 relative group">
+                {/* Step circle */}
                 <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 relative z-10 border md:mb-4"
                   style={{
-                    background: '#F0F3F7',
-                    borderColor: 'rgba(239,173,66,0.8)',
+                    width: 46, height: 46, borderRadius: '50%', background: '#EFAD42',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    flexShrink: 0, position: 'relative', zIndex: 2,
+                    boxShadow: '0 4px 15px rgba(239,173,66,0.3)',
                   }}
+                  className="transition-transform duration-300 group-hover:scale-110"
                 >
-                  <span
-                    className="font-heading font-black text-xl"
-                    style={{ color: '#EFAD42' }}
-                  >
-                    {step.n}
-                  </span>
+                  <span className="font-heading text-lg font-black text-black">{step.num}</span>
                 </div>
-
-                {/* Texte */}
-                <div className="pt-3 md:pt-0">
-                  <p
-                    className="font-heading font-bold text-xl md:text-lg leading-tight mb-1"
-                    style={{ color: '#111111' }}
-                  >
-                    {step.title}
-                  </p>
-                  <p className="font-body text-[#6B7280] text-sm leading-relaxed">
-                    {step.desc}
-                  </p>
+                <div className="pt-1">
+                  <p className="font-heading text-xl font-extrabold mb-2" style={{ color: '#EFAD42' }}>{step.title}</p>
+                  <p className="font-body text-sm text-white/70 leading-relaxed">{step.desc}</p>
                 </div>
-
-                {/* Flèche desktop entre étapes */}
-                {i < 3 && (
-                  <div
-                    className="hidden md:block absolute right-0 top-6 -translate-y-1/2 text-2xl font-black"
-                    style={{ color: 'rgba(239,173,66,0.6)' }}
-                    aria-hidden="true"
-                  >
-                    ›
-                  </div>
-                )}
               </div>
             ))}
           </div>
 
-          <p className="text-center font-body text-sm font-semibold mt-14 mb-2 tracking-wide" style={{ color: '#EFAD42' }}>
-            À partir de {PRICES.cleSimple.sinnes}€ &nbsp;·&nbsp; Devis gratuit &nbsp;·&nbsp; <span className="whitespace-nowrap">{NAP.phoneDisplay}</span>
-          </p>
+          {/* Bon à savoir block — PRESERVED & STYLED */}
+          <div
+            className="mt-12 p-6 rounded-2xl border"
+            style={{
+              background: 'rgba(239,173,66,0.03)',
+              borderColor: 'rgba(239,173,66,0.1)'
+            }}
+          >
+            <p className="font-heading text-xs font-black text-accent uppercase tracking-widest mb-4">Bon à savoir :</p>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li className="flex gap-3"><span className="text-accent">→</span> Double préventif 2 à 5× moins cher qu&apos;une perte totale.</li>
+              <li className="flex gap-3"><span className="text-accent">→</span> Intervention mobile 7j/7, aucun remorquage nécessaire.</li>
+              <li className="flex gap-3"><span className="text-accent">→</span> +40 marques prises en charge (Renault, BMW, VW, etc.).</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      {/* RÉASSURANCE */}
-      <TrustStrip items={TRUST_ITEMS} theme="shade" />
-
-      {/* AVIS GOOGLE RÉEL */}
-      {review && <SingleReview review={review} serviceName="Reproduction de clé de voiture" serviceUrl="/reproduction-cle-voiture/" />}
-
-
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction-2" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
 
-      {/* CORPS TEXTUEL */}
-      <article className="bg-white pt-6 pb-6 px-4">
+      {/* CORPS TEXTUEL — PARTIE 1 */}
+      <article className="bg-white pt-8 pb-8 px-4">
         <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
-
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-text-main mb-6">
             Tarifs reproduction de clé de voiture : Transparence totale
           </h2>
@@ -405,35 +460,61 @@ export default function ReproductionCleVoiturePage() {
             dès l&apos;achat de votre véhicule : c&apos;est le moyen le plus économique de vous prémunir
             contre la perte.
           </p>
+        </div>
+      </article>
 
-          <h3 className="font-heading font-bold text-xl text-text-main mb-4">
+      {/* SECTION PERTE TOTALE — FULL WIDTH DARK section */}
+      <section
+        style={{
+          background: 'linear-gradient(170deg, #0A0A0A 0%, #111111 100%)',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+        className="py-10 px-4"
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '50%',
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(239,173,66,0.4), transparent)',
+          }}
+        />
+        <div className="container-sinnes max-w-3xl mx-auto">
+          <h3 className="font-heading font-bold text-3xl mb-8 text-center" style={{ color: '#EFAD42' }}>
             {seoData['reproduction-cle-voiture'].h3[1]}
           </h3>
-          <p className="font-body text-text-muted leading-relaxed mb-4">
+          <p className="font-body text-xl md:text-2xl leading-relaxed mb-8 text-white/80 text-center">
             La{' '}
-            <a href="/cle-voiture-perdue/" className="text-primary font-semibold hover:underline">
+            <a href="/cle-voiture-perdue/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
               clé de voiture perdue
             </a>{' '}
-            sans aucun double est le cas le plus complexe, mais il reste résolu dans la grande
-            majorité des situations. Sinouhé procède au crochetage professionnel de la serrure ou
-            interroge la centrale électronique du véhicule via valise de diagnostic pour extraire
-            les codes d&apos;accès. Une nouvelle clé est ensuite recréée de zéro.
+            sans aucun double est résolue dans la majorité des situations via crochetage professionnel
+            et extraction des codes d&apos;accès via valise diagnostic (Abrites / ZedFull).
           </p>
-          <p className="font-body text-text-muted leading-relaxed mb-8">
+          <p className="font-body text-lg leading-relaxed text-white/60 text-center">
             Ce service est réalisé en atelier ou directement sur place selon la complexité. L&apos;ancien
-            jeu de clés est invalidé dans le calculateur : votre véhicule est sécurisé.
+            jeu de clés est invalidé dans le calculateur pour sécuriser votre véhicule : repartez avec l&apos;esprit tranquille.
           </p>
+        </div>
+      </section>
 
+      {/* CORPS TEXTUEL — PARTIE 2 (Outils & Marques) */}
+      <article className="bg-white pt-8 pb-8 px-4">
+        <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[2]}
           </h2>
-          <p className="font-body text-text-muted leading-relaxed mb-4">
+          <p className="font-body text-text-muted leading-relaxed mb-6">
             Sinnes Automobiles investit dans les outils utilisés par les professionnels de l&apos;électronique
             automobile :
           </p>
-          <ul className="font-body text-text-muted leading-relaxed mb-4 space-y-2 list-none pl-0">
+          <ul className="font-body text-text-muted leading-relaxed mb-8 space-y-4 list-none pl-0">
             <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
+              <KeyIcon size={20} color="#EFAD42" className="mt-1 flex-shrink-0" />
               <span>
                 <strong>Abrites Commander</strong> : lecture des codes d&apos;accès sans démontage du
                 tableau de bord. Compatible avec la quasi-totalité des véhicules européens et
@@ -441,20 +522,21 @@ export default function ReproductionCleVoiturePage() {
               </span>
             </li>
             <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
+              <KeyIcon size={20} color="#EFAD42" className="mt-1 flex-shrink-0" />
               <span>
                 <strong>ZedFull</strong> : programmation des immobiliseurs ID46, ID48, HITAG 2,
                 PCF7936 : les transpondeurs les plus répandus sur le marché.
               </span>
             </li>
             <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
+              <KeyIcon size={20} color="#EFAD42" className="mt-1 flex-shrink-0" />
               <span>
                 <strong>Lecteur RFID</strong> : pour les cartes mains libres et badges
                 d&apos;accès sans contact.
               </span>
             </li>
           </ul>
+
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[3]}
           </h2>
@@ -464,7 +546,7 @@ export default function ReproductionCleVoiturePage() {
             Mini, Smart, Porsche, Skoda, Seat, Cupra, Volvo, Lexus, Land Rover, Jaguar, Jeep,
             Alfa Romeo, DS, MG, Chevrolet, Chrysler, Dodge, Abarth, Lancia, Saab, Iveco.
           </p>
-          <p className="font-body text-text-muted leading-relaxed mb-8">
+          <p className="font-body text-text-muted leading-relaxed mb-12">
             Si votre marque ne figure pas dans cette liste, contactez-nous directement au{' '}
             <a
               href={`tel:${NAP.phoneTel}`}
@@ -475,196 +557,156 @@ export default function ReproductionCleVoiturePage() {
             : la plupart des véhicules peuvent être traités.
           </p>
 
-        </div>
-      </article>
-
-      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-reproduction-3" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
-
-      <article className="bg-white pt-6 pb-6 px-4">
-        <div className="container-sinnes max-w-3xl mx-auto prose-sinnes">
-
-          <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
-            {seoData['reproduction-cle-voiture'].h2[4]}
-          </h2>
-          <p className="font-body text-text-muted leading-relaxed mb-6">
-            Pour les détails complets,{' '}
-            <a href="/tarif-cle-voiture/" className="text-primary font-semibold hover:underline">
-              consultez nos tarifs
-            </a>{' '}
-            , devis gratuit, sans frais cachés.
-          </p>
-
-          {/* SECTION TARIFS - DESIGN PREMIUM & TRANSPARENT */}
-          <div className="mt-12 mb-16">
-            <div className="text-center mb-10">
-              <h3 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-text-main mb-6">
-              Transparence totale sur nos tarifs
-            </h3>
-              <p className="font-body text-text-muted max-w-2xl mx-auto">
-                Comparez nos prix avec ceux des réseaux constructeurs. Économisez jusqu&apos;à 80% 
-                sur votre double de clé ou en cas de perte totale.
-              </p>
-            </div>
-
-            {/* Desktop Table View */}
-            <div className="hidden md:block overflow-hidden rounded-2xl border border-card-border shadow-lg">
-              <table className="w-full font-body text-sm border-collapse">
-                <thead>
-                  <tr className="bg-[#1A1A1A] text-white">
-                    <th className="text-left px-8 py-5 font-bold uppercase tracking-wider">Prestation & Type de clé</th>
-                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider">Expertise Sinnes</th>
-                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider text-white/50 border-l border-white/10">Concessionnaire</th>
-                    <th className="text-center px-8 py-5 font-bold uppercase tracking-wider text-accent font-black border-l border-white/10">Votre Économie</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-card-border">
-                  {[
-                    { key: 'cleSimple', icon: <IconKeySimple className="w-6 h-6" /> },
-                    { key: 'cleCentralisee', icon: <IconKeyCentralisee className="w-6 h-6" /> },
-                    { key: 'cleMainsLibres', icon: <IconKeyMainsLibres className="w-6 h-6" /> },
-                    { key: 'perteTotale', icon: <IconPerteTotale className="w-6 h-6" /> },
-                  ].map(({ key, icon }, i) => {
-                    const price = PRICES[key as keyof typeof PRICES];
-                    const avgConc = Math.round((price.concessionnaire.min + price.concessionnaire.max) / 2);
-                    const saving = Math.round(((avgConc - price.sinnes) / avgConc) * 100);
-                    
-                    return (
-                      <tr key={key} className={`group hover:bg-primary/5 transition-colors ${i % 2 === 0 ? 'bg-white' : 'bg-bg-shade'}`}>
-                        <td className="px-8 py-6">
-                          <div className="flex items-center gap-4">
-                            <span className="shrink-0 p-2 rounded-lg bg-bg-shade group-hover:bg-primary/10 group-hover:text-primary transition-colors duration-300">
-                                {icon}
-                            </span>
-                            <div>
-                                <span className="block font-bold text-lg text-text-main leading-tight">{price.label}</span>
-                                <span className="text-xs text-text-muted uppercase tracking-widest mt-1">Équipements pro · Garanti</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-8 py-6 text-center border-l border-card-border/50">
-                          <span className="inline-block text-primary font-black text-2xl tracking-tight whitespace-nowrap">
-                            {price.sinnes}€
-                          </span>
-                        </td>
-                        <td className="px-8 py-6 text-center text-text-muted border-l border-card-border/50">
-                           <span className="font-semibold text-base">{price.concessionnaire.min}€ - {price.concessionnaire.max}€</span>
-                        </td>
-                        <td className="px-8 py-6 text-center border-l border-card-border/50">
-                            <span className="inline-flex items-center justify-center bg-accent/10 text-accent font-black text-xl px-4 py-1 rounded-full">
-                                -{saving}%
-                            </span>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-
-            {/* Mobile Cards View */}
-            <div className="md:hidden space-y-6">
-              {[
-                { key: 'cleSimple', icon: <IconKeySimple className="w-6 h-6" /> },
-                { key: 'cleCentralisee', icon: <IconKeyCentralisee className="w-6 h-6" /> },
-                { key: 'cleMainsLibres', icon: <IconKeyMainsLibres className="w-6 h-6" /> },
-                { key: 'perteTotale', icon: <IconPerteTotale className="w-6 h-6" /> },
-              ].map(({ key, icon }) => {
-                const price = PRICES[key as keyof typeof PRICES];
-                const avgConc = Math.round((price.concessionnaire.min + price.concessionnaire.max) / 2);
-                const saving = Math.round(((avgConc - price.sinnes) / avgConc) * 100);
-                
-                return (
-                  <div key={key} className="bg-white rounded-2xl border border-card-border p-6 shadow-md relative overflow-hidden">
-                    <div className="absolute top-0 right-0 bg-accent text-white px-4 py-1 text-xs font-black rounded-bl-xl shadow-sm">
-                      -{saving}%
-                    </div>
-                    
-                    <div className="flex items-start gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-bg-shade flex items-center justify-center text-text-main border border-card-border shrink-0">
-                        {icon}
-                      </div>
-                      <div>
-                        <h4 className="font-heading font-black text-xl text-text-main leading-tight mb-1">{price.label}</h4>
-                        <p className="text-xs text-text-muted">Intervention mobile 7j/7 incluse</p>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-dashed border-card-border">
-                      <div>
-                        <p className="text-[11px] text-text-muted uppercase tracking-widest mb-1 font-bold">Sinnes</p>
-                        <p className="text-3xl font-black text-primary tracking-tight">
-                          {price.sinnes}€
-                        </p>
-                      </div>
-                      <div className="text-right border-l border-card-border/50 pl-4">
-                        <p className="text-[11px] text-text-muted uppercase tracking-widest mb-1 font-bold">Concession</p>
-                        <p className="text-base font-bold text-text-muted/60 line-through mb-1 italic">
-                          {avgConc}€
-                        </p>
-                        <p className="text-[10px] font-black text-accent uppercase tracking-tighter">Économie immédiate</p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="mb-14">
-            <a
-              href="/contactez-nous/"
-              className="inline-block bg-accent text-white font-body font-bold text-base px-8 py-3 rounded-lg hover:bg-accent-dark transition-colors shadow-md"
-            >
-              Obtenir un devis gratuit
-            </a>
-          </div>
-
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-6">
             {seoData['reproduction-cle-voiture'].h2[5]}
           </h2>
-          <ul className="font-body text-text-muted leading-relaxed mb-4 space-y-3 list-none pl-0">
-            <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
-              <span>
-                <strong>2 à 5 fois moins cher</strong> qu&apos;un concessionnaire, à prestation
-                équivalente
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
-              <span>
-                <strong>Intervention à domicile</strong> : pas de dépanneuse, pas de rendez-vous
-                en agence
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
-              <span>
-                <strong>Délai sous 24h</strong> vs 1 à 3 semaines chez le constructeur
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
-              <span>
-                <strong>Garantie constructeur préservée</strong> : programmation officielle,
-                zéro invalidation
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <KeyIcon size={16} color="#EFAD42" className="mt-0.5 flex-shrink-0" />
-              <span>
-                <strong>Spécialiste 100% automobile</strong> : pas de serrurier maison, pas de
-                généraliste
-              </span>
-            </li>
+          <ul className="font-body text-text-muted leading-relaxed mb-8 space-y-3 list-none pl-0">
+            {[
+              { t: "2 à 5 fois moins cher", d: "qu'un concessionnaire, à prestation équivalente" },
+              { t: "Intervention à domicile", d: "pas de dépanneuse, pas de rendez-vous en agence" },
+              { t: "Délai sous 24h", d: "vs 1 à 3 semaines chez le constructeur" },
+              { t: "Garantie constructeur préservée", d: "programmation officielle, zéro invalidation" },
+              { t: "Spécialiste 100% automobile", d: "pas de serrurier maison, pas de généraliste" }
+            ].map((item, i) => (
+              <li key={i} className="flex gap-3">
+                <KeyIcon size={16} color="#EFAD42" className="mt-1 flex-shrink-0" />
+                <span><strong>{item.t}</strong> : {item.d}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </article>
 
+      <div className="bg-white">
+        <div className="container-sinnes">
+          <DiagonalDivider id="dd-reproduction-pre-tarifs" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" />
+        </div>
+      </div>
+
+      {/* SECTION TARIFS — FULL WIDTH DARK — COMPACT & ELEGANT */}
+      <section
+        style={{
+          background: 'linear-gradient(170deg, #0A0A0A 0%, #111111 50%, #0d0b07 100%)',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+        className="py-12 px-4"
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '60%',
+            height: '1px',
+            background: 'linear-gradient(90deg, transparent, rgba(239,173,66,0.5), transparent)',
+          }}
+        />
+
+        <div className="container-sinnes max-w-5xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="font-heading font-bold text-3xl md:text-5xl mb-4" style={{ color: '#EFAD42' }}>
+              Nos Tarifs
+            </h3>
+            <p className="font-body text-white/50 text-sm max-w-lg mx-auto leading-relaxed">
+              Comparez nos prix avec les réseaux constructeurs. Économisez jusqu&apos;à 80% sur vos doubles ou pertes totales.
+            </p>
+          </div>
+
+          {/* Table Container — Hidden on small mobile */}
+          <div className="hidden sm:block overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-white/5">
+                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent/60">Prestation</th>
+                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent/60 text-center">Expert Sinnes</th>
+                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-white/30 text-center border-l border-white/5">Concessionnaire</th>
+                  <th className="px-8 py-5 text-xs font-black uppercase tracking-widest text-accent text-center border-l border-white/5">Économie</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/5">
+                {[
+                  { k: 'cleSimple', idx: <IconKeySimple className="w-6 h-6" /> },
+                  { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-6 h-6" /> },
+                  { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-6 h-6" /> },
+                  { k: 'perteTotale', idx: <IconKeyMainsLibres className="w-6 h-6" /> } // Note: Using mains libres icon for loss total if specific not found, or replace with appropriate
+                ].map((item) => {
+                  const p = PRICES[item.k as keyof typeof PRICES];
+                  if (!p) return null;
+                  const avg = Math.round((p.concessionnaire.min + p.concessionnaire.max) / 2);
+                  const s = Math.round(((avg - p.sinnes) / avg) * 100);
+                  // Ensure Perte Totale uses correct icon
+                  const icon = item.k === 'perteTotale' ? <IconPerteTotale className="w-6 h-6" /> : item.idx;
+
+                  return (
+                    <tr key={item.k} className="hover:bg-white/5 transition-colors">
+                      <td className="px-8 py-6 flex items-center gap-4">
+                        <span className="text-accent">{icon}</span>
+                        <span className="font-bold text-white text-lg">{p.label}</span>
+                      </td>
+                      <td className="px-8 py-6 text-center text-3xl font-black text-white">{p.sinnes}€</td>
+                      <td className="px-8 py-6 text-center text-white/30 font-bold line-through border-l border-white/5">{avg}€ avg.</td>
+                      <td className="px-8 py-6 text-center border-l border-white/5">
+                        <span className="bg-accent/20 text-accent font-black py-1 px-4 rounded-full">-{s}%</span>
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Small Mobile List */}
+          <div className="sm:hidden space-y-4">
+            {[
+              { k: 'cleSimple', idx: <IconKeySimple className="w-6 h-6" /> },
+              { k: 'cleCentralisee', idx: <IconKeyCentralisee className="w-6 h-6" /> },
+              { k: 'cleMainsLibres', idx: <IconKeyMainsLibres className="w-6 h-6" /> },
+              { k: 'perteTotale', idx: <IconPerteTotale className="w-6 h-6" /> }
+            ].map((item) => {
+              const p = PRICES[item.k as keyof typeof PRICES];
+              if (!p) return null;
+              const avg = Math.round((p.concessionnaire.min + p.concessionnaire.max) / 2);
+              const s = Math.round(((avg - p.sinnes) / avg) * 100);
+              return (
+                <div key={item.k} className="p-6 rounded-2xl bg-white/5 border border-white/10">
+                  <div className="flex justify-between items-center mb-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-accent">{item.idx}</span>
+                      <h4 className="font-bold text-white text-sm">{p.label}</h4>
+                    </div>
+                    <span className="bg-accent/20 text-accent font-black text-[0.6rem] py-1 px-2 rounded-full">-{s}%</span>
+                  </div>
+                  <div className="flex justify-between items-end">
+                    <div>
+                      <p className="text-[0.6rem] uppercase tracking-widest text-white/40 mb-1">Expert Sinnes</p>
+                      <p className="text-2xl font-black text-white">{p.sinnes}€</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-[0.6rem] uppercase tracking-widest text-white/40 mb-1">Constructeur</p>
+                      <p className="text-xs font-bold text-white/30 line-through">{avg}€ avg.</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href="/contactez-nous/"
+              className="inline-block font-body font-black text-lg px-12 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform"
+              style={{ background: '#EFAD42', color: '#0A0A0A' }}
+            >
+              Obtenir un devis gratuit
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
-
-      <section className="bg-white py-16 px-4">
-
+      <section className="bg-white py-10 px-4">
         <div className="container-sinnes max-w-3xl mx-auto">
           <h2 className="font-heading font-bold text-2xl md:text-3xl text-text-main mb-8 text-center ">
             {seoData['reproduction-cle-voiture'].h2[6]}
@@ -673,13 +715,12 @@ export default function ReproductionCleVoiturePage() {
         </div>
       </section>
 
-
-      {/* SECTION 9 — CTA BAS */}
-      <div className="text-center py-12 bg-bg-shade">
-        <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg">
+      {/* CTA BAS */}
+      <div className="text-center py-8 bg-bg-shade border-t border-card-border">
+        <a href={`tel:${NAP.phoneTel}`} className="btn-accent inline-flex items-center justify-center font-body font-bold rounded-lg px-8 py-4">
           Appelez maintenant : {NAP.phoneDisplay}
         </a>
-        <p className="text-sm text-text-muted mt-3">7j/7 · Devis gratuit · Intervention rapide</p>
+        <p className="text-sm text-text-muted mt-4">7j/7 · Devis gratuit · Intervention rapide</p>
       </div>
 
       <StickyCTA 
