@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['refaire-cle-fiat'].title,
     url: 'https://sinnes.fr/refaire-cle-fiat/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -70,7 +71,15 @@ const schema = {
           "bestRating": "5"
         },
         "reviewBody": review.text
-      } : undefined
+      } : undefined,
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Tarifs clé Fiat',
+        itemListElement: [
+          { '@type': 'Offer', name: 'Clé simple Fiat', price: `${PRICES.cleSimple.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé avec télécommande Fiat', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
+        ],
+      },
     },
     {
       '@type': 'BreadcrumbList',
@@ -182,11 +191,11 @@ export default function RefaireCleFiatPage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="shade" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Refaire clé Fiat" serviceUrl="/refaire-cle-fiat/" />}
+
+      {/* TRUST STRIP */}
+      <TrustStrip theme="shade" items={TRUST_ITEMS} />
 
 
       {/* H2 BLOC 1 — dark */}

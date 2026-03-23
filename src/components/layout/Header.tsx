@@ -18,6 +18,7 @@ export default function Header() {
               width={240}
               height={100}
               priority
+              fetchPriority="high"
               className="object-contain h-12 sm:h-14 md:h-16 w-auto"
             />
           </Link>

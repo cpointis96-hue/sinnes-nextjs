@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP, HOURS } from '@/constants/siteConfig'
+import { NAP, HOURS, GEO } from '@/constants/siteConfig'
 import ContactForm from './ContactForm'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['contactez-nous'].title,
     url: 'https://sinnes.fr/contactez-nous/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -33,8 +34,8 @@ const schema = {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 43.7031,
-        longitude: 7.2620,
+        latitude: GEO.latitude,
+        longitude: GEO.longitude,
       },
       openingHours: HOURS.schemaValue,
     },

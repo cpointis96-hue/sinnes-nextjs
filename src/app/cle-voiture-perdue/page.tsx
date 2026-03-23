@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconWrench, IconShield, IconClock } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['cle-voiture-perdue'].title,
     url: 'https://sinnes.fr/cle-voiture-perdue/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -46,12 +47,7 @@ const schema = {
       "@id": "https://sinnes.fr/cle-voiture-perdue/#service",
       "name": "Clé de voiture perdue sans double — Nice",
       "provider": { "@id": "https://sinnes.fr/#organization" },
-      "areaServed": [
-        { "@type": "City", "name": "Nice" },
-        { "@type": "City", "name": "Antibes" },
-        { "@type": "City", "name": "Cagnes-sur-Mer" },
-        { "@type": "City", "name": "Cannes" }
-      ],
+      "areaServed": AREA_SERVED_TYPED,
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Tarifs clé perdue",
@@ -76,20 +72,13 @@ const schema = {
         "acceptedAnswer": { "@type": "Answer", "text": item.answer }
       }))
     },
-    {
-      "@type": "Person",
-      "@id": "https://sinnes.fr/#sinouhe",
-      "name": "Sinouhé Rochereau",
-      "jobTitle": "Expert en programmation de clés automobiles",
-      "knowsAbout": TEAM.sinouhe.knowsAbout,
-      "worksFor": { "@id": "https://sinnes.fr/#organization" }
-    },
+    SINOUHE_FULL_ENTITY,
     {
       "@type": "WebPage",
       "@id": "https://sinnes.fr/cle-voiture-perdue/#webpage",
       "url": "https://sinnes.fr/cle-voiture-perdue/",
       "datePublished": "2026-03-05",
-      "dateModified": "2026-03-22",
+      "dateModified": "2026-03-23",
       "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
@@ -177,11 +166,11 @@ export default function CleVoiturePerdуePage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="light" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Clé de voiture perdue" serviceUrl="/cle-voiture-perdue/" />}
+
+      {/* TRUST STRIP */}
+      <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
       {/* H2 BLOC 1 — dark */}

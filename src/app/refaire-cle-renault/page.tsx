@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['refaire-cle-renault'].title,
     url: 'https://sinnes.fr/refaire-cle-renault/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -70,7 +71,16 @@ const schema = {
           "bestRating": "5"
         },
         "reviewBody": review.text
-      } : undefined
+      } : undefined,
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Tarifs clé Renault',
+        itemListElement: [
+          { '@type': 'Offer', name: 'Clé simple Renault (Clio)', price: `${PRICES.cleSimple.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé carte Renault (Mégane, Laguna)', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Badge Smart Card Renault (Mégane 4)', price: `${PRICES.cleMainsLibres.sinnes}`, priceCurrency: 'EUR' },
+        ],
+      },
     },
     {
       '@type': 'BreadcrumbList',
@@ -187,11 +197,11 @@ export default function RefaireCleRenaultPage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="shade" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Refaire clé Renault" serviceUrl="/refaire-cle-renault/" />}
+
+      {/* TRUST STRIP */}
+      <TrustStrip theme="shade" items={TRUST_ITEMS} />
 
 
       {/* CORPS TEXTUEL — BLOC 1 : modèles couverts (dark) */}

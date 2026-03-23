@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon, KeyIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, PRICES, TEAM } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import TrustStrip, { IconEuro, IconSteering, IconShield, IconCalendar, type TrustStripItem } from '@/components/ui/TrustStrip'
 import SingleReview from '@/components/ui/SingleReview'
@@ -56,12 +56,7 @@ const schema = {
       provider: { '@id': 'https://sinnes.fr/#organization' },
       description:
         'Reproduction, double et programmation de clé automobile à Nice. Toutes marques, intervention à domicile 7j/7.',
-      areaServed: [
-        { '@type': 'City', name: 'Nice' },
-        { '@type': 'City', name: 'Antibes' },
-        { '@type': 'City', name: 'Cagnes-sur-Mer' },
-        { '@type': 'City', name: 'Cannes' },
-      ],
+      areaServed: AREA_SERVED_TYPED,
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Tarifs reproduction de clé',
@@ -93,20 +88,13 @@ const schema = {
         acceptedAnswer: { '@type': 'Answer', text: item.answer },
       })),
     },
-    {
-      '@type': 'Person',
-      '@id': 'https://sinnes.fr/#sinouhe',
-      name: TEAM.sinouhe.name,
-      jobTitle: TEAM.sinouhe.jobTitle,
-      knowsAbout: TEAM.sinouhe.knowsAbout,
-      worksFor: { '@id': 'https://sinnes.fr/#organization' },
-    },
+    SINOUHE_FULL_ENTITY,
     {
       '@type': 'WebPage',
       '@id': 'https://sinnes.fr/reproduction-cle-voiture/#webpage',
       url: 'https://sinnes.fr/reproduction-cle-voiture/',
       datePublished: '2026-03-01',
-      dateModified: '2026-03-22',
+      dateModified: '2026-03-23',
       isPartOf: { '@id': 'https://sinnes.fr/#website' },
     },
   ],

@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconClock, IconMapPin } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['urgence-cle-voiture'].title,
     url: 'https://sinnes.fr/urgence-cle-voiture/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -46,17 +47,22 @@ const schema = {
       "@id": "https://sinnes.fr/urgence-cle-voiture/#service",
       "name": "Serrurier automobile urgence Nice",
       "provider": { "@id": "https://sinnes.fr/#organization" },
-      "areaServed": [
-        { "@type": "City", "name": "Nice" },
-        { "@type": "City", "name": "Antibes" },
-        { "@type": "City", "name": "Cagnes-sur-Mer" },
-        { "@type": "City", "name": "Cannes" }
-      ],
+      "areaServed": AREA_SERVED_TYPED,
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tarifs urgence clé voiture",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Clé simple", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Clé centralisée", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Clé mains libres", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Perte totale", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR" }
+        ]
       }
     },
     {
@@ -74,20 +80,13 @@ const schema = {
         "acceptedAnswer": { "@type": "Answer", "text": item.answer }
       }))
     },
-    {
-      "@type": "Person",
-      "@id": "https://sinnes.fr/#sinouhe",
-      "name": "Sinouhé Rochereau",
-      "jobTitle": "Expert en programmation de clés automobiles",
-      "knowsAbout": TEAM.sinouhe.knowsAbout,
-      "worksFor": { "@id": "https://sinnes.fr/#organization" }
-    },
+    SINOUHE_FULL_ENTITY,
     {
       "@type": "WebPage",
       "@id": "https://sinnes.fr/urgence-cle-voiture/#webpage",
       "url": "https://sinnes.fr/urgence-cle-voiture/",
       "datePublished": "2026-03-10",
-      "dateModified": "2026-03-10",
+      "dateModified": "2026-03-23",
       "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]
@@ -174,11 +173,11 @@ export default function UrgenceCleVoiturePage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="light" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Urgence clé de voiture" serviceUrl="/urgence-cle-voiture/" />}
+
+      {/* TRUST STRIP */}
+      <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
       {/* H2 BLOC 1 — dark */}

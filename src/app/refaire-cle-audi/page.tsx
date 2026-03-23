@@ -15,6 +15,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['refaire-cle-audi'].title,
   url: 'https://sinnes.fr/refaire-cle-audi/',
+  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
  },
 }
 
@@ -65,7 +66,15 @@ const schema = {
        "bestRating": "5"
      },
      "reviewBody": review.text
-   } : undefined
+   } : undefined,
+   hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Tarifs clé Audi',
+    itemListElement: [
+     { '@type': 'Offer', name: 'Clé Audi avec lame escamotable', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
+     { '@type': 'Offer', name: 'Clé KESSY / badge Audi', price: `${PRICES.cleMainsLibres.sinnes}`, priceCurrency: 'EUR' },
+    ],
+   },
   },
   {
    '@type': 'BreadcrumbList',
@@ -179,11 +188,11 @@ export default function RefaireCleAudiPage() {
     </div>
    </section>
 
-   {/* TRUST STRIP */}
-   <TrustStrip theme="shade" items={TRUST_ITEMS} />
-
    {/* AVIS GOOGLE RÉEL */}
    {review && <SingleReview review={review} serviceName="Refaire clé Audi" serviceUrl="/refaire-cle-audi/" />}
+
+   {/* TRUST STRIP */}
+   <TrustStrip theme="shade" items={TRUST_ITEMS} />
 
 
    {/* H2 BLOC 1 — dark */}

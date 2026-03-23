@@ -15,6 +15,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['prix-cle-voiture'].title,
   url: 'https://sinnes.fr/prix-cle-voiture/',
+  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
  },
 }
 
@@ -188,11 +189,11 @@ export default function PrixCleVoiturePage() {
     </div>
    </section>
 
-   {/* TRUST STRIP */}
-   <TrustStrip theme="light" items={TRUST_ITEMS} />
-
    {/* AVIS GOOGLE RÉEL */}
    {review && <SingleReview review={review} serviceName="Prix clé de voiture" serviceUrl="/prix-cle-voiture/" />}
+
+   {/* TRUST STRIP */}
+   <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
    {/* H2 BLOC 1 — dark (informative) */}

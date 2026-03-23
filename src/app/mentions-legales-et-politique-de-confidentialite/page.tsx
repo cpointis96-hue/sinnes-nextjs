@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: seoData['mentions-legales-et-politique-de-confidentialite'].title,
   description: seoData['mentions-legales-et-politique-de-confidentialite'].description,
   alternates: { canonical: 'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/' },
+  openGraph: {
+    title: seoData['mentions-legales-et-politique-de-confidentialite'].title,
+    url: 'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+  },
 }
 
 const schema = {

@@ -1,7 +1,7 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, PRICES, TEAM } from '@/constants/siteConfig'
+import { NAP, ORG, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -58,17 +58,22 @@ const schema = {
       '@id': 'https://sinnes.fr/serrurier-automobile-nice/#service',
       name: 'Serrurier automobile à Nice',
       provider: { '@id': 'https://sinnes.fr/#organization' },
-      areaServed: [
-        { '@type': 'City', name: 'Nice' },
-        { '@type': 'City', name: 'Antibes' },
-        { '@type': 'City', name: 'Cagnes-sur-Mer' },
-        { '@type': 'City', name: 'Cannes' },
-      ],
+      areaServed: AREA_SERVED_TYPED,
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         opens: '00:00',
         closes: '23:59',
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Tarifs serrurier automobile Nice',
+        itemListElement: [
+          { '@type': 'Offer', name: 'Clé simple', price: `${PRICES.cleSimple.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé centralisée', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé mains libres', price: `${PRICES.cleMainsLibres.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Perte totale', price: `${PRICES.perteTotale.sinnes}`, priceCurrency: 'EUR' },
+        ],
       },
     },
     {
@@ -86,20 +91,13 @@ const schema = {
         acceptedAnswer: { '@type': 'Answer', text: item.answer },
       })),
     },
-    {
-      '@type': 'Person',
-      '@id': 'https://sinnes.fr/#sinouhe',
-      name: 'Sinouhé Rochereau',
-      jobTitle: 'Expert en programmation de clés automobiles',
-      knowsAbout: TEAM.sinouhe.knowsAbout,
-      worksFor: { '@id': 'https://sinnes.fr/#organization' },
-    },
+    SINOUHE_FULL_ENTITY,
     {
       '@type': 'WebPage',
       '@id': 'https://sinnes.fr/serrurier-automobile-nice/#webpage',
       url: 'https://sinnes.fr/serrurier-automobile-nice/',
       datePublished: '2026-03-01',
-      dateModified: '2026-03-22',
+      dateModified: '2026-03-23',
       isPartOf: { '@id': 'https://sinnes.fr/#website' },
     },
   ],

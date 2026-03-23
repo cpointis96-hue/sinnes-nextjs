@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['cle-voiture-transpondeur'].title,
     url: 'https://sinnes.fr/cle-voiture-transpondeur/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -46,12 +47,17 @@ const schema = {
       "@id": "https://sinnes.fr/cle-voiture-transpondeur/#service",
       "name": "Programmation clé voiture transpondeur",
       "provider": { "@id": "https://sinnes.fr/#organization" },
-      "areaServed": [
-        { "@type": "City", "name": "Nice" },
-        { "@type": "City", "name": "Antibes" },
-        { "@type": "City", "name": "Cagnes-sur-Mer" },
-        { "@type": "City", "name": "Cannes" }
-      ]
+      "areaServed": AREA_SERVED_TYPED,
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tarifs clé voiture transpondeur",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Clé simple", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Clé centralisée", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Clé mains libres", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Perte totale", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR" }
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -68,20 +74,13 @@ const schema = {
         "acceptedAnswer": { "@type": "Answer", "text": item.answer }
       }))
     },
-    {
-      "@type": "Person",
-      "@id": "https://sinnes.fr/#sinouhe",
-      "name": "Sinouhé Rochereau",
-      "jobTitle": "Expert en programmation de clés automobiles",
-      "knowsAbout": TEAM.sinouhe.knowsAbout,
-      "worksFor": { "@id": "https://sinnes.fr/#organization" }
-    },
+    SINOUHE_FULL_ENTITY,
     {
       "@type": "WebPage",
       "@id": "https://sinnes.fr/cle-voiture-transpondeur/#webpage",
       "url": "https://sinnes.fr/cle-voiture-transpondeur/",
       "datePublished": "2026-03-07",
-      "dateModified": "2026-03-07",
+      "dateModified": "2026-03-23",
       "isPartOf": { "@id": "https://sinnes.fr/#website" }
     }
   ]

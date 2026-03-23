@@ -1,527 +1,1223 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<title>Audit SEO Sinnes.fr — 22/03/2026</title>
-<style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 10px; background: #f4f4f4; }
-  .header { background: #1a3a1a; color: #fff; padding: 8px 12px; border-radius: 4px; margin-bottom: 10px; text-align: center; }
-  .header h1 { font-size: 16px; margin: 0; }
-  .header p { font-size: 9px; opacity: 0.8; margin: 2px 0 0; }
-  .toc { background: #fff; border: 2px solid #2d7a2d; border-radius: 4px; padding: 6px 10px; margin-bottom: 10px; columns: 4; font-size: 9px; }
-  .toc a { color: #2d7a2d; text-decoration: none; }
-  .toc a:hover { text-decoration: underline; }
-  .cols { display: flex; gap: 10px; align-items: flex-start; }
-  .col { flex: 1; min-width: 0; }
-  @media print {
-    @page { size: A4 landscape; margin: 8mm; }
-    .page-card { page-break-inside: avoid; }
-    .col { break-inside: avoid; }
-  }
-</style>
-</head>
-<body>
+# Audit SEO — Sinnes.fr
 
-<div class="header">
-  <h1>Audit SEO — Sinnes.fr</h1>
-  <p>Généré le 22 mars 2026 · 23 pages · Format 2 colonnes</p>
-</div>
+> Généré le 22 mars 2026 · 23 pages
 
-<div class="toc"><a href="#p1" style="color:#2d7a2d;text-decoration:none;font-size:9px;">1. Accueil</a> ✅&nbsp;&nbsp;<a href="#p2" style="color:#2d7a2d;text-decoration:none;font-size:9px;">2. reproduction cle voiture</a> ✅&nbsp;&nbsp;<a href="#p3" style="color:#2d7a2d;text-decoration:none;font-size:9px;">3. serrurier automobile nice</a> ✅&nbsp;&nbsp;<a href="#p4" style="color:#2d7a2d;text-decoration:none;font-size:9px;">4. tarif cle voiture</a> ✅&nbsp;&nbsp;<a href="#p5" style="color:#2d7a2d;text-decoration:none;font-size:9px;">5. double cle voiture</a> ✅&nbsp;&nbsp;<a href="#p6" style="color:#2d7a2d;text-decoration:none;font-size:9px;">6. cle voiture perdue</a> ✅&nbsp;&nbsp;<a href="#p7" style="color:#2d7a2d;text-decoration:none;font-size:9px;">7. programmation cle voiture</a> ✅&nbsp;&nbsp;<a href="#p8" style="color:#2d7a2d;text-decoration:none;font-size:9px;">8. cle voiture transpondeur</a> ✅&nbsp;&nbsp;<a href="#p9" style="color:#2d7a2d;text-decoration:none;font-size:9px;">9. cle voiture nice</a> ✅&nbsp;&nbsp;<a href="#p10" style="color:#2d7a2d;text-decoration:none;font-size:9px;">10. urgence cle voiture</a> ✅&nbsp;&nbsp;<a href="#p11" style="color:#2d7a2d;text-decoration:none;font-size:9px;">11. depannage cle domicile</a> ✅&nbsp;&nbsp;<a href="#p12" style="color:#2d7a2d;text-decoration:none;font-size:9px;">12. prix cle voiture</a> ✅&nbsp;&nbsp;<a href="#p13" style="color:#2d7a2d;text-decoration:none;font-size:9px;">13. prix cle vs concessionnaire</a> ✅&nbsp;&nbsp;<a href="#p14" style="color:#2d7a2d;text-decoration:none;font-size:9px;">14. refaire cle hyundai</a> ✅&nbsp;&nbsp;<a href="#p15" style="color:#2d7a2d;text-decoration:none;font-size:9px;">15. refaire cle audi</a> ✅&nbsp;&nbsp;<a href="#p16" style="color:#2d7a2d;text-decoration:none;font-size:9px;">16. refaire cle fiat</a> ✅&nbsp;&nbsp;<a href="#p17" style="color:#2d7a2d;text-decoration:none;font-size:9px;">17. refaire cle toyota</a> ✅&nbsp;&nbsp;<a href="#p18" style="color:#2d7a2d;text-decoration:none;font-size:9px;">18. refaire cle mercedes</a> ✅&nbsp;&nbsp;<a href="#p19" style="color:#2d7a2d;text-decoration:none;font-size:9px;">19. refaire cle renault</a> ✅&nbsp;&nbsp;<a href="#p20" style="color:#2d7a2d;text-decoration:none;font-size:9px;">20. acheter une voiture</a> ✅&nbsp;&nbsp;<a href="#p21" style="color:#2d7a2d;text-decoration:none;font-size:9px;">21. qui sommes nous</a> ✅&nbsp;&nbsp;<a href="#p22" style="color:#2d7a2d;text-decoration:none;font-size:9px;">22. contactez nous</a> ✅&nbsp;&nbsp;<a href="#p23" style="color:#2d7a2d;text-decoration:none;font-size:9px;">23. mentions legales et politique de confidentialite</a> ✅&nbsp;&nbsp;</div>
+---
 
-<div class="cols">
-<div class="col">
+## 1. ACCUEIL
 
-<!-- p1 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">1. ACCUEIL — http://localhost:3000/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">reproduction clé voiture nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Sinnes Automobiles Nice \| Serrurier automobile & Reproduction clé</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Serrurier automobile à Nice — Reproduction & double de clé voiture. Intervention 7j/7, tous véhicules. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Sinnes Automobiles : Reproduction & Double de Clé Voiture à Nice</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (5)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Faites un double de clé en toute sécurité<br>• Intervention à domicile à Nice : votre serrurier vient à vous<br>• Nos services de serrurier automobile à Nice<br>• Sinouhé et Inès : votre équipe de serruriers à Nice<br>• Demandez votre devis clé voiture à Nice</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Reproduction de clé de voiture<br>• Vente de véhicule<br>• Ouverture de Sinnes Automobiles<br>• La vente de véhicules</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>1.91%</b><br>nice: <b>1.70%</b><br>clés: <b>1.49%</b><br>automobile: <b>1.49%</b><br>double: <b>1.06%</b><br>voiture: <b>0.85%</b><br>reproduction: <b>0.64%</b><br>programmation: <b>0.64%</b><br>domicile: <b>0.64%</b><br>refaire: <b>0.42%</b><br>perdu: <b>0.42%</b><br>rapide: <b>0.42%</b><br>tarifs: <b>0.42%</b><br>devis: <b>0.42%</b><br>auto: <b>0.21%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>serrurier automobile à Nice</b> → /serrurier-automobile-nice/<br><b>reproduction et double de clé de voiture</b> → /reproduction-cle-voiture/<br><b>CONTACTEZ-NOUS</b> → /contactez-nous/<br><b>Découvrir nos services</b> → /reproduction-cle-voiture/<br><b>Voir les véhicules</b> → /acheter-une-voiture/<br><b>En savoir plus</b> → /qui-sommes-nous/<br><b>tarifs de reproduction de clé</b> → /tarif-cle-voiture/<br><b>Demandez votre devis</b> → /contactez-nous/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (17)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Demandez votre devis : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr<br><b>VALENTINA ROSSILocal Guide★★★★★“Si vous cherchez un service automobile de qualité, une équipe professionnelle, réactive et à l'écoute, Sinnes Automobiles est LA référence à Nice.”avril 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Nathalie Letienne★★★★★“Je recommande vivement sinnes automobiles ! J'étais bloqué sur un parking avec mes clés à l'intérieur de ma voiture, complètement stressé… ils sont intervenus très rapidement et ont réussi à ouvrir mon véhicule sans aucun dégât.”février 2026</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>OuissemLocal Guide★★★★★“Sinnes Automobiles est juste incroyable ! Juste après quelques échanges par sms, la clef a était réparer dans l'heure qui suis ! Rapport qualité-prix jusqu'à 6x moins chère que chez le constructeur !! Voici une photo avant et après réparation, je recommande à 1000% ! À bientôt !! 😁”août 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Alex Chuet★★★★★“Ce jeune homme mérite tellement plus que cinq étoiles… Souriant, Efficace très arrangeant, il a résolu mon problème en moins d'une heure. Un énorme merci. Je vous souhaite le meilleur pour votre entreprise et pour vous-même qui êtes exceptionnels”janvier 2026</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Denis Ribes★★★★★“Merci beaucoup à sinoe et Inés un couple magnifique qui ont fait le déplacement de Nice pour nous dépanner une voiture à Menton ils sont tellement efficaces en 5 minutes il a réussi a rencoder une clé ils nous ont sauvé la vie entreprise très sérieuse recommandation plus plus merci encore à vous du fond du cœur”décembre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Lina Dounia★★★★★“Un grand merci à l'équipe de Sinnes à Nice pour son professionnalisme exemplaire. Une société à l'écoute, réactive, efficace et surtout profondément bienveillante. Tout a été géré avec une grande clarté et dans un excellent esprit de”juin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Fabien Houssu★★★★★“Grâce à la société Sinnes , j'ai pu refaire le double de ma clé de ma Toyota Aygo et surtout la réparation de ma clé d'origine.Rapidité du rendez-vous et professionnalisme ont été au rendez-vous avec un tarif attractif. Encore un grand”août 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Syrine Ben Hassine★★★★★“Bonjour, je voudrais remercier ce duo de choc, j'ai changé mon neiman et faut programmer les nouvelles clés, j'étais très embêtée cause manque de temps et ce duo m'ont sauvé la vie je les ai appelé a 18h et a 18h30 ils se sont déplacé ce”septembre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Pierre FouretLocal Guide★★★★★“Je me suis retrouvé dans une vraie galère après avoir perdu mes clés… et en pleine nuit ! Après plusieurs appels sans succès à d'autres prestataires (tarifs exorbitants ou refus de se déplacer), cette société a été la seule à répondre”juin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Matthews Dahmoun LILICARLocal Guide★★★★★“En tant que professionnel de l'automobile, il est essentiel pour moi de m'entourer de prestataires sérieux, réactifs et compétents. Après plusieurs essais ailleurs, j'ai enfin trouvé la pépite ! Un service irréprochable, un”juin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk<br><b>Voir nos 58 avis Google →</b> → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p3 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">3. SERRURIER AUTOMOBILE NICE — http://localhost:3000/serrurier-automobile-nice/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">serrurier automobile</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Serrurier Automobile Nice \| 7j/7 Urgence \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Serrurier automobile Nice — Spécialiste clé de voiture. Intervention 7j/7 sur Côte d'Azur. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Serrurier Automobile à Nice · Intervention 7j/7</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Serrurier automobile à Nice : spécialiste clé de voiture, pas serrurier maison<br>• Sinouhé Rochereau · Formateur international, expert certifié<br>• Zone d'intervention : Nice, Cannes et Côte d'Azur<br>• Serrurier automobile d'urgence Nice : Clé bloquée, perdue ou cassée<br>• Nos interventions de serrurier automobile à Nice<br>• Tarifs serrurier automobile Nice : Transparence totale<br>• Questions fréquentes : Serrurier Automobile à Nice</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Ouverture de véhicule sans effraction<br>• Reproduction et double de clé de voiture<br>• Programmation de clé et transpondeur<br>• Clé perdue sans double existant</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.52%</b><br>automobile: <b>2.48%</b><br>intervention: <b>1.90%</b><br>nice: <b>1.75%</b><br>programmation: <b>1.31%</b><br>serrure: <b>1.02%</b><br>voiture: <b>0.87%</b><br>double: <b>0.87%</b><br>clés: <b>0.73%</b><br>perte: <b>0.73%</b><br>prix: <b>0.73%</b><br>devis: <b>0.73%</b><br>transpondeur: <b>0.58%</b><br>urgence: <b>0.58%</b><br>véhicule: <b>0.44%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (24)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>78 €À partir de</b> → /tarif-cle-voiture/<br><b>7j/7Nice · Antibes · Cagnes · Cannes</b> → /urgence-cle-voiture/<br><b>Garantie préservéeProgrammation officielle Abrites · ZedFull</b> → /reproduction-cle-voiture/<br><b>reproduction de clé de voiture</b> → /reproduction-cle-voiture/<br><b>programmation de clé voiture</b> → /programmation-cle-voiture/<br><b>clé de voiture à Nice et alentours</b> → /cle-voiture-nice/<br><b>urgence clé voiture dans les Alpes-Maritimes</b> → /urgence-cle-voiture/<br><b>double de clé de voiture</b> → /double-cle-voiture/<br><b>dépannage clé voiture à domicile</b> → /depannage-cle-domicile/<br><b>tarif clé voiture à Nice</b> → /tarif-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (6)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Si vous cherchez un service automobile de qualité, une équipe professionnelle, réactive et à l'écoute, Sinnes Automobiles est LA référence à Nice.”VALENTINA ROSSILocal Guide · 151 avisavril 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p5 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">5. DOUBLE CLE VOITURE — http://localhost:3000/double-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">doubler clé voiture</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Double clé voiture Nice \| Devis Gratuit \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Faire un double de clé voiture à Nice : intervention rapide, toutes marques. À partir de 78€. Sinouhé Rochereau, expert automobile. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Double de clé de voiture : Faire un double en toute sécurité</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• 4 étapes pour votre double de clé<br>• Pourquoi faire un double de clé voiture maintenant ?<br>• Faire un double de clé voiture : comment ça marche ?<br>• Prix d'un double de clé voiture<br>• Double de clé Toyota, Hyundai, Renault et Fiat : spécificités par marque<br>• Faire un double de clé voiture à Nice<br>• Questions fréquentes : Double de clé voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre clé<br>• Décodage<br>• Taille laser<br>• Votre double<br>• Avec la clé originale : copie par décodage<br>• Sans la clé originale : décodage direct de la serrure</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>7.09%</b><br>double: <b>4.36%</b><br>voiture: <b>2.00%</b><br>faire: <b>1.82%</b><br>perte: <b>1.45%</b><br>clés: <b>0.91%</b><br>lame: <b>0.91%</b><br>devis: <b>0.91%</b><br>transpondeur: <b>0.73%</b><br>télécommande: <b>0.73%</b><br>serrure: <b>0.73%</b><br>véhicule: <b>0.55%</b><br>programmation: <b>0.55%</b><br>laser: <b>0.55%</b><br>domicile: <b>0.55%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (22)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>78 €À partir de</b> → /tarif-cle-voiture/<br><b>en cas de perte totale de vos clés</b> → /cle-voiture-perdue/<br><b>reproduction de clé de voiture</b> → /reproduction-cle-voiture/<br><b>prix d'un double de clé</b> → /prix-cle-voiture/<br><b>double de clé Toyota</b> → /refaire-cle-toyota/<br><b>refaire une clé Hyundai</b> → /refaire-cle-hyundai/<br><b>double de clé Renault</b> → /refaire-cle-renault/<br><b>refaire une clé Fiat</b> → /refaire-cle-fiat/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (8)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Sinouhé et Inès sont venus aujourd'hui me faire un double des clés de ma voiture. C'est un duo à la fois agréable bienveillant et très professionnel, je conseille vivement de les contacter vous ne serez absolument pas déçu et vous passerez un bon moment avec des personnes ravies de vous aider! Rim”Rim BELHADJaoût 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p7 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">7. PROGRAMMATION CLE VOITURE — http://localhost:3000/programmation-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">programmation clé voiture</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Programmation clé voiture Nice \| Code \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Programmation clé voiture Nice — Transpondeur, télécommande, badge mains libres. Expert formateur Incarline. Devis : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Programmation de clé de voiture : Transpondeur, télécommande et badge</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (8)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Le processus de programmation de clé voiture<br>• Programmation de clé voiture : qu'est-ce que c'est exactement ?<br>• Reprogrammation clé voiture : les 3 cas de figure<br>• Nos équipements professionnels : Abrites et ZedFull<br>• Programmation de clé voiture à domicile : Nice et Côte d'Azur<br>• Programmation par marque : Audi, Mercedes, Renault...<br>• Programmer votre clé voiture à Nice<br>• Questions fréquentes : Programmation de clé</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Identification<br>• Connexion<br>• Programmation<br>• Test complet<br>• Ajout d'une nouvelle clé (vous avez encore l'originale)<br>• Remplacement complet (clé perdue, immobiliseur réinitialisé)<br>• Télécommande seule (lame OK, plip défaillant)</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.38%</b><br>programmation: <b>2.77%</b><br>clés: <b>1.61%</b><br>voiture: <b>1.46%</b><br>transpondeur: <b>1.17%</b><br>télécommande: <b>1.02%</b><br>immobiliseur: <b>1.02%</b><br>domicile: <b>1.02%</b><br>intervention: <b>0.88%</b><br>véhicule: <b>0.73%</b><br>lame: <b>0.73%</b><br>devis: <b>0.73%</b><br>nice: <b>0.73%</b><br>reproduction: <b>0.58%</b><br>obd: <b>0.44%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>7j/7Atelier ou à domicile</b> → /depannage-cle-domicile/<br><b>Devis gratuitTarif ferme avant intervention</b> → /tarif-cle-voiture/<br><b>clé à transpondeur</b> → /cle-voiture-transpondeur/<br><b>reproduction de clé</b> → /reproduction-cle-voiture/<br><b>programmation à domicile</b> → /depannage-cle-domicile/<br><b>programmation clé Audi à Nice</b> → /refaire-cle-audi/<br><b>programmation clé Mercedes à Nice</b> → /refaire-cle-mercedes/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Un service vraiment formidable. Rendez-vous pris rapidement sur un parking. Une petite heure d intervention, la programmation et l'usinage des clés sur place avec tout le matériel et un service au top. Je recommande vivement cette team bien sympa. Merci”Christian Lorgueoctobre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p9 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">9. CLE VOITURE NICE — http://localhost:3000/cle-voiture-nice/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé voiture nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé voiture Nice \| Antibes Cannes Cagnes \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction et double de clé voiture à Nice, Antibes, Cagnes-sur-Mer et Cannes. Intervention mobile 7j/7. Sinouhé Rochereau. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Reproduction et double de clé voiture à Nice, Antibes, Cagnes et Cannes</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment se passe une intervention à Nice ?<br>• Nos interventions à Nice, quartier par quartier<br>• Double de clé voiture Antibes : Sophia Antipolis, Vieil Antibes, Port Vauban<br>• Reproduction de clé voiture à Cagnes-sur-Mer<br>• Serrurier auto à Cannes : Croisette, La Bocca et Palais des Festivals<br>• Votre clé de voiture sur toute la Côte d'Azur<br>• Questions pratiques : Délais, accès et logistique par zone</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (16)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Appelez<br>• Localisation<br>• Déplacement<br>• Solution<br>• Vieux-Nice : intervention à pied obligatoire<br>• Aéroport Nice Côte d'Azur : clé perdue avant ou après un vol<br>• Promenade des Anglais, Gare Nice-Ville, Quartier Libération<br>• Sophia Antipolis : véhicules modernes, systèmes complexes<br>• Vieil Antibes et remparts : accès piéton comme dans le Vieux-Nice<br>• Port Vauban : plaisanciers et véhicules de passage<br>• Hippodrome de la Côte d'Azur : pics de demande les jours de courses<br>• Haut-de-Cagnes : village médiéval perché, accès piéton<br>• Cros-de-Cagnes : bord de mer, zone touristique<br>• Palais des Festivals et Croisette : pics de demande pendant les événements<br>• Rue d'Antibes et parkings souterrains<br>• La Bocca : quartier résidentiel, couvert sans supplément</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">nice: <b>3.09%</b><br>intervention: <b>2.22%</b><br>clé: <b>1.60%</b><br>antibes: <b>1.60%</b><br>cannes: <b>1.11%</b><br>voiture: <b>0.86%</b><br>véhicule: <b>0.74%</b><br>devis: <b>0.74%</b><br>cagnes: <b>0.62%</b><br>azur: <b>0.62%</b><br>urgence: <b>0.37%</b><br>reproduction: <b>0.25%</b><br>perdue: <b>0.25%</b><br>rapide: <b>0.25%</b><br>clés: <b>0.12%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Nice · Antibes · Cagnes · CannesZone d'intervention</b> → /serrurier-automobile-nice/<br><b>Intervention < 2hSur la Côte d'Azur</b> → /urgence-cle-voiture/<br><b>Domicile inclusIntervention à domicile</b> → /depannage-cle-domicile/<br><b>serrurier automobile niçois</b> → /serrurier-automobile-nice/<br><b>intervention d'urgence clé voiture</b> → /urgence-cle-voiture/<br><b>dépannage clé à domicile sur toute la zone</b> → /depannage-cle-domicile/<br><b>reproduction de clé voiture à Nice</b> → /reproduction-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (8)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Travail très professionnel pour une perte totale de clés pendant notre séjour à Nice. Merci à cette jeune entreprise.”Christine Barthelemyfévrier 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p11 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">11. DEPANNAGE CLE DOMICILE — http://localhost:3000/depannage-cle-domicile/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">dépannage clé voiture domicile</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Dépannage clé domicile Nice \| Côte d'Azur \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Dépannage et programmation de clé voiture à domicile à Nice. Intervention sur place 7j/7. Sinouhé Rochereau se déplace avec son matériel. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Dépannage à domicile : Intervention sur place Nice</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment se passe le dépannage à domicile ?<br>• Programmation clé voiture à domicile : comment ça marche ?<br>• Zones d'intervention à domicile<br>• Dépannage d'urgence à domicile<br>• Intervention à domicile sur la Côte d'Azur<br>• Questions fréquentes : Dépannage clé à domicile</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Appelez<br>• Déplacement<br>• Intervention<br>• Repartez</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>3.07%</b><br>domicile: <b>3.07%</b><br>intervention: <b>2.63%</b><br>voiture: <b>1.54%</b><br>urgence: <b>1.54%</b><br>nice: <b>1.54%</b><br>véhicule: <b>1.32%</b><br>programmation: <b>1.10%</b><br>dépannage: <b>1.10%</b><br>devis: <b>0.88%</b><br>cannes: <b>0.66%</b><br>automobile: <b>0.44%</b><br>lame: <b>0.44%</b><br>laser: <b>0.44%</b><br>perdue: <b>0.44%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (20)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Toute la Côte d'AzurNice et alentours</b> → /cle-voiture-nice/<br><b>serrurier automobile à Nice</b> → /serrurier-automobile-nice/<br><b>programmation clé voiture à domicile</b> → /programmation-cle-voiture/<br><b>clé de voiture à Nice et alentours</b> → /cle-voiture-nice/<br><b>tarifs déplacement et programmation</b> → /tarif-cle-voiture/<br><b>urgence clé voiture</b> → /urgence-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Je laisse un avis car vraiment le service est rapide, de qualité et surtout à votre domicile. C'est rare de nos jours il faut donc le souligner.”Stéphane Vegaseptembre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p13 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">13. PRIX CLE VS CONCESSIONNAIRE — http://localhost:3000/prix-cle-vs-concessionnaire/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">prix clé vs concessionnaire</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Prix clé vs Concessionnaire \| Jusqu'à -60% \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Refaire une clé voiture chez un serrurier indépendant vs concessionnaire à Nice : comparatif prix, délais et garantie. Économisez jusqu'à 300€. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Serrurier vs Concessionnaire : Le comparatif Sinnes</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Sinnes vs concessionnaire : les faits<br>• Tableau comparatif : serrurier vs concessionnaire 2026<br>• Pourquoi le concessionnaire coûte-t-il plus cher ?<br>• La garantie constructeur est-elle préservée chez Sinnes ?<br>• Délais : concessionnaire vs Sinnes<br>• Économisez jusqu'à 300€ sur votre clé de voiture<br>• Questions fréquentes : Prix serrurier vs concessionnaire</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Prix concessionnaire<br>• Prix Sinnes<br>• Même qualité<br>• Votre choix</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>3.07%</b><br>concessionnaire: <b>2.53%</b><br>véhicule: <b>1.27%</b><br>garantie: <b>1.08%</b><br>intervention: <b>0.90%</b><br>perte: <b>0.72%</b><br>prix: <b>0.72%</b><br>voiture: <b>0.54%</b><br>reproduction: <b>0.54%</b><br>tarif: <b>0.54%</b><br>devis: <b>0.54%</b><br>refaire: <b>0.36%</b><br>programmation: <b>0.36%</b><br>domicile: <b>0.36%</b><br>tarifs: <b>0.36%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>-80%Jusqu'à</b> → /tarif-cle-voiture/<br><b>Garantie préservéeProgrammation officielle</b> → /reproduction-cle-voiture/<br><b>serrurier automobile indépendant à Nice</b> → /serrurier-automobile-nice/<br><b>grille de tarifs Sinnes</b> → /tarif-cle-voiture/<br><b>prix d'une clé voiture</b> → /prix-cle-voiture/<br><b>nos services de reproduction</b> → /reproduction-cle-voiture/<br><b>faire un double de clé plutôt qu'attendre le concessionnaire</b> → /double-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Sinnes Automobiles est juste incroyable ! Juste après quelques échanges par sms, la clef a était réparer dans l'heure qui suis ! Rapport qualité-prix jusqu'à 6x moins chère que chez le constructeur !! Voici une photo avant et après réparation, je recommande à 1000% ! À bientôt !! 😁”OuissemLocal Guide · 14 avisaoût 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p15 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">15. REFAIRE CLE AUDI — http://localhost:3000/refaire-cle-audi/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé audi</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Audi Nice \| Programmation VAG \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé Audi à Nice : A1, A3, A4, Q3, Q5. Système KESSY et VAG. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Audi à Nice : Programmation VAG et KESSY</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment se déroule la programmation clé Audi ?<br>• Clé Audi : modèles couverts à Nice<br>• Système VAG et KESSY : pourquoi la programmation Audi est complexe<br>• Tarif clé Audi : à partir de 120€<br>• Refaites votre clé Audi maintenant<br>• Questions fréquentes : Clé Audi</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Audi<br>• Diagnostic<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.06%</b><br>programmation: <b>1.43%</b><br>refaire: <b>1.19%</b><br>lame: <b>0.95%</b><br>code: <b>0.95%</b><br>devis: <b>0.95%</b><br>nice: <b>0.95%</b><br>transpondeur: <b>0.72%</b><br>immobiliseur: <b>0.72%</b><br>tarif: <b>0.72%</b><br>plip: <b>0.48%</b><br>domicile: <b>0.48%</b><br>intervention: <b>0.48%</b><br>rapide: <b>0.48%</b><br>concessionnaire: <b>0.48%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 132 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>programmation de clé voiture</b> → /programmation-cle-voiture/<br><b>tarifs différents selon le modèle</b> → /tarif-cle-voiture/<br><b>transpondeur clé Audi</b> → /cle-voiture-transpondeur/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Un vrai pro, réactif et efficace ! Je l'ai appelé pour un problème de neiman bloqué sur mon Audi A3, il m'a rappelé dans la demi-heure. Après un simple échange par téléphone, il a su poser le bon”Oussem Gaoût 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p17 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">17. REFAIRE CLE TOYOTA — http://localhost:3000/refaire-cle-toyota/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé toyota</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Toyota Nice \| Hybride Thermique \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé Toyota à Nice : Yaris, Corolla, RAV4, hybride et thermique. Smart Entry & Start. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Toyota à Nice : Hybride et Crypto G-chip</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne la reproduction de clé Toyota ?<br>• Clé Toyota : modèles couverts à Nice<br>• Toyota Crypto G-chip : pourquoi la clé hybride est complexe<br>• Tarif clé Toyota : à partir de 78€<br>• Refaites votre clé Toyota maintenant<br>• Questions fréquentes : Clé Toyota</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Toyota<br>• Diagnostic<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>3.98%</b><br>double: <b>1.05%</b><br>refaire: <b>1.05%</b><br>devis: <b>1.05%</b><br>programmation: <b>0.63%</b><br>intervention: <b>0.63%</b><br>tarif: <b>0.63%</b><br>garantie: <b>0.63%</b><br>nice: <b>0.63%</b><br>reproduction: <b>0.42%</b><br>transpondeur: <b>0.42%</b><br>télécommande: <b>0.42%</b><br>clonage: <b>0.42%</b><br>rapide: <b>0.42%</b><br>voiture: <b>0.21%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 78 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>double de clé Toyota</b> → /double-cle-voiture/<br><b>tarif clé Toyota</b> → /tarif-cle-voiture/<br><b>programmation de clé Toyota hybride</b> → /programmation-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Grâce à la société Sinnes , j'ai pu refaire le double de ma clé de ma Toyota Aygo et surtout la réparation de ma clé d'origine.Rapidité du rendez-vous et professionnalisme ont été au rendez-vous avec un tarif attractif. Encore un grand”Fabien Houssuaoût 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p19 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">19. REFAIRE CLE RENAULT — http://localhost:3000/refaire-cle-renault/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé renault</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Renault Nice \| Carte Lame \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé Renault à Nice : Clio, Captur, Mégane, clé carte. Sinouhé Rochereau, expert IVER Renault. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Renault à Nice : Carte et Lame pour Captur, Clio, Mégane</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne la reproduction de clé Renault ?<br>• Clé Renault : modèles couverts à Nice<br>• Clé carte Renault : le format le plus complexe du marché<br>• Tarif clé Renault : à partir de 78€<br>• Refaites votre clé Renault maintenant<br>• Questions fréquentes : Clé Renault</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Renault<br>• Diagnostic IVER<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>5.42%</b><br>carte: <b>3.13%</b><br>refaire: <b>1.25%</b><br>devis: <b>1.04%</b><br>intervention: <b>0.83%</b><br>nice: <b>0.83%</b><br>programmation: <b>0.63%</b><br>transpondeur: <b>0.63%</b><br>immobiliseur: <b>0.63%</b><br>code: <b>0.63%</b><br>rapide: <b>0.63%</b><br>azur: <b>0.63%</b><br>véhicule: <b>0.42%</b><br>clonage: <b>0.42%</b><br>domicile: <b>0.42%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 78 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>double de clé Renault</b> → /double-cle-voiture/<br><b>tarif clé Renault</b> → /tarif-cle-voiture/<br><b>transpondeur clé carte Renault</b> → /cle-voiture-transpondeur/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Merci à vous pour l'excellence de votre travail, votre gentillesse, vos explications mais aussi pour avoir trouvé une solution à un problème de clef perdue, qui sont introuvables chez le constructeur RENAULT puisque ces derniers ne”Isabellejanvier 2026</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p21 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">21. QUI SOMMES NOUS — http://localhost:3000/qui-sommes-nous/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">sinnes automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Qui sommes-nous \| Sinnes Automobiles Nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Sinouhé Rochereau (Formateur Incarline, Commissaire GP Monaco) & Inès Barthelemy — Sinnes Automobiles à Nice, experts clé voiture depuis 2016. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Sinnes Automobiles à Nice : Serrurier Automobile et Expert Clé Voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Sinouhé Rochereau · Référent technique<br>• Inès Barthelemy · Référente commerciale<br>• L'histoire de Sinnes Automobiles<br>• Contactez Sinnes Automobiles</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>1.98%</b><br>reproduction: <b>1.98%</b><br>voiture: <b>0.99%</b><br>devis: <b>0.99%</b><br>nice: <b>0.99%</b><br>azur: <b>0.99%</b><br>intervention: <b>0.66%</b><br>antibes: <b>0.66%</b><br>cannes: <b>0.66%</b><br>clés: <b>0.33%</b><br>automobile: <b>0.33%</b><br>programmation: <b>0.33%</b><br>domicile: <b>0.33%</b><br>prix: <b>0.33%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (17)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>→ Consulter notre grille tarifaire</b> → /tarif-cle-voiture/<br><b>reproduction de clé</b> → /reproduction-cle-voiture/<br><b>vente de véhicules d'occasion</b> → /acheter-une-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (5)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Ce jeune homme mérite tellement plus que cinq étoiles… Souriant, Efficace très arrangeant, il a résolu mon problème en moins d'une heure. Un énorme merci. Je vous souhaite le meilleur pour votre entreprise et pour vous-même qui êtes exceptionnels”Alex Chuetjanvier 2026</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p23 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">23. MENTIONS LEGALES ET POLITIQUE DE CONFIDENTIALITE — http://localhost:3000/mentions-legales-et-politique-de-confidentialite/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">mentions légales sinnes</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Mentions légales \| Sinnes Automobiles Nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Mentions légales, politique de confidentialité et informations RGPD de Sinnes Automobiles, 4 rue Diderot, 06000 Nice.</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Mentions Légales et Confidentialité de Sinnes Automobiles</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (2)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Mentions Légales<br>• Politique de Confidentialité</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (11)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Informations Générales<br>• Hébergement du Site Internet<br>• Propriété Intellectuelle<br>• Responsabilité<br>• Données Personnelles Collectées<br>• Finalité de la Collecte<br>• Durée de Conservation des Données<br>• Partage des données<br>• Sécurité<br>• Vos droits (RGPD)<br>• Cookies</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><em>vide</em></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (14)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (4)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
+**URL:** http://localhost:3000/
 
-</div>
-<div class="col">
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | reproduction clé voiture nice |
+| **Title** | Sinnes Automobiles Nice | Serrurier automobile & Reproduction clé |
+| **Meta Desc** | Serrurier automobile à Nice — Reproduction & double de clé voiture. Intervention 7j/7, tous véhicules. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Sinnes Automobiles : Reproduction & Double de Clé Voiture à Nice |
 
-<!-- p2 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">2. REPRODUCTION CLE VOITURE — http://localhost:3000/reproduction-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">reproduction clé voiture</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé voiture Nice \| Dès 78€ \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction et double de clé de voiture à Nice. Toutes marques, intervention 7j/7. À partir de 78€. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Reproduction de clé de voiture : spécialiste Nice & Côte d'Azur</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Notre processus pour refaire votre clé de voiture<br>• Tarifs reproduction de clé de voiture : Transparence totale<br>• Reproduction de clé avec ou sans original : deux situations<br>• Notre méthode : taille laser + programmation transpondeur<br>• Reproduction de clé pour plus de 40 marques de voiture<br>• Pourquoi choisir Sinnes Automobiles plutôt qu'un concessionnaire ?<br>• Questions fréquentes : Reproduction de clé de voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (3)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Vous avez encore votre clé originale (double préventif)<br>• Vous n'avez plus aucune clé (perte totale)<br>• Nos Tarifs</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>5.69%</b><br>voiture: <b>1.46%</b><br>programmation: <b>1.46%</b><br>reproduction: <b>1.31%</b><br>double: <b>1.17%</b><br>perte: <b>1.17%</b><br>véhicule: <b>1.02%</b><br>électronique: <b>1.02%</b><br>devis: <b>0.88%</b><br>transpondeur: <b>0.73%</b><br>télécommande: <b>0.73%</b><br>laser: <b>0.73%</b><br>intervention: <b>0.73%</b><br>garantie: <b>0.73%</b><br>clés: <b>0.58%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (22)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Obtenir un devis gratuit</b> → /contactez-nous/<br><b>78 €À partir de : clé simple, centralisée, mains libres</b> → /tarif-cle-voiture/<br><b>Laser + transpondeurAbrites & ZedFull · garantie constructeur préservée</b> → /programmation-cle-voiture/<br><b>7j/7À domicile : Nice, Antibes, Cagnes-sur-Mer, Cannes</b> → /serrurier-automobile-nice/<br><b>programmation de clé automobile</b> → /programmation-cle-voiture/<br><b>clé à transpondeur</b> → /cle-voiture-transpondeur/<br><b>faire un double de clé</b> → /double-cle-voiture/<br><b>clé de voiture perdue</b> → /cle-voiture-perdue/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (8)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Urgence 7j/7 : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Rendez vous rapide. Professionnel et sympathique. Je n avais plus de clefs en une heure je me suis retrouvé avec une Comme a l origine et un double. Top service merci”Michel Bertrandjuillet 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p4 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">4. TARIF CLE VOITURE — http://localhost:3000/tarif-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">tarif reproduction clé voiture</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Tarif clé voiture Nice \| Dès 78€ \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Tarif clé voiture Nice — Décodage laser + programmation transpondeur dès 78€. 1-2h chrono. Jusqu'à 300€ d'économies vs concessionnaire. Devis : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Tarif clé de voiture : Prix à partir de 78€</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (5)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Grille tarifaire : Tous types de clés<br>• Ce qui est inclus dans le tarif : aucune surprise<br>• Pourquoi nos tarifs sont inférieurs au concessionnaire ?<br>• Cas particuliers et suppléments éventuels<br>• Questions fréquentes : Tarifs et paiement</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Clé Simple<br>• Clé Centralisée<br>• Clé Mains Libres<br>• Perte Totale<br>• Frais de déplacement hors Nice<br>• Véhicules anciens ou rares<br>• Comment Obtenir un devis gratuit ?</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">devis: <b>3.26%</b><br>clé: <b>3.03%</b><br>concessionnaire: <b>2.33%</b><br>intervention: <b>1.86%</b><br>nice: <b>1.63%</b><br>prix: <b>1.17%</b><br>tarif: <b>1.17%</b><br>perte: <b>0.93%</b><br>voiture: <b>0.70%</b><br>tarifs: <b>0.70%</b><br>programmation: <b>0.47%</b><br>carte: <b>0.47%</b><br>domicile: <b>0.47%</b><br>antibes: <b>0.47%</b><br>cannes: <b>0.47%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (22)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Obtenir un devis gratuit</b> → /contactez-nous/<br><b>reproduction de clé de voiture à Nice</b> → /reproduction-cle-voiture/<br><b>tarif vs concessionnaire</b> → /prix-cle-vs-concessionnaire/<br><b>demandez votre devis personnalisé</b> → /contactez-nous/<br><b>prix par type de clé</b> → /prix-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (6)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p6 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">6. CLE VOITURE PERDUE — http://localhost:3000/cle-voiture-perdue/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé voiture perdue sans double</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé voiture perdue Nice \| Sans double \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Clé de voiture perdue sans double à Nice ? Sinnes intervient en urgence : crochetage, décodage, nouvelle clé programmée. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Clé de Voiture Perdue à Nice : Solution Sans Double en Urgence</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (8)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• 4 étapes pour récupérer votre clé<br>• J'ai perdu mes clés de voiture sans double : que faire ?<br>• Crochetage professionnel : ouvrir votre voiture sans casse<br>• Reconstituer une clé perdue : le processus complet<br>• Combien coûte une clé perdue sans double ?<br>• Prévenir la prochaine perte : l'importance du double<br>• Clé perdue ? Appelez maintenant<br>• Questions fréquentes : Clé de voiture perdue</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Appelez<br>• Crochetage<br>• Décodage<br>• Nouvelle clé<br>• 1. Le crochetage et l'ouverture du véhicule<br>• 2. Le décodage de la serrure<br>• 3. La programmation d'une nouvelle clé</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">serrure: <b>2.44%</b><br>clé: <b>2.11%</b><br>double: <b>1.95%</b><br>crochetage: <b>1.95%</b><br>voiture: <b>1.62%</b><br>véhicule: <b>1.30%</b><br>transpondeur: <b>1.30%</b><br>programmation: <b>1.14%</b><br>lame: <b>1.14%</b><br>laser: <b>1.14%</b><br>intervention: <b>1.14%</b><br>urgence: <b>0.97%</b><br>clés: <b>0.81%</b><br>perdue: <b>0.81%</b><br>effraction: <b>0.81%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Intervention urgenceRéponse immédiate 7j/7</b> → /urgence-cle-voiture/<br><b>240 €À partir de</b> → /tarif-cle-voiture/<br><b>refaire sa clé de voiture</b> → /reproduction-cle-voiture/<br><b>serrurier automobile d'intervention en urgence</b> → /urgence-cle-voiture/<br><b>prix d'une clé de voiture en cas de perte</b> → /prix-cle-voiture/<br><b>tarif en cas de perte totale</b> → /tarif-cle-voiture/<br><b>pourquoi avoir un double de clé</b> → /double-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Suite au vol de mon sac, je n'avais plus de clefs pour ma voiture, heureusement après quelques recherches, j'ai trouvé Sinnes Automobile et le rendez-vous a été pris rapidement. Je les ai choisis car comme évoqué dans les commentaires”Laetitia LANGLOISLocal Guide · 13 avisjuin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p8 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">8. CLE VOITURE TRANSPONDEUR — http://localhost:3000/cle-voiture-transpondeur/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé voiture transpondeur</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé voiture transpondeur Nice \| Puce \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Clé voiture avec transpondeur : comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Transpondeur de Clé Voiture : Fonctionnement et Programmation</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (8)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne un transpondeur ?<br>• Qu'est-ce qu'un transpondeur dans une clé de voiture ?<br>• Comment fonctionne l'immobiliseur électronique ?<br>• Les différents types de transpondeurs automobiles<br>• Peut-on cloner un transpondeur de clé voiture ?<br>• Reproduire ou programmer une clé à transpondeur<br>• Programmer votre clé transpondeur<br>• Questions fréquentes : Clé voiture transpondeur</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• La clé émet<br>• L'antenne reçoit<br>• Le calculateur vérifie<br>• Démarrage autorisé<br>• Transpondeur fixe (ID60, ID33, T5)<br>• Transpondeur crypté (ID46, ID48, HITAG2)<br>• Transpondeur haute sécurité (HITAG Pro, DST80)</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">transpondeur: <b>4.76%</b><br>clé: <b>3.40%</b><br>puce: <b>1.50%</b><br>immobiliseur: <b>1.36%</b><br>code: <b>1.36%</b><br>voiture: <b>1.22%</b><br>véhicule: <b>0.82%</b><br>programmation: <b>0.82%</b><br>lame: <b>0.82%</b><br>électronique: <b>0.68%</b><br>programmer: <b>0.54%</b><br>obd: <b>0.54%</b><br>intervention: <b>0.54%</b><br>nice: <b>0.54%</b><br>azur: <b>0.54%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Programmation OBDAbrites · ZedFull</b> → /programmation-cle-voiture/<br><b>78 €À partir de</b> → /reproduction-cle-voiture/<br><b>programmation de clé</b> → /programmation-cle-voiture/<br><b>reproduction de clé</b> → /reproduction-cle-voiture/<br><b>obtenir un double de clé à transpondeur</b> → /double-cle-voiture/<br><b>tarifs programmation clé à transpondeur</b> → /tarif-cle-voiture/<br><b>clé transpondeur Audi</b> → /refaire-cle-audi/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“J'ai fait appel à cette société pour un double smart key. Je suis très satisfaite du résultat. La communication a été très efficace, le service hyper rapide, avec beaucoup de professionnalisme. Le rdv respecté. 5/5, sans hesitation.”OANA ALEXAjuillet 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p10 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">10. URGENCE CLE VOITURE — http://localhost:3000/urgence-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">serrurier voiture urgence</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Urgence clé voiture Nice \| 24h/24 7j/7 \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Serrurier automobile d'urgence à Nice. Clé bloquée, porte claquée, vol de clé. Intervention sous 30-45 minutes. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Dépannage Urgence Clé Voiture : Intervention immédiate 7j/7</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Clé bloquée ou perdue ? Nous intervenons au plus vite<br>• Serrurier voiture urgence : disponible autour de vous<br>• Les 4 situations d'urgence les plus fréquentes<br>• Pourquoi choisir Sinnes pour votre urgence ?<br>• Zone d'intervention : Nice et Côte d'Azur<br>• Questions fréquentes : Urgence clé voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (8)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Appelez<br>• Diagnostic<br>• Intervention<br>• Solution<br>• Clé de voiture perdue : sans double<br>• Clé bloquée dans le contact ou cassée<br>• Véhicule fermé avec clés à l'intérieur<br>• Perte de la télécommande centralisée</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">urgence: <b>2.87%</b><br>clé: <b>2.49%</b><br>intervention: <b>2.49%</b><br>nice: <b>2.10%</b><br>voiture: <b>1.72%</b><br>véhicule: <b>0.96%</b><br>perdue: <b>0.96%</b><br>automobile: <b>0.76%</b><br>bloquée: <b>0.76%</b><br>domicile: <b>0.76%</b><br>antibes: <b>0.76%</b><br>clés: <b>0.57%</b><br>effraction: <b>0.57%</b><br>serrure: <b>0.57%</b><br>tarif: <b>0.57%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (20)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Nice · Antibes · Cagnes · CannesZone d'intervention</b> → /cle-voiture-nice/<br><b>78 €À partir de</b> → /tarif-cle-voiture/<br><b>notre service de serrurier automobile à Nice</b> → /serrurier-automobile-nice/<br><b>clé de voiture perdue</b> → /cle-voiture-perdue/<br><b>l'intervention à domicile</b> → /depannage-cle-domicile/<br><b>urgence clé voiture sur Nice et la Côte d'Azur</b> → /cle-voiture-nice/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (6)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>URGENCE : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Je me suis retrouvé dans une vraie galère après avoir perdu mes clés… et en pleine nuit ! Après plusieurs appels sans succès à d'autres prestataires (tarifs exorbitants ou refus de se déplacer), cette société a été la seule à répondre”Pierre FouretLocal Guide · 66 avisjuin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p12 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">12. PRIX CLE VOITURE — http://localhost:3000/prix-cle-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">prix clé voiture</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Prix clé voiture Nice \| Facteurs \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Prix pour refaire une clé de voiture à Nice : à partir de 78€. Simple, centralisée ou mains libres. Comparez : jusqu'à 300€ d'économies vs concessionnaire. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Prix d'une reproduction de clé : Comparatif par type de clé</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (7)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment obtenir votre prix pour refaire une clé voiture ?<br>• Quels facteurs font varier le prix d'une clé voiture ?<br>• Prix d'un double de clé voiture<br>• Ce qui est inclus dans le prix<br>• Pourquoi Sinnes coûte moins cher ?<br>• Obtenez votre prix maintenant<br>• Questions fréquentes : Prix clé voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Identifiez<br>• Comparez<br>• Demandez<br>• Économisez</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.82%</b><br>prix: <b>3.15%</b><br>télécommande: <b>2.04%</b><br>tarif: <b>2.04%</b><br>voiture: <b>1.48%</b><br>programmation: <b>1.48%</b><br>transpondeur: <b>1.48%</b><br>devis: <b>1.30%</b><br>double: <b>1.11%</b><br>tarifs: <b>0.93%</b><br>concessionnaire: <b>0.93%</b><br>lame: <b>0.74%</b><br>laser: <b>0.74%</b><br>véhicule: <b>0.56%</b><br>perte: <b>0.56%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (21)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>78 €À partir de</b> → /tarif-cle-voiture/<br><b>Jusqu'à 80% moins chervs concessionnaire</b> → /prix-cle-vs-concessionnaire/<br><b>notre grille tarifaire complète</b> → /tarif-cle-voiture/<br><b>refaire une clé en cas de perte totale</b> → /cle-voiture-perdue/<br><b>faire un double de clé voiture</b> → /double-cle-voiture/<br><b>notre comparatif tarif vs concessionnaire</b> → /prix-cle-vs-concessionnaire/<br><b>nos prestations de reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Rapidité, professionnalisme, prix compétitifs et en plus sympathique, merci bq à Sinnes Automobile, que je recommande vivement”marc navelloaoût 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p14 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">14. REFAIRE CLE HYUNDAI — http://localhost:3000/refaire-cle-hyundai/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">refaire clé hyundai</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Hyundai Nice \| Toutes générations \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Hyundai à Nice : Architecture IMMO3 Maîtrisée</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne la reproduction de clé Hyundai ?<br>• Refaire une clé Hyundai : modèles couverts<br>• Le système IMMO3 Hyundai : pourquoi la programmation est indispensable<br>• Tarif clé Hyundai : à partir de 78€<br>• Refaites votre clé Hyundai maintenant<br>• Questions fréquentes : Clé Hyundai</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Hyundai<br>• Diagnostic<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>3.52%</b><br>programmation: <b>1.04%</b><br>transpondeur: <b>1.04%</b><br>refaire: <b>0.83%</b><br>nice: <b>0.83%</b><br>immobiliseur: <b>0.62%</b><br>clonage: <b>0.62%</b><br>intervention: <b>0.62%</b><br>rapide: <b>0.62%</b><br>devis: <b>0.62%</b><br>voiture: <b>0.41%</b><br>véhicule: <b>0.41%</b><br>faire: <b>0.41%</b><br>télécommande: <b>0.41%</b><br>domicile: <b>0.41%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 78 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>double de clé Hyundai</b> → /double-cle-voiture/<br><b>tarif clé Hyundai</b> → /tarif-cle-voiture/<br><b>programmation de clé Hyundai</b> → /programmation-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“C'est la seconde fois que je fais appel à less services et je ne peux que recommander ce jeune entrepreneur: déplacement en bas de chez moi, service rapide et efficace à un prix battant celui des concessionnaires! ⭐️⭐️⭐️⭐️⭐️”Mounya Mazouzseptembre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p16 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">16. REFAIRE CLE FIAT — http://localhost:3000/refaire-cle-fiat/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé fiat 500</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Fiat 500 Nice \| Double Prog. \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé Fiat à Nice : Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Fiat à Nice : 500, Panda et Transpondeur ID46</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne la reproduction de clé Fiat ?<br>• Clé Fiat : modèles couverts à Nice<br>• Transpondeur ID46 Fiat : clonage ou programmation ?<br>• Tarif clé Fiat : à partir de 78€<br>• Refaites votre clé Fiat maintenant<br>• Questions fréquentes : Clé Fiat</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Fiat<br>• Diagnostic<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.40%</b><br>transpondeur: <b>1.39%</b><br>télécommande: <b>1.39%</b><br>programmation: <b>1.16%</b><br>devis: <b>1.16%</b><br>nice: <b>1.16%</b><br>refaire: <b>0.93%</b><br>azur: <b>0.93%</b><br>domicile: <b>0.69%</b><br>intervention: <b>0.69%</b><br>rapide: <b>0.69%</b><br>voiture: <b>0.46%</b><br>véhicule: <b>0.46%</b><br>immobiliseur: <b>0.46%</b><br>clonage: <b>0.46%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 78 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>double de clé Fiat</b> → /double-cle-voiture/<br><b>tarif clé Fiat</b> → /tarif-cle-voiture/<br><b>programmation transpondeur Fiat</b> → /programmation-cle-voiture/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Rapide, efficace et très compétent, le service a été irréprochable. Je suis vraiment contente du travail réalisé sur ma voiture. Je recommande vivement de faire appel à eux !”Cassandra Farautfévrier 2026</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p18 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">18. REFAIRE CLE MERCEDES — http://localhost:3000/refaire-cle-mercedes/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">clé mercedes</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Clé Mercedes Nice \| Étoile Badge \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Reproduction clé Mercedes à Nice : Classe A, C, E, GLC. KESSY, clé étoile, ProxiKey. Sinouhé Rochereau, formateur Incarline. +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Refaire une Clé Mercedes à Nice : Clé Étoile et ProxiKey</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (6)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Comment fonctionne la reproduction de clé Mercedes ?<br>• Clé Mercedes : modèles couverts à Nice<br>• Clé étoile et ProxiKey Mercedes : programmation HiTag AES<br>• Tarif clé Mercedes : à partir de 120€<br>• Refaites votre clé Mercedes maintenant<br>• Questions fréquentes : Clé Mercedes</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (4)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Votre Mercedes<br>• Diagnostic<br>• Programmation<br>• Garantie</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clé: <b>4.57%</b><br>programmation: <b>1.14%</b><br>transpondeur: <b>1.14%</b><br>refaire: <b>0.91%</b><br>intervention: <b>0.91%</b><br>tarif: <b>0.91%</b><br>devis: <b>0.91%</b><br>nice: <b>0.68%</b><br>voiture: <b>0.46%</b><br>automobile: <b>0.46%</b><br>télécommande: <b>0.46%</b><br>concessionnaire: <b>0.46%</b><br>véhicule: <b>0.23%</b><br>reproduction: <b>0.23%</b><br>plip: <b>0.23%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (18)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>À partir de 132 €Devis gratuit</b> → /tarif-cle-voiture/<br><b>programmation clé Mercedes</b> → /programmation-cle-voiture/<br><b>tarif clé Mercedes</b> → /tarif-cle-voiture/<br><b>transpondeur haute sécurité Mercedes HiTag AES</b> → /cle-voiture-transpondeur/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Obtenir un devis gratuit : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Un grand merci à l'équipe de Sinnes à Nice pour son professionnalisme exemplaire. Une société à l'écoute, réactive, efficace et surtout profondément bienveillante. Tout a été géré avec une grande clarté et dans un excellent esprit de”Lina Douniajuin 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>Appelez maintenant : +33 6 75 54 04 11</b> → tel:+33675540411<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p20 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">20. ACHETER UNE VOITURE — http://localhost:3000/acheter-une-voiture/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">acheter voiture nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Acheter voiture Nice \| Sinnes Automobiles</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Voitures d'occasion révisées et garanties à Nice. Sélection expert Sinnes. Essai sur RDV — Devis personnalisé : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Acheter une Voiture d'Occasion à Nice avec Sinnes Automobiles</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (3)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Véhicules disponibles<br>• Contactez-nous pour le stock VO<br>• Voir les véhicules disponibles</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">véhicule: <b>2.70%</b><br>prix: <b>0.90%</b><br>nice: <b>0.90%</b><br>azur: <b>0.90%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (14)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (7)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Entreprise de qualité, et dirigeants très sympathiques qui inspirent confiance. Pour la vente de véhicules d'occasion, ils n'hésitent pas à effectuer les prestations qui semblent nécessaires à la demande du client. Au vu des bons avis”Frecanovembre 2025</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
-<!-- p22 -->
-<table style="width:100%;border:2px solid #2d7a2d;border-radius:6px;collapse:collapse;font-family:'Segoe UI',Arial,sans-serif;margin-bottom:8px;" cellpadding="0" cellspacing="0">
-<tr><td style="padding:6px 8px;background:#2d7a2d;color:#fff;font-weight:bold;font-size:11px;" colspan="2">22. CONTACTEZ NOUS — http://localhost:3000/contactez-nous/</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">MC Principal</td><td style="font-size:8px;padding:2px 5px;">contact serrurier nice</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Title</td><td style="font-size:8px;padding:2px 5px;">Contact \| Sinnes Automobiles Nice \| Devis gratuit</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">Meta Desc</td><td style="font-size:8px;padding:2px 5px;">Contactez Sinnes Automobiles pour un devis gratuit. Reproduction de clé, serrurier automobile Nice. Réponse rapide 7j/7 : +33 6 75 54 04 11</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;width:70px;background:#f8f8f8;">H1</td><td style="font-size:8px;padding:2px 5px;">Contactez Sinnes Automobiles à Nice : Devis Gratuit pour Clé Voiture</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H2 (2)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;">• Nos coordonnées à Nice<br>• Demande de devis</td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">H3 (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">FAQ (0)</td></tr>
-<tr><td style="font-size:8px;color:#555;padding:2px 5px;background:#f8f8f8;"></td><td style="font-size:8px;padding:2px 5px;"><em>vide</em></td></tr>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Densités (top 15)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;">clés: <b>1.82%</b><br>voiture: <b>1.82%</b><br>véhicule: <b>1.82%</b><br>intervention: <b>1.82%</b><br>nice: <b>1.82%</b><br>antibes: <b>1.82%</b></td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens internes (14)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>Accueil</b> → /<br><b>Reproduction de clé</b> → /reproduction-cle-voiture/<br><b>Serrurier Nice</b> → /serrurier-automobile-nice/<br><b>Tarifs</b> → /tarif-cle-voiture/<br><b>Acheter une voiture</b> → /acheter-une-voiture/<br><b>Contact</b> → /contactez-nous/<br><b>Mentions légales & politique de confidentialité</b> → /mentions-legales-et-politique-de-confidentialite/</td>
-<tr><td colspan="2" style="background:#e8f5e9;color:#1a3a1a;font-weight:bold;font-size:9px;padding:3px 5px;border:1px solid #2d7a2d;">Liens externes (6)</td></tr>
-<td colspan="2" style="font-size:8px;padding:2px 5px;"><b>+33 6 75 54 04 11</b> → tel:+33675540411<br><b>Avis Google★★★★★5.0 · 58 avis“Je recommande vivement sinnes automobiles ! J'étais bloqué sur un parking avec mes clés à l'intérieur de ma voiture, complètement stressé… ils sont intervenus très rapidement et ont réussi à ouvrir mon véhicule sans aucun dégât.”Nathalie Letiennefévrier 2026</b> → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs<br><b>contact@sinnes.fr</b> → mailto:contact@sinnes.fr</td>
-<tr><td style="padding:4px 5px;background:#f0fff0;border-top:1px dashed #2d7a2d;" colspan="2"><span style="font-size:8px;color:#2d7a2d;">Notes:</span> <span style="font-size:8px;color:#ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td></tr>
-</table>
+**H2** (5)
+- Faites un double de clé en toute sécurité
+- Intervention à domicile à Nice : votre serrurier vient à vous
+- Nos services de serrurier automobile à Nice
+- Sinouhé et Inès : votre équipe de serruriers à Nice
+- Demandez votre devis clé voiture à Nice
 
-</div>
-</div>
+**H3** (4)
+- Reproduction de clé de voiture
+- Vente de véhicule
+- Ouverture de Sinnes Automobiles
+- La vente de véhicules
 
-</body>
-</html>
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **serrurier automobile à Nice** → /serrurier-automobile-nice/
+- **reproduction et double de clé de voiture** → /reproduction-cle-voiture/
+- **CONTACTEZ-NOUS** → /contactez-nous/
+- **Découvrir nos services** → /reproduction-cle-voiture/
+- **Voir les véhicules** → /acheter-une-voiture/
+- **En savoir plus** → /qui-sommes-nous/
+- **tarifs de reproduction de clé** → /tarif-cle-voiture/
+- **Demandez votre devis** → /contactez-nous/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (17)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Demandez votre devis : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+- **VALENTINA ROSSILocal Guide★★★★★“Si vous cherchez un service automobile de qualité, une équipe professionnelle, réactive et à l'écoute, Sinnes Automobiles est LA référence à Nice.”avril 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Nathalie Letienne★★★★★“Je recommande vivement sinnes automobiles ! J'étais bloqué sur un parking avec mes clés à l'intérieur de ma voiture, complètement stressé… ils sont intervenus très rapidement et ont réussi à ouvrir mon véhicule sans aucun dégât.”février 2026** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **OuissemLocal Guide★★★★★“Sinnes Automobiles est juste incroyable ! Juste après quelques échanges par sms, la clef a était réparer dans l'heure qui suis ! Rapport qualité-prix jusqu'à 6x moins chère que chez le constructeur !! Voici une photo avant et après réparation, je recommande à 1000% ! À bientôt !! 😁”août 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Alex Chuet★★★★★“Ce jeune homme mérite tellement plus que cinq étoiles… Souriant, Efficace très arrangeant, il a résolu mon problème en moins d'une heure. Un énorme merci. Je vous souhaite le meilleur pour votre entreprise et pour vous-même qui êtes exceptionnels”janvier 2026** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Denis Ribes★★★★★“Merci beaucoup à sinoe et Inés un couple magnifique qui ont fait le déplacement de Nice pour nous dépanner une voiture à Menton ils sont tellement efficaces en 5 minutes il a réussi a rencoder une clé ils nous ont sauvé la vie entreprise très sérieuse recommandation plus plus merci encore à vous du fond du cœur”décembre 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Lina Dounia★★★★★“Un grand merci à l'équipe de Sinnes à Nice pour son professionnalisme exemplaire. Une société à l'écoute, réactive, efficace et surtout profondément bienveillante. Tout a été géré avec une grande clarté et dans un excellent esprit de”juin 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Fabien Houssu★★★★★“Grâce à la société Sinnes , j'ai pu refaire le double de ma clé de ma Toyota Aygo et surtout la réparation de ma clé d'origine.Rapidité du rendez-vous et professionnalisme ont été au rendez-vous avec un tarif attractif. Encore un grand”août 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Syrine Ben Hassine★★★★★“Bonjour, je voudrais remercier ce duo de choc, j'ai changé mon neiman et faut programmer les nouvelles clés, j'étais très embêtée cause manque de temps et ce duo m'ont sauvé la vie je les ai appelé a 18h et a 18h30 ils se sont déplacé ce”septembre 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Pierre FouretLocal Guide★★★★★“Je me suis retrouvé dans une vraie galère après avoir perdu mes clés… et en pleine nuit ! Après plusieurs appels sans succès à d'autres prestataires (tarifs exorbitants ou refus de se déplacer), cette société a été la seule à répondre”juin 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Matthews Dahmoun LILICARLocal Guide★★★★★“En tant que professionnel de l'automobile, il est essentiel pour moi de m'entourer de prestataires sérieux, réactifs et compétents. Après plusieurs essais ailleurs, j'ai enfin trouvé la pépite ! Un service irréprochable, un”juin 2025** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+- **Voir nos 58 avis Google →** → https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+
+
+·······································································································································································
+
+## 2. REPRODUCTION CLE VOITURE
+
+**URL:** http://localhost:3000/reproduction-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | reproduction clé voiture |
+| **Title** | Reproduction clé voiture Nice | Dès 78€ | Sinnes Automobiles |
+| **Meta Desc** | Reproduction et double de clé de voiture à Nice. Toutes marques, intervention 7j/7. À partir de 78€. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Reproduction de clé de voiture : spécialiste Nice & Côte d'Azur |
+
+**H2** (7)
+- Notre processus pour refaire votre clé de voiture
+- Tarifs reproduction de clé de voiture : Transparence totale
+- Reproduction de clé avec ou sans original : deux situations
+- Notre méthode : taille laser + programmation transpondeur
+- Reproduction de clé pour plus de 40 marques de voiture
+- Pourquoi choisir Sinnes Automobiles plutôt qu'un concessionnaire ?
+- Questions fréquentes : Reproduction de clé de voiture
+
+**H3** (3)
+- Vous avez encore votre clé originale (double préventif)
+- Vous n'avez plus aucune clé (perte totale)
+- Nos Tarifs
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (22)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Obtenir un devis gratuit** → /contactez-nous/
+- **78 €À partir de : clé simple, centralisée, mains libres** → /tarif-cle-voiture/
+- **Laser + transpondeurAbrites & ZedFull · garantie constructeur préservée** → /programmation-cle-voiture/
+- **7j/7À domicile : Nice, Antibes, Cagnes-sur-Mer, Cannes** → /serrurier-automobile-nice/
+- **programmation de clé automobile** → /programmation-cle-voiture/
+- **clé à transpondeur** → /cle-voiture-transpondeur/
+- **faire un double de clé** → /double-cle-voiture/
+- **clé de voiture perdue** → /cle-voiture-perdue/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (8)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Urgence 7j/7 : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Rendez vous rapide. Professionnel et sympathique. Je n avais plus de clefs en une heure je me suis retrouvé avec une Comme a l origine et un double. Top service merci”Michel Bertrandjuillet 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 3. SERRURIER AUTOMOBILE NICE
+
+**URL:** http://localhost:3000/serrurier-automobile-nice/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | serrurier automobile |
+| **Title** | Serrurier Automobile Nice | 7j/7 Urgence | Sinnes Automobiles |
+| **Meta Desc** | Serrurier automobile Nice — Spécialiste clé de voiture. Intervention 7j/7 sur Côte d'Azur. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Serrurier Automobile à Nice · Intervention 7j/7 |
+
+**H2** (7)
+- Serrurier automobile à Nice : spécialiste clé de voiture, pas serrurier maison
+- Sinouhé Rochereau · Formateur international, expert certifié
+- Zone d'intervention : Nice, Cannes et Côte d'Azur
+- Clé bloquée, perdue ou cassée à Nice : intervention sans frais cachés, 7j/7
+- Ouverture, duplication, programmation, perte totale : les 4 cas traités
+- Tarif clé voiture à Nice : grille complète, jusqu'à 3× moins cher qu'en concession
+- Questions fréquentes
+
+**H3** (4)
+- Ouverture de véhicule sans effraction
+- Reproduction et double de clé de voiture
+- Programmation de clé et transpondeur
+- Clé perdue sans double existant
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (24)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **78 €À partir de** → /tarif-cle-voiture/
+- **7j/7Nice · Antibes · Cagnes · Cannes** → /urgence-cle-voiture/
+- **Garantie préservéeProgrammation officielle Abrites · ZedFull** → /reproduction-cle-voiture/
+- **reproduction de clé de voiture** → /reproduction-cle-voiture/
+- **programmation de clé voiture** → /programmation-cle-voiture/
+- **clé de voiture à Nice et alentours** → /cle-voiture-nice/
+- **urgence clé voiture dans les Alpes-Maritimes** → /urgence-cle-voiture/
+- **double de clé de voiture** → /double-cle-voiture/
+- **dépannage clé voiture à domicile** → /depannage-cle-domicile/
+- **tarif clé voiture à Nice** → /tarif-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (6)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Si vous cherchez un service automobile de qualité, une équipe professionnelle, réactive et à l'écoute, Sinnes Automobiles est LA référence à Nice.”VALENTINA ROSSILocal Guide · 151 avisavril 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 4. TARIF CLE VOITURE
+
+**URL:** http://localhost:3000/tarif-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | tarif reproduction clé voiture |
+| **Title** | Tarif clé voiture Nice | Dès 78€ | Sinnes Automobiles |
+| **Meta Desc** | Tarif clé voiture Nice — Décodage laser + programmation transpondeur dès 78€. 1-2h chrono. Jusqu'à 300€ d'économies vs concessionnaire. Devis : +33 6 75 54 04 11 |
+| **H1** | Tarif clé de voiture : Prix à partir de 78€ |
+
+**H2** (5)
+- Grille tarifaire : Tous types de clés
+- Ce qui est inclus dans le tarif : aucune surprise
+- Pourquoi nos tarifs sont inférieurs au concessionnaire ?
+- Cas particuliers et suppléments éventuels
+- Questions fréquentes : Tarifs et paiement
+
+**H3** (7)
+- Clé Simple
+- Clé Centralisée
+- Clé Mains Libres
+- Perte Totale
+- Frais de déplacement hors Nice
+- Véhicules anciens ou rares
+- Comment Obtenir un devis gratuit ?
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (22)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Obtenir un devis gratuit** → /contactez-nous/
+- **reproduction de clé de voiture à Nice** → /reproduction-cle-voiture/
+- **tarif vs concessionnaire** → /prix-cle-vs-concessionnaire/
+- **demandez votre devis personnalisé** → /contactez-nous/
+- **prix par type de clé** → /prix-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (6)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 5. DOUBLE CLE VOITURE
+
+**URL:** http://localhost:3000/double-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | doubler clé voiture |
+| **Title** | Double clé voiture Nice | Devis Gratuit | Sinnes Automobiles |
+| **Meta Desc** | Faire un double de clé voiture à Nice : intervention rapide, toutes marques. À partir de 78€. Sinouhé Rochereau, expert automobile. +33 6 75 54 04 11 |
+| **H1** | Double de clé de voiture : Faire un double en toute sécurité |
+
+**H2** (7)
+- 4 étapes pour votre double de clé
+- Pourquoi faire un double de clé voiture maintenant ?
+- Faire un double de clé voiture : comment ça marche ?
+- Prix d'un double de clé voiture
+- Double de clé Toyota, Hyundai, Renault et Fiat : spécificités par marque
+- Faire un double de clé voiture à Nice
+- Questions fréquentes : Double de clé voiture
+
+**H3** (6)
+- Votre clé
+- Décodage
+- Taille laser
+- Votre double
+- Avec la clé originale : copie par décodage
+- Sans la clé originale : décodage direct de la serrure
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (22)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **78 €À partir de** → /tarif-cle-voiture/
+- **en cas de perte totale de vos clés** → /cle-voiture-perdue/
+- **reproduction de clé de voiture** → /reproduction-cle-voiture/
+- **prix d'un double de clé** → /prix-cle-voiture/
+- **double de clé Toyota** → /refaire-cle-toyota/
+- **refaire une clé Hyundai** → /refaire-cle-hyundai/
+- **double de clé Renault** → /refaire-cle-renault/
+- **refaire une clé Fiat** → /refaire-cle-fiat/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (8)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Sinouhé et Inès sont venus aujourd'hui me faire un double des clés de ma voiture. C'est un duo à la fois agréable bienveillant et très professionnel, je conseille vivement de les contacter vous ne serez absolument pas déçu et vous passerez un bon moment avec des personnes ravies de vous aider! Rim”Rim BELHADJaoût 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 6. CLE VOITURE PERDUE
+
+**URL:** http://localhost:3000/cle-voiture-perdue/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé voiture perdue sans double |
+| **Title** | Clé voiture perdue Nice | Sans double | Sinnes Automobiles |
+| **Meta Desc** | Clé de voiture perdue sans double à Nice ? Sinnes intervient en urgence : crochetage, décodage, nouvelle clé programmée. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Clé de Voiture Perdue à Nice : Solution Sans Double en Urgence |
+
+**H2** (8)
+- 4 étapes pour récupérer votre clé
+- J'ai perdu mes clés de voiture sans double : que faire ?
+- Crochetage professionnel : ouvrir votre voiture sans casse
+- Reconstituer une clé perdue : le processus complet
+- Combien coûte une clé perdue sans double ?
+- Prévenir la prochaine perte : l'importance du double
+- Clé perdue ? Appelez maintenant
+- Questions fréquentes : Clé de voiture perdue
+
+**H3** (7)
+- Appelez
+- Crochetage
+- Décodage
+- Nouvelle clé
+- 1. Le crochetage et l'ouverture du véhicule
+- 2. Le décodage de la serrure
+- 3. La programmation d'une nouvelle clé
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Intervention urgenceRéponse immédiate 7j/7** → /urgence-cle-voiture/
+- **240 €À partir de** → /tarif-cle-voiture/
+- **refaire sa clé de voiture** → /reproduction-cle-voiture/
+- **serrurier automobile d'intervention en urgence** → /urgence-cle-voiture/
+- **prix d'une clé de voiture en cas de perte** → /prix-cle-voiture/
+- **tarif en cas de perte totale** → /tarif-cle-voiture/
+- **pourquoi avoir un double de clé** → /double-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Suite au vol de mon sac, je n'avais plus de clefs pour ma voiture, heureusement après quelques recherches, j'ai trouvé Sinnes Automobile et le rendez-vous a été pris rapidement. Je les ai choisis car comme évoqué dans les commentaires”Laetitia LANGLOISLocal Guide · 13 avisjuin 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 7. PROGRAMMATION CLE VOITURE
+
+**URL:** http://localhost:3000/programmation-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | programmation clé voiture |
+| **Title** | Programmation clé voiture Nice | Code | Sinnes Automobiles |
+| **Meta Desc** | Programmation clé voiture Nice — Transpondeur, télécommande, badge mains libres. Expert formateur Incarline. Devis : +33 6 75 54 04 11 |
+| **H1** | Programmation de clé de voiture : Transpondeur, télécommande et badge |
+
+**H2** (8)
+- Le processus de programmation de clé voiture
+- Programmation de clé voiture : qu'est-ce que c'est exactement ?
+- Reprogrammation clé voiture : les 3 cas de figure
+- Nos équipements professionnels : Abrites et ZedFull
+- Programmation de clé voiture à domicile : Nice et Côte d'Azur
+- Programmation par marque : Audi, Mercedes, Renault...
+- Programmer votre clé voiture à Nice
+- Questions fréquentes : Programmation de clé
+
+**H3** (7)
+- Identification
+- Connexion
+- Programmation
+- Test complet
+- Ajout d'une nouvelle clé (vous avez encore l'originale)
+- Remplacement complet (clé perdue, immobiliseur réinitialisé)
+- Télécommande seule (lame OK, plip défaillant)
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **7j/7Atelier ou à domicile** → /depannage-cle-domicile/
+- **Devis gratuitTarif ferme avant intervention** → /tarif-cle-voiture/
+- **clé à transpondeur** → /cle-voiture-transpondeur/
+- **reproduction de clé** → /reproduction-cle-voiture/
+- **programmation à domicile** → /depannage-cle-domicile/
+- **programmation clé Audi à Nice** → /refaire-cle-audi/
+- **programmation clé Mercedes à Nice** → /refaire-cle-mercedes/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Un service vraiment formidable. Rendez-vous pris rapidement sur un parking. Une petite heure d intervention, la programmation et l'usinage des clés sur place avec tout le matériel et un service au top. Je recommande vivement cette team bien sympa. Merci”Christian Lorgueoctobre 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 8. CLE VOITURE TRANSPONDEUR
+
+**URL:** http://localhost:3000/cle-voiture-transpondeur/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé voiture transpondeur |
+| **Title** | Clé voiture transpondeur Nice | Puce | Sinnes Automobiles |
+| **Meta Desc** | Clé voiture avec transpondeur : comment ça fonctionne, comment la programmer ou reproduire. Expert Nice — Sinouhé Rochereau. +33 6 75 54 04 11 |
+| **H1** | Transpondeur de Clé Voiture : Fonctionnement et Programmation |
+
+**H2** (8)
+- Comment fonctionne un transpondeur ?
+- Qu'est-ce qu'un transpondeur dans une clé de voiture ?
+- Comment fonctionne l'immobiliseur électronique ?
+- Les différents types de transpondeurs automobiles
+- Peut-on cloner un transpondeur de clé voiture ?
+- Reproduire ou programmer une clé à transpondeur
+- Programmer votre clé transpondeur
+- Questions fréquentes : Clé voiture transpondeur
+
+**H3** (7)
+- La clé émet
+- L'antenne reçoit
+- Le calculateur vérifie
+- Démarrage autorisé
+- Transpondeur fixe (ID60, ID33, T5)
+- Transpondeur crypté (ID46, ID48, HITAG2)
+- Transpondeur haute sécurité (HITAG Pro, DST80)
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Programmation OBDAbrites · ZedFull** → /programmation-cle-voiture/
+- **78 €À partir de** → /reproduction-cle-voiture/
+- **programmation de clé** → /programmation-cle-voiture/
+- **reproduction de clé** → /reproduction-cle-voiture/
+- **obtenir un double de clé à transpondeur** → /double-cle-voiture/
+- **tarifs programmation clé à transpondeur** → /tarif-cle-voiture/
+- **clé transpondeur Audi** → /refaire-cle-audi/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“J'ai fait appel à cette société pour un double smart key. Je suis très satisfaite du résultat. La communication a été très efficace, le service hyper rapide, avec beaucoup de professionnalisme. Le rdv respecté. 5/5, sans hesitation.”OANA ALEXAjuillet 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 9. CLE VOITURE NICE
+
+**URL:** http://localhost:3000/cle-voiture-nice/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé voiture nice |
+| **Title** | Clé voiture Nice | Antibes Cannes Cagnes | Sinnes Automobiles |
+| **Meta Desc** | Reproduction et double de clé voiture à Nice, Antibes, Cagnes-sur-Mer et Cannes. Intervention mobile 7j/7. Sinouhé Rochereau. +33 6 75 54 04 11 |
+| **H1** | Reproduction et double de clé voiture à Nice, Antibes, Cagnes et Cannes |
+
+**H2** (7)
+- Comment se passe une intervention à Nice ?
+- Nos interventions à Nice, quartier par quartier
+- Double de clé voiture Antibes : Sophia Antipolis, Vieil Antibes, Port Vauban
+- Reproduction de clé voiture à Cagnes-sur-Mer
+- Serrurier auto à Cannes : Croisette, La Bocca et Palais des Festivals
+- Votre clé de voiture sur toute la Côte d'Azur
+- Questions pratiques : Délais, accès et logistique par zone
+
+**H3** (16)
+- Appelez
+- Localisation
+- Déplacement
+- Solution
+- Vieux-Nice : intervention à pied obligatoire
+- Aéroport Nice Côte d'Azur : clé perdue avant ou après un vol
+- Promenade des Anglais, Gare Nice-Ville, Quartier Libération
+- Sophia Antipolis : véhicules modernes, systèmes complexes
+- Vieil Antibes et remparts : accès piéton comme dans le Vieux-Nice
+- Port Vauban : plaisanciers et véhicules de passage
+- Hippodrome de la Côte d'Azur : pics de demande les jours de courses
+- Haut-de-Cagnes : village médiéval perché, accès piéton
+- Cros-de-Cagnes : bord de mer, zone touristique
+- Palais des Festivals et Croisette : pics de demande pendant les événements
+- Rue d'Antibes et parkings souterrains
+- La Bocca : quartier résidentiel, couvert sans supplément
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Nice · Antibes · Cagnes · CannesZone d'intervention** → /serrurier-automobile-nice/
+- **Intervention < 2hSur la Côte d'Azur** → /urgence-cle-voiture/
+- **Domicile inclusIntervention à domicile** → /depannage-cle-domicile/
+- **serrurier automobile niçois** → /serrurier-automobile-nice/
+- **intervention d'urgence clé voiture** → /urgence-cle-voiture/
+- **dépannage clé à domicile sur toute la zone** → /depannage-cle-domicile/
+- **reproduction de clé voiture à Nice** → /reproduction-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (8)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Travail très professionnel pour une perte totale de clés pendant notre séjour à Nice. Merci à cette jeune entreprise.”Christine Barthelemyfévrier 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 10. URGENCE CLE VOITURE
+
+**URL:** http://localhost:3000/urgence-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | serrurier voiture urgence |
+| **Title** | Urgence clé voiture Nice | 24h/24 7j/7 | Sinnes Automobiles |
+| **Meta Desc** | Serrurier automobile d'urgence à Nice. Clé bloquée, porte claquée, vol de clé. Intervention sous 30-45 minutes. +33 6 75 54 04 11 |
+| **H1** | Dépannage Urgence Clé Voiture : Intervention immédiate 7j/7 |
+
+**H2** (6)
+- Clé bloquée ou perdue ? Nous intervenons au plus vite
+- Serrurier voiture urgence : disponible autour de vous
+- Les 4 situations d'urgence les plus fréquentes
+- Pourquoi choisir Sinnes pour votre urgence ?
+- Zone d'intervention : Nice et Côte d'Azur
+- Questions fréquentes : Urgence clé voiture
+
+**H3** (8)
+- Appelez
+- Diagnostic
+- Intervention
+- Solution
+- Clé de voiture perdue : sans double
+- Clé bloquée dans le contact ou cassée
+- Véhicule fermé avec clés à l'intérieur
+- Perte de la télécommande centralisée
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (20)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Nice · Antibes · Cagnes · CannesZone d'intervention** → /cle-voiture-nice/
+- **78 €À partir de** → /tarif-cle-voiture/
+- **notre service de serrurier automobile à Nice** → /serrurier-automobile-nice/
+- **clé de voiture perdue** → /cle-voiture-perdue/
+- **l'intervention à domicile** → /depannage-cle-domicile/
+- **urgence clé voiture sur Nice et la Côte d'Azur** → /cle-voiture-nice/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (6)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Je me suis retrouvé dans une vraie galère après avoir perdu mes clés… et en pleine nuit ! Après plusieurs appels sans succès à d'autres prestataires (tarifs exorbitants ou refus de se déplacer), cette société a été la seule à répondre”Pierre FouretLocal Guide · 66 avisjuin 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 11. DEPANNAGE CLE DOMICILE
+
+**URL:** http://localhost:3000/depannage-cle-domicile/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | dépannage clé voiture domicile |
+| **Title** | Dépannage clé domicile Nice | Côte d'Azur | Sinnes Automobiles |
+| **Meta Desc** | Dépannage et programmation de clé voiture à domicile à Nice. Intervention sur place 7j/7. Sinouhé Rochereau se déplace avec son matériel. +33 6 75 54 04 11 |
+| **H1** | Dépannage à domicile : Intervention sur place Nice |
+
+**H2** (6)
+- Comment se passe le dépannage à domicile ?
+- Programmation clé voiture à domicile : comment ça marche ?
+- Zones d'intervention à domicile
+- Dépannage d'urgence à domicile
+- Intervention à domicile sur la Côte d'Azur
+- Questions fréquentes : Dépannage clé à domicile
+
+**H3** (4)
+- Appelez
+- Déplacement
+- Intervention
+- Repartez
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (20)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Toute la Côte d'AzurNice et alentours** → /cle-voiture-nice/
+- **serrurier automobile à Nice** → /serrurier-automobile-nice/
+- **programmation clé voiture à domicile** → /programmation-cle-voiture/
+- **clé de voiture à Nice et alentours** → /cle-voiture-nice/
+- **tarifs déplacement et programmation** → /tarif-cle-voiture/
+- **urgence clé voiture** → /urgence-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Je laisse un avis car vraiment le service est rapide, de qualité et surtout à votre domicile. C'est rare de nos jours il faut donc le souligner.”Stéphane Vegaseptembre 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **URGENCE : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 12. PRIX CLE VOITURE
+
+**URL:** http://localhost:3000/prix-cle-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | prix clé voiture |
+| **Title** | Prix clé voiture Nice | Facteurs | Sinnes Automobiles |
+| **Meta Desc** | Prix pour refaire une clé de voiture à Nice : à partir de 78€. Simple, centralisée ou mains libres. Comparez : jusqu'à 300€ d'économies vs concessionnaire. +33 6 75 54 04 11 |
+| **H1** | Prix d'une reproduction de clé : Comparatif par type de clé |
+
+**H2** (7)
+- Comment obtenir votre prix pour refaire une clé voiture ?
+- Quels facteurs font varier le prix d'une clé voiture ?
+- Prix d'un double de clé voiture
+- Ce qui est inclus dans le prix
+- Pourquoi Sinnes coûte moins cher ?
+- Obtenez votre prix maintenant
+- Questions fréquentes : Prix clé voiture
+
+**H3** (4)
+- Identifiez
+- Comparez
+- Demandez
+- Économisez
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **78 €À partir de** → /tarif-cle-voiture/
+- **Jusqu'à 80% moins chervs concessionnaire** → /prix-cle-vs-concessionnaire/
+- **notre grille tarifaire complète** → /tarif-cle-voiture/
+- **refaire une clé en cas de perte totale** → /cle-voiture-perdue/
+- **faire un double de clé voiture** → /double-cle-voiture/
+- **notre comparatif tarif vs concessionnaire** → /prix-cle-vs-concessionnaire/
+- **nos prestations de reproduction de clé** → /reproduction-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Rapidité, professionnalisme, prix compétitifs et en plus sympathique, merci bq à Sinnes Automobile, que je recommande vivement”marc navelloaoût 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 13. PRIX CLE VS CONCESSIONNAIRE
+
+**URL:** http://localhost:3000/prix-cle-vs-concessionnaire/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | prix clé vs concessionnaire |
+| **Title** | Prix clé vs Concessionnaire | Jusqu'à -60% | Sinnes Automobiles |
+| **Meta Desc** | Refaire une clé voiture chez un serrurier indépendant vs concessionnaire à Nice : comparatif prix, délais et garantie. Économisez jusqu'à 300€. +33 6 75 54 04 11 |
+| **H1** | Serrurier vs Concessionnaire : Le comparatif Sinnes |
+
+**H2** (7)
+- Sinnes vs concessionnaire : les faits
+- Tableau comparatif : serrurier vs concessionnaire 2026
+- Pourquoi le concessionnaire coûte-t-il plus cher ?
+- La garantie constructeur est-elle préservée chez Sinnes ?
+- Délais : concessionnaire vs Sinnes
+- Économisez jusqu'à 300€ sur votre clé de voiture
+- Questions fréquentes : Prix serrurier vs concessionnaire
+
+**H3** (4)
+- Prix concessionnaire
+- Prix Sinnes
+- Même qualité
+- Votre choix
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (21)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **-80%Jusqu'à** → /tarif-cle-voiture/
+- **Garantie préservéeProgrammation officielle** → /reproduction-cle-voiture/
+- **serrurier automobile indépendant à Nice** → /serrurier-automobile-nice/
+- **grille de tarifs Sinnes** → /tarif-cle-voiture/
+- **prix d'une clé voiture** → /prix-cle-voiture/
+- **nos services de reproduction** → /reproduction-cle-voiture/
+- **faire un double de clé plutôt qu'attendre le concessionnaire** → /double-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Sinnes Automobiles est juste incroyable ! Juste après quelques échanges par sms, la clef a était réparer dans l'heure qui suis ! Rapport qualité-prix jusqu'à 6x moins chère que chez le constructeur !! Voici une photo avant et après réparation, je recommande à 1000% ! À bientôt !! 😁”OuissemLocal Guide · 14 avisaoût 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 14. REFAIRE CLE HYUNDAI
+
+**URL:** http://localhost:3000/refaire-cle-hyundai/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | refaire clé hyundai |
+| **Title** | Clé Hyundai Nice | Toutes générations | Sinnes Automobiles |
+| **Meta Desc** | Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Hyundai à Nice : Architecture IMMO3 Maîtrisée |
+
+**H2** (6)
+- Comment fonctionne la reproduction de clé Hyundai ?
+- Refaire une clé Hyundai : modèles couverts
+- Le système IMMO3 Hyundai : pourquoi la programmation est indispensable
+- Tarif clé Hyundai : à partir de 78€
+- Refaites votre clé Hyundai maintenant
+- Questions fréquentes : Clé Hyundai
+
+**H3** (4)
+- Votre Hyundai
+- Diagnostic
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
+- **double de clé Hyundai** → /double-cle-voiture/
+- **tarif clé Hyundai** → /tarif-cle-voiture/
+- **programmation de clé Hyundai** → /programmation-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“C'est la seconde fois que je fais appel à less services et je ne peux que recommander ce jeune entrepreneur: déplacement en bas de chez moi, service rapide et efficace à un prix battant celui des concessionnaires! ⭐️⭐️⭐️⭐️⭐️”Mounya Mazouzseptembre 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 15. REFAIRE CLE AUDI
+
+**URL:** http://localhost:3000/refaire-cle-audi/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé audi |
+| **Title** | Clé Audi Nice | Programmation VAG | Sinnes Automobiles |
+| **Meta Desc** | Reproduction clé Audi à Nice : A1, A3, A4, Q3, Q5. Système KESSY et VAG. Sinouhé Rochereau, formateur Incarline. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Audi à Nice : Programmation VAG et KESSY |
+
+**H2** (6)
+- Comment se déroule la programmation clé Audi ?
+- Clé Audi : modèles couverts à Nice
+- Système VAG et KESSY : pourquoi la programmation Audi est complexe
+- Tarif clé Audi : à partir de 120€
+- Refaites votre clé Audi maintenant
+- Questions fréquentes : Clé Audi
+
+**H3** (4)
+- Votre Audi
+- Diagnostic
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 132 €Devis gratuit** → /tarif-cle-voiture/
+- **programmation de clé voiture** → /programmation-cle-voiture/
+- **tarifs différents selon le modèle** → /tarif-cle-voiture/
+- **transpondeur clé Audi** → /cle-voiture-transpondeur/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Un vrai pro, réactif et efficace ! Je l'ai appelé pour un problème de neiman bloqué sur mon Audi A3, il m'a rappelé dans la demi-heure. Après un simple échange par téléphone, il a su poser le bon”Oussem Gaoût 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 16. REFAIRE CLE FIAT
+
+**URL:** http://localhost:3000/refaire-cle-fiat/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé fiat 500 |
+| **Title** | Clé Fiat 500 Nice | Double Prog. | Sinnes Automobiles |
+| **Meta Desc** | Reproduction clé Fiat à Nice : Fiat 500, Panda, Tipo, Ducato. Programmation transpondeur ID46. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Fiat à Nice : 500, Panda et Transpondeur ID46 |
+
+**H2** (6)
+- Comment fonctionne la reproduction de clé Fiat ?
+- Clé Fiat : modèles couverts à Nice
+- Transpondeur ID46 Fiat : clonage ou programmation ?
+- Tarif clé Fiat : à partir de 78€
+- Refaites votre clé Fiat maintenant
+- Questions fréquentes : Clé Fiat
+
+**H3** (4)
+- Votre Fiat
+- Diagnostic
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
+- **double de clé Fiat** → /double-cle-voiture/
+- **tarif clé Fiat** → /tarif-cle-voiture/
+- **programmation transpondeur Fiat** → /programmation-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Rapide, efficace et très compétent, le service a été irréprochable. Je suis vraiment contente du travail réalisé sur ma voiture. Je recommande vivement de faire appel à eux !”Cassandra Farautfévrier 2026** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 17. REFAIRE CLE TOYOTA
+
+**URL:** http://localhost:3000/refaire-cle-toyota/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé toyota |
+| **Title** | Clé Toyota Nice | Hybride Thermique | Sinnes Automobiles |
+| **Meta Desc** | Reproduction clé Toyota à Nice : Yaris, Corolla, RAV4, hybride et thermique. Smart Entry & Start. Sinouhé Rochereau. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Toyota à Nice : Hybride et Crypto G-chip |
+
+**H2** (6)
+- Comment fonctionne la reproduction de clé Toyota ?
+- Clé Toyota : modèles couverts à Nice
+- Toyota Crypto G-chip : pourquoi la clé hybride est complexe
+- Tarif clé Toyota : à partir de 78€
+- Refaites votre clé Toyota maintenant
+- Questions fréquentes : Clé Toyota
+
+**H3** (4)
+- Votre Toyota
+- Diagnostic
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
+- **double de clé Toyota** → /double-cle-voiture/
+- **tarif clé Toyota** → /tarif-cle-voiture/
+- **programmation de clé Toyota hybride** → /programmation-cle-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Grâce à la société Sinnes , j'ai pu refaire le double de ma clé de ma Toyota Aygo et surtout la réparation de ma clé d'origine.Rapidité du rendez-vous et professionnalisme ont été au rendez-vous avec un tarif attractif. Encore un grand”Fabien Houssuaoût 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 18. REFAIRE CLE MERCEDES
+
+**URL:** http://localhost:3000/refaire-cle-mercedes/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé mercedes |
+| **Title** | Clé Mercedes Nice | Étoile Badge | Sinnes Automobiles |
+| **Meta Desc** | Reproduction clé Mercedes à Nice : Classe A, C, E, GLC. KESSY, clé étoile, ProxiKey. Sinouhé Rochereau, formateur Incarline. +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Mercedes à Nice : Clé Étoile et ProxiKey |
+
+**H2** (6)
+- Comment fonctionne la reproduction de clé Mercedes ?
+- Clé Mercedes : modèles couverts à Nice
+- Clé étoile et ProxiKey Mercedes : programmation HiTag AES
+- Tarif clé Mercedes : à partir de 120€
+- Refaites votre clé Mercedes maintenant
+- Questions fréquentes : Clé Mercedes
+
+**H3** (4)
+- Votre Mercedes
+- Diagnostic
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 132 €Devis gratuit** → /tarif-cle-voiture/
+- **programmation clé Mercedes** → /programmation-cle-voiture/
+- **tarif clé Mercedes** → /tarif-cle-voiture/
+- **transpondeur haute sécurité Mercedes HiTag AES** → /cle-voiture-transpondeur/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Un grand merci à l'équipe de Sinnes à Nice pour son professionnalisme exemplaire. Une société à l'écoute, réactive, efficace et surtout profondément bienveillante. Tout a été géré avec une grande clarté et dans un excellent esprit de”Lina Douniajuin 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 19. REFAIRE CLE RENAULT
+
+**URL:** http://localhost:3000/refaire-cle-renault/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | clé renault |
+| **Title** | Clé Renault Nice | Carte Lame | Sinnes Automobiles |
+| **Meta Desc** | Reproduction clé Renault à Nice : Clio, Captur, Mégane, clé carte. Sinouhé Rochereau, expert IVER Renault. Devis gratuit : +33 6 75 54 04 11 |
+| **H1** | Refaire une Clé Renault à Nice : Carte et Lame pour Captur, Clio, Mégane |
+
+**H2** (6)
+- Comment fonctionne la reproduction de clé Renault ?
+- Clé Renault : modèles couverts à Nice
+- Clé carte Renault : le format le plus complexe du marché
+- Tarif clé Renault : à partir de 78€
+- Refaites votre clé Renault maintenant
+- Questions fréquentes : Clé Renault
+
+**H3** (4)
+- Votre Renault
+- Diagnostic IVER
+- Programmation
+- Garantie
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (18)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
+- **double de clé Renault** → /double-cle-voiture/
+- **tarif clé Renault** → /tarif-cle-voiture/
+- **transpondeur clé carte Renault** → /cle-voiture-transpondeur/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Merci à vous pour l'excellence de votre travail, votre gentillesse, vos explications mais aussi pour avoir trouvé une solution à un problème de clef perdue, qui sont introuvables chez le constructeur RENAULT puisque ces derniers ne”Isabellejanvier 2026** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 20. ACHETER UNE VOITURE
+
+**URL:** http://localhost:3000/acheter-une-voiture/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | acheter voiture nice |
+| **Title** | Acheter voiture Nice | Sinnes Automobiles |
+| **Meta Desc** | Voitures d'occasion révisées et garanties à Nice. Sélection expert Sinnes. Essai sur RDV — Devis personnalisé : +33 6 75 54 04 11 |
+| **H1** | Acheter une Voiture d'Occasion à Nice avec Sinnes Automobiles |
+
+**H2** (3)
+- Véhicules disponibles
+- Contactez-nous pour le stock VO
+- Voir les véhicules disponibles
+
+**H3** (0)
+_vide_
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (14)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (7)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Entreprise de qualité, et dirigeants très sympathiques qui inspirent confiance. Pour la vente de véhicules d'occasion, ils n'hésitent pas à effectuer les prestations qui semblent nécessaires à la demande du client. Au vu des bons avis”Frecanovembre 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 21. QUI SOMMES NOUS
+
+**URL:** http://localhost:3000/qui-sommes-nous/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | sinnes automobiles |
+| **Title** | Qui sommes-nous | Sinnes Automobiles Nice |
+| **Meta Desc** | Sinouhé Rochereau (Formateur Incarline, Commissaire GP Monaco) & Inès Barthelemy — Sinnes Automobiles à Nice, experts clé voiture depuis 2016. +33 6 75 54 04 11 |
+| **H1** | Sinnes Automobiles à Nice : Serrurier Automobile et Expert Clé Voiture |
+
+**H2** (4)
+- Sinouhé Rochereau · Référent technique
+- Inès Barthelemy · Référente commerciale
+- L'histoire de Sinnes Automobiles
+- Contactez Sinnes Automobiles
+
+**H3** (0)
+_vide_
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (17)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **→ Consulter notre grille tarifaire** → /tarif-cle-voiture/
+- **reproduction de clé** → /reproduction-cle-voiture/
+- **vente de véhicules d'occasion** → /acheter-une-voiture/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (5)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Ce jeune homme mérite tellement plus que cinq étoiles… Souriant, Efficace très arrangeant, il a résolu mon problème en moins d'une heure. Un énorme merci. Je vous souhaite le meilleur pour votre entreprise et pour vous-même qui êtes exceptionnels”Alex Chuetjanvier 2026** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 22. CONTACTEZ NOUS
+
+**URL:** http://localhost:3000/contactez-nous/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | contact serrurier nice |
+| **Title** | Contact | Sinnes Automobiles Nice | Devis gratuit |
+| **Meta Desc** | Contactez Sinnes Automobiles pour un devis gratuit. Reproduction de clé, serrurier automobile Nice. Réponse rapide 7j/7 : +33 6 75 54 04 11 |
+| **H1** | Contactez Sinnes Automobiles à Nice : Devis Gratuit pour Clé Voiture |
+
+**H2** (2)
+- Nos coordonnées à Nice
+- Demande de devis
+
+**H3** (0)
+_vide_
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (14)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (6)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **Avis Google★★★★★5.0 · 58 avis“Je recommande vivement sinnes automobiles ! J'étais bloqué sur un parking avec mes clés à l'intérieur de ma voiture, complètement stressé… ils sont intervenus très rapidement et ont réussi à ouvrir mon véhicule sans aucun dégât.”Nathalie Letiennefévrier 2026** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+
+
+·······································································································································································
+
+## 23. MENTIONS LEGALES ET POLITIQUE DE CONFIDENTIALITE
+
+**URL:** http://localhost:3000/mentions-legales-et-politique-de-confidentialite/
+
+| Balise | Valeur |
+|---|---|
+| **MC Principal** | mentions légales sinnes |
+| **Title** | Mentions légales | Sinnes Automobiles Nice |
+| **Meta Desc** | Mentions légales, politique de confidentialité et informations RGPD de Sinnes Automobiles, 4 rue Diderot, 06000 Nice. |
+| **H1** | Mentions Légales et Confidentialité de Sinnes Automobiles |
+
+**H2** (2)
+- Mentions Légales
+- Politique de Confidentialité
+
+**H3** (11)
+- Informations Générales
+- Hébergement du Site Internet
+- Propriété Intellectuelle
+- Responsabilité
+- Données Personnelles Collectées
+- Finalité de la Collecte
+- Durée de Conservation des Données
+- Partage des données
+- Sécurité
+- Vos droits (RGPD)
+- Cookies
+
+**FAQ** (0)
+_vide_
+
+**Liens internes** (14)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
+- **Acheter une voiture** → /acheter-une-voiture/
+- **Contact** → /contactez-nous/
+- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
+
+**Liens externes** (4)
+- **+33 6 75 54 04 11** → tel:+33675540411
+- **contact@sinnes.fr** → mailto:contact@sinnes.fr
+

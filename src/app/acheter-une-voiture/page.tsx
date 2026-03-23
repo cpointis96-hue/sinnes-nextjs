@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP } from '@/constants/siteConfig'
+import { NAP, GEO } from '@/constants/siteConfig'
 
 import { seoData } from '@/data/seoData'
 
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['acheter-une-voiture'].title,
     url: 'https://sinnes.fr/acheter-une-voiture/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -34,8 +35,8 @@ const schema = {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 43.7031,
-        longitude: 7.2620,
+        latitude: GEO.latitude,
+        longitude: GEO.longitude,
       },
     },
     {

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['qui-sommes-nous'].title,
   url: 'https://sinnes.fr/qui-sommes-nous/',
+  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
  },
 }
 

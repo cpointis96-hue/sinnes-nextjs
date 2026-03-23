@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconMapPin, IconCalendar, IconClock, IconWrench } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['cle-voiture-nice'].title,
   url: 'https://sinnes.fr/cle-voiture-nice/',
+  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
  },
 }
 
@@ -60,10 +61,7 @@ const schema = {
     "addressCountry": "FR"
    },
    "areaServed": [
-    { "@type": "City", "name": "Nice" },
-    { "@type": "City", "name": "Antibes" },
-    { "@type": "City", "name": "Cagnes-sur-Mer" },
-    { "@type": "City", "name": "Cannes" },
+    ...AREA_SERVED_TYPED,
     { "@type": "City", "name": "Saint-Laurent-du-Var" },
     { "@type": "City", "name": "Villefranche-sur-Mer" }
    ],
@@ -86,14 +84,7 @@ const schema = {
     "acceptedAnswer": { "@type": "Answer", "text": item.answer }
    }))
   },
-  {
-   "@type": "Person",
-   "@id": "https://sinnes.fr/#sinouhe",
-   "name": "Sinouhé Rochereau",
-   "jobTitle": "Expert en programmation de clés automobiles",
-   "knowsAbout": TEAM.sinouhe.knowsAbout,
-   "worksFor": { "@id": "https://sinnes.fr/#organization" }
-  },
+  SINOUHE_FULL_ENTITY,
   {
    "@type": "Person",
    "@id": "https://sinnes.fr/#ines",
@@ -106,7 +97,7 @@ const schema = {
    "@id": "https://sinnes.fr/cle-voiture-nice/#webpage",
    "url": "https://sinnes.fr/cle-voiture-nice/",
    "datePublished": "2026-03-12",
-   "dateModified": "2026-03-22",
+   "dateModified": "2026-03-23",
    "isPartOf": { "@id": "https://sinnes.fr/#website" }
   }
  ]

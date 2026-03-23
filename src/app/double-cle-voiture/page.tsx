@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['double-cle-voiture'].title,
   url: 'https://sinnes.fr/double-cle-voiture/',
+  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
  },
 }
 
@@ -46,12 +47,7 @@ const schema = {
    "@id": "https://sinnes.fr/double-cle-voiture/#service",
    "name": "Double et reproduction de clé de voiture",
    "provider": { "@id": "https://sinnes.fr/#organization" },
-   "areaServed": [
-    { "@type": "City", "name": "Nice" },
-    { "@type": "City", "name": "Antibes" },
-    { "@type": "City", "name": "Cagnes-sur-Mer" },
-    { "@type": "City", "name": "Cannes" }
-   ],
+   "areaServed": AREA_SERVED_TYPED,
    "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Tarifs double clé automobile",
@@ -76,20 +72,13 @@ const schema = {
     "acceptedAnswer": { "@type": "Answer", "text": item.answer }
    }))
   },
-  {
-   "@type": "Person",
-   "@id": "https://sinnes.fr/#sinouhe",
-   "name": "Sinouhé Rochereau",
-   "jobTitle": "Expert en programmation de clés automobiles",
-   "knowsAbout": TEAM.sinouhe.knowsAbout,
-   "worksFor": { "@id": "https://sinnes.fr/#organization" }
-  },
+  SINOUHE_FULL_ENTITY,
   {
    "@type": "WebPage",
    "@id": "https://sinnes.fr/double-cle-voiture/#webpage",
    "url": "https://sinnes.fr/double-cle-voiture/",
    "datePublished": "2026-03-05",
-   "dateModified": "2026-03-05",
+   "dateModified": "2026-03-23",
    "isPartOf": { "@id": "https://sinnes.fr/#website" }
   }
  ]
@@ -176,11 +165,11 @@ export default function DoubleCleVoiturePage() {
     </div>
    </section>
 
-   {/* TRUST STRIP */}
-   <TrustStrip theme="light" items={TRUST_ITEMS} />
-
    {/* AVIS GOOGLE RÉEL */}
    {review && <SingleReview review={review} serviceName="Double de clé de voiture" serviceUrl="/double-cle-voiture/" />}
+
+   {/* TRUST STRIP */}
+   <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
    {/* H2 BLOC 1 — dark */}

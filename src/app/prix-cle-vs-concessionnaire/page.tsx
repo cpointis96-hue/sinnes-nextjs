@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['prix-cle-vs-concessionnaire'].title,
     url: 'https://sinnes.fr/prix-cle-vs-concessionnaire/',
+    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
   },
 }
 
@@ -177,11 +178,11 @@ export default function PrixCleVsConcessionnairePage() {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <TrustStrip theme="light" items={TRUST_ITEMS} />
-
       {/* AVIS GOOGLE RÉEL */}
       {review && <SingleReview review={review} serviceName="Prix clé vs concessionnaire" serviceUrl="/prix-cle-vs-concessionnaire/" />}
+
+      {/* TRUST STRIP */}
+      <TrustStrip theme="light" items={TRUST_ITEMS} />
 
 
       {/* H2 BLOC 1 — dark (table dark) */}

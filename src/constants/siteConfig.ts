@@ -23,7 +23,7 @@ export const ORG = {
   logo: `${SITE_URL}/images/logo-avec-fond-noir.png`,
   logoWidth: 500,
   logoHeight: 500,
-  foundingDate: '2025-02-17',
+  foundingDate: '2025-01-01',
 } as const
 
 // ---------------------------------------------------------------------------
@@ -49,12 +49,13 @@ export const NAP = {
 
 // ---------------------------------------------------------------------------
 // GÉOLOCALISATION
-// ✅ Corrigé : latitude 43.7031 (pas 43.7102), longitude 7.2620 inchangée
+// Source de vérité : Google My Business PlaceID ChIJl4_C8y7QzRIR_0Vn9YmYrGk
+// Coordonnées extraites du marker GMB : !3d43.7361438!4d7.2701284
 // ---------------------------------------------------------------------------
 
 export const GEO = {
-  latitude: 43.7031,
-  longitude: 7.2662,
+  latitude: 43.7361438,
+  longitude: 7.2701284,
 } as const
 
 // ---------------------------------------------------------------------------
@@ -202,13 +203,6 @@ export const NAV_ITEMS = [
   { label: 'Acheter une voiture', href: '/acheter-une-voiture/' },
   { label: 'Contact', href: '/contactez-nous/' },
 ] as const
-
-// ---------------------------------------------------------------------------
-// GOOGLE MAPS embed (sans API key)
-// ---------------------------------------------------------------------------
-
-export const GOOGLE_MAPS_EMBED_SRC =
-  'https://maps.google.com/maps?q=4+rue+diderot+nice+06000&output=embed&hl=fr'
 
 // ---------------------------------------------------------------------------
 // INFRASTRUCTURE SÉMANTIQUE (Entity-First 2026)
