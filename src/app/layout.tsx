@@ -3,8 +3,7 @@ import { Playfair_Display, Maven_Pro, Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import { ORG, NAP, GEO, HOURS, SAME_AS } from '@/constants/siteConfig'
-import { getWebSiteSchema, getBaseOrganization } from '@/utils/schema'
+import { getWebSiteSchema } from '@/utils/schema'
 
 // ---------------------------------------------------------------------------
 // FONTS — next/font/google (zéro @import externe, display:swap = CLS 0)
@@ -48,14 +47,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://sinnes.fr/',
   },
-  robots: {
-    index: false,
-    follow: false,
-  },
   openGraph: {
     siteName: 'Sinnes Automobiles',
     locale: 'fr_FR',
     type: 'website',
+    images: ['/images/sinnes-automobiles-cle-voiture-nice-og.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sinnes Automobiles Nice | Serrurier Auto & Reproduction Clé',
+    description: 'Reproduction et double de clé de voiture à Nice. Intervention 7j/7.',
+    images: ['/images/sinnes-automobiles-cle-voiture-nice-og.jpg'],
   },
 }
 
@@ -84,8 +86,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@graph": [
-                getWebSiteSchema(),
-                getBaseOrganization()
+                getWebSiteSchema()
               ]
             })
           }}

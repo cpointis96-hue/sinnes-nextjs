@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP, HOURS, GEO, SITE_URL } from '@/constants/siteConfig'
+import { NAP, HOURS, GEO, SITE_URL, INES_FULL_ENTITY } from '@/constants/siteConfig'
 import ContactForm from './ContactForm'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
@@ -45,7 +45,8 @@ const schema = {
       { name: 'Accueil', item: 'https://sinnes.fr/' },
       { name: 'Contactez-nous', item: 'https://sinnes.fr/contactez-nous/' },
     ]),
-    getWebPageSchema('https://sinnes.fr/contactez-nous/', '2026-03-01', '2026-03-07')
+    INES_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/contactez-nous/', '2026-03-01', '2026-03-24', 'Contactez Sinnes Automobiles Nice — Devis gratuit', INES_FULL_ENTITY['@id'])
   ],
 }
 

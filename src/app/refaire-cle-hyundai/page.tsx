@@ -62,15 +62,18 @@ const schema = {
         "@type": "AggregateRating",
         "ratingValue": REVIEWS.ratingValue,
         "reviewCount": REVIEWS.reviewCount,
-        "bestRating": REVIEWS.bestRating
+        "bestRating": REVIEWS.bestRating,
+        "worstRating": REVIEWS.worstRating
       },
       "review": review ? {
         "@type": "Review",
         "author": { "@type": "Person", "name": review.author },
         "datePublished": review.date,
         "reviewRating": {
+          "@type": "Rating",
           "ratingValue": "5",
-          "bestRating": "5"
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "reviewBody": review.text
       } : undefined,

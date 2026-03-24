@@ -178,7 +178,7 @@ export const seoData = {
     }
   },
   'urgence-cle-voiture': {
-    title: 'Urgence clé voiture Nice | 24h/24 7j/7 | Sinnes Automobiles',
+    title: 'Urgence Clé Voiture Nice | 7j/7 | Sinnes',
     description: 'Serrurier automobile d\'urgence à Nice. Clé bloquée, porte claquée, vol de clé. Intervention sous 30-45 minutes. +33675540411',
     h1: 'Dépannage Urgence Clé Voiture\u00A0: Intervention immédiate 7j/7',
     h2: [
@@ -203,7 +203,7 @@ export const seoData = {
     }
   },
   'depannage-cle-domicile': {
-    title: 'Dépannage clé domicile Nice | Côte d\'Azur | Sinnes Automobiles',
+    title: 'Dépannage Clé Domicile Nice | 7j/7 | Sinnes',
     description: 'Dépannage et programmation de clé voiture à domicile à Nice. Intervention sur place 7j/7. Sinouhé Rochereau se déplace avec son matériel. +33675540411',
     h1: 'Dépannage à domicile\u00A0: Intervention sur place Nice',
     h2: [
@@ -299,7 +299,7 @@ export const seoData = {
     }
   },
   'prix-cle-vs-concessionnaire': {
-    title: 'Prix clé vs Concessionnaire | Jusqu\'à -60% | Sinnes Automobiles',
+    title: 'Serrurier vs Concessionnaire | -60% | Sinnes Nice',
     description: 'Refaire une clé voiture chez un serrurier indépendant vs concessionnaire à Nice\u00A0: comparatif prix, délais et garantie. Économisez jusqu\'à 300€. +33675540411',
     h1: 'Serrurier vs Concessionnaire\u00A0: Le comparatif Sinnes',
     h2: [
@@ -316,7 +316,7 @@ export const seoData = {
     }
   },
   'refaire-cle-hyundai': {
-    title: 'Clé Hyundai Nice | Double & Programmation | Sinnes Automobiles',
+    title: 'Clé Hyundai Nice | Double & Prog. | Sinnes',
     description: 'Reproduction et double de clé Hyundai à Nice. Architecture propriétaire IMMO3. Sinouhé Rochereau, expert Incarline. Devis gratuit\u00A0: +33675540411',
     h1: 'Refaire une Clé Hyundai à Nice\u00A0: Architecture IMMO3 Maîtrisée',
     h2: [

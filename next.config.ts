@@ -60,16 +60,16 @@ const nextConfig: NextConfig = {
         headers: [
           // Sécurité
           {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains',
+          },
+          {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
           },
           {
             key: 'X-Frame-Options',
             value: 'DENY',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
           },
           {
             key: 'Referrer-Policy',
@@ -102,11 +102,6 @@ const nextConfig: NextConfig = {
           {
             key: 'Access-Control-Allow-Origin',
             value: 'https://sinnes.fr',
-          },
-          // Performance : prefetch DNS pour Google Fonts (chargées via next/font en local — backup CDN)
-          {
-            key: 'Link',
-            value: '<https://fonts.gstatic.com>; rel=preconnect; crossorigin',
           },
         ],
       },

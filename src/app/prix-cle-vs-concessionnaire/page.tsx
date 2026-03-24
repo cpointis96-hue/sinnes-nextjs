@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES, SITE_URL } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, INES_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconClock, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -83,7 +83,8 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/prix-cle-vs-concessionnaire/', '2026-03-14', '2026-03-22')
+    INES_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/prix-cle-vs-concessionnaire/', '2026-03-14', '2026-03-24', 'Serrurier vs Concessionnaire | Sinnes Nice', INES_FULL_ENTITY['@id'])
   ]
 }
 

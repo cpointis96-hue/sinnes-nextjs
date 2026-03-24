@@ -4,7 +4,7 @@
  *
  * ⚠️  CORRECTIONS APPLIQUÉES (audit 2026-03-15) :
  *   - Code postal : 06100 → 06000 (adresse réelle : Nice centre)
- *   - Latitude    : 43.7102 → 43.7031 (4 rue Diderot, coordonnées exactes)
+ *   - Latitude    : 43.7361438 (source : Google My Business PlaceID ChIJl4_C8y7QzRIR_0Vn9YmYrGk)
  *   - Téléphone   : "+33 06.75.54.04.11" → E.164 + format affichage unifié
  */
 
@@ -20,7 +20,7 @@ export const ORG = {
   /** SIRET affiché dans le footer et la page mentions légales */
   siret: '940 997 927 00014',
   url: SITE_URL,
-  logo: `${SITE_URL}/images/logo-avec-fond-noir.png`,
+  logo: `${SITE_URL}/images/logo-avec-fond-noir-150x150.png`,
   logoWidth: 500,
   logoHeight: 500,
   foundingDate: '2025-01-01',
@@ -117,13 +117,6 @@ export const SOCIAL = {
   /** URL directe vers les avis Google */
   gmbReviewsUrl: 'https://search.google.com/local/reviews?placeid=ChIJl4_C8y7QzRIR_0Vn9YmYrGk',
 } as const
-
-export const SAME_AS: string[] = [
-  SOCIAL.facebook,
-  SOCIAL.instagram,
-  SOCIAL.linkedin,
-  SOCIAL.googleMaps,
-]
 
 // ---------------------------------------------------------------------------
 // ÉQUIPE — E-E-A-T Personas
@@ -254,6 +247,15 @@ export const SOURCES = {
   },
 } as const
 
+export const SAME_AS: string[] = [
+  SOCIAL.facebook,
+  SOCIAL.instagram,
+  SOCIAL.linkedin,
+  SOCIAL.googleMaps,
+  SOURCES.enterprise.gmb,
+  SOURCES.enterprise.societeCom,
+]
+
 /**
  * Villes desservies typées pour injection JSON-LD directe.
  */
@@ -299,4 +301,25 @@ export const SINOUHE_FULL_ENTITY = {
     { '@type': 'Thing' as const, name: 'Transpondeur RFID', sameAs: ENTITY_LINKS.rfid },
     { '@type': 'Thing' as const, name: 'Immobiliseur électronique', sameAs: ENTITY_LINKS.immobilizer },
   ],
+}
+
+/**
+ * Entité Person maximale pour Inès Barthelemy.
+ */
+export const INES_FULL_ENTITY = {
+  '@type': 'Person' as const,
+  '@id': TEAM.ines.id,
+  name: TEAM.ines.name,
+  jobTitle: TEAM.ines.jobTitle,
+  description: TEAM.ines.description,
+  sameAs: [
+    SOURCES.ines.societeCom,
+    SOURCES.ines.infonet,
+  ],
+  knowsAbout: [
+    { '@type': 'Thing' as const, name: 'Tarification automobile' },
+    { '@type': 'Thing' as const, name: 'Devis et facturation' },
+    { '@type': 'Thing' as const, name: 'Relation client' },
+  ],
+  worksFor: { '@id': `${SITE_URL}/#organization` },
 }

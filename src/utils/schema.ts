@@ -1,4 +1,4 @@
-import { SITE_URL, ORG, NAP, GEO, HOURS, SAME_AS, SINOUHE_FULL_ENTITY, TEAM, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { SITE_URL, ORG, NAP, GEO, HOURS, SAME_AS, REVIEWS, SINOUHE_FULL_ENTITY, TEAM, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 
 /**
  * SOURCE DE VÉRITÉ UNIQUE POUR LES SCHEMAS JSON-LD
@@ -14,7 +14,15 @@ export const getBaseOrganization = () => ({
   "name": ORG.name,
   "legalName": ORG.legalName,
   "url": ORG.url,
-  "logo": ORG.logo,
+  "logo": {
+    "@type": "ImageObject",
+    "url": ORG.logo,
+    "width": ORG.logoWidth,
+    "height": ORG.logoHeight
+  },
+  "foundingDate": ORG.foundingDate,
+  "image": `${SITE_URL}/images/sinnes-automobiles-cle-voiture-nice-og.jpg`,
+  "priceRange": "€€",
   "telephone": NAP.phoneTel,
   "email": NAP.email,
   "address": {
@@ -56,14 +64,23 @@ export const getWebSiteSchema = () => ({
 /**
  * Entité WebPage standard
  */
-export const getWebPageSchema = (url: string, datePublished: string, dateModified: string) => ({
+export const getWebPageSchema = (
+  url: string,
+  datePublished: string,
+  dateModified: string,
+  name?: string,
+  authorId?: string
+) => ({
   "@type": "WebPage",
   "@id": `${url}#webpage`,
   "url": url,
+  ...(name && { "name": name }),
+  "inLanguage": "fr-FR",
   "datePublished": datePublished,
   "dateModified": dateModified,
   "isPartOf": { "@id": `${SITE_URL}/#website` },
-  "breadcrumb": { "@id": `${url}#breadcrumb` }
+  "breadcrumb": { "@id": `${url}#breadcrumb` },
+  ...(authorId && { "author": { "@id": authorId } })
 })
 
 /**
@@ -87,9 +104,10 @@ export const getFullOrganizationSchema = (reviews: any[], offers: any[], employe
   ...getBaseOrganization(),
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "58",
-    "bestRating": "5"
+    "ratingValue": REVIEWS.ratingValue,
+    "reviewCount": REVIEWS.reviewCount,
+    "bestRating": REVIEWS.bestRating,
+    "worstRating": REVIEWS.worstRating
   },
   "review": reviews,
   "areaServed": AREA_SERVED_TYPED,

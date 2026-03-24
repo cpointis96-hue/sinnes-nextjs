@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP, PRICES, TEAM, SITE_URL } from '@/constants/siteConfig'
+import { NAP, PRICES, TEAM, SITE_URL, INES_FULL_ENTITY } from '@/constants/siteConfig'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import PricingSection from './PricingSection'
@@ -53,7 +53,7 @@ const schema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://sinnes.fr/tarif-cle-voiture/#pricing',
+      '@id': 'https://sinnes.fr/tarif-cle-voiture/#service',
       name: 'Tarif reproduction de clé de voiture',
       provider: { '@id': `${SITE_URL}/#organization` },
       hasOfferCatalog: {
@@ -103,16 +103,8 @@ const schema = {
         acceptedAnswer: { '@type': 'Answer', text: item.answer },
       })),
     },
-    {
-      '@type': 'Person',
-      '@id': `${SITE_URL}/#ines`,
-      name: TEAM.ines.name,
-      jobTitle: TEAM.ines.jobTitle,
-      knowsAbout: TEAM.ines.knowsAbout,
-      description: TEAM.ines.description,
-      worksFor: { '@id': `${SITE_URL}/#organization` },
-    },
-    getWebPageSchema('https://sinnes.fr/tarif-cle-voiture/', '2026-03-03', '2026-03-22')
+    INES_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/tarif-cle-voiture/', '2026-03-03', '2026-03-24', 'Tarif clé de voiture Nice — Grille complète | Sinnes', INES_FULL_ENTITY['@id'])
   ],
 }
 

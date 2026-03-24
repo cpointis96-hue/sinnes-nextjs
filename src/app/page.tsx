@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS, GEO, AREA_SERVED, ENTITY_LINKS, SOURCES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS, GEO, AREA_SERVED, ENTITY_LINKS, SOURCES, SINOUHE_FULL_ENTITY, INES_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
 import { seoData } from '@/data/seoData'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import { BrandsCarousel, ReviewsCarousel } from './DynamicCarousels'
 import HeroCard from './HeroCard'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import { getHomepageReviews } from '@/data/reviews'
-import { getFullOrganizationSchema, getWebPageSchema } from '@/utils/schema'
+import { getFullOrganizationSchema, getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
 
 // ─────────────────────────────────────────────────────────────
 // METADATA
@@ -70,19 +70,13 @@ const schema = {
       ],
       [
         SINOUHE_FULL_ENTITY,
-        {
-          '@type': 'Person',
-          '@id': TEAM.ines.id,
-          name: TEAM.ines.name,
-          jobTitle: TEAM.ines.jobTitle,
-          sameAs: [
-            SOURCES.ines.societeCom,
-            SOURCES.ines.infonet
-          ]
-        },
+        INES_FULL_ENTITY,
       ]
     ),
-    getWebPageSchema('https://sinnes.fr/', '2026-03-01', '2026-03-22')
+    getWebPageSchema('https://sinnes.fr/', '2026-03-01', '2026-03-24', 'Sinnes Automobiles — Serrurier auto & Reproduction clé Nice'),
+    getBreadcrumbSchema('https://sinnes.fr/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' }
+    ]),
   ],
 }
 
