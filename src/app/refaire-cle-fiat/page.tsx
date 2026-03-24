@@ -98,7 +98,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-fiat/', '2026-03-16', '2026-03-20')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-fiat/',
+      seoData['refaire-cle-fiat'].publishedAt,
+      seoData['refaire-cle-fiat'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    ),
   ],
 }
 

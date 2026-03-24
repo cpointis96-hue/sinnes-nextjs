@@ -91,7 +91,13 @@ const schema = {
    "jobTitle": "Co-fondatrice, gestion et relation client",
    "worksFor": { "@id": `${SITE_URL}/#organization` }
   },
-  getWebPageSchema('https://sinnes.fr/cle-voiture-nice/', '2026-03-12', '2026-03-23')
+  getWebPageSchema(
+    'https://sinnes.fr/cle-voiture-nice/',
+    seoData['cle-voiture-nice'].publishedAt,
+    seoData['cle-voiture-nice'].modifiedAt,
+    undefined,
+    SINOUHE_FULL_ENTITY['@id']
+  )
  ]
 }
 

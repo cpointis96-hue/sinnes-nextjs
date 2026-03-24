@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, REVIEWS, SITE_URL } from '@/constants/siteConfig'
+import { NAP, TEAM, REVIEWS, SITE_URL, SINOUHE_FULL_ENTITY } from '@/constants/siteConfig'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
 import { seoData } from '@/data/seoData'
@@ -50,7 +50,13 @@ const schema = {
       { name: 'Accueil', item: 'https://sinnes.fr/' },
       { name: 'Qui sommes-nous', item: 'https://sinnes.fr/qui-sommes-nous/' },
     ]),
-    getWebPageSchema('https://sinnes.fr/qui-sommes-nous/', '2026-03-01', '2026-03-22')
+    getWebPageSchema(
+      'https://sinnes.fr/qui-sommes-nous/',
+      seoData['qui-sommes-nous'].publishedAt,
+      seoData['qui-sommes-nous'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ],
 }
 

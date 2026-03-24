@@ -95,7 +95,13 @@ const schema = {
     },
     SINOUHE_FULL_ENTITY,
     INES_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/prix-cle-voiture/', '2026-03-14', '2026-03-24', 'Prix clé de voiture Nice — Tarifs transparents | Sinnes', INES_FULL_ENTITY['@id'])
+    getWebPageSchema(
+      'https://sinnes.fr/prix-cle-voiture/',
+      seoData['prix-cle-voiture'].publishedAt,
+      seoData['prix-cle-voiture'].modifiedAt,
+      undefined,
+      INES_FULL_ENTITY['@id']
+    )
   ]
 }
 

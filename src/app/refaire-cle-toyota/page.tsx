@@ -99,7 +99,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-toyota/', '2026-03-17', '2026-03-21')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-toyota/',
+      seoData['refaire-cle-toyota'].publishedAt,
+      seoData['refaire-cle-toyota'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    ),
   ],
 }
 

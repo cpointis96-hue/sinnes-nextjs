@@ -102,7 +102,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-hyundai/', '2026-03-15', '2026-03-19')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-hyundai/',
+      seoData['refaire-cle-hyundai'].publishedAt,
+      seoData['refaire-cle-hyundai'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    ),
   ],
 }
 

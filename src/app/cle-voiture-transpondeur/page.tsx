@@ -74,7 +74,13 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/cle-voiture-transpondeur/', '2026-03-07', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/cle-voiture-transpondeur/',
+      seoData['cle-voiture-transpondeur'].publishedAt,
+      seoData['cle-voiture-transpondeur'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 

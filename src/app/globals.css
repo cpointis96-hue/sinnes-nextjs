@@ -376,3 +376,13 @@ textarea {
 .btn-with-arrow:hover::after {
   transform: translateX(4px);
 }
+
+/* ---------------------------------------------------------------------------
+   ACCESSIBILITÉ — prefers-reduced-motion (WCAG 2.1 AA)
+   --------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  video[autoPlay] {
+    display: none;
+  }
+}

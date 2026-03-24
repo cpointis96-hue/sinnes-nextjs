@@ -45,4 +45,11 @@ test.describe('Service Cards Branded Design', () => {
     });
     expect(afterContent).toContain('→');
   });
+
+  test('capture screenshot for layout analysis', async ({ page }) => {
+    // Scroll to the services section heading (exact text from seoData.home.h2[2])
+    const heading = page.getByRole('heading', { name: 'Reproduction, double et programmation de clé automobile' });
+    await heading.scrollIntoViewIfNeeded();
+    await page.screenshot({ path: 'e2e/screenshots/layout-analysis.png', fullPage: false });
+  });
 });

@@ -91,7 +91,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/serrurier-automobile-nice/', '2026-03-01', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/serrurier-automobile-nice/',
+      seoData['serrurier-automobile-nice'].publishedAt,
+      seoData['serrurier-automobile-nice'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ],
 }
 

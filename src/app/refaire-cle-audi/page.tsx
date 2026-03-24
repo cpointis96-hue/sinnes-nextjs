@@ -81,7 +81,7 @@ const schema = {
     getBreadcrumbSchema('https://sinnes.fr/refaire-cle-audi/', [
       { name: 'Accueil', item: 'https://sinnes.fr/' },
       { name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
-      { name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
+      { name: 'Programmation de clé', item: 'https://sinnes.fr/programmation-cle-voiture/' },
       { name: 'Refaire clé Audi', item: 'https://sinnes.fr/refaire-cle-audi/' }
     ]),
     {
@@ -93,7 +93,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-audi/', '2026-03-16', '2026-03-22')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-audi/',
+      seoData['refaire-cle-audi'].publishedAt,
+      seoData['refaire-cle-audi'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 

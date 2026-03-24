@@ -99,7 +99,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-renault/', '2026-03-18', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-renault/',
+      seoData['refaire-cle-renault'].publishedAt,
+      seoData['refaire-cle-renault'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    ),
   ],
 }
 

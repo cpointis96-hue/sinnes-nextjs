@@ -104,7 +104,13 @@ const schema = {
       })),
     },
     INES_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/tarif-cle-voiture/', '2026-03-03', '2026-03-24', 'Tarif clé de voiture Nice — Grille complète | Sinnes', INES_FULL_ENTITY['@id'])
+    getWebPageSchema(
+      'https://sinnes.fr/tarif-cle-voiture/',
+      seoData['tarif-cle-voiture'].publishedAt,
+      seoData['tarif-cle-voiture'].modifiedAt,
+      undefined,
+      INES_FULL_ENTITY['@id']
+    )
   ],
 }
 

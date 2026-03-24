@@ -72,7 +72,13 @@ const schema = {
    }))
   },
   SINOUHE_FULL_ENTITY,
-  getWebPageSchema('https://sinnes.fr/double-cle-voiture/', '2026-03-05', '2026-03-23')
+  getWebPageSchema(
+      'https://sinnes.fr/double-cle-voiture/',
+      seoData['double-cle-voiture'].publishedAt,
+      seoData['double-cle-voiture'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
  ]
 }
 

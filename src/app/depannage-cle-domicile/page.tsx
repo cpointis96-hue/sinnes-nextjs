@@ -74,7 +74,13 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/depannage-cle-domicile/', '2026-03-10', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/depannage-cle-domicile/',
+      seoData['depannage-cle-domicile'].publishedAt,
+      seoData['depannage-cle-domicile'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 

@@ -84,7 +84,13 @@ const schema = {
     },
     SINOUHE_FULL_ENTITY,
     INES_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/prix-cle-vs-concessionnaire/', '2026-03-14', '2026-03-24', 'Serrurier vs Concessionnaire | Sinnes Nice', INES_FULL_ENTITY['@id'])
+    getWebPageSchema(
+      'https://sinnes.fr/prix-cle-vs-concessionnaire/',
+      seoData['prix-cle-vs-concessionnaire'].publishedAt,
+      seoData['prix-cle-vs-concessionnaire'].modifiedAt,
+      undefined,
+      INES_FULL_ENTITY['@id']
+    )
   ]
 }
 

@@ -83,7 +83,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/reproduction-cle-voiture/', '2026-03-01', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/reproduction-cle-voiture/',
+      seoData['reproduction-cle-voiture'].publishedAt,
+      seoData['reproduction-cle-voiture'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ],
 }
 

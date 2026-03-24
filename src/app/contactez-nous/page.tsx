@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP, HOURS, GEO, SITE_URL, INES_FULL_ENTITY } from '@/constants/siteConfig'
+import { NAP, HOURS, GEO, SITE_URL, TEAM, INES_FULL_ENTITY } from '@/constants/siteConfig'
 import ContactForm from './ContactForm'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
@@ -46,7 +46,13 @@ const schema = {
       { name: 'Contactez-nous', item: 'https://sinnes.fr/contactez-nous/' },
     ]),
     INES_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/contactez-nous/', '2026-03-01', '2026-03-24', 'Contactez Sinnes Automobiles Nice — Devis gratuit', INES_FULL_ENTITY['@id'])
+    getWebPageSchema(
+      'https://sinnes.fr/contactez-nous/',
+      seoData['contactez-nous'].publishedAt,
+      seoData['contactez-nous'].modifiedAt,
+      undefined,
+      INES_FULL_ENTITY['@id']
+    )
   ],
 }
 
@@ -119,6 +125,10 @@ export default function ContactezNousPage() {
               <h2 className="font-heading font-bold text-xl mb-6" style={{ color: '#EFAD42' }}>
                 {seoData['contactez-nous'].h2[1]}
               </h2>
+              {/* Byline Inès — E-E-A-T */}
+              <p className="text-sm border-l-4 border-accent pl-4 mb-6 mt-2 font-body" style={{ color: 'rgba(255,255,255,0.7)' }}>
+                Devis et suivi client gérés par <strong>{TEAM.ines.name}</strong> · {TEAM.ines.jobTitle}. Transparence totale.
+              </p>
               <ContactForm />
             </div>
           </div>

@@ -72,7 +72,13 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/cle-voiture-perdue/', '2026-03-05', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/cle-voiture-perdue/',
+      seoData['cle-voiture-perdue'].publishedAt,
+      seoData['cle-voiture-perdue'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 

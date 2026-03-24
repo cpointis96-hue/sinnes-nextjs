@@ -80,7 +80,13 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/urgence-cle-voiture/', '2026-03-10', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/urgence-cle-voiture/',
+      seoData['urgence-cle-voiture'].publishedAt,
+      seoData['urgence-cle-voiture'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 

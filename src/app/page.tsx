@@ -73,7 +73,13 @@ const schema = {
         INES_FULL_ENTITY,
       ]
     ),
-    getWebPageSchema('https://sinnes.fr/', '2026-03-01', '2026-03-24', 'Sinnes Automobiles — Serrurier auto & Reproduction clé Nice'),
+    getWebPageSchema(
+      'https://sinnes.fr/',
+      seoData.home.publishedAt,
+      seoData.home.modifiedAt,
+      'Sinnes Automobiles — Serrurier auto & Reproduction clé Nice',
+      SINOUHE_FULL_ENTITY['@id']
+    ),
     getBreadcrumbSchema('https://sinnes.fr/', [
       { name: 'Accueil', item: 'https://sinnes.fr/' }
     ]),
@@ -117,6 +123,7 @@ export default function HomePage() {
           muted
           loop
           playsInline
+          poster="/images/hero-poster.png"
           className="absolute inset-0 w-full h-full object-cover opacity-70 contrast-110"
           aria-hidden="true"
         >
@@ -155,7 +162,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 3 — AVANTAGE DOMICILE
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white pt-6 pb-8 md:pb-12">
+      <section className="bg-white pt-6 pb-2 md:pb-4">
         <div className="container-sinnes">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -206,40 +213,40 @@ export default function HomePage() {
       </section>
 
       {/* Divider signature — après domicile */}
-      <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-domicile" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+      <div className="bg-white py-0"><div className="container-sinnes"><DiagonalDivider id="dd-domicile" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" className="!pt-0 !pb-0" /></div></div>
 
       {/* ═══════════════════════════════════════════════════
           SECTION 4 — SERVICES GRID
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-bg-shade pt-12 md:pt-20 pb-20 md:pb-32">
+      <section className="bg-bg-shade pt-0 pb-8 md:pb-12">
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-4xl md:text-5xl text-third text-center mb-16 tracking-tight">
+            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-4 md:mb-6 tracking-tight">
             {seoData.home.h2[2]}
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* Card 1 — Reproduction de clé */}
             <ScrollReveal animation="fadeInUp" delay={0.1}>
-              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+              <article className="card-branded p-5 md:p-6 flex flex-col gap-3 h-full">
                 <ScrollReveal animation="zoomIn" delay={0.3} className="flex justify-center">
                   <Image
                     src="/images/svg/icon-card-cle.svg"
                     alt={seoData.home.images.iconCle}
-                    width={180}
-                    height={180}
+                    width={100}
+                    height={100}
                     className="object-contain"
                   />
                 </ScrollReveal>
-                <h3 className="font-heading font-bold text-2xl text-card-title">
+                <h3 className="font-heading font-bold text-lg md:text-xl text-card-title">
                   {seoData.home.h3[0]}
                 </h3>
-                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
+                <p className="font-body text-text-muted text-xs md:text-sm leading-relaxed flex-1">
                   Vous avez perdu vos clés ou souhaitez refaire un double ? Nous avons une solution simple et rapide.
                 </p>
-                <a href="/reproduction-cle-voiture/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
+                <a href="/reproduction-cle-voiture/" className="btn-accent btn-with-arrow text-xs md:text-sm mt-2 self-start">
                   Découvrir nos services
                 </a>
               </article>
@@ -247,23 +254,23 @@ export default function HomePage() {
 
             {/* Card 2 — Tarif */}
             <ScrollReveal animation="fadeInUp" delay={0.3}>
-              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+              <article className="card-branded p-5 md:p-6 flex flex-col gap-3 h-full">
                 <ScrollReveal animation="zoomIn" delay={0.5} className="flex justify-center">
                   <Image
                     src="/images/svg/icon-card-tarif.svg"
                     alt={seoData.home.images.iconTarif}
-                    width={180}
-                    height={180}
+                    width={100}
+                    height={100}
                     className="object-contain"
                   />
                 </ScrollReveal>
-                <h3 className="font-heading font-bold text-2xl text-card-title">
+                <h3 className="font-heading font-bold text-lg md:text-xl text-card-title">
                   {seoData.home.h3[1]}
                 </h3>
-                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
+                <p className="font-body text-text-muted text-xs md:text-sm leading-relaxed flex-1">
                   Clé simple, centralisée ou mains libres — tarifs transparents, sans frais cachés, à partir de {PRICES.cleSimple.sinnes}€.
                 </p>
-                <a href="/tarif-cle-voiture/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
+                <a href="/tarif-cle-voiture/" className="btn-accent btn-with-arrow text-xs md:text-sm mt-2 self-start">
                   Voir les tarifs
                 </a>
               </article>
@@ -271,23 +278,23 @@ export default function HomePage() {
 
             {/* Card 3 — Serrurier automobile */}
             <ScrollReveal animation="fadeInUp" delay={0.5}>
-              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+              <article className="card-branded p-5 md:p-6 flex flex-col gap-3 h-full">
                 <ScrollReveal animation="zoomIn" delay={0.7} className="flex justify-center">
                   <Image
                     src="/images/svg/icon-card-serrurier.svg"
                     alt={seoData.home.images.iconSerrurier}
-                    width={180}
-                    height={180}
+                    width={100}
+                    height={100}
                     className="object-contain"
                   />
                 </ScrollReveal>
-                <h3 className="font-heading font-bold text-2xl text-card-title">
+                <h3 className="font-heading font-bold text-lg md:text-xl text-card-title">
                   {seoData.home.h3[2]}
                 </h3>
-                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
+                <p className="font-body text-text-muted text-xs md:text-sm leading-relaxed flex-1">
                   Spécialiste clé voiture à Nice — intervention mobile {HOURS.display} sur tout Nice et la Côte d&apos;Azur.
                 </p>
-                <a href="/serrurier-automobile-nice/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
+                <a href="/serrurier-automobile-nice/" className="btn-accent btn-with-arrow text-xs md:text-sm mt-2 self-start">
                   En savoir plus
                 </a>
               </article>
@@ -298,7 +305,7 @@ export default function HomePage() {
       </section>
 
       {/* Divider signature — entre services et qui-sommes-nous */}
-      <div className="bg-bg-shade"><div className="container-sinnes"><DiagonalDivider id="dd-services" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>
+      <div className="bg-bg-shade py-0"><div className="container-sinnes"><DiagonalDivider id="dd-services" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" className="!pt-0 !pb-0" /></div></div>
 
       {/* ═══════════════════════════════════════════════════
           SECTION 5 — QUI SOMMES-NOUS (Timeline)
@@ -351,8 +358,15 @@ export default function HomePage() {
 
               {/* Byline Sinouhé — obligatoire */}
               <ScrollReveal animation="fadeInUp" delay={0.2}>
-                <p className="font-body text-sm text-text-muted border-l-4 border-accent pl-4 mb-8">
+                <p className="font-body text-sm text-text-muted border-l-4 border-accent pl-4 mb-4">
                   Par <strong>{TEAM.sinouhe.name}</strong> · {TEAM.sinouhe.description}
+                </p>
+              </ScrollReveal>
+
+              {/* Byline Inès — E-E-A-T */}
+              <ScrollReveal animation="fadeInUp" delay={0.25}>
+                <p className="font-body text-sm text-text-muted border-l-4 border-accent pl-4 mb-8">
+                  Par <strong>{TEAM.ines.name}</strong> · {TEAM.ines.description}
                 </p>
               </ScrollReveal>
 

@@ -1,29 +1,31 @@
 import { MetadataRoute } from 'next'
 import { SITE_URL } from '@/constants/siteConfig'
+import { seoData } from '@/data/seoData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
-    { url: '/', lastModified: '2026-03-24' },
-    { url: '/reproduction-cle-voiture/', lastModified: '2026-03-23' },
-    { url: '/serrurier-automobile-nice/', lastModified: '2026-03-23' },
-    { url: '/tarif-cle-voiture/', lastModified: '2026-03-24' },
-    { url: '/programmation-cle-voiture/', lastModified: '2026-03-20' },
-    { url: '/double-cle-voiture/', lastModified: '2026-03-19' },
-    { url: '/cle-voiture-perdue/', lastModified: '2026-03-18' },
-    { url: '/urgence-cle-voiture/', lastModified: '2026-03-17' },
-    { url: '/depannage-cle-domicile/', lastModified: '2026-03-16' },
-    { url: '/cle-voiture-transpondeur/', lastModified: '2026-03-15' },
-    { url: '/cle-voiture-nice/', lastModified: '2026-03-14' },
-    { url: '/prix-cle-voiture/', lastModified: '2026-03-24' },
-    { url: '/prix-cle-vs-concessionnaire/', lastModified: '2026-03-24' },
-    { url: '/refaire-cle-hyundai/', lastModified: '2026-03-11' },
-    { url: '/refaire-cle-audi/', lastModified: '2026-03-10' },
-    { url: '/refaire-cle-fiat/', lastModified: '2026-03-09' },
-    { url: '/refaire-cle-toyota/', lastModified: '2026-03-08' },
-    { url: '/refaire-cle-mercedes/', lastModified: '2026-03-07' },
-    { url: '/refaire-cle-renault/', lastModified: '2026-03-06' },
-    { url: '/qui-sommes-nous/', lastModified: '2026-03-05' },
-    { url: '/contactez-nous/', lastModified: '2026-03-24' },
+    { url: '/', lastModified: seoData.home.modifiedAt },
+    { url: '/reproduction-cle-voiture/', lastModified: seoData['reproduction-cle-voiture'].modifiedAt },
+    { url: '/serrurier-automobile-nice/', lastModified: seoData['serrurier-automobile-nice'].modifiedAt },
+    { url: '/tarif-cle-voiture/', lastModified: seoData['tarif-cle-voiture'].modifiedAt },
+    { url: '/programmation-cle-voiture/', lastModified: seoData['programmation-cle-voiture'].modifiedAt },
+    { url: '/double-cle-voiture/', lastModified: seoData['double-cle-voiture'].modifiedAt },
+    { url: '/cle-voiture-perdue/', lastModified: seoData['cle-voiture-perdue'].modifiedAt },
+    { url: '/urgence-cle-voiture/', lastModified: seoData['urgence-cle-voiture'].modifiedAt },
+    { url: '/depannage-cle-domicile/', lastModified: seoData['depannage-cle-domicile'].modifiedAt },
+    { url: '/cle-voiture-transpondeur/', lastModified: seoData['cle-voiture-transpondeur'].modifiedAt },
+    { url: '/cle-voiture-nice/', lastModified: seoData['cle-voiture-nice'].modifiedAt },
+    { url: '/prix-cle-voiture/', lastModified: seoData['prix-cle-voiture'].modifiedAt },
+    { url: '/prix-cle-vs-concessionnaire/', lastModified: seoData['prix-cle-vs-concessionnaire'].modifiedAt },
+    { url: '/refaire-cle-hyundai/', lastModified: seoData['refaire-cle-hyundai'].modifiedAt },
+    { url: '/refaire-cle-audi/', lastModified: seoData['refaire-cle-audi'].modifiedAt },
+    { url: '/refaire-cle-fiat/', lastModified: seoData['refaire-cle-fiat'].modifiedAt },
+    { url: '/refaire-cle-toyota/', lastModified: seoData['refaire-cle-toyota'].modifiedAt },
+    { url: '/refaire-cle-mercedes/', lastModified: seoData['refaire-cle-mercedes'].modifiedAt },
+    { url: '/refaire-cle-renault/', lastModified: seoData['refaire-cle-renault'].modifiedAt },
+    { url: '/qui-sommes-nous/', lastModified: seoData['qui-sommes-nous'].modifiedAt },
+    { url: '/contactez-nous/', lastModified: seoData['contactez-nous'].modifiedAt },
+    { url: '/mentions-legales-et-politique-de-confidentialite/', lastModified: seoData['mentions-legales-et-politique-de-confidentialite'].modifiedAt },
   ]
 
   return pages.map(({ url, lastModified }) => ({

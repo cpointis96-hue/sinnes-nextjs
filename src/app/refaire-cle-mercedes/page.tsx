@@ -86,7 +86,7 @@ const schema = {
     getBreadcrumbSchema('https://sinnes.fr/refaire-cle-mercedes/', [
       { name: 'Accueil', item: 'https://sinnes.fr/' },
       { name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
-      { name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
+      { name: 'Programmation de clé', item: 'https://sinnes.fr/programmation-cle-voiture/' },
       { name: 'Refaire clé Mercedes', item: 'https://sinnes.fr/refaire-cle-mercedes/' }
     ]),
     {
@@ -98,7 +98,13 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/refaire-cle-mercedes/', '2026-03-18', '2026-03-22')
+    getWebPageSchema(
+      'https://sinnes.fr/refaire-cle-mercedes/',
+      seoData['refaire-cle-mercedes'].publishedAt,
+      seoData['refaire-cle-mercedes'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    ),
   ],
 }
 

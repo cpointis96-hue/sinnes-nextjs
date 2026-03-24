@@ -23,7 +23,11 @@ const schema = {
       { name: 'Accueil', item: 'https://sinnes.fr/' },
       { name: 'Mentions légales & Politique de confidentialité', item: 'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/' }
     ]),
-    getWebPageSchema('https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/', '2025-11-01', '2026-03-22')
+    getWebPageSchema(
+      'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/',
+      seoData['mentions-legales-et-politique-de-confidentialite'].publishedAt,
+      seoData['mentions-legales-et-politique-de-confidentialite'].modifiedAt
+    )
   ]
 }
 
@@ -350,7 +354,7 @@ export default function MentionsLegalesPage() {
           
           <div className="mt-20 pt-10 border-t border-gray-100">
             <p className="text-gray-950 text-base font-body">
-              Dernière mise à jour : <span className="font-bold">Novembre 2025</span>
+              Dernière mise à jour : <span className="font-bold">{new Date(seoData['mentions-legales-et-politique-de-confidentialite'].modifiedAt).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}</span>
             </p>
           </div>
 

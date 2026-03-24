@@ -74,7 +74,13 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    getWebPageSchema('https://sinnes.fr/programmation-cle-voiture/', '2026-03-07', '2026-03-23')
+    getWebPageSchema(
+      'https://sinnes.fr/programmation-cle-voiture/',
+      seoData['programmation-cle-voiture'].publishedAt,
+      seoData['programmation-cle-voiture'].modifiedAt,
+      undefined,
+      SINOUHE_FULL_ENTITY['@id']
+    )
   ]
 }
 
