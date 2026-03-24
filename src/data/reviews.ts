@@ -95,17 +95,7 @@ export const REVIEWS: Review[] = [
     pages: [],
     homepage: true,
   },
-  {
-    id: 'freca',
-    author: 'Freca',
-    isLocalGuide: false,
-    reviewCount: 3,
-    date: '2025-11-01',
-    rating: 5,
-    text: "Entreprise de qualité, et dirigeants très sympathiques qui inspirent confiance. Pour la vente de véhicules d'occasion, ils n'hésitent pas à effectuer les prestations qui semblent nécessaires à la demande du client. Au vu des bons avis",
-    pages: ['/acheter-une-voiture/'],
-    homepage: false,
-  },
+
   {
     id: 'nicolas-moreau',
     author: 'Nicolas Moreau',

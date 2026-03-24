@@ -1,10 +1,11 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconShield, IconWrench } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
+import BylineInes from '@/components/ui/BylineInes'
 import { getReviewForPage } from '@/data/reviews'
 import { seoData } from '@/data/seoData'
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['prix-cle-voiture'].title,
   url: 'https://sinnes.fr/prix-cle-voiture/',
-  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+  images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
  },
 }
 
@@ -40,72 +41,61 @@ const FAQ_ITEMS: FAQItem[] = [
 
 const review = getReviewForPage('/prix-cle-voiture/')
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Service",
-   "@id": "https://sinnes.fr/prix-cle-voiture/#service",
-   "name": "Tarifs reproduction clé voiture Nice",
-   "serviceType": "Locksmith Pricing Information",
-   "description": "Guide complet des tarifs pour refaire une clé de voiture à Nice. Devis transparent, sans frais cachés, économie par rapport au réseau constructeur.",
-   "provider": { "@id": "https://sinnes.fr/#organization" },
-   "areaServed": AREA_SERVED_TYPED,
-   "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Prix reproduction de clé de voiture — Sinnes Automobiles",
-    "itemListElement": [
-     { "@type": "Offer", "name": "Clé simple (sans télécommande)", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur. Délai : 1–2h." },
-     { "@type": "Offer", "name": "Clé centralisée (avec télécommande)", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur + télécommande. Délai : 2–3h." },
-     { "@type": "Offer", "name": "Clé mains libres / badge", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR", "description": "Programmation badge + décodage + insert de secours + télécommande. Délai : 2–4h." },
-     { "@type": "Offer", "name": "Perte totale (sans aucun double)", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR", "description": "Crochetage + décodage serrure + taille + programmation. Délai : selon complexité." }
-    ]
-   },
-   "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": REVIEWS.ratingValue,
-    "reviewCount": REVIEWS.reviewCount,
-    "bestRating": REVIEWS.bestRating
-   },
-   "review": review ? {
-    "@type": "Review",
-    "author": { "@type": "Person", "name": review.author },
-    "datePublished": review.date,
-    "reviewRating": {
-     "ratingValue": "5",
-     "bestRating": "5"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://sinnes.fr/prix-cle-voiture/#service",
+      "name": "Tarifs reproduction clé voiture Nice",
+      "serviceType": "Locksmith Pricing Information",
+      "description": "Guide complet des tarifs pour refaire une clé de voiture à Nice. Devis transparent, sans frais cachés, économie par rapport au réseau constructeur.",
+      "provider": { "@id": `${SITE_URL}/#organization` },
+      "areaServed": AREA_SERVED_TYPED,
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prix reproduction de clé de voiture — Sinnes Automobiles",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Clé simple (sans télécommande)", "price": `${PRICES.cleSimple.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur. Délai : 1–2h." },
+          { "@type": "Offer", "name": "Clé centralisée (avec télécommande)", "price": `${PRICES.cleCentralisee.sinnes}`, "priceCurrency": "EUR", "description": "Décodage + taille laser + programmation transpondeur + télécommande. Délai : 2–3h." },
+          { "@type": "Offer", "name": "Clé mains libres / badge", "price": `${PRICES.cleMainsLibres.sinnes}`, "priceCurrency": "EUR", "description": "Programmation badge + décodage + insert de secours + télécommande. Délai : 2–4h." },
+          { "@type": "Offer", "name": "Perte totale (sans aucun double)", "price": `${PRICES.perteTotale.sinnes}`, "priceCurrency": "EUR", "description": "Crochetage + décodage serrure + taille + programmation. Délai : selon complexité." }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": REVIEWS.ratingValue,
+        "reviewCount": REVIEWS.reviewCount,
+        "bestRating": REVIEWS.bestRating
+      },
+      "review": review ? {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": review.author },
+        "datePublished": review.date,
+        "reviewRating": {
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": review.text
+      } : undefined
     },
-    "reviewBody": review.text
-   } : undefined
-  },
-  SINOUHE_FULL_ENTITY,
-  {
-   "@type": "WebPage",
-   "@id": "https://sinnes.fr/prix-cle-voiture/#webpage",
-   "url": "https://sinnes.fr/prix-cle-voiture/",
-   "datePublished": "2026-03-14",
-   "dateModified": "2026-03-22",
-   "name": "Prix clé voiture Nice — Guide complet des tarifs 2026",
-   "isPartOf": { "@id": "https://sinnes.fr/#website" },
-   "about": { "@id": "https://sinnes.fr/#organization" },
-   "mainEntity": { "@id": "https://sinnes.fr/prix-cle-voiture/#service" }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-    { "@type": "ListItem", "position": 2, "name": "Prix clé voiture", "item": "https://sinnes.fr/prix-cle-voiture/" }
-   ]
-  },
-  {
-   "@type": "FAQPage",
-   "mainEntity": FAQ_ITEMS.map(item => ({
-    "@type": "Question",
-    "name": item.question,
-    "acceptedAnswer": { "@type": "Answer", "text": item.answer }
-   }))
-  }
- ]
+    getBreadcrumbSchema('https://sinnes.fr/prix-cle-voiture/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Prix clé voiture', item: 'https://sinnes.fr/prix-cle-voiture/' }
+    ]),
+    {
+      "@type": "FAQPage",
+      "mainEntity": FAQ_ITEMS.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": { "@type": "Answer", "text": item.answer }
+      }))
+    },
+    SINOUHE_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/prix-cle-voiture/', '2026-03-14', '2026-03-22')
+  ]
 }
 
 const steps = [
@@ -171,10 +161,8 @@ export default function PrixCleVoiturePage() {
       Devis gratuit : {NAP.phoneDisplay}
      </a>
 
-     <p className="text-sm border-l-4 border-[#EFAD42] pl-4 mt-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
-      Tarifs et devis gérés par <strong style={{ color: '#FFFFFF' }}>{TEAM.ines.name}</strong> ·
-      Co-fondatrice de Sinnes Automobiles, responsable gestion et relation client.
-     </p>
+     <BylineInes />
+
     </div>
    </section>
    <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-prix-cle-voiture" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>

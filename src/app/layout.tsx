@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { ORG, NAP, GEO, HOURS, SAME_AS } from '@/constants/siteConfig'
+import { getWebSiteSchema, getBaseOrganization } from '@/utils/schema'
 
 // ---------------------------------------------------------------------------
 // FONTS — next/font/google (zéro @import externe, display:swap = CLS 0)
@@ -83,48 +84,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@graph": [
-                {
-                  "@type": "WebSite",
-                  "@id": "https://sinnes.fr/#website",
-                  "url": "https://sinnes.fr/",
-                  "name": "Sinnes Automobiles",
-                  "publisher": { "@id": "https://sinnes.fr/#organization" },
-                  "inLanguage": "fr-FR"
-                },
-                {
-                  "@type": ["Organization", "LocalBusiness", "AutomotiveBusiness"],
-                  "@id": "https://sinnes.fr/#organization",
-                  "name": ORG.name,
-                  "legalName": ORG.legalName,
-                  "identifier": ORG.siret,
-                  "foundingDate": ORG.foundingDate,
-                  "url": ORG.url,
-                  "logo": ORG.logo,
-                  "telephone": NAP.phoneTel,
-                  "email": NAP.email,
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": NAP.address.streetAddress,
-                    "addressLocality": NAP.address.addressLocality,
-                    "postalCode": NAP.address.postalCode,
-                    "addressCountry": NAP.address.addressCountry,
-                    "addressRegion": NAP.address.addressRegion
-                  },
-                  "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": GEO.latitude,
-                    "longitude": GEO.longitude
-                  },
-                  "openingHours": HOURS.schemaValue,
-                  "sameAs": SAME_AS,
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": NAP.phoneTel,
-                    "contactType": "customer service",
-                    "areaServed": "FR",
-                    "availableLanguage": ["French"]
-                  }
-                }
+                getWebSiteSchema(),
+                getBaseOrganization()
               ]
             })
           }}

@@ -55,7 +55,6 @@ const config: Config = {
         'card-border': 'rgba(17, 24, 39, 0.1)',
 
         // --- Badges ---
-        'sold-badge': '#FC4E4E',    // rouge — badge vendu (Silo B)
         'cta-urgence': '#e53935',   // rouge vif — CTA urgence (pages serrurier)
 
         // --- Palette SVG Infographies Fast-Check ---
@@ -87,7 +86,6 @@ const config: Config = {
       // Extraites des styles Elementor source
       // -----------------------------------------------------------------------
       fontSize: {
-        // Prix overlay (cards Silo B + badges)
         'price-overlay': ['1.3rem', { lineHeight: '1.2', fontWeight: '700' }],
         // Titres H3 cocon
         'h3-cocon': ['1.3rem', { lineHeight: '1.4', fontWeight: '700' }],

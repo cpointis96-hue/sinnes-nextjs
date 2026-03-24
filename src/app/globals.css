@@ -341,3 +341,38 @@ textarea {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
   line-height: 1;
 }
+
+/* ---------------------------------------------------------------------------
+   BRANDED CARDS (Refined Section 4)
+   --------------------------------------------------------------------------- */
+
+.card-branded {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 4px solid var(--sinnes-or);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card-branded:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.06),
+    0 24px 48px rgba(0, 0, 0, 0.06);
+  border-color: var(--sinnes-or);
+}
+
+.btn-with-arrow {
+  gap: 8px;
+}
+
+.btn-with-arrow::after {
+  content: "→";
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn-with-arrow:hover::after {
+  transform: translateX(4px);
+}

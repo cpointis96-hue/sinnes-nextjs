@@ -24,9 +24,8 @@
 
 **H3** (4)
 - Reproduction de clé de voiture
-- Vente de véhicule
+- Reproduction de clé de voiture
 - Ouverture de Sinnes Automobiles
-- La vente de véhicules
 
 **FAQ** (0)
 _vide_
@@ -36,13 +35,16 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
+**Liens internes** (13)
+- **Accueil** → /
+- **Reproduction de clé** → /reproduction-cle-voiture/
+- **Serrurier Nice** → /serrurier-automobile-nice/
+- **Tarifs** → /tarif-cle-voiture/
 - **Contact** → /contactez-nous/
 - **serrurier automobile à Nice** → /serrurier-automobile-nice/
 - **reproduction et double de clé de voiture** → /reproduction-cle-voiture/
 - **CONTACTEZ-NOUS** → /contactez-nous/
 - **Découvrir nos services** → /reproduction-cle-voiture/
-- **Voir les véhicules** → /acheter-une-voiture/
 - **En savoir plus** → /qui-sommes-nous/
 - **tarifs de reproduction de clé** → /tarif-cle-voiture/
 - **Demandez votre devis** → /contactez-nous/
@@ -100,7 +102,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Obtenir un devis gratuit** → /contactez-nous/
 - **78 €À partir de : clé simple, centralisée, mains libres** → /tarif-cle-voiture/
@@ -156,7 +157,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **78 €À partir de** → /tarif-cle-voiture/
 - **7j/7Nice · Antibes · Cagnes · Cannes** → /urgence-cle-voiture/
@@ -214,7 +214,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Obtenir un devis gratuit** → /contactez-nous/
 - **reproduction de clé de voiture à Nice** → /reproduction-cle-voiture/
@@ -267,7 +266,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **78 €À partir de** → /tarif-cle-voiture/
 - **en cas de perte totale de vos clés** → /cle-voiture-perdue/
@@ -327,7 +325,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Intervention urgenceRéponse immédiate 7j/7** → /urgence-cle-voiture/
 - **240 €À partir de** → /tarif-cle-voiture/
@@ -385,7 +382,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **7j/7Atelier ou à domicile** → /depannage-cle-domicile/
 - **Devis gratuitTarif ferme avant intervention** → /tarif-cle-voiture/
@@ -444,7 +440,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Programmation OBDAbrites · ZedFull** → /programmation-cle-voiture/
 - **78 €À partir de** → /reproduction-cle-voiture/
@@ -511,7 +506,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Nice · Antibes · Cagnes · CannesZone d'intervention** → /serrurier-automobile-nice/
 - **Intervention < 2hSur la Côte d'Azur** → /urgence-cle-voiture/
@@ -569,7 +563,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Nice · Antibes · Cagnes · CannesZone d'intervention** → /cle-voiture-nice/
 - **78 €À partir de** → /tarif-cle-voiture/
@@ -621,7 +614,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Toute la Côte d'AzurNice et alentours** → /cle-voiture-nice/
 - **serrurier automobile à Nice** → /serrurier-automobile-nice/
@@ -675,7 +667,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **78 €À partir de** → /tarif-cle-voiture/
 - **Jusqu'à 80% moins chervs concessionnaire** → /prix-cle-vs-concessionnaire/
@@ -730,7 +721,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **-80%Jusqu'à** → /tarif-cle-voiture/
 - **Garantie préservéeProgrammation officielle** → /reproduction-cle-voiture/
@@ -784,7 +774,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
 - **double de clé Hyundai** → /double-cle-voiture/
@@ -835,7 +824,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 132 €Devis gratuit** → /tarif-cle-voiture/
 - **programmation de clé voiture** → /programmation-cle-voiture/
@@ -886,7 +874,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
 - **double de clé Fiat** → /double-cle-voiture/
@@ -937,7 +924,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
 - **double de clé Toyota** → /double-cle-voiture/
@@ -988,7 +974,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 132 €Devis gratuit** → /tarif-cle-voiture/
 - **programmation clé Mercedes** → /programmation-cle-voiture/
@@ -1039,7 +1024,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **À partir de 78 €Devis gratuit** → /tarif-cle-voiture/
 - **double de clé Renault** → /double-cle-voiture/
@@ -1052,45 +1036,6 @@ _vide_
 - **Obtenir un devis gratuit : +33 6 75 54 04 11** → tel:+33675540411
 - **Avis Google★★★★★5.0 · 58 avis“Merci à vous pour l'excellence de votre travail, votre gentillesse, vos explications mais aussi pour avoir trouvé une solution à un problème de clef perdue, qui sont introuvables chez le constructeur RENAULT puisque ces derniers ne”Isabellejanvier 2026** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
 - **Appelez maintenant : +33 6 75 54 04 11** → tel:+33675540411
-- **contact@sinnes.fr** → mailto:contact@sinnes.fr
-
-
-·······································································································································································
-
-## 20. ACHETER UNE VOITURE
-
-**URL:** http://localhost:3000/acheter-une-voiture/
-
-| Balise | Valeur |
-|---|---|
-| **MC Principal** | acheter voiture nice |
-| **Title** | Acheter voiture Nice | Sinnes Automobiles |
-| **Meta Desc** | Voitures d'occasion révisées et garanties à Nice. Sélection expert Sinnes. Essai sur RDV — Devis personnalisé : +33 6 75 54 04 11 |
-| **H1** | Acheter une Voiture d'Occasion à Nice avec Sinnes Automobiles |
-
-**H2** (3)
-- Véhicules disponibles
-- Contactez-nous pour le stock VO
-- Voir les véhicules disponibles
-
-**H3** (0)
-_vide_
-
-**FAQ** (0)
-_vide_
-
-**Liens internes** (14)
-- **Accueil** → /
-- **Reproduction de clé** → /reproduction-cle-voiture/
-- **Serrurier Nice** → /serrurier-automobile-nice/
-- **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
-- **Contact** → /contactez-nous/
-- **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
-
-**Liens externes** (7)
-- **+33 6 75 54 04 11** → tel:+33675540411
-- **Avis Google★★★★★5.0 · 58 avis“Entreprise de qualité, et dirigeants très sympathiques qui inspirent confiance. Pour la vente de véhicules d'occasion, ils n'hésitent pas à effectuer les prestations qui semblent nécessaires à la demande du client. Au vu des bons avis”Frecanovembre 2025** → https://search.google.com/local/reviews?placeid=ChIJCS7doSKy_EcRN5-Q-XSfBSs
 - **contact@sinnes.fr** → mailto:contact@sinnes.fr
 
 
@@ -1124,11 +1069,9 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **→ Consulter notre grille tarifaire** → /tarif-cle-voiture/
 - **reproduction de clé** → /reproduction-cle-voiture/
-- **vente de véhicules d'occasion** → /acheter-une-voiture/
 - **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
 
 **Liens externes** (5)
@@ -1165,7 +1108,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
 
@@ -1213,7 +1155,6 @@ _vide_
 - **Reproduction de clé** → /reproduction-cle-voiture/
 - **Serrurier Nice** → /serrurier-automobile-nice/
 - **Tarifs** → /tarif-cle-voiture/
-- **Acheter une voiture** → /acheter-une-voiture/
 - **Contact** → /contactez-nous/
 - **Mentions légales & politique de confidentialité** → /mentions-legales-et-politique-de-confidentialite/
 

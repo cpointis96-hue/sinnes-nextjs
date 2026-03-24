@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconMapPin, IconCalendar, IconClock, IconWrench } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['cle-voiture-nice'].title,
   url: 'https://sinnes.fr/cle-voiture-nice/',
-  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+  images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
  },
 }
 
@@ -43,6 +43,8 @@ const FAQ_ITEMS: FAQItem[] = [
  },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
  "@context": "https://schema.org",
  "@graph": [
@@ -65,17 +67,14 @@ const schema = {
     { "@type": "City", "name": "Saint-Laurent-du-Var" },
     { "@type": "City", "name": "Villefranche-sur-Mer" }
    ],
-   "employee": { "@id": "https://sinnes.fr/#sinouhe" },
-   "parentOrganization": { "@id": "https://sinnes.fr/#organization" }
+   "employee": { "@id": TEAM.sinouhe.id },
+   "parentOrganization": { "@id": `${SITE_URL}/#organization` }
   },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-    { "@type": "ListItem", "position": 2, "name": "Serrurier automobile Nice", "item": "https://sinnes.fr/serrurier-automobile-nice/" },
-    { "@type": "ListItem", "position": 3, "name": "Clé voiture Nice et alentours", "item": "https://sinnes.fr/cle-voiture-nice/" }
-   ]
-  },
+  getBreadcrumbSchema('https://sinnes.fr/cle-voiture-nice/', [
+    { name: 'Accueil', item: 'https://sinnes.fr/' },
+    { name: 'Serrurier automobile Nice', item: 'https://sinnes.fr/serrurier-automobile-nice/' },
+    { name: 'Clé voiture Nice et alentours', item: 'https://sinnes.fr/cle-voiture-nice/' }
+  ]),
   {
    "@type": "FAQPage",
    "mainEntity": FAQ_ITEMS.map(item => ({
@@ -87,19 +86,12 @@ const schema = {
   SINOUHE_FULL_ENTITY,
   {
    "@type": "Person",
-   "@id": "https://sinnes.fr/#ines",
+   "@id": TEAM.ines.id,
    "name": "Inès Barthelemy",
    "jobTitle": "Co-fondatrice, gestion et relation client",
-   "worksFor": { "@id": "https://sinnes.fr/#organization" }
+   "worksFor": { "@id": `${SITE_URL}/#organization` }
   },
-  {
-   "@type": "WebPage",
-   "@id": "https://sinnes.fr/cle-voiture-nice/#webpage",
-   "url": "https://sinnes.fr/cle-voiture-nice/",
-   "datePublished": "2026-03-12",
-   "dateModified": "2026-03-23",
-   "isPartOf": { "@id": "https://sinnes.fr/#website" }
-  }
+  getWebPageSchema('https://sinnes.fr/cle-voiture-nice/', '2026-03-12', '2026-03-23')
  ]
 }
 

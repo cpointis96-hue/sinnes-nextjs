@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP, HOURS, GEO } from '@/constants/siteConfig'
+import { NAP, HOURS, GEO, SITE_URL } from '@/constants/siteConfig'
 import ContactForm from './ContactForm'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
@@ -12,16 +12,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['contactez-nous'].title,
     url: 'https://sinnes.fr/contactez-nous/',
-    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
+
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
 
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://sinnes.fr/#organization',
+      '@id': `${SITE_URL}/#organization`,
       name: 'Sinnes Automobiles',
       telephone: NAP.phoneTel,
       email: 'contact@sinnes.fr',
@@ -39,21 +41,11 @@ const schema = {
       },
       openingHours: HOURS.schemaValue,
     },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        { '@type': 'ListItem', position: 2, name: 'Contactez-nous', item: 'https://sinnes.fr/contactez-nous/' },
-      ],
-    },
-    {
-      '@type': 'WebPage',
-      '@id': 'https://sinnes.fr/contactez-nous/#webpage',
-      url: 'https://sinnes.fr/contactez-nous/',
-      datePublished: '2026-03-01',
-      dateModified: '2026-03-01',
-      isPartOf: { '@id': 'https://sinnes.fr/#website' },
-    },
+    getBreadcrumbSchema('https://sinnes.fr/contactez-nous/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Contactez-nous', item: 'https://sinnes.fr/contactez-nous/' },
+    ]),
+    getWebPageSchema('https://sinnes.fr/contactez-nous/', '2026-03-01', '2026-03-07')
   ],
 }
 

@@ -15,7 +15,6 @@ const pagesToTest = [
   '/serrurier-automobile-nice/',
   '/tarif-cle-voiture/',
   '/contactez-nous/',
-  '/acheter-une-voiture/',
   '/depannage-cle-domicile/',
   '/urgence-cle-voiture/',
   '/cle-voiture-nice/',

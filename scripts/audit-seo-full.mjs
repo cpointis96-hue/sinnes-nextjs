@@ -22,7 +22,6 @@ const PAGES = [
   '/refaire-cle-toyota/',
   '/refaire-cle-mercedes/',
   '/refaire-cle-renault/',
-  '/acheter-une-voiture/',
   '/qui-sommes-nous/',
   '/contactez-nous/',
   '/mentions-legales-et-politique-de-confidentialite/',
@@ -200,7 +199,6 @@ const KW_MAP = {
       { kw: 'carte renault程序', vol: 0 },
     ],
   },
-  '/acheter-une-voiture/': {
     primary: { kw: 'acheter voiture nice', vol: 0, kd: null },
     secondary: [
       { kw: 'voiture occasion nice', vol: 0 },

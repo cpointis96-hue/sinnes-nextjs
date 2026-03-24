@@ -193,14 +193,15 @@ export const PRICES = {
 // ---------------------------------------------------------------------------
 // NAVIGATION — menu principal
 // (voir aussi Header.tsx pour le rendu)
+// Force refresh for hydration
 // ---------------------------------------------------------------------------
+
 
 export const NAV_ITEMS = [
   { label: 'Accueil', href: '/' },
   { label: 'Reproduction de clé', href: '/reproduction-cle-voiture/' },
   { label: 'Serrurier Nice', href: '/serrurier-automobile-nice/' },
   { label: 'Tarifs', href: '/tarif-cle-voiture/' },
-  { label: 'Acheter une voiture', href: '/acheter-une-voiture/' },
   { label: 'Contact', href: '/contactez-nous/' },
 ] as const
 

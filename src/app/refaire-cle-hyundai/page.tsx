@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['refaire-cle-hyundai'].title,
     url: 'https://sinnes.fr/refaire-cle-hyundai/',
-    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -40,6 +40,8 @@ const FAQ_ITEMS: FAQItem[] = [
 
 const review = getReviewForPage('/refaire-cle-hyundai/')
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -49,7 +51,7 @@ const schema = {
       name: 'Reproduction clé Hyundai Nice',
       serviceType: 'Car Key Specialist',
       description: 'Expert en reproduction et programmation de clés Hyundai (i10, i30, Tucson, Ioniq) à Nice. Spécialiste système IMMO3 et Smart Key.',
-      provider: { '@id': 'https://sinnes.fr/#organization' },
+      provider: { '@id': `${SITE_URL}/#organization` },
       areaServed: AREA_SERVED_TYPED,
       brand: {
         "@type": "Brand",
@@ -82,15 +84,12 @@ const schema = {
         ],
       },
     },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        { '@type': 'ListItem', position: 2, name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
-        { '@type': 'ListItem', position: 3, name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
-        { '@type': 'ListItem', position: 4, name: 'Refaire clé Hyundai', item: 'https://sinnes.fr/refaire-cle-hyundai/' },
-      ],
-    },
+    getBreadcrumbSchema('https://sinnes.fr/refaire-cle-hyundai/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
+      { name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
+      { name: 'Refaire clé Hyundai', item: 'https://sinnes.fr/refaire-cle-hyundai/' }
+    ]),
     {
       '@type': 'FAQPage',
       mainEntity: FAQ_ITEMS.map(item => ({
@@ -99,19 +98,9 @@ const schema = {
         acceptedAnswer: { '@type': 'Answer', text: item.answer },
       })),
     },
-      SINOUHE_FULL_ENTITY,
-      {
-        '@type': 'WebPage',
-        '@id': 'https://sinnes.fr/refaire-cle-hyundai/#webpage',
-        url: 'https://sinnes.fr/refaire-cle-hyundai/',
-        datePublished: '2026-03-15',
-        dateModified: '2026-03-15',
-        name: 'Refaire une clé Hyundai à Nice · Double & Perte totale 7j/7',
-        isPartOf: { '@id': 'https://sinnes.fr/#website' },
-        about: { '@id': 'https://sinnes.fr/#organization' },
-        mainEntity: { '@id': 'https://sinnes.fr/refaire-cle-hyundai/#service' }
-      }
-    ],
+    SINOUHE_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/refaire-cle-hyundai/', '2026-03-15', '2026-03-19')
+  ],
 }
 
 const steps = [

@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NAP, NAV_ITEMS } from '@/constants/siteConfig'
+// Update for hydration fix
+
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false)

@@ -70,9 +70,17 @@ export default function Footer() {
               <meta itemProp="name" content={ORG.name} />
 
               <a
+                href={`tel:${NAP.phoneTel}`}
+                itemProp="telephone"
+                className="font-body text-sm text-white/50 hover:text-white transition-colors"
+              >
+                {NAP.phoneDisplay}
+              </a>
+
+              <a
                 href={`mailto:${NAP.email}`}
                 itemProp="email"
-                className="font-body text-sm text-white/60 hover:text-white transition-colors"
+                className="font-body text-sm text-white/50 hover:text-white transition-colors"
               >
                 {NAP.email}
               </a>

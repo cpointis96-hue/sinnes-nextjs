@@ -22,7 +22,6 @@ const URLS = [
   '/refaire-cle-mercedes/',
   '/refaire-cle-renault/',
   '/refaire-cle-toyota/',
-  '/acheter-une-voiture/',
   '/contactez-nous/',
   '/qui-sommes-nous/'
 ];

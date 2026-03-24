@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconWrench, IconShield, IconCalendar } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['programmation-cle-voiture'].title,
     url: 'https://sinnes.fr/programmation-cle-voiture/',
-    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -39,6 +39,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -46,7 +48,7 @@ const schema = {
       "@type": "Service",
       "@id": "https://sinnes.fr/programmation-cle-voiture/#service",
       "name": "Programmation de clé de voiture — Nice",
-      "provider": { "@id": "https://sinnes.fr/#organization" },
+      "provider": { "@id": `${SITE_URL}/#organization` },
       "areaServed": AREA_SERVED_TYPED,
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -59,13 +61,10 @@ const schema = {
         ]
       }
     },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Programmation clé voiture", "item": "https://sinnes.fr/programmation-cle-voiture/" }
-      ]
-    },
+    getBreadcrumbSchema('https://sinnes.fr/programmation-cle-voiture/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Programmation clé voiture', item: 'https://sinnes.fr/programmation-cle-voiture/' }
+    ]),
     {
       "@type": "FAQPage",
       "mainEntity": FAQ_ITEMS.map(item => ({
@@ -75,14 +74,7 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    {
-      "@type": "WebPage",
-      "@id": "https://sinnes.fr/programmation-cle-voiture/#webpage",
-      "url": "https://sinnes.fr/programmation-cle-voiture/",
-      "datePublished": "2026-03-07",
-      "dateModified": "2026-03-23",
-      "isPartOf": { "@id": "https://sinnes.fr/#website" }
-    }
+    getWebPageSchema('https://sinnes.fr/programmation-cle-voiture/', '2026-03-07', '2026-03-23')
   ]
 }
 

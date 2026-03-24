@@ -4,8 +4,10 @@ import { NAP, ORG, SOCIAL, HOURS, TEAM, PRICES, REVIEWS, GEO, AREA_SERVED, ENTIT
 import { seoData } from '@/data/seoData'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import { BrandsCarousel, ReviewsCarousel } from './DynamicCarousels'
+import HeroCard from './HeroCard'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import { getHomepageReviews } from '@/data/reviews'
+import { getFullOrganizationSchema, getWebPageSchema } from '@/utils/schema'
 
 // ─────────────────────────────────────────────────────────────
 // METADATA
@@ -18,58 +20,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData.home.title,
     url: 'https://sinnes.fr/',
-    images: [{ url: '/images/depannage-urgence-sinnes-1024x523.jpg', width: 1024, height: 523 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
 const homepageReviews = getHomepageReviews()
 
+// ... (dans le composant ou juste avant)
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': ['Organization', 'LocalBusiness', 'AutomotiveBusiness'],
-      '@id': 'https://sinnes.fr/#organization',
-      name: ORG.name,
-      legalName: ORG.legalName,
-      foundingDate: ORG.foundingDate,
-      identifier: ORG.siret,
-      url: ORG.url,
-      telephone: NAP.phoneTel,
-      email: NAP.email,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: NAP.address.streetAddress,
-        addressLocality: NAP.address.addressLocality,
-        postalCode: NAP.address.postalCode,
-        addressCountry: NAP.address.addressCountry,
-        addressRegion: NAP.address.addressRegion,
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: GEO.latitude,
-        longitude: GEO.longitude,
-      },
-      openingHours: HOURS.schemaValue,
-      priceRange: '€€',
-      numberOfEmployees: {
-        '@type': 'QuantitativeValue',
-        value: 2
-      },
-      contactPoint: {
-        '@type': 'ContactPoint',
-        telephone: NAP.phoneTel,
-        contactType: 'customer service',
-        areaServed: 'FR',
-        availableLanguage: ['French']
-      },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: REVIEWS.ratingValue,
-        reviewCount: REVIEWS.reviewCount,
-        bestRating: REVIEWS.bestRating,
-      },
-      review: homepageReviews.map((r) => ({
+    getFullOrganizationSchema(
+      homepageReviews.map((r) => ({
         '@type': 'Review',
         author: { '@type': 'Person', name: r.author },
         datePublished: r.date,
@@ -80,18 +42,33 @@ const schema = {
         },
         reviewBody: r.text,
       })),
-      areaServed: AREA_SERVED_TYPED,
-      sameAs: [
-        SOCIAL.facebook,
-        SOCIAL.instagram,
-        SOCIAL.linkedin,
-        SOCIAL.googleMaps,
-        SOURCES.enterprise.societeCom,
-        SOURCES.enterprise.lefigaroEntreprises,
-        ENTITY_LINKS.nice,
-        ENTITY_LINKS.locksmith,
+      [
+        {
+          '@type': 'Offer',
+          name: 'Clé simple (sans télécommande)',
+          price: String(PRICES.cleSimple.sinnes),
+          priceCurrency: 'EUR',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Clé centralisée (télécommande)',
+          price: String(PRICES.cleCentralisee.sinnes),
+          priceCurrency: 'EUR',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Clé mains libres / badge',
+          price: String(PRICES.cleMainsLibres.sinnes),
+          priceCurrency: 'EUR',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Perte totale (sans double)',
+          price: String(PRICES.perteTotale.sinnes),
+          priceCurrency: 'EUR',
+        },
       ],
-      employee: [
+      [
         SINOUHE_FULL_ENTITY,
         {
           '@type': 'Person',
@@ -103,46 +80,9 @@ const schema = {
             SOURCES.ines.infonet
           ]
         },
-      ],
-      hasOfferCatalog: {
-        '@type': 'OfferCatalog',
-        name: 'Reproduction & double de clé de voiture',
-        itemListElement: [
-          {
-            '@type': 'Offer',
-            name: 'Clé simple (sans télécommande)',
-            price: String(PRICES.cleSimple.sinnes),
-            priceCurrency: 'EUR',
-          },
-          {
-            '@type': 'Offer',
-            name: 'Clé centralisée (télécommande)',
-            price: String(PRICES.cleCentralisee.sinnes),
-            priceCurrency: 'EUR',
-          },
-          {
-            '@type': 'Offer',
-            name: 'Clé mains libres / badge',
-            price: String(PRICES.cleMainsLibres.sinnes),
-            priceCurrency: 'EUR',
-          },
-          {
-            '@type': 'Offer',
-            name: 'Perte totale (sans double)',
-            price: String(PRICES.perteTotale.sinnes),
-            priceCurrency: 'EUR',
-          },
-        ],
-      },
-    },
-    {
-      '@type': 'WebPage',
-      '@id': 'https://sinnes.fr/#webpage',
-      url: 'https://sinnes.fr/',
-      datePublished: '2026-03-01',
-      dateModified: '2026-03-22',
-      isPartOf: { '@id': 'https://sinnes.fr/#website' },
-    },
+      ]
+    ),
+    getWebPageSchema('https://sinnes.fr/', '2026-03-01', '2026-03-22')
   ],
 }
 
@@ -156,12 +96,6 @@ const TIMELINE = [
     titre: 'Ouverture de Sinnes Automobiles',
     texte:
       "Lancement de l'activité spécialisée dans la programmation et le codage de clés automobiles.",
-  },
-  {
-    date: 'Octobre 2025',
-    titre: 'La vente de véhicules',
-    texte:
-      "Sinnes Automobiles élargit son savoir-faire en proposant désormais la vente de voitures sélectionnées avec soin.",
   },
 ]
 
@@ -179,73 +113,31 @@ export default function HomePage() {
       />
 
       {/* ═══════════════════════════════════════════════════
-          SECTION 1 — HERO (vidéo fond + carte blanche gauche)
+          SECTION 1 — HERO (Bande horizontale slim)
       ═══════════════════════════════════════════════════ */}
-      <section className="relative flex items-center overflow-hidden bg-[#1a1a1a]" style={{ minHeight: '52vh' }}>
+      <section className="relative flex items-center overflow-hidden bg-[#0A0A0A]" style={{ minHeight: '32vh' }}>
 
-        {/* Vidéo fond — couvre exactement la section */}
+        {/* Vidéo fond — couvre toute la largeur, hauteur réduite */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover opacity-70 contrast-110"
           aria-hidden="true"
         >
           <source src="/videos/Design-sans-titre-2.mp4" type="video/mp4" />
         </video>
 
-        {/* Overlay sombre global léger */}
-        <div className="absolute inset-0 bg-black/20" aria-hidden="true" />
+        {/* Overlay progressif délesté pour plus de clarté */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" 
+          aria-hidden="true" 
+        />
 
-        {/* Carte semi-transparente gauche — vidéo visible derrière, texte lisible */}
-        <div className="relative z-10 w-full px-4 sm:px-8 py-10 md:py-14">
-          <ScrollReveal animation="fadeInUp" delay={0}
-            className="bg-white/80 rounded-2xl shadow-xl p-7 md:p-10 w-full max-w-xl ml-0 md:ml-12 lg:ml-20">
-
-            {/* Badge avis */}
-            <div className="inline-flex items-center gap-2 bg-[#FFFFFF] px-3 py-1.5 rounded-full mb-6 border border-[#EFAD42]/20">
-              <span className="star-or text-base leading-none" aria-hidden="true" style={{ color: '#FBBC04' }}>★★★★★</span>
-              <span className="font-body text-[#1a1a1a] text-xs font-bold tracking-wide">{REVIEWS.reviewCount} avis Google · {REVIEWS.ratingValue}/5</span>
-            </div>
-
-            {/* H1 — noir sur blanc, choc visuel immédiat */}
-            <h1 className="font-heading font-black text-3xl md:text-4xl lg:text-5xl text-[#1a1a1a] leading-tight mb-3 uppercase tracking-tight ">
-              {seoData.home.h1}
-            </h1>
-
-            <h2 className="font-heading font-bold text-lg md:text-xl text-[#1a1a1a] mb-5 leading-snug ">
-              {seoData.home.h2[0]}
-            </h2>
-
-            {/* Corps — concis, service clair */}
-            <p className="font-body text-[#6B7280] text-sm md:text-base leading-relaxed mb-8">
-              {ORG.name} vous propose un service rapide de programmation de clé automobile,
-              que ce soit pour un double ou en cas de perte totale. Nous nous déplaçons là où
-              vous êtes, que ce soit à domicile, sur votre lieu de travail ou ailleurs.
-            </p>
-
-            {/* CTA principal */}
-            <a
-              href={`tel:${NAP.phoneTel}`}
-              className="btn-accent inline-flex items-center gap-3 text-lg md:text-xl font-bold rounded-lg transition-colors shadow-lg"
-            >
-              Demandez votre devis : {NAP.phoneDisplay}
-            </a>
-
-            {/* Lien maillage secondaire */}
-            <p className="font-body text-xs text-[#6B7280] mt-5">
-              Besoin d&apos;un{' '}
-              <a
-                href="/serrurier-automobile-nice/"
-                className="text-primary font-semibold underline underline-offset-2 hover:text-accent transition-colors"
-              >
-                serrurier automobile à Nice
-              </a>{' '}
-              disponible maintenant&nbsp;?
-            </p>
-
-          </ScrollReveal>
+        {/* Contenu Hero — Largeur conteneur standard, disposition gérée dans HeroCard */}
+        <div className="relative z-10 w-full container-sinnes px-4 py-8">
+          <HeroCard />
         </div>
 
       </section>
@@ -253,7 +145,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 2 — CAROUSEL MARQUES
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white border-y border-[#F0F3F7] pt-6 pb-0 overflow-hidden" aria-label="Marques automobiles prises en charge">
+      <section className="bg-white border-y border-[#F0F3F7] pt-4 pb-0 overflow-hidden" aria-label="Marques automobiles prises en charge">
         <BrandsCarousel />
         <ScrollReveal animation="fadeInUp" delay={0.1} className="container-sinnes mt-4 text-center">
           <p className="font-body text-sm italic text-[#6B7280]">
@@ -269,7 +161,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 3 — AVANTAGE DOMICILE
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-white pt-6 pb-16 md:pb-24">
+      <section className="bg-white pt-6 pb-8 md:pb-12">
         <div className="container-sinnes">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -325,60 +217,84 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════
           SECTION 4 — SERVICES GRID
       ═══════════════════════════════════════════════════ */}
-      <section className="bg-bg-shade pt-6 pb-16 md:pb-24">
+      <section className="bg-bg-shade pt-12 md:pt-20 pb-20 md:pb-32">
         <div className="container-sinnes">
 
           <ScrollReveal animation="fadeInDown" as="h2"
-            className="font-heading font-bold text-3xl md:text-4xl text-third text-center mb-12 ">
+            className="font-heading font-bold text-4xl md:text-5xl text-third text-center mb-16 tracking-tight">
             {seoData.home.h2[2]}
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-            {/* Card 1 — Clé voiture */}
-            <ScrollReveal animation="fadeInUp" delay={0}>
-              <article className="card-sinnes p-8 flex flex-col gap-4 h-full">
-                <ScrollReveal animation="zoomIn" delay={0.1} className="flex justify-center">
+            {/* Card 1 — Reproduction de clé */}
+            <ScrollReveal animation="fadeInUp" delay={0.1}>
+              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+                <ScrollReveal animation="zoomIn" delay={0.3} className="flex justify-center">
                   <Image
-                    src="/images/programmation-cle.png"
-                    alt={seoData.home.images.programmation}
+                    src="/images/svg/icon-card-cle.svg"
+                    alt={seoData.home.images.iconCle}
                     width={180}
                     height={180}
                     className="object-contain"
                   />
                 </ScrollReveal>
-                <h3 className="font-heading font-bold text-xl text-card-title">
+                <h3 className="font-heading font-bold text-2xl text-card-title">
                   {seoData.home.h3[0]}
                 </h3>
-                <p className="font-body text-text-muted leading-relaxed flex-1">
+                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
                   Vous avez perdu vos clés ou souhaitez refaire un double ? Nous avons une solution simple et rapide.
                 </p>
-                <a href="/reproduction-cle-voiture/" className="btn-accent text-sm mt-auto self-start">
+                <a href="/reproduction-cle-voiture/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
                   Découvrir nos services
                 </a>
               </article>
             </ScrollReveal>
 
-            {/* Card 2 — Vente véhicule */}
-            <ScrollReveal animation="fadeInUp" delay={0.15}>
-              <article className="card-sinnes p-8 flex flex-col gap-4 h-full">
-                <ScrollReveal animation="zoomIn" delay={0.1} className="flex justify-center">
+            {/* Card 2 — Tarif */}
+            <ScrollReveal animation="fadeInUp" delay={0.3}>
+              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+                <ScrollReveal animation="zoomIn" delay={0.5} className="flex justify-center">
                   <Image
-                    src="/images/achatrevente-vehicule.png"
-                    alt={seoData.home.images.achatrevente}
+                    src="/images/svg/icon-card-tarif.svg"
+                    alt={seoData.home.images.iconTarif}
                     width={180}
                     height={180}
                     className="object-contain"
                   />
                 </ScrollReveal>
-                <h3 className="font-heading font-bold text-xl text-card-title">
+                <h3 className="font-heading font-bold text-2xl text-card-title">
                   {seoData.home.h3[1]}
                 </h3>
-                <p className="font-body text-text-muted leading-relaxed flex-1">
-                  Trouvez la voiture qui vous correspond parmi nos modèles récents et fiables, disponibles immédiatement.
+                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
+                  Clé simple, centralisée ou mains libres — tarifs transparents, sans frais cachés, à partir de {PRICES.cleSimple.sinnes}€.
                 </p>
-                <a href="/acheter-une-voiture/" className="btn-accent text-sm mt-auto self-start">
-                  Voir les véhicules
+                <a href="/tarif-cle-voiture/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
+                  Voir les tarifs
+                </a>
+              </article>
+            </ScrollReveal>
+
+            {/* Card 3 — Serrurier automobile */}
+            <ScrollReveal animation="fadeInUp" delay={0.5}>
+              <article className="card-branded p-10 flex flex-col gap-6 h-full">
+                <ScrollReveal animation="zoomIn" delay={0.7} className="flex justify-center">
+                  <Image
+                    src="/images/svg/icon-card-serrurier.svg"
+                    alt={seoData.home.images.iconSerrurier}
+                    width={180}
+                    height={180}
+                    className="object-contain"
+                  />
+                </ScrollReveal>
+                <h3 className="font-heading font-bold text-2xl text-card-title">
+                  {seoData.home.h3[2]}
+                </h3>
+                <p className="font-body text-text-muted text-base leading-relaxed flex-1">
+                  Spécialiste clé voiture à Nice — intervention mobile {HOURS.display} sur tout Nice et la Côte d&apos;Azur.
+                </p>
+                <a href="/serrurier-automobile-nice/" className="btn-accent btn-with-arrow text-sm mt-8 self-start">
+                  En savoir plus
                 </a>
               </article>
             </ScrollReveal>

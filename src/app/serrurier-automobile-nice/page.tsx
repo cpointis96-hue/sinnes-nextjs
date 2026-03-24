@@ -1,7 +1,7 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { NAP, ORG, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, ORG, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SITE_URL } from '@/constants/siteConfig'
 import TrustStrip, { TrustStripItem, IconEuro, IconCalendar, IconWrench, IconShield } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['serrurier-automobile-nice'].title,
     url: 'https://sinnes.fr/serrurier-automobile-nice/',
-    images: [{ url: '/images/cle-de-voiture-nice-1024x683.jpg', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -50,6 +50,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -57,7 +59,7 @@ const schema = {
       '@type': 'Service',
       '@id': 'https://sinnes.fr/serrurier-automobile-nice/#service',
       name: 'Serrurier automobile à Nice',
-      provider: { '@id': 'https://sinnes.fr/#organization' },
+      provider: { '@id': `${SITE_URL}/#organization` },
       areaServed: AREA_SERVED_TYPED,
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
@@ -76,13 +78,10 @@ const schema = {
         ],
       },
     },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        { '@type': 'ListItem', position: 2, name: 'Serrurier automobile Nice', item: 'https://sinnes.fr/serrurier-automobile-nice/' },
-      ],
-    },
+    getBreadcrumbSchema('https://sinnes.fr/serrurier-automobile-nice/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Serrurier automobile Nice', item: 'https://sinnes.fr/serrurier-automobile-nice/' },
+    ]),
     {
       '@type': 'FAQPage',
       mainEntity: FAQ_ITEMS.map(item => ({
@@ -92,14 +91,7 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    {
-      '@type': 'WebPage',
-      '@id': 'https://sinnes.fr/serrurier-automobile-nice/#webpage',
-      url: 'https://sinnes.fr/serrurier-automobile-nice/',
-      datePublished: '2026-03-01',
-      dateModified: '2026-03-23',
-      isPartOf: { '@id': 'https://sinnes.fr/#website' },
-    },
+    getWebPageSchema('https://sinnes.fr/serrurier-automobile-nice/', '2026-03-01', '2026-03-23')
   ],
 }
 

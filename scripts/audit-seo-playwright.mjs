@@ -20,7 +20,6 @@ const PAGES = [
   '/refaire-cle-toyota/',
   '/refaire-cle-mercedes/',
   '/refaire-cle-renault/',
-  '/acheter-une-voiture/',
   '/qui-sommes-nous/',
   '/contactez-nous/',
   '/mentions-legales-et-politique-de-confidentialite/',

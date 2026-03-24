@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, REVIEWS } from '@/constants/siteConfig'
+import { NAP, TEAM, REVIEWS, SITE_URL } from '@/constants/siteConfig'
 import SingleReview from '@/components/ui/SingleReview'
 import { getReviewForPage } from '@/data/reviews'
 import { seoData } from '@/data/seoData'
@@ -12,65 +12,46 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['qui-sommes-nous'].title,
   url: 'https://sinnes.fr/qui-sommes-nous/',
-  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+  images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
  },
 }
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
- '@context': 'https://schema.org',
- '@graph': [
-  {
-   '@type': 'Organization',
-   '@id': 'https://sinnes.fr/#organization',
-   name: 'Sinnes Automobiles',
-   url: 'https://sinnes.fr/',
-   telephone: NAP.phoneTel,
-   address: {
-    '@type': 'PostalAddress',
-    streetAddress: '4 rue Diderot',
-    addressLocality: 'Nice',
-    postalCode: '06000',
-    addressCountry: 'FR',
-   },
-   member: [
-    { '@id': 'https://sinnes.fr/#sinouhe' },
-    { '@id': 'https://sinnes.fr/#ines' },
-   ],
-  },
-  {
-   '@type': 'Person',
-   '@id': 'https://sinnes.fr/#sinouhe',
-   name: TEAM.sinouhe.name,
-   jobTitle: TEAM.sinouhe.jobTitle,
-   description: TEAM.sinouhe.description,
-   worksFor: { '@id': 'https://sinnes.fr/#organization' },
-   knowsAbout: TEAM.sinouhe.knowsAbout,
-  },
-  {
-   '@type': 'Person',
-   '@id': 'https://sinnes.fr/#ines',
-   name: TEAM.ines.name,
-   jobTitle: TEAM.ines.jobTitle,
-   description: TEAM.ines.description,
-   worksFor: { '@id': 'https://sinnes.fr/#organization' },
-   knowsAbout: TEAM.ines.knowsAbout,
-  },
-  {
-   '@type': 'BreadcrumbList',
-   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-    { '@type': 'ListItem', position: 2, name: 'Qui sommes-nous', item: 'https://sinnes.fr/qui-sommes-nous/' },
-   ],
-  },
-  {
-   '@type': 'WebPage',
-   '@id': 'https://sinnes.fr/qui-sommes-nous/#webpage',
-   url: 'https://sinnes.fr/qui-sommes-nous/',
-   datePublished: '2026-03-01',
-   dateModified: '2026-03-22',
-   isPartOf: { '@id': 'https://sinnes.fr/#website' },
-  },
- ],
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      "@id": `${SITE_URL}/#organization`,
+      "member": [
+        { "@id": TEAM.sinouhe.id },
+        { "@id": TEAM.ines.id },
+      ],
+    },
+    {
+      '@type': 'Person',
+      '@id': TEAM.sinouhe.id,
+      name: TEAM.sinouhe.name,
+      jobTitle: TEAM.sinouhe.jobTitle,
+      description: TEAM.sinouhe.description,
+      worksFor: { '@id': `${SITE_URL}/#organization` },
+      knowsAbout: TEAM.sinouhe.knowsAbout,
+    },
+    {
+      '@type': 'Person',
+      '@id': TEAM.ines.id,
+      name: TEAM.ines.name,
+      jobTitle: TEAM.ines.jobTitle,
+      description: TEAM.ines.description,
+      worksFor: { '@id': `${SITE_URL}/#organization` },
+      knowsAbout: TEAM.ines.knowsAbout,
+    },
+    getBreadcrumbSchema('https://sinnes.fr/qui-sommes-nous/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Qui sommes-nous', item: 'https://sinnes.fr/qui-sommes-nous/' },
+    ]),
+    getWebPageSchema('https://sinnes.fr/qui-sommes-nous/', '2026-03-01', '2026-03-22')
+  ],
 }
 
 const review = getReviewForPage('/qui-sommes-nous/')
@@ -99,8 +80,7 @@ export default function QuiSommesNousPage() {
      </h1>
      <p className="font-body text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
       Sinnes Automobiles est une entreprise niçoise fondée en janvier 2025, spécialisée dans la
-      reproduction de clé de voiture et la vente de véhicules d'occasion. Deux expertises
-      complémentaires, une équipe de deux personnes : Sinouhé Rochereau et Inès Barthelemy.
+      reproduction de clé de voiture. Une expertise pointue, une équipe de deux personnes : Sinouhé Rochereau et Inès Barthelemy.
      </p>
     </div>
    </section>
@@ -191,24 +171,7 @@ export default function QuiSommesNousPage() {
        </div>
       </div>
 
-      <div className="flex gap-6">
-       <div className="flex flex-col items-center">
-        <div className="w-4 h-4 rounded-full mt-1 flex-shrink-0" style={{ background: '#EFAD42' }}></div>
-        <div className="w-px flex-1 mt-2" style={{ background: 'rgba(239,173,66,0.3)' }}></div>
-       </div>
-       <div>
-        <p className="font-body text-sm font-semibold mb-1" style={{ color: '#EFAD42' }}>Octobre 2025</p>
-        <p className="font-heading font-bold text-xl mb-2" style={{ color: '#FFFFFF' }}>Extension : Vente de véhicules d'occasion</p>
-        <p className="font-body leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
-         Fort de la confiance des clients niçois, Sinnes élargit son activité à la vente de
-         véhicules d'occasion. Des modèles récents et fiables, sélectionnés avec la même
-         exigence. Découvrez notre sélection sur la page{' '}
-         <a href="/acheter-une-voiture/" className="font-semibold hover:underline" style={{ color: '#EFAD42' }}>
-          vente de véhicules d'occasion
-         </a>.
-        </p>
-       </div>
-      </div>
+
 
       <div className="flex gap-6">
        <div className="flex flex-col items-center">

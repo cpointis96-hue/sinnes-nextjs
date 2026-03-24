@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { NAP } from '@/constants/siteConfig'
+import { NAP, SITE_URL } from '@/constants/siteConfig'
 import { seoData } from '@/data/seoData'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 
@@ -10,33 +10,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['mentions-legales-et-politique-de-confidentialite'].title,
     url: 'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/',
-    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
+
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/#webpage",
-      "url": "https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/",
-      "name": seoData['mentions-legales-et-politique-de-confidentialite'].title,
-      "description": seoData['mentions-legales-et-politique-de-confidentialite'].description,
-      "inLanguage": "fr-FR",
-      "datePublished": "2025-11-01",
-      "dateModified": "2026-03-22",
-      "isPartOf": { "@id": "https://sinnes.fr/#website" },
-      "breadcrumb": { "@id": "https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/#breadcrumb" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/#breadcrumb",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Mentions légales & Politique de confidentialité", "item": "https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/" }
-      ]
-    }
+    getBreadcrumbSchema('https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Mentions légales & Politique de confidentialité', item: 'https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/' }
+    ]),
+    getWebPageSchema('https://sinnes.fr/mentions-legales-et-politique-de-confidentialite/', '2025-11-01', '2026-03-22')
   ]
 }
 

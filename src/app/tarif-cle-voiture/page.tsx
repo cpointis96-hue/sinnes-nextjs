@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { NAP, PRICES, TEAM } from '@/constants/siteConfig'
+import { NAP, PRICES, TEAM, SITE_URL } from '@/constants/siteConfig'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import PricingSection from './PricingSection'
 import SingleReview from '@/components/ui/SingleReview'
+import BylineInes from '@/components/ui/BylineInes'
 import { getReviewForPage } from '@/data/reviews'
 import { seoData } from '@/data/seoData'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['tarif-cle-voiture'].title,
     url: 'https://sinnes.fr/tarif-cle-voiture/',
-    images: [{ url: '/images/depannage-urgence-sinnes-1024x523.jpg', width: 1024, height: 523 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -45,6 +46,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -52,7 +55,7 @@ const schema = {
       '@type': 'Service',
       '@id': 'https://sinnes.fr/tarif-cle-voiture/#pricing',
       name: 'Tarif reproduction de clé de voiture',
-      provider: { '@id': 'https://sinnes.fr/#organization' },
+      provider: { '@id': `${SITE_URL}/#organization` },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Grille tarifaire clé automobile — Sinnes Automobiles',
@@ -60,46 +63,38 @@ const schema = {
           {
             '@type': 'Offer',
             name: 'Clé simple (sans télécommande)',
-            price: '78',
+            price: `${PRICES.cleSimple.sinnes}`,
             priceCurrency: 'EUR',
             description: 'Décodage + taille laser + clonage transpondeur. Délai : 1-2h.',
           },
           {
             '@type': 'Offer',
             name: 'Clé centralisée (avec télécommande)',
-            price: '132',
+            price: `${PRICES.cleCentralisee.sinnes}`,
             priceCurrency: 'EUR',
             description: 'Décodage + taille laser + programmation transpondeur + télécommande. Délai : 2-3h.',
           },
           {
             '@type': 'Offer',
             name: 'Clé mains libres / badge',
-            price: '150',
+            price: `${PRICES.cleMainsLibres.sinnes}`,
             priceCurrency: 'EUR',
             description: 'Programmation badge + décodage + insert de secours + télécommande. Délai : 2-4h.',
           },
           {
             '@type': 'Offer',
             name: 'Perte totale (sans aucun double)',
-            price: '240',
+            price: `${PRICES.perteTotale.sinnes}`,
             priceCurrency: 'EUR',
             description: 'Crochetage + décodage serrure + taille + programmation. Délai : selon complexité.',
           },
         ],
       },
     },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Tarif clé de voiture',
-          item: 'https://sinnes.fr/tarif-cle-voiture/',
-        },
-      ],
-    },
+    getBreadcrumbSchema('https://sinnes.fr/tarif-cle-voiture/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Tarif clé de voiture', item: 'https://sinnes.fr/tarif-cle-voiture/' }
+    ]),
     {
       '@type': 'FAQPage',
       mainEntity: FAQ_ITEMS.map(item => ({
@@ -110,21 +105,14 @@ const schema = {
     },
     {
       '@type': 'Person',
-      '@id': 'https://sinnes.fr/#ines',
+      '@id': `${SITE_URL}/#ines`,
       name: TEAM.ines.name,
       jobTitle: TEAM.ines.jobTitle,
       knowsAbout: TEAM.ines.knowsAbout,
       description: TEAM.ines.description,
-      worksFor: { '@id': 'https://sinnes.fr/#organization' },
+      worksFor: { '@id': `${SITE_URL}/#organization` },
     },
-    {
-      '@type': 'WebPage',
-      '@id': 'https://sinnes.fr/tarif-cle-voiture/#webpage',
-      url: 'https://sinnes.fr/tarif-cle-voiture/',
-      datePublished: '2026-03-03',
-      dateModified: '2026-03-22',
-      isPartOf: { '@id': 'https://sinnes.fr/#website' },
-    },
+    getWebPageSchema('https://sinnes.fr/tarif-cle-voiture/', '2026-03-03', '2026-03-22')
   ],
 }
 
@@ -197,11 +185,8 @@ export default function TarifCleVoiturePage() {
           </div>
 
           {/* Byline Inès */}
-          <p className="text-sm text-white/70 border-l-4 border-accent pl-4 text-left max-w-xl mx-auto">
-            Tarifs établis par{' '}
-            <strong className="text-white">{TEAM.ines.name}</strong> ·{' '}
-            {TEAM.ines.jobTitle}. Transparence totale, sans frais cachés.
-          </p>
+          <BylineInes />
+
         </div>
       </section>
       <div className="bg-white"><div className="container-sinnes"><DiagonalDivider id="dd-tarif-cle-voiture" icon={<SteeringWheelIcon size={42} color="#D4A017" />} color="#1A1A1A" /></div></div>

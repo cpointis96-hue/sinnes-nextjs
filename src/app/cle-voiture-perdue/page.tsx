@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import TrustStrip, { TrustStripItem, IconEuro, IconWrench, IconShield, IconClock } from '@/components/ui/TrustStrip'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['cle-voiture-perdue'].title,
     url: 'https://sinnes.fr/cle-voiture-perdue/',
-    images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -39,6 +39,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -46,7 +48,7 @@ const schema = {
       "@type": "Service",
       "@id": "https://sinnes.fr/cle-voiture-perdue/#service",
       "name": "Clé de voiture perdue sans double — Nice",
-      "provider": { "@id": "https://sinnes.fr/#organization" },
+      "provider": { "@id": `${SITE_URL}/#organization` },
       "areaServed": AREA_SERVED_TYPED,
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -57,13 +59,10 @@ const schema = {
         ]
       }
     },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://sinnes.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Clé voiture perdue", "item": "https://sinnes.fr/cle-voiture-perdue/" }
-      ]
-    },
+    getBreadcrumbSchema('https://sinnes.fr/cle-voiture-perdue/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Clé voiture perdue', item: 'https://sinnes.fr/cle-voiture-perdue/' }
+    ]),
     {
       "@type": "FAQPage",
       "mainEntity": FAQ_ITEMS.map(item => ({
@@ -73,14 +72,7 @@ const schema = {
       }))
     },
     SINOUHE_FULL_ENTITY,
-    {
-      "@type": "WebPage",
-      "@id": "https://sinnes.fr/cle-voiture-perdue/#webpage",
-      "url": "https://sinnes.fr/cle-voiture-perdue/",
-      "datePublished": "2026-03-05",
-      "dateModified": "2026-03-23",
-      "isPartOf": { "@id": "https://sinnes.fr/#website" }
-    }
+    getWebPageSchema('https://sinnes.fr/cle-voiture-perdue/', '2026-03-05', '2026-03-23')
   ]
 }
 

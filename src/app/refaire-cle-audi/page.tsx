@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, ENTITY_LINKS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SOURCES, SITE_URL } from '@/constants/siteConfig'
 import ProcessSteps from '@/components/ui/ProcessSteps'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import SingleReview from '@/components/ui/SingleReview'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  openGraph: {
   title: seoData['refaire-cle-audi'].title,
   url: 'https://sinnes.fr/refaire-cle-audi/',
-  images: [{ url: '/images/Deplacement.png', width: 1024, height: 683 }],
+  images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
  },
 }
 
@@ -40,72 +40,61 @@ const FAQ_ITEMS: FAQItem[] = [
 
 const review = getReviewForPage('/refaire-cle-audi/')
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
- '@context': 'https://schema.org',
- '@graph': [
-  {
-   '@type': 'Service',
-   '@id': 'https://sinnes.fr/refaire-cle-audi/#service',
-   name: 'Reproduction clé Audi Nice',
-   serviceType: 'Car Key Duplication',
-   description: 'Expertise VAG : reproduction et programmation de clés Audi à Nice. Systèmes IMMO4/IMMO5 et KESSY.',
-   provider: { '@id': 'https://sinnes.fr/#organization' },
-   areaServed: AREA_SERVED_TYPED,
-   "aggregateRating": {
-     "@type": "AggregateRating",
-     "ratingValue": REVIEWS.ratingValue,
-     "reviewCount": REVIEWS.reviewCount,
-     "bestRating": REVIEWS.bestRating
-   },
-   "review": review ? {
-     "@type": "Review",
-     "author": { "@type": "Person", "name": review.author },
-     "datePublished": review.date,
-     "reviewRating": {
-       "ratingValue": "5",
-       "bestRating": "5"
-     },
-     "reviewBody": review.text
-   } : undefined,
-   hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Tarifs clé Audi',
-    itemListElement: [
-     { '@type': 'Offer', name: 'Clé Audi avec lame escamotable', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
-     { '@type': 'Offer', name: 'Clé KESSY / badge Audi', price: `${PRICES.cleMainsLibres.sinnes}`, priceCurrency: 'EUR' },
-    ],
-   },
-  },
-  {
-   '@type': 'BreadcrumbList',
-   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-    { '@type': 'ListItem', position: 2, name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
-    { '@type': 'ListItem', position: 3, name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
-    { '@type': 'ListItem', position: 4, name: 'Refaire clé Audi', item: 'https://sinnes.fr/refaire-cle-audi/' },
-   ],
-  },
-  {
-   '@type': 'FAQPage',
-   mainEntity: FAQ_ITEMS.map(item => ({
-    '@type': 'Question',
-    name: item.question,
-    acceptedAnswer: { '@type': 'Answer', text: item.answer },
-   })),
-  },
-  SINOUHE_FULL_ENTITY,
-  {
-   '@type': 'WebPage',
-   '@id': 'https://sinnes.fr/refaire-cle-audi/#webpage',
-   url: 'https://sinnes.fr/refaire-cle-audi/',
-   datePublished: '2026-03-16',
-   dateModified: '2026-03-22',
-   name: 'Refaire une clé Audi à Nice · Programmation VAG officielle',
-   isPartOf: { '@id': 'https://sinnes.fr/#website' },
-   about: { '@id': 'https://sinnes.fr/#organization' },
-   mainEntity: { '@id': 'https://sinnes.fr/refaire-cle-audi/#service' }
-  }
- ],
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://sinnes.fr/refaire-cle-audi/#service',
+      name: 'Reproduction clé Audi Nice',
+      serviceType: 'Car Key Duplication',
+      description: 'Expertise VAG : reproduction et programmation de clés Audi à Nice. Systèmes IMMO4/IMMO5 et KESSY.',
+      provider: { '@id': `${SITE_URL}/#organization` },
+      areaServed: AREA_SERVED_TYPED,
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": REVIEWS.ratingValue,
+        "reviewCount": REVIEWS.reviewCount,
+        "bestRating": REVIEWS.bestRating
+      },
+      "review": review ? {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": review.author },
+        "datePublished": review.date,
+        "reviewRating": {
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": review.text
+      } : undefined,
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Tarifs clé Audi',
+        itemListElement: [
+          { '@type': 'Offer', name: 'Clé Audi avec lame escamotable', price: `${PRICES.cleCentralisee.sinnes}`, priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé KESSY / badge Audi', price: `${PRICES.cleMainsLibres.sinnes}`, priceCurrency: 'EUR' },
+        ],
+      },
+    },
+    getBreadcrumbSchema('https://sinnes.fr/refaire-cle-audi/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Reproduction de clé', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
+      { name: 'Double de clé', item: 'https://sinnes.fr/double-cle-voiture/' },
+      { name: 'Refaire clé Audi', item: 'https://sinnes.fr/refaire-cle-audi/' }
+    ]),
+    {
+      '@type': 'FAQPage',
+      mainEntity: FAQ_ITEMS.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    },
+    SINOUHE_FULL_ENTITY,
+    getWebPageSchema('https://sinnes.fr/refaire-cle-audi/', '2026-03-16', '2026-03-22')
+  ]
 }
 
 const steps = [

@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NAV_ITEMS } from '@/constants/siteConfig'
+// Update for hydration fix
+
 
 export default function NavDesktop() {
   const pathname = usePathname()

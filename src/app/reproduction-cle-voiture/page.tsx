@@ -1,6 +1,6 @@
 import DiagonalDivider, { SteeringWheelIcon, KeyIcon } from '@/components/ui/DiagonalDivider'
 import type { Metadata } from 'next'
-import { NAP, TEAM, PRICES, REVIEWS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED } from '@/constants/siteConfig'
+import { NAP, TEAM, PRICES, REVIEWS, SINOUHE_FULL_ENTITY, AREA_SERVED_TYPED, SITE_URL } from '@/constants/siteConfig'
 import FAQAccordion, { type FAQItem } from './FAQAccordion'
 import TrustStrip, { IconEuro, IconSteering, IconShield, IconCalendar, type TrustStripItem } from '@/components/ui/TrustStrip'
 import SingleReview from '@/components/ui/SingleReview'
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: seoData['reproduction-cle-voiture'].title,
     url: 'https://sinnes.fr/reproduction-cle-voiture/',
-    images: [{ url: '/images/programmation-cle.png', width: 300, height: 300 }],
+    images: [{ url: '/images/sinnes-automobiles-cle-voiture-nice-og.jpg', width: 1200, height: 630, alt: 'Sinnes Automobiles — Double de clé voiture à Nice, service mobile expert Côte d\'Azur' }],
   },
 }
 
@@ -46,6 +46,8 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ]
 
+import { getWebPageSchema, getBreadcrumbSchema } from '@/utils/schema'
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -53,7 +55,7 @@ const schema = {
       '@type': 'Service',
       '@id': 'https://sinnes.fr/reproduction-cle-voiture/#service',
       name: 'Reproduction de clé de voiture',
-      provider: { '@id': 'https://sinnes.fr/#organization' },
+      provider: { '@id': `${SITE_URL}/#organization` },
       description:
         'Reproduction, double et programmation de clé automobile à Nice. Toutes marques, intervention à domicile 7j/7.',
       areaServed: AREA_SERVED_TYPED,
@@ -61,25 +63,17 @@ const schema = {
         '@type': 'OfferCatalog',
         name: 'Tarifs reproduction de clé',
         itemListElement: [
-          { '@type': 'Offer', name: 'Clé simple', price: '78', priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Clé centralisée', price: '132', priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Clé mains libres', price: '150', priceCurrency: 'EUR' },
-          { '@type': 'Offer', name: 'Perte totale', price: '240', priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé simple', price: String(PRICES.cleSimple.sinnes), priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé centralisée', price: String(PRICES.cleCentralisee.sinnes), priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Clé mains libres', price: String(PRICES.cleMainsLibres.sinnes), priceCurrency: 'EUR' },
+          { '@type': 'Offer', name: 'Perte totale', price: String(PRICES.perteTotale.sinnes), priceCurrency: 'EUR' },
         ],
       },
     },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://sinnes.fr/' },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Reproduction de clé de voiture',
-          item: 'https://sinnes.fr/reproduction-cle-voiture/',
-        },
-      ],
-    },
+    getBreadcrumbSchema('https://sinnes.fr/reproduction-cle-voiture/', [
+      { name: 'Accueil', item: 'https://sinnes.fr/' },
+      { name: 'Reproduction de clé de voiture', item: 'https://sinnes.fr/reproduction-cle-voiture/' },
+    ]),
     {
       '@type': 'FAQPage',
       mainEntity: FAQ_ITEMS.map(item => ({
@@ -89,14 +83,7 @@ const schema = {
       })),
     },
     SINOUHE_FULL_ENTITY,
-    {
-      '@type': 'WebPage',
-      '@id': 'https://sinnes.fr/reproduction-cle-voiture/#webpage',
-      url: 'https://sinnes.fr/reproduction-cle-voiture/',
-      datePublished: '2026-03-01',
-      dateModified: '2026-03-23',
-      isPartOf: { '@id': 'https://sinnes.fr/#website' },
-    },
+    getWebPageSchema('https://sinnes.fr/reproduction-cle-voiture/', '2026-03-01', '2026-03-23')
   ],
 }
 
