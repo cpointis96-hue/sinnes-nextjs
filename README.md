@@ -1,6 +1,16 @@
 # Sinnes Automobiles
 
-Site vitrine et pages de services locaux pour une activité de serrurerie automobile à Nice. Le projet explore Next.js16/React19, rendu statique, contenu SEO par service et marque, vidéo d’accueil, navigation responsive, Framer Motion et Swiper.
+## En bref
+
+**Ce que c’est :** un site vitrine pour une activité de serrurerie automobile à Nice.
+
+**À quoi il sert :** présenter les services et les marques, organiser des pages locales et orienter un visiteur vers une prise de contact.
+
+**Ce qui a été réalisé :** pages de services, contenu local, vidéo d’accueil, navigation responsive et contrôles du build et du parcours navigateur.
+
+**Technologies :** Next.js 16, React 19, TypeScript, rendu statique, Framer Motion et Swiper.
+
+Le contenu métier historique est conservé mais les avis, tarifs, disponibilités et promesses commerciales n’ont pas été revérifiés.
 
 ![Accueil desktop réellement exécuté](docs/screenshots/home-desktop.png)
 
