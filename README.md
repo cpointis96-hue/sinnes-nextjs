@@ -20,7 +20,7 @@ Ouvrir http://127.0.0.1:4187. En développement : `npm run dev`. Sources dans le
 
 ## Vérifications
 
-Build et TypeScript réussis,27pages générées dans le build dont les routes techniques. Les17tests Chromium existants passent sur le serveur local : titres/canonical, navigation/téléphone, vidéo hero, pages de services et certains textes. L’accueil à390px a une largeur de document390px ; vidéo en lecture et44images chargées. Trois captures réelles : accueil desktop/mobile et service.
+Build et TypeScript réussis,27pages générées dans le build dont les routes techniques. Les17tests Chromium existants passent sur le serveur local : titres, navigation/téléphone, vidéo hero, pages de services et certains textes. L’accueil à390px a une largeur de document390px ; vidéo en lecture et44images chargées. Trois captures réelles : accueil desktop/mobile et service.
 
 ```sh
 PLAYWRIGHT_BASE_URL=http://127.0.0.1:4187 npx playwright test --project=chromium
