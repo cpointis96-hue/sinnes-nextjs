@@ -8,7 +8,7 @@ export default defineConfig({
   workers: 2,
   reporter: 'list',
   use: {
-    baseURL: 'https://sinnes-nextjs.vercel.app',
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'https://sinnes-nextjs.vercel.app',
     trace: 'on-first-retry',
   },
   projects: [
