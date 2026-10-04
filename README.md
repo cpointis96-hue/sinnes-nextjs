@@ -16,7 +16,7 @@ npm run build
 npm start -- --hostname 127.0.0.1 --port 4187
 ```
 
-Ouvrir http://127.0.0.1:4187. En développement : `npm run dev`. Sources dans le dépôt privé existant, Code → Download ZIP avec accès autorisé. Aucun nouveau déploiement de production ni changement de visibilité.
+Ouvrir http://127.0.0.1:4187. En développement : `npm run dev`. Aucun nouveau déploiement de production n’est annoncé ici.
 
 ## Vérifications
 
@@ -35,3 +35,7 @@ Le lint échoue avec391erreurs et2avertissements, principalement liens internes 
 Corriger le lint, mettre à jour les dépendances avec tests de non-régression, confirmer le contenu métier et les droits des médias, vérifier clavier/mobile et contacts sans envoyer de demandes de test à l’entreprise. Le dépôt distant à `e96244a8c89e220a9c0c1771116b7b26a3cfb0c2` sert de référence ; l’archive Sinnes-demo comprend aussi des notes SEO/mirrors non destinés à être republiés en bloc.
 
 Voir [VERIFICATION.md](VERIFICATION.md).
+
+## Dépôt et téléchargement
+
+[Voir le dépôt](https://github.com/cpointis96-hue/sinnes-nextjs) · [Télécharger les sources ZIP](https://github.com/cpointis96-hue/sinnes-nextjs/archive/HEAD.zip). Le ZIP contient les sources, pas un site hébergé par ce dépôt.
