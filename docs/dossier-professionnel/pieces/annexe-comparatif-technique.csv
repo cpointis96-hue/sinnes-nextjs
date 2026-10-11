@@ -1,0 +1,46 @@
+Critere;Ancien site (WordPress);Nouveau site (Next.js 16)
+Framework;WordPress + Elementor;Next.js 16 + React 19 + Tailwind CSS v4
+Bibliotheques JavaScript;65+ fichiers (jQuery, Bootstrap, etc.);Zero bibliotheque lourde
+Fichiers CSS;18+ fichiers, Font Awesome charge 8 fois;CSS optimise, zero doublon
+Format images;JPG uniquement;Conversion automatique AVIF + WebP
+Polices de caracteres;Chargement externe, decalage visuel (CLS);next/font : Playfair Display + Maven Pro + Roboto, zero decalage
+Compression;Non optimisee;Brotli active
+Cache images;Non configure;1 an, immutable (Cache-Control: max-age=31536000)
+Cache assets statiques;Non configure;1 an, immutable
+Nombre de pages (hors vehicules);9;23
+Balises canoniques;Cassees -- pointent toutes vers index.html;Correctes -- URL complete sur chaque page
+robots.txt;Absent;Configure avec lien vers le sitemap
+Sitemap XML;Absent;Dynamique, 23 URLs avec dates de modification
+Trailing slash;Incoherent;Active partout (/slug/)
+Redirections 301;Aucune;3 redirections configurees (refaire-sa-cle-auto, programmation-de-cle, nos-services)
+Open Graph;URLs relatives cassees;URLs absolues + image dediee sinnes-automobiles-cle-voiture-nice-og.jpg
+Meta Twitter Card;Absente;summary_large_image configuree
+Langue declaree;Non declaree;lang="fr" + inLanguage: "fr-FR"
+Schema.org -- types;3 types (Organization, Breadcrumb, WebSite);10+ types (Organization, LocalBusiness, AutomotiveBusiness, WebSite, WebPage, BreadcrumbList, Person, Service, FAQ, AggregateRating, OfferCatalog, Review, EducationalOccupationalCredential, SportsOrganization, GeoCoordinates, PostalAddress, ContactPoint)
+Schema.org -- Person;Aucun;2 entites Person completes (Sinouhe + Ines) avec sameAs, credentials, knowsAbout
+Schema.org -- Service;Aucun;Services structures avec prix et descriptions
+Schema.org -- FAQ;Aucun;67 questions sur 18 pages
+Schema.org -- AggregateRating;Aucun;5.0/5, 58 avis integres
+Schema.org -- Offers;Aucun;4 types de cles avec prix (78EUR a 240EUR)
+Signaux E-E-A-T;Aucun;Personas, bylines, certifications, liens vers registres officiels (Pappers, Infonet, Societe.com)
+Fichier llms.txt;Inexistant;59 lignes optimisees pour 6 plateformes IA
+Entites Wikidata;Aucune;17 entites liees (villes, marques, metier, GP Monaco)
+Code postal;06100 (incorrect);06000 (correct)
+Coordonnees GPS;Decalees de 3.3 km;Synchronisees avec Google My Business (43.7361438, 7.2701284)
+Synchronisation NAP;Incoherente entre pages;Centralisee dans siteConfig.ts -- identique partout
+HSTS;Absent;Active (max-age 63072000, includeSubDomains)
+Content Security Policy (CSP);Absente;Configuree (default-src self, script-src, style-src, etc.)
+X-Frame-Options;Absent;DENY
+X-Content-Type-Options;Absent;nosniff
+Referrer-Policy;Absente;strict-origin-when-cross-origin
+Permissions-Policy;Absente;camera=(), microphone=(), geolocation=(self)
+Access-Control-Allow-Origin;Non configure;Restreint a https://sinnes.fr
+Optimisation CSS critique;Non;experimental.optimizeCss active
+Maillage interne contextuel;Aucun (liens menu/footer uniquement);90+ liens contextuels dans le contenu avec ancres optimisees
+Cocon semantique;Inexistant;19 pages sur 3 niveaux hierarchiques
+FAQ structurees;0;67 questions sur 18 pages avec Schema.org FAQPage
+Pages marques;0;6 pages dediees (Hyundai, Audi, Fiat, Toyota, Mercedes, Renault)
+Page locale multi-villes;Inexistante;/cle-voiture-nice/ couvrant Nice, Antibes, Cagnes-sur-Mer, Cannes avec contenu unique par ville
+Profils autoritaires externes (sameAs);Aucun;6 liens entreprise + 4 liens dirigeants vers registres officiels
+Avis Google integres;Non;58 avis verbatim avec noms, dates, textes + Schema AggregateRating
+Deploiement;Hebergement WordPress classique;Vercel (CDN mondial, edge functions)

@@ -8,17 +8,53 @@ Ce site est ma première réalisation centrale et reste la plus approfondie de m
 
 Le site présente une activité de serrurerie automobile à Nice. Il permet de comprendre les services, de trouver une réponse à une situation concrète (clé perdue, double de clé, programmation) et de rejoindre les moyens de contact.
 
-## Le travail de référencement et de contenu
+## Vue d’ensemble du travail : SEO, marché et offres commerciales
 
-- Des pages consacrées aux besoins des clients : perte de clé, reproduction, programmation, dépannage et tarifs.
-- Des contenus locaux autour de Nice et de la zone d'intervention.
-- Des pages par marque automobile pour répondre à des recherches plus précises.
-- Des liens entre les pages pour faciliter la navigation et relier les sujets.
-- Des titres et descriptions propres aux pages pour présenter leur contenu dans les moteurs de recherche.
-- Des questions fréquentes et des informations structurées sur l'entreprise et ses services, lisibles par les moteurs de recherche.
-- Un plan du site et des consignes d'exploration pour les moteurs de recherche.
+Cette réalisation regroupe le développement d’un site et une réflexion complète sur la manière de rendre une prestation visible, compréhensible et vendable à une entreprise locale. Les éléments ci-dessous résument le travail dès la page d’accueil du dépôt ; les documents liés donnent les détails et les pièces originales.
 
-J'ai également étudié les différents concurrents pendant ce travail. Les documents d'analyse conservés dans mes archives pourront compléter cette présentation après leur sélection. Cette fiche ne revendique pas de résultat de classement ou de trafic mesuré.
+### Analyse SEO et organisation du site
+
+J’ai analysé l’ancien site WordPress et préparé une refonte sur mesure autour des besoins des automobilistes : reproduction ou perte de clé, programmation, urgence, déplacement, tarifs et marques de véhicules. Le travail comprend une architecture de pages par intention de recherche, des contenus locaux autour de Nice et des communes voisines, une stratégie de liens entre pages, ainsi que les éléments techniques de référencement tels que les titres, descriptions, données structurées, sitemap et consignes d’exploration.
+
+Cette démarche vise à mieux répondre aux recherches des clients et à faciliter la compréhension du site par les moteurs de recherche. Elle ne prouve pas un gain de trafic ou de positionnement. Les volumes de recherche, scores et comparaisons figurant dans les documents sont des données historiques qui n’ont pas toutes été revérifiées.
+
+### Étude de la concurrence et du marché
+
+J’ai recensé des acteurs locaux de la serrurerie automobile et comparé les besoins auxquels leurs sites répondent : services, recherches par marque, urgence, prix, zone d’intervention et contact. Les pistes de développement incluent les agences de location, les assurances et les annuaires locaux. J’ai également recherché des repères de prix pour la création de sites, les audits SEO, la maintenance et le suivi mensuel.
+
+Ces recherches ont servi à construire le projet et à réfléchir au positionnement. Elles constituent un repérage préparatoire, pas une étude complète des parts de marché ni une validation actuelle des tarifs de chaque concurrent.
+
+### Prix et formules que j’ai préparés
+
+Les documents de mars 2026 présentent plusieurs versions de l’offre :
+
+| Prestation envisagée | Prix présenté | Périmètre résumé |
+|---|---:|---|
+| Refonte SEO ponctuelle, première estimation | 2 500 € HT | Architecture, contenus, référencement technique et maillage |
+| Vente du site, proposition ultérieure | 7 000 € | Refonte complète, avec paiement envisagé en 12 ou 24 mensualités |
+| Maintenance technique du site | 200 €/mois | Surveillance, mises à jour, sécurité et petites modifications |
+| Suivi SEO Essentiel | 450 €/mois | Reporting, ajustements et un contenu mensuel |
+| Suivi SEO Standard | 750 €/mois | Suivi renforcé, contenus, positions et liens externes légers |
+| Suivi SEO Premium | 1 200 €/mois | Audit continu, contenus plus nombreux et reporting détaillé |
+| Offre SEO Pro / Leader, autre version | 800 €/mois | Suivi, contenu, concurrence et liens externes ; périmètre variable selon le document |
+
+Ces montants sont des propositions de travail et ne sont pas présentés comme acceptés ou facturés. Les pièces ne définissent pas toutes clairement si les montants mensuels de SEO sont HT ou TTC. La maintenance à 200 €/mois est séparée dans le projet de contrat ; certaines offres SEO disent l’inclure. Il faut donc éviter de l’ajouter deux fois.
+
+J’ai aussi vérifié les échéanciers. À titre de repère, 7 000 € répartis sur 24 mois représentent environ 291,67 €/mois. Le contrat préparé comporte une erreur de 40 centimes sur son total à cause du dernier paiement ; les calculs corrigés, les différentes versions de prix et les questions à harmoniser sont expliqués dans le [dossier de tarification](docs/dossier-professionnel/tarification.md).
+
+### Présentation et cadre de prestation
+
+J’ai préparé une présentation commerciale pour expliquer le site et sa valeur, des offres distinctes pour l’accompagnement SEO, ainsi qu’un projet de contrat de création et de maintenance. Le contrat aborde les livrables, les paiements, les accès au code et à l’hébergement, la propriété du site, la maintenance, les responsabilités et les limites des promesses SEO.
+
+Ces documents montrent un travail de préparation commerciale et contractuelle. Ils ne prouvent ni signature, ni vente, ni suivi mensuel effectivement réalisé. Les pièces publiées sont accessibles depuis le [dossier professionnel](docs/dossier-professionnel/README.md). Il comprend aussi une [synthèse PDF](docs/dossier-professionnel/synthese-du-projet.pdf) pour une lecture hors ligne.
+
+### Lire les pièces détaillées
+
+- [Présentation du travail et compétences mobilisées](docs/dossier-professionnel/presentation.md)
+- [Tarification, formules et calculs vérifiés](docs/dossier-professionnel/tarification.md)
+- [Concurrence et étude de marché](docs/dossier-professionnel/marche-et-concurrence.md)
+- [Projet de contrat et points à harmoniser](docs/dossier-professionnel/contrat.md)
+- [Inventaire des documents et provenance](docs/dossier-professionnel/inventaire.md)
 
 ## Voir le site sur son ordinateur
 
