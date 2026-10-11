@@ -24,36 +24,30 @@ J’ai recensé des acteurs locaux de la serrurerie automobile et comparé les b
 
 Ces recherches ont servi à construire le projet et à réfléchir au positionnement. Elles constituent un repérage préparatoire, pas une étude complète des parts de marché ni une validation actuelle des tarifs de chaque concurrent.
 
-### Prix et formules que j’ai préparés
+### Offres et tarification proposées
 
-Les documents de mars 2026 présentent plusieurs versions de l’offre :
+J’ai structuré le travail commercial en deux prestations indépendantes, avec un périmètre et un prix lisibles :
 
-| Prestation envisagée | Prix présenté | Périmètre résumé |
+| Formule | Prix proposé | Périmètre |
 |---|---:|---|
-| Refonte SEO ponctuelle, première estimation | 2 500 € HT | Architecture, contenus, référencement technique et maillage |
-| Vente du site, proposition ultérieure | 7 000 € | Refonte complète, avec paiement envisagé en 12 ou 24 mensualités |
-| Maintenance technique du site | 200 €/mois | Surveillance, mises à jour, sécurité et petites modifications |
-| Suivi SEO Essentiel | 450 €/mois | Reporting, ajustements et un contenu mensuel |
-| Suivi SEO Standard | 750 €/mois | Suivi renforcé, contenus, positions et liens externes légers |
-| Suivi SEO Premium | 1 200 €/mois | Audit continu, contenus plus nombreux et reporting détaillé |
-| Offre SEO Pro / Leader, autre version | 800 €/mois | Suivi, contenu, concurrence et liens externes ; périmètre variable selon le document |
+| Création du site | 7 000 € HT | Conception, développement, pages et contenus définis au devis, réglages SEO techniques de base et remise du code source après règlement. |
+| Suivi SEO local et entretien | 800 € HT/mois | Une optimisation éditoriale par mois, entretien courant, suivi des requêtes convenues, observation de trois concurrents, compte rendu et échange mensuel. |
 
-Ces montants sont des propositions de travail et ne sont pas présentés comme acceptés ou facturés. Les pièces ne définissent pas toutes clairement si les montants mensuels de SEO sont HT ou TTC. La maintenance à 200 €/mois est séparée dans le projet de contrat ; certaines offres SEO disent l’inclure. Il faut donc éviter de l’ajouter deux fois.
-
-J’ai aussi vérifié les échéanciers. À titre de repère, 7 000 € répartis sur 24 mois représentent environ 291,67 €/mois. Le contrat préparé comporte une erreur de 40 centimes sur son total à cause du dernier paiement ; les calculs corrigés, les différentes versions de prix et les questions à harmoniser sont expliqués dans le [dossier de tarification](docs/dossier-professionnel/tarification.md).
+La TVA et le total à payer seront précisés sur le devis selon le régime applicable au prestataire. Le suivi mensuel est une prestation de moyens : aucun classement Google ni résultat commercial n’est garanti. Les deux formules, leurs limites et les documents associés sont détaillés dans le [dossier de tarification](docs/dossier-professionnel/tarification.md).
 
 ### Présentation et cadre de prestation
 
-J’ai préparé une présentation commerciale pour expliquer le site et sa valeur, des offres distinctes pour l’accompagnement SEO, ainsi qu’un projet de contrat de création et de maintenance. Le contrat aborde les livrables, les paiements, les accès au code et à l’hébergement, la propriété du site, la maintenance, les responsabilités et les limites des promesses SEO.
+J’ai préparé une présentation commerciale qui explique le site, sa valeur et les deux façons de travailler ensemble, ainsi qu’un contrat de prestation associé. Le contrat précise les prestations, le paiement, la livraison, les droits sur les créations, la maintenance et les limites du référencement.
 
-Ces documents montrent un travail de préparation commerciale et contractuelle. Ils ne prouvent ni signature, ni vente, ni suivi mensuel effectivement réalisé. Les pièces publiées sont accessibles depuis le [dossier professionnel](docs/dossier-professionnel/README.md). Il comprend aussi une [synthèse PDF](docs/dossier-professionnel/synthese-du-projet.pdf) pour une lecture hors ligne.
+Ces documents montrent un travail de préparation commerciale et contractuelle. Ils ne prouvent ni signature, ni vente, ni suivi mensuel effectivement réalisé. La [proposition commerciale](docs/dossier-professionnel/pieces/offre-commerciale.md) et le [contrat de prestation](docs/dossier-professionnel/pieces/contrat-prestation-sinnes.md) sont accessibles dans le [dossier professionnel](docs/dossier-professionnel/README.md). La [présentation commerciale PDF](docs/dossier-professionnel/pieces/presentation-commerciale.pdf), l’offre détaillée et le contrat sont disponibles au téléchargement.
 
 ### Lire les pièces détaillées
 
+- [Présentation commerciale](docs/dossier-professionnel/pieces/presentation-commerciale.md)
 - [Présentation du travail et compétences mobilisées](docs/dossier-professionnel/presentation.md)
-- [Tarification, formules et calculs vérifiés](docs/dossier-professionnel/tarification.md)
+- [Tarification et périmètre des offres](docs/dossier-professionnel/tarification.md)
 - [Concurrence et étude de marché](docs/dossier-professionnel/marche-et-concurrence.md)
-- [Projet de contrat et points à harmoniser](docs/dossier-professionnel/contrat.md)
+- [Contrat de prestation et conditions](docs/dossier-professionnel/contrat.md)
 - [Inventaire des documents et provenance](docs/dossier-professionnel/inventaire.md)
 
 ## Voir le site sur son ordinateur
