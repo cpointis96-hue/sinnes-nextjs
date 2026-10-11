@@ -1,8 +1,10 @@
 # Sinnes Automobiles
 
-## Mon projet principal
+## Ma réalisation la plus approfondie
 
 J'ai consacré plus de trois mois à ce projet, avec un investissement quotidien très important. Ce travail a porté sur la conception du site, le référencement naturel (SEO), l'étude du secteur et des concurrents, et l'amélioration de la présentation sur ordinateur et téléphone.
+
+Ce site est ma première réalisation centrale et reste la plus approfondie de mon parcours. Mon projet d'activité principal est désormais [Ancrage / Website Factory](https://github.com/cpointis96-hue/business-site-factory#readme), qui reprend cette direction de travail autour des sites et de la visibilité d'entreprises locales.
 
 Le site présente une activité de serrurerie automobile à Nice. Il permet de comprendre les services, de trouver une réponse à une situation concrète (clé perdue, double de clé, programmation) et de rejoindre les moyens de contact.
 
