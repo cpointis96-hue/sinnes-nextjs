@@ -1,0 +1,186 @@
+[
+  {
+    "route": "/",
+    "title": "Sinnes Automobiles — Reproduction de clé voiture Nice",
+    "file": "accueil.jpg",
+    "width": 1440,
+    "height": 4664,
+    "status": 200
+  },
+  {
+    "route": "/acheter-une-voiture/",
+    "title": "Acheter une voiture à Nice — Sinnes Automobiles | Sinnes Nice",
+    "file": "acheter-une-voiture.jpg",
+    "width": 1440,
+    "height": 1761,
+    "status": 200
+  },
+  {
+    "route": "/cle-voiture-nice/",
+    "title": "Clé de voiture Nice, Antibes, Cagnes-sur-Mer, Cannes | Sinnes Nice",
+    "file": "cle-voiture-nice.jpg",
+    "width": 1440,
+    "height": 4474,
+    "status": 200
+  },
+  {
+    "route": "/cle-voiture-perdue/",
+    "title": "Clé de voiture perdue sans double — Solution Nice | Sinnes Nice",
+    "file": "cle-voiture-perdue.jpg",
+    "width": 1440,
+    "height": 4827,
+    "status": 200
+  },
+  {
+    "route": "/cle-voiture-transpondeur/",
+    "title": "Clé voiture transpondeur — Fonctionnement et programmation | Sinnes Nice",
+    "file": "cle-voiture-transpondeur.jpg",
+    "width": 1440,
+    "height": 4510,
+    "status": 200
+  },
+  {
+    "route": "/contactez-nous/",
+    "title": "Sinnes Automobiles — Reproduction de clé voiture Nice",
+    "file": "contactez-nous.jpg",
+    "width": 1440,
+    "height": 1397,
+    "status": 200
+  },
+  {
+    "route": "/depannage-cle-domicile/",
+    "title": "Dépannage clé voiture à domicile — Nice et Côte d'Azur | Sinnes Nice",
+    "file": "depannage-cle-domicile.jpg",
+    "width": 1440,
+    "height": 4018,
+    "status": 200
+  },
+  {
+    "route": "/double-cle-voiture/",
+    "title": "Double de clé voiture à Nice — Devis gratuit | Sinnes Nice",
+    "file": "double-cle-voiture.jpg",
+    "width": 1440,
+    "height": 4396,
+    "status": 200
+  },
+  {
+    "route": "/mentions-legales-et-politique-de-confidentialite/",
+    "title": "Mentions légales et politique de confidentialité — Sinnes Automobiles | Sinnes Nice",
+    "file": "mentions-legales-et-politique-de-confidentialite.jpg",
+    "width": 1440,
+    "height": 2311,
+    "status": 200
+  },
+  {
+    "route": "/prix-cle-voiture/",
+    "title": "Prix clé voiture — Facteurs et fourchettes | Sinnes Nice | Sinnes Nice",
+    "file": "prix-cle-voiture.jpg",
+    "width": 1440,
+    "height": 4461,
+    "status": 200
+  },
+  {
+    "route": "/prix-cle-vs-concessionnaire/",
+    "title": "Serrurier auto vs concessionnaire — Jusqu'à 80% moins cher | Sinnes Nice",
+    "file": "prix-cle-vs-concessionnaire.jpg",
+    "width": 1440,
+    "height": 4402,
+    "status": 200
+  },
+  {
+    "route": "/programmation-cle-voiture/",
+    "title": "Programmation de clé voiture Nice — Transpondeur et badge | Sinnes Nice",
+    "file": "programmation-cle-voiture.jpg",
+    "width": 1440,
+    "height": 4557,
+    "status": 200
+  },
+  {
+    "route": "/qui-sommes-nous/",
+    "title": "Qui sommes-nous — Sinnes Automobiles Nice | Sinnes Nice",
+    "file": "qui-sommes-nous.jpg",
+    "width": 1440,
+    "height": 2517,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-audi/",
+    "title": "Refaire une clé Audi à Nice — Programmation VAG officielle | Sinnes Nice",
+    "file": "refaire-cle-audi.jpg",
+    "width": 1440,
+    "height": 3952,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-fiat/",
+    "title": "Refaire une clé Fiat 500 à Nice — Double et programmation | Sinnes Nice",
+    "file": "refaire-cle-fiat.jpg",
+    "width": 1440,
+    "height": 4025,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-hyundai/",
+    "title": "Refaire une clé Hyundai à Nice — Toutes générations | Sinnes Nice",
+    "file": "refaire-cle-hyundai.jpg",
+    "width": 1440,
+    "height": 4153,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-mercedes/",
+    "title": "Refaire une clé Mercedes à Nice — Clé étoile et badge | Sinnes Nice",
+    "file": "refaire-cle-mercedes.jpg",
+    "width": 1440,
+    "height": 3912,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-renault/",
+    "title": "Refaire une clé Renault à Nice — Clé carte et clé à lame | Sinnes Nice",
+    "file": "refaire-cle-renault.jpg",
+    "width": 1440,
+    "height": 4025,
+    "status": 200
+  },
+  {
+    "route": "/refaire-cle-toyota/",
+    "title": "Refaire une clé Toyota à Nice — Hybride et thermique | Sinnes Nice",
+    "file": "refaire-cle-toyota.jpg",
+    "width": 1440,
+    "height": 4081,
+    "status": 200
+  },
+  {
+    "route": "/reproduction-cle-voiture/",
+    "title": "Reproduction de clé de voiture Nice — Spécialiste | Sinnes Nice",
+    "file": "reproduction-cle-voiture.jpg",
+    "width": 1440,
+    "height": 5092,
+    "status": 200
+  },
+  {
+    "route": "/serrurier-automobile-nice/",
+    "title": "Serrurier Automobile Nice — Intervention 7j/7 | Sinnes Nice",
+    "file": "serrurier-automobile-nice.jpg",
+    "width": 1440,
+    "height": 4772,
+    "status": 200
+  },
+  {
+    "route": "/tarif-cle-voiture/",
+    "title": "Tarif clé de voiture — Prix à partir de 78€ Nice | Sinnes Nice",
+    "file": "tarif-cle-voiture.jpg",
+    "width": 1440,
+    "height": 3966,
+    "status": 200
+  },
+  {
+    "route": "/urgence-cle-voiture/",
+    "title": "Urgence clé voiture Nice — Intervention immédiate 7j/7 | Sinnes Nice",
+    "file": "urgence-cle-voiture.jpg",
+    "width": 1440,
+    "height": 4572,
+    "status": 200
+  }
+]
