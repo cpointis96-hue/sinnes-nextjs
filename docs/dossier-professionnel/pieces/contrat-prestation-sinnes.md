@@ -12,14 +12,15 @@ Date de prise d’effet : [date]. Devis accepté annexé : [référence et date]
 
 ## 2. Prestations commandées
 
-Cocher la formule retenue et reporter son périmètre détaillé dans le devis signé.
+Cocher la prestation ponctuelle de création si elle est commandée. Pour le suivi mensuel, choisir une seule des deux formules ; elles ne se cumulent pas.
 
 - ☐ **Création du site : 7 000 € HT.** Cadrage, pages et contenus convenus, conception, développement, adaptation mobile, réglages SEO techniques de base, contrôles de livraison et remise des sources après paiement complet.
-- ☐ **Suivi SEO local et entretien : 800 € HT par mois.** Une optimisation éditoriale mensuelle, vérifications techniques et mises à jour courantes, suivi des requêtes définies, observation de trois concurrents, compte rendu, échange de 30 minutes et jusqu’à une heure de petites corrections.
+- ☐ **Maintenance technique seule : 200 € HT par mois.** Surveillance de disponibilité, mises à jour courantes et de sécurité, jusqu’à une heure par mois de petites corrections de texte ou de présentation. Sans création de contenu ni suivi SEO.
+- ☐ **Suivi SEO local complet : 800 € HT par mois.** Inclut la maintenance technique ci-dessus, une optimisation éditoriale par mois, le suivi des requêtes définies, l’observation de trois concurrents, un compte rendu et un échange de 30 minutes. La maintenance à 200 € n’est pas facturée en supplément de cette formule.
 
 Le devis décrit les pages, livrables, accès, calendrier et toute particularité de la formule. En cas de différence, le devis signé prévaut pour son périmètre et son prix ; le présent contrat fixe les conditions générales de la prestation.
 
-Sont exclus sauf ajout écrit au devis : hébergement et nom de domaine, licences payantes, photographie, fonctionnalités non listées, nouvelles pages, achats ou campagnes de liens et interventions sur les services de tiers.
+Sont exclus sauf ajout écrit au devis : hébergement et nom de domaine, licences payantes, photographie, fonctionnalités non listées, nouvelles pages, achats ou campagnes de liens et interventions sur les services de tiers. La maintenance seule n’inclut aucune prestation SEO ; le suivi SEO complet inclut la maintenance sans cumul du prix de 200 €.
 
 ## 3. Délais et coopération
 
@@ -29,9 +30,9 @@ Le Prestataire soumet les livrables prévus au devis pour validation. Le Client 
 
 ## 4. Prix et paiement
 
-Les prix sont ceux du devis accepté : **7 000 € HT** pour la création et/ou **800 € HT par mois** pour le suivi choisi. La facture précise la TVA applicable selon le régime du Prestataire et le montant total à payer.
+Les prix sont ceux du devis accepté : **7 000 € HT** pour la création ; pour l’abonnement mensuel, **200 € HT** pour la maintenance seule ou **800 € HT** pour le suivi SEO complet avec maintenance incluse. Les deux abonnements ne se cumulent pas. La facture précise la TVA applicable selon le régime du Prestataire et le montant total à payer.
 
-Pour la création, l’échéancier proposé est : 40 % à la commande, 30 % à la validation de la structure et des maquettes, 30 % à la livraison. Pour le suivi, la facturation est mensuelle. Les factures sont payables dans les 30 jours de leur émission par virement sur le compte indiqué sur la facture.
+Pour la création, l’échéancier proposé est : 40 % à la commande, 30 % à la validation de la structure et des maquettes, 30 % à la livraison. Pour l’abonnement retenu, la facturation est mensuelle. Les factures sont payables dans les 30 jours de leur émission par virement sur le compte indiqué sur la facture.
 
 En cas de retard entre professionnels, des pénalités sont dues de plein droit au taux de refinancement de la Banque centrale européenne applicable, majoré de dix points. Une indemnité forfaitaire légale de 40 € pour frais de recouvrement est due pour chaque facture payée en retard, sans préjudice d’une indemnisation complémentaire justifiée lorsque les frais dépassent ce montant.
 
@@ -39,7 +40,7 @@ En cas de retard entre professionnels, des pénalités sont dues de plein droit 
 
 Les modalités de livraison et de recette sont celles du devis. À défaut de précision, le Client dispose de dix jours ouvrés après remise pour signaler par écrit les écarts précis par rapport au périmètre convenu. Les défauts reproductibles couverts sont corrigés sans frais ; toute demande d’évolution est traitée séparément.
 
-Le Client conserve le contrôle de son nom de domaine, de son hébergement et des comptes de ses services tiers. Le suivi mensuel comprend uniquement les opérations décrites à l’article 2. Il ne comprend pas la garantie de disponibilité des plateformes tierces ni les travaux hors forfait.
+Le Client conserve le contrôle de son nom de domaine, de son hébergement et des comptes de ses services tiers. L’abonnement mensuel comprend uniquement les opérations décrites à l’article 2. La maintenance vise la surveillance et les mises à jour courantes ; elle ne garantit pas la disponibilité des services tiers. Les travaux hors forfait nécessitent un accord écrit préalable.
 
 ## 6. Propriété intellectuelle
 
@@ -59,7 +60,7 @@ Le Client demeure responsable des traitements de données réalisés pour son ac
 
 ## 9. Durée et fin du contrat
 
-Le présent contrat prend effet à la date indiquée à l’article 1 et couvre la formule cochée. La création prend fin après livraison et règlement. Le suivi mensuel est conclu sans durée minimale et peut être résilié par l’une ou l’autre partie par écrit avec un préavis de 30 jours. Les sommes dues pour les prestations réalisées jusqu’à la date de fin restent exigibles.
+Le présent contrat prend effet à la date indiquée à l’article 1 et couvre la formule cochée. La création prend fin après livraison et règlement. L’abonnement choisi est conclu sans durée minimale et peut être résilié par l’une ou l’autre partie par écrit avec un préavis de 30 jours. Les sommes dues pour les prestations réalisées jusqu’à la date de fin restent exigibles.
 
 En cas de manquement important, la partie lésée adresse une mise en demeure écrite décrivant le manquement et accorde quinze jours pour y remédier. Si le manquement persiste, elle peut résilier le contrat par notification écrite, sans préjudice des sommes dues.
 

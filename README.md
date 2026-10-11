@@ -26,18 +26,19 @@ Ces recherches ont servi à construire le projet et à réfléchir au positionne
 
 ### Offres et tarification proposées
 
-J’ai structuré le travail commercial en deux prestations indépendantes, avec un périmètre et un prix lisibles :
+J’ai préparé une création de site et deux niveaux d’accompagnement mensuel, pour répondre à des budgets et à des besoins différents :
 
-| Formule | Prix proposé | Périmètre |
+| Prestation | Prix proposé | Périmètre |
 |---|---:|---|
 | Création du site | 7 000 € HT | Conception, développement, pages et contenus définis au devis, réglages SEO techniques de base et remise du code source après règlement. |
-| Suivi SEO local et entretien | 800 € HT/mois | Une optimisation éditoriale par mois, entretien courant, suivi des requêtes convenues, observation de trois concurrents, compte rendu et échange mensuel. |
+| Maintenance technique seule | 200 € HT/mois | Surveillance, mises à jour courantes et de sécurité, une heure au plus de petites corrections. Sans suivi SEO. |
+| Suivi SEO local complet | 800 € HT/mois | Maintenance incluse, optimisation éditoriale mensuelle, suivi des requêtes, observation de trois concurrents, compte rendu et échange mensuel. |
 
-La TVA et le total à payer seront précisés sur le devis selon le régime applicable au prestataire. Le suivi mensuel est une prestation de moyens : aucun classement Google ni résultat commercial n’est garanti. Les deux formules, leurs limites et les documents associés sont détaillés dans le [dossier de tarification](docs/dossier-professionnel/tarification.md).
+Les deux abonnements sont alternatifs : la maintenance à 200 € n’est pas ajoutée au suivi complet à 800 €. La TVA et le total à payer seront précisés sur le devis selon le régime applicable au prestataire. Le suivi SEO est une prestation de moyens, sans garantie de classement ou de résultat commercial. Le [dossier de tarification](docs/dossier-professionnel/tarification.md) détaille ces prestations et leurs limites.
 
 ### Présentation et cadre de prestation
 
-J’ai préparé une présentation commerciale qui explique le site, sa valeur et les deux façons de travailler ensemble, ainsi qu’un contrat de prestation associé. Le contrat précise les prestations, le paiement, la livraison, les droits sur les créations, la maintenance et les limites du référencement.
+J’ai préparé une présentation commerciale qui explique le site, sa valeur et les niveaux de suivi proposés, ainsi qu’un contrat de prestation associé. Le contrat précise les prestations, le paiement, la livraison, les droits sur les créations, la maintenance et les limites du référencement.
 
 Ces documents montrent un travail de préparation commerciale et contractuelle. Ils ne prouvent ni signature, ni vente, ni suivi mensuel effectivement réalisé. La [proposition commerciale](docs/dossier-professionnel/pieces/offre-commerciale.md) et le [contrat de prestation](docs/dossier-professionnel/pieces/contrat-prestation-sinnes.md) sont accessibles dans le [dossier professionnel](docs/dossier-professionnel/README.md). La [présentation commerciale PDF](docs/dossier-professionnel/pieces/presentation-commerciale.pdf), l’offre détaillée et le contrat sont disponibles au téléchargement.
 

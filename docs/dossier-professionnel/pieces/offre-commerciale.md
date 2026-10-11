@@ -1,12 +1,10 @@
 # Proposition commerciale — Sinnes Automobiles
 
-**Objet :** création d’un site vitrine et accompagnement de sa visibilité locale.
+**Objet :** création d’un site vitrine et deux niveaux d’accompagnement après sa livraison.
 
-Cette proposition présente deux prestations indépendantes. Le client peut commander la création seule, puis décider séparément de souscrire au suivi mensuel.
+La création du site est une prestation ponctuelle. Après la livraison, le client peut choisir entre une maintenance technique essentielle à 200 € par mois et un suivi SEO complet à 800 € par mois. Ces deux formules mensuelles sont alternatives : la maintenance est déjà comprise dans le suivi SEO complet.
 
-## Formule 1 — Création du site
-
-**Prix : 7 000 € HT** — TVA appliquée selon le régime du prestataire à la date de facturation.
+## Création du site — 7 000 € HT
 
 La prestation comprend le cadrage, la structure des pages validées, la conception et le développement du site, l’intégration des contenus prévus, l’adaptation mobile, les réglages SEO techniques de base, le contrôle avant livraison et la remise du code source après paiement complet.
 
@@ -16,29 +14,31 @@ Le devis annexé fixera la liste des pages, les contenus attendus, les accès, l
 
 L’hébergement, le nom de domaine, les licences payantes, la photographie, les achats de liens et les demandes hors périmètre sont facturés séparément après accord écrit.
 
-## Formule 2 — Suivi SEO local et entretien
+## Abonnement A — Maintenance technique seule — 200 € HT par mois
 
-**Prix : 800 € HT par mois** — TVA appliquée selon le régime du prestataire à la date de facturation.
+Pour conserver le site à jour et surveillé sans accompagnement SEO :
 
-Chaque mois :
+- vérification de la disponibilité du site ;
+- mises à jour courantes et de sécurité ;
+- jusqu’à une heure par mois de petites corrections de texte ou de présentation.
 
-- optimisation d’une page existante ou d’un contenu ciblé ;
-- vérifications techniques et mises à jour courantes du site ;
+Cette formule ne comprend pas de création de contenu, de suivi des requêtes, d’analyse de concurrence ni d’optimisation SEO. L’hébergement, le domaine et les licences restent à la charge du client.
+
+## Abonnement B — Suivi SEO local complet — 800 € HT par mois
+
+Cette formule inclut la maintenance ci-dessus et ajoute :
+
+- optimisation d’une page existante ou d’un contenu ciblé par mois ;
 - suivi des requêtes définies ensemble au démarrage ;
 - observation de trois concurrents locaux ;
-- compte rendu mensuel et échange de suivi de 30 minutes ;
-- jusqu’à une heure de petites corrections de contenu ou de présentation.
+- compte rendu mensuel et échange de suivi de 30 minutes.
 
-Les nouvelles fonctionnalités et pages, l’hébergement, les licences, les campagnes de liens payantes et les interventions sur des services tiers sont exclus. Ils nécessitent un devis accepté avant intervention.
+Les nouvelles fonctionnalités et pages, les campagnes de liens payantes et les interventions sur des services tiers sont hors forfait. Elles nécessitent un devis accepté avant intervention. La maintenance à 200 € n’est pas ajoutée au prix de 800 € : elle est incluse dans cette formule complète.
 
-La formule est facturée mensuellement, payable à 30 jours. Elle peut être arrêtée par l’une ou l’autre partie avec un préavis écrit de 30 jours.
+## Facturation et limites
 
-## Cadre et limites
+Les deux abonnements sont facturés mensuellement, payables à 30 jours, sans durée minimale, et peuvent être arrêtés par écrit avec un préavis de 30 jours. Le client choisit un seul abonnement pour une période donnée.
 
-Le référencement dépend de facteurs externes et évolutifs. La prestation prévoit des actions et un suivi, sans garantir un classement, un trafic, des appels ou un chiffre d’affaires. Le client fournit des informations exactes, les contenus et autorisations nécessaires ainsi que les accès utiles. Les délais sont ajustés si ces éléments tardent.
+Les montants sont hors taxes. Le devis et la facture préciseront la TVA applicable selon le régime du prestataire et le total à payer. Le suivi SEO prévoit des actions et des comptes rendus, sans garantir un classement, du trafic, des appels ou un chiffre d’affaires.
 
-Le montant HT, la TVA éventuelle, le total à payer, les identités des parties et les dates seront indiqués dans le devis accepté. La prestation ne démarre qu’après acceptation écrite du devis et paiement de l’acompte convenu.
-
-## Pièce contractuelle
-
-Le [modèle de contrat de prestation](contrat-prestation-sinnes.md) complète cette proposition. Le devis accepté précisera la formule commandée et ses paramètres particuliers.
+Le [modèle de contrat de prestation](contrat-prestation-sinnes.md) complète cette proposition. Le devis accepté précisera la formule mensuelle choisie, son périmètre et ses paramètres particuliers.

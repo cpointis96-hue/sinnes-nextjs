@@ -6,12 +6,13 @@ Concevoir un site vitrine complet pour une activité de serrurerie automobile à
 
 Les montants ci-dessous constituent une proposition commerciale préparée pour ce projet. Ils ne signifient ni que l’offre a été acceptée, ni qu’une prestation a été vendue. Un devis signé précisera les coordonnées des parties, le calendrier, les livrables retenus et le régime de TVA applicable à la date de facturation.
 
-## Deux formules, deux besoins
+## Une création et deux niveaux de suivi
 
 | Formule | Prix proposé | Ce qui est compris |
 |---|---:|---|
 | **Création du site** | **7 000 € HT** | Conception et réalisation du site vitrine, structure des pages définies au cadrage, rédaction et intégration des contenus prévus, référencement technique de base, mise en ligne et remise des sources après règlement complet. |
-| **Suivi SEO local et entretien** | **800 € HT / mois** | Suivi mensuel du référencement local, optimisation d’une page existante ou d’un contenu par mois, vérifications techniques et mises à jour courantes, suivi d’un tableau de requêtes convenu au démarrage, observation de trois concurrents locaux, compte rendu mensuel et échange de suivi de 30 minutes. |
+| **Maintenance technique seule** | **200 € HT / mois** | Surveillance de disponibilité, mises à jour courantes et de sécurité, jusqu’à une heure de petites corrections de texte ou de présentation. Pas de suivi SEO ni de création de contenu. |
+| **Suivi SEO local complet** | **800 € HT / mois** | Maintenance incluse, optimisation d’une page ou d’un contenu par mois, suivi des requêtes convenues, observation de trois concurrents locaux, compte rendu mensuel et échange de suivi de 30 minutes. |
 
 Les montants sont exprimés hors taxes. La facture appliquera la TVA selon le régime déclaré du prestataire au moment de la prestation. Le devis indiquera le montant total à payer et la mention fiscale correspondante.
 
@@ -23,11 +24,17 @@ La prestation couvre la conception d’un site adapté à Sinnes Automobiles et 
 
 **Hors forfait :** hébergement, nom de domaine, licences ou services payants, achats de liens, production photo, fonctionnalités non prévues au devis et modifications demandées après validation. Toute évolution substantielle fait l’objet d’un accord écrit et d’un chiffrage complémentaire.
 
-### 2. Suivi SEO local et entretien — 800 € HT / mois
+### 2. Maintenance technique seule — 200 € HT / mois
+
+Cette formule couvre la surveillance de disponibilité, les mises à jour courantes et de sécurité, ainsi qu’une heure au plus par mois de petites corrections de texte ou de présentation. Elle ne comprend ni audit, ni suivi de mots-clés, ni optimisation SEO, ni création de contenu.
+
+**Facturation et arrêt :** facturation mensuelle, payable à 30 jours. La formule peut être arrêtée avec un préavis écrit de 30 jours. L’hébergement, le nom de domaine, les licences et les interventions sur les services tiers restent à la charge du client.
+
+### 3. Suivi SEO local complet — 800 € HT / mois
 
 La formule associe un travail SEO suivi et l’entretien courant du site. Chaque mois, elle comprend une optimisation éditoriale ciblée, les vérifications techniques utiles, le suivi des requêtes convenues, un regard sur trois concurrents locaux, un compte rendu synthétique et un échange de 30 minutes.
 
-L’entretien couvre les mises à jour courantes, la vérification de disponibilité et une heure au plus de petites corrections de contenu ou de présentation. Les évolutions fonctionnelles, nouvelles pages, incidents imputables à un service tiers, licences, hébergement et campagnes de liens payantes sont hors forfait et soumis à accord préalable.
+La maintenance est incluse dans cette formule : mises à jour courantes et de sécurité, vérification de disponibilité et jusqu’à une heure de petites corrections de contenu ou de présentation. Il n’y a pas de facturation additionnelle de la formule maintenance à 200 € lorsqu’un client souscrit au suivi complet à 800 €. Les évolutions fonctionnelles, nouvelles pages, incidents imputables à un service tiers, licences, hébergement et campagnes de liens payantes sont hors forfait et soumis à accord préalable.
 
 **Facturation et arrêt :** facturation mensuelle, payable à 30 jours. Chaque partie peut mettre fin à la formule avec un préavis écrit de 30 jours. Le suivi commence après validation des accès et des sujets prioritaires.
 
@@ -45,4 +52,4 @@ Cette prestation est une obligation de moyens : elle ne garantit ni position pr�
 
 ## Repères commerciaux
 
-Le travail a consisté à séparer clairement la création du site de son suivi, à définir ce qui entre dans chaque prestation et à préciser ce qui requiert un devis complémentaire. La grille donne un prix et un périmètre lisibles, sans promettre de résultat de référencement que le prestataire ne maîtrise pas.
+Le travail a consisté à distinguer la création du site, la maintenance seule pour un budget réduit et le suivi SEO complet qui inclut la maintenance, puis à préciser le contenu de chaque niveau et ce qui requiert un devis complémentaire. La grille donne un prix et un périmètre lisibles, sans promettre de résultat de référencement que le prestataire ne maîtrise pas.

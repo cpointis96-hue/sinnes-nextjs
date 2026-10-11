@@ -7,7 +7,7 @@ J’ai consacré plus de trois mois à cette réalisation, qui associe développ
 ## Parcours de lecture
 
 1. [Présentation du projet](presentation.md) — objectifs, réalisation et compétences mobilisées.
-2. [Tarification et formules](tarification.md) — deux offres, périmètres et prix proposés.
+2. [Tarification et formules](tarification.md) — une création et deux niveaux d’abonnement, leurs périmètres et leurs prix.
 3. [Étude de marché et concurrence](marche-et-concurrence.md) — repérage et pistes de positionnement.
 4. [Contrat de prestation](contrat.md) — conditions prévues et documents à compléter.
 5. [Présentation commerciale en PDF](pieces/presentation-commerciale.pdf) — lecture hors ligne de la proposition.

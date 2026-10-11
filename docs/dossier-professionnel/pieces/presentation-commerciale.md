@@ -6,29 +6,31 @@ Le projet vise à rendre les services de serrurerie automobile de Sinnes faciles
 
 Le travail comprend la conception du site, sa structure de contenu, les pages locales, les liens entre les sujets et les réglages SEO techniques. Il s’appuie sur une analyse de l’ancien site et un repérage des acteurs et recherches du secteur.
 
-## Deux façons de travailler ensemble
+## Une création, puis deux budgets de suivi
 
 ### Création du site — 7 000 € HT
 
-Conception et développement du site, pages et contenus définis au devis, adaptation mobile, réglages SEO techniques de base, contrôles avant livraison et remise du code source après paiement complet.
+Conception et développement, pages et contenus définis au devis, adaptation mobile, réglages SEO techniques de base, contrôles avant livraison et remise du code source après paiement complet.
 
 **Paiement proposé :** 40 % à la commande, 30 % à la validation de la structure et des maquettes, 30 % à la livraison.
 
-### Suivi SEO local et entretien — 800 € HT par mois
+### Maintenance technique seule — 200 € HT par mois
 
-Une optimisation éditoriale ciblée par mois, vérifications techniques et mises à jour courantes, suivi des requêtes définies ensemble, observation de trois concurrents locaux, compte rendu mensuel, échange de suivi de 30 minutes et jusqu’à une heure de petites corrections.
+Surveillance de disponibilité, mises à jour courantes et de sécurité, et jusqu’à une heure de petites corrections de texte ou de présentation par mois. Cette formule n’inclut pas de suivi SEO, de rapport de référencement ou de création de contenu.
 
-La formule est indépendante de la création et peut être arrêtée avec un préavis écrit de 30 jours. Les pages supplémentaires, fonctionnalités, hébergement, licences et campagnes de liens payantes sont hors périmètre et chiffrés avant accord.
+### Suivi SEO local complet — 800 € HT par mois
 
-## Une proposition mesurable et réaliste
+Inclut la maintenance technique, puis ajoute une optimisation éditoriale ciblée par mois, le suivi des requêtes convenues, l’observation de trois concurrents locaux, un compte rendu mensuel et un échange de 30 minutes.
 
-Le suivi porte sur les actions définies et leur évolution. Le référencement dépend aussi de la concurrence, des moteurs de recherche et des plateformes tierces ; aucun rang Google, trafic, appel ou chiffre d’affaires n’est garanti.
+Les deux abonnements sont des choix alternatifs : le suivi complet à 800 € comprend déjà la maintenance. Il n’y a pas à additionner les deux prix. Les abonnements sont mensuels et résiliables avec un préavis écrit de 30 jours.
 
-Les prix sont exprimés hors taxes. Le devis indiquera la TVA applicable selon le régime du prestataire et le montant total à payer. Il fixera également les livrables, les dates, les coordonnées des parties et les accès nécessaires.
+## Un suivi réaliste
+
+Le référencement dépend aussi de la concurrence et des moteurs de recherche. Les prestations prévoient des actions et leur suivi sans garantir de rang Google, de trafic, d’appels ou de chiffre d’affaires. Les montants sont hors taxes ; le devis précisera la TVA applicable et le total à payer.
 
 ## Documents associés
 
-- [Détail des formules et de leurs limites](../tarification.md)
-- [Proposition commerciale](offre-commerciale.md)
+- [Détail des tarifs et périmètres](../tarification.md)
+- [Proposition commerciale](offre-commerciale.md) — PDF et Word dans l’index du dossier
 - [Contrat de prestation](contrat-prestation-sinnes.md) — [PDF](contrat-prestation-sinnes.pdf) · [Word](contrat-prestation-sinnes.docx)
 - [Étude de marché et concurrence](../marche-et-concurrence.md)
